@@ -2,6 +2,7 @@ import './style.css'
 import { shelves, countBooks } from './catalog.js'
 import { relatedClusters, worthExploring } from './discoveries.js'
 import { spineTextureUrl, hashString } from './textures.js'
+import { coverFor } from './covers-data.js'
 
 const MATERIALS = ['leather', 'cloth', 'paper', 'board']
 const PALETTES = [
@@ -22,20 +23,28 @@ const PALETTES = [
   { bg: '#241c14', ink: '#f0e4cc', band: '#a88848', pages: '#ebe4d4' },
 ]
 
+/** Inner width of book rows inside the upright case (px) */
+const CASE_ROW_WIDTH = 520
+
 let selectedId = null
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
 }
 
+function assetUrl(rel) {
+  const base = import.meta.env.BASE_URL || '/'
+  return `${base}${rel.replace(/^\//, '')}`
+}
+
 function bookStyle(book, index) {
   const h = hashString(`${book.title}:${book.author}:${index}`)
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
-  const height = 158 + (h % 62)
-  const width = 30 + (h % 24)
+  const height = 152 + (h % 48)
+  const width = 26 + (h % 18)
   const lean = ((h >> 8) % 5) - 2
-  const fontSize = Math.max(9, Math.min(12.5, width * 0.36))
+  const fontSize = Math.max(8.5, Math.min(11.5, width * 0.36))
   const inkMode = h % 3 === 0 ? 'foil' : h % 3 === 1 ? 'blind' : 'ink'
   const texture = spineTextureUrl({
     key: `${book.title}:${index}`,
@@ -46,7 +55,35 @@ function bookStyle(book, index) {
   return { palette, material, height, width, lean, fontSize, inkMode, texture }
 }
 
+function chunkIntoRows(shelf) {
+  const rows = []
+  let current = []
+  let used = 0
+  shelf.books.forEach((book, index) => {
+    const style = bookStyle(book, index)
+    const w = style.width + 3
+    if (current.length && used + w > CASE_ROW_WIDTH) {
+      rows.push(current)
+      current = []
+      used = 0
+    }
+    current.push({ book, index, style })
+    used += w
+  })
+  if (current.length) rows.push(current)
+  return rows
+}
+
+function applyWoodAssets() {
+  const root = document.documentElement
+  root.style.setProperty('--wood-case', `url('${assetUrl('textures/wood-case.jpg')}')`)
+  root.style.setProperty('--wood-dark', `url('${assetUrl('textures/wood-dark.jpg')}')`)
+  root.style.setProperty('--wood-plank', `url('${assetUrl('textures/wood-plank.jpg')}')`)
+  root.style.setProperty('--wood-grain', `url('${assetUrl('textures/wood-grain.jpg')}')`)
+}
+
 function renderApp() {
+  applyWoodAssets()
   const app = document.querySelector('#app')
   app.innerHTML = `
     <div class="atmosphere" aria-hidden="true">
@@ -60,7 +97,7 @@ function renderApp() {
     <header class="hero">
       <p class="hero-eyebrow">A private study</p>
       <h1 class="brand">Library</h1>
-      <p class="hero-tag">Cool light on dark wood — shelves built like the real thing, spines you can almost touch.</p>
+      <p class="hero-tag">A tall case in cool light — real wood, real spines, volumes stacked floor to crown.</p>
     </header>
 
     <main class="room" id="room">
@@ -69,7 +106,7 @@ function renderApp() {
         <div class="case-body">
           <div class="case-upright left" aria-hidden="true"></div>
           <div class="case-bays">
-            ${shelves.map((shelf) => renderShelf(shelf)).join('')}
+            ${shelves.map((shelf) => renderShelfSection(shelf)).join('')}
           </div>
           <div class="case-upright right" aria-hidden="true"></div>
         </div>
@@ -95,7 +132,7 @@ function renderApp() {
     <footer class="colophon">
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
-      <span>Four shelves</span>
+      <span>One upright case</span>
     </footer>
 
     <div class="panel-backdrop" id="panel-backdrop" hidden data-close></div>
@@ -110,10 +147,14 @@ function renderApp() {
       <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
         <span aria-hidden="true">×</span>
       </button>
+      <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
+        <img class="detail-cover" id="detail-cover" alt="" />
+      </div>
       <p class="detail-category" id="detail-category"></p>
       <h2 class="detail-title" id="detail-title"></h2>
       <p class="detail-author" id="detail-author"></p>
       <p class="detail-description" id="detail-description"></p>
+      <p class="detail-source" id="detail-source" hidden></p>
     </aside>
   `
 
@@ -211,37 +252,45 @@ function renderExploreBody() {
   `
 }
 
-function renderShelf(shelf) {
+function renderShelfSection(shelf) {
+  const rows = chunkIntoRows(shelf)
   return `
-    <section class="bay" data-shelf="${shelf.id}" aria-labelledby="shelf-${shelf.id}">
+    <section class="bay-section" data-shelf="${shelf.id}" aria-labelledby="shelf-${shelf.id}">
       <div class="bay-heading">
         <h2 id="shelf-${shelf.id}">${shelf.label}</h2>
         <p>${shelf.books.length}</p>
       </div>
-      <div class="bay-recess">
-        <div class="bay-back" aria-hidden="true"></div>
-        <div class="bay-spotlight" aria-hidden="true"></div>
-        <div class="book-row" role="list" aria-label="${shelf.label}">
-          ${shelf.books.map((book, index) => renderBook(shelf, book, index)).join('')}
-        </div>
-        <div class="shelf-board" aria-hidden="true">
-          <div class="shelf-top-face"></div>
-          <div class="shelf-front-lip"></div>
-          <div class="shelf-under-shadow"></div>
-        </div>
-      </div>
+      ${rows
+        .map(
+          (row, rowIndex) => `
+        <div class="bay-recess" data-row="${rowIndex}">
+          <div class="bay-back" aria-hidden="true"></div>
+          <div class="bay-spotlight" aria-hidden="true"></div>
+          <div class="book-row" role="list" aria-label="${shelf.label} row ${rowIndex + 1}">
+            ${row.map(({ book, index, style }) => renderBook(shelf, book, index, style)).join('')}
+          </div>
+          <div class="shelf-board" aria-hidden="true">
+            <div class="shelf-top-face"></div>
+            <div class="shelf-front-lip"></div>
+            <div class="shelf-under-shadow"></div>
+          </div>
+        </div>`,
+        )
+        .join('')}
     </section>
   `
 }
 
-function renderBook(shelf, book, index) {
-  const style = bookStyle(book, index)
+function renderBook(shelf, book, index, style) {
   const id = bookId(shelf.id, index)
   const selected = selectedId === id
+  const cover = coverFor(shelf.id, index)
+  const hasReal = cover?.cover
+  const spineImg = hasReal ? assetUrl(cover.spine || cover.cover) : null
   return `
     <button
       type="button"
-      class="book material-${style.material} ink-${style.inkMode}${selected ? ' is-selected' : ''}"
+      class="book material-${style.material} ink-${style.inkMode}${selected ? ' is-selected' : ''}${hasReal ? ' has-photo' : ''}"
       role="listitem"
       data-book-id="${id}"
       data-shelf="${shelf.id}"
@@ -258,14 +307,21 @@ function renderBook(shelf, book, index) {
         --book-lean: ${style.lean}deg;
         --spine-size: ${style.fontSize}px;
         --spine-texture: url('${style.texture}');
+        ${spineImg ? `--spine-photo: url('${spineImg}');` : ''}
       "
     >
       <span class="book-block">
         <span class="book-spine">
-          <span class="spine-skin"></span>
-          <span class="spine-title">${escapeHtml(book.spine)}</span>
-          <span class="spine-edge-light"></span>
-          <span class="spine-wear"></span>
+          ${
+            hasReal
+              ? `<span class="spine-photo" role="img" aria-hidden="true"></span>
+                 <span class="spine-photo-shade"></span>
+                 <span class="spine-title photo-title">${escapeHtml(book.spine)}</span>`
+              : `<span class="spine-skin"></span>
+                 <span class="spine-title">${escapeHtml(book.spine)}</span>
+                 <span class="spine-edge-light"></span>
+                 <span class="spine-wear"></span>`
+          }
         </span>
         <span class="book-pages" aria-hidden="true"></span>
         <span class="book-head" aria-hidden="true"></span>
@@ -300,14 +356,38 @@ function openPanel(id) {
   const found = findBook(id)
   if (!found) return
   selectedId = id
-  const { shelf, book } = found
+  const { shelf, book, index } = found
   const panel = document.getElementById('detail-panel')
   const backdrop = document.getElementById('panel-backdrop')
+  const coverMeta = coverFor(shelf.id, index)
+  const coverWrap = document.getElementById('detail-cover-wrap')
+  const coverImg = document.getElementById('detail-cover')
+  const sourceEl = document.getElementById('detail-source')
 
   document.getElementById('detail-category').textContent = shelf.category
   document.getElementById('detail-title').textContent = book.title
   document.getElementById('detail-author').textContent = book.author
   document.getElementById('detail-description').textContent = book.description
+
+  if (coverMeta?.cover) {
+    coverImg.src = assetUrl(coverMeta.cover)
+    coverImg.alt = `Cover of ${book.title}`
+    coverWrap.hidden = false
+    const bits = []
+    if (coverMeta.source) bits.push(`Cover: ${coverMeta.source}`)
+    if (coverMeta.note) bits.push(coverMeta.note)
+    if (bits.length) {
+      sourceEl.hidden = false
+      sourceEl.textContent = bits.join(' · ')
+    } else {
+      sourceEl.hidden = true
+    }
+  } else {
+    coverWrap.hidden = true
+    coverImg.removeAttribute('src')
+    sourceEl.hidden = false
+    sourceEl.textContent = 'Cover image not found in Open Library for this edition yet.'
+  }
 
   panel.hidden = false
   backdrop.hidden = false
@@ -391,7 +471,7 @@ function bindEvents() {
       openPanel(link.dataset.bookId)
       document
         .querySelector(`[data-book-id="${link.dataset.bookId}"]`)
-        ?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+        ?.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' })
     }
   })
 
