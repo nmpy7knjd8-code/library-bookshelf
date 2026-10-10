@@ -56,9 +56,8 @@ function bookStyle(book, index) {
   const material = MATERIALS[h % MATERIALS.length]
   const scale = widthScale()
   const height = Math.round((148 + (h % 44)) * Math.min(1, scale + 0.08))
-  const width = Math.max(18, Math.round((24 + (h % 14)) * scale))
-  const lean = ((h >> 8) % 5) - 2
-  const fontSize = Math.max(8, Math.min(11, width * 0.36))
+  const width = Math.max(20, Math.round((26 + (h % 14)) * scale))
+  const fontSize = Math.max(9.5, Math.min(12.5, width * 0.4))
   const inkMode = h % 3 === 0 ? 'foil' : h % 3 === 1 ? 'blind' : 'ink'
   const texture = spineTextureUrl({
     key: `${book.title}:${index}`,
@@ -66,7 +65,22 @@ function bookStyle(book, index) {
     bg: palette.bg,
     band: palette.band,
   })
-  return { palette, material, height, width, lean, fontSize, inkMode, texture }
+  return { palette, material, height, width, fontSize, inkMode, texture }
+}
+
+function spineAuthor(author) {
+  if (!author) return ''
+  let a = author
+    .replace(/^edited by\s+/i, '')
+    .replace(/^tr\.?\s+/i, '')
+    .replace(/\s*\(.*?\)\s*/g, ' ')
+    .split(/[;,/]/)[0]
+    .trim()
+  // Keep last two name parts when long
+  const parts = a.split(/\s+/).filter(Boolean)
+  if (parts.length > 3) a = parts.slice(-2).join(' ')
+  if (a.length > 28) a = `${a.slice(0, 26)}…`
+  return a
 }
 
 function chunkIntoRows(shelf) {
@@ -220,13 +234,11 @@ function renderShelfSection(shelf) {
 function renderBook(shelf, book, index, style) {
   const id = bookId(shelf.id, index)
   const selected = selectedId === id
-  const cover = coverFor(shelf.id, index)
-  const hasReal = cover?.cover
-  const spineImg = hasReal ? assetUrl(cover.spine || cover.cover) : null
+  const authorLine = spineAuthor(book.author)
   return `
     <button
       type="button"
-      class="book material-${style.material} ink-${style.inkMode}${selected ? ' is-selected' : ''}${hasReal ? ' has-photo' : ''}"
+      class="book material-${style.material} ink-${style.inkMode}${selected ? ' is-selected' : ''}"
       role="listitem"
       data-book-id="${id}"
       data-shelf="${shelf.id}"
@@ -240,24 +252,20 @@ function renderBook(shelf, book, index, style) {
         --book-ink: ${style.palette.ink};
         --book-band: ${style.palette.band};
         --book-pages: ${style.palette.pages};
-        --book-lean: ${style.lean}deg;
         --spine-size: ${style.fontSize}px;
+        --spine-author-size: ${Math.max(7.5, style.fontSize * 0.72)}px;
         --spine-texture: url('${style.texture}');
-        ${spineImg ? `--spine-photo: url('${spineImg}');` : ''}
       "
     >
       <span class="book-block">
         <span class="book-spine">
-          ${
-            hasReal
-              ? `<span class="spine-photo" role="img" aria-hidden="true"></span>
-                 <span class="spine-photo-shade"></span>
-                 <span class="spine-title photo-title">${escapeHtml(book.spine)}</span>`
-              : `<span class="spine-skin"></span>
-                 <span class="spine-title">${escapeHtml(book.spine)}</span>
-                 <span class="spine-edge-light"></span>
-                 <span class="spine-wear"></span>`
-          }
+          <span class="spine-skin"></span>
+          <span class="spine-copy">
+            <span class="spine-title">${escapeHtml(book.spine)}</span>
+            <span class="spine-author">${escapeHtml(authorLine)}</span>
+          </span>
+          <span class="spine-edge-light"></span>
+          <span class="spine-wear"></span>
         </span>
         <span class="book-pages" aria-hidden="true"></span>
         <span class="book-head" aria-hidden="true"></span>
@@ -487,7 +495,7 @@ function buildAppHtml() {
     <header class="hero">
       <p class="hero-eyebrow">A private study</p>
       <h1 class="brand">Library</h1>
-      <p class="hero-tag">A tall case in cool light — real wood, real spines, volumes stacked floor to crown.</p>
+      <p class="hero-tag">A tall freestanding case in cool light — dark wood, upright spines, title and author stamped in order.</p>
     </header>
 
     <main class="room" id="room">
