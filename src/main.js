@@ -697,8 +697,8 @@ function renderCoverCard(shelf, book, index) {
         hasCover
           ? `<img class="cover-card-img" src="${escapeAttr(assetUrl(cover.cover))}" alt="" loading="lazy" />`
           : `<span class="cover-card-fallback" aria-hidden="true">
-              <span class="cover-card-fallback-title">${escapeHtml(book.spine || book.title)}</span>
-              <span class="cover-card-fallback-author">${escapeHtml(spineAuthor(book.author))}</span>
+              <span class="cover-card-fallback-title">${escapeHtml(book.title)}</span>
+              <span class="cover-card-fallback-author">${escapeHtml(book.author)}</span>
             </span>`
       }
       <span class="cover-card-caption">
