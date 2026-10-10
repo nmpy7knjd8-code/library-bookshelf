@@ -46,50 +46,113 @@ function rowCapacity() {
   return Math.max(200, Math.floor(caseW - upright - pad))
 }
 
-function widthScale() {
-  const cap = rowCapacity()
-  if (cap < 280) return 0.78
-  if (cap < 360) return 0.88
-  return 1
+/** Full title for the spine — keep wording; strip only edition/series noise */
+function fullSpineTitle(book) {
+  let t = (book.title || '').replace(/\s+/g, ' ').trim()
+  // Remove trailing parenthetical edition notes
+  t = t.replace(/\s*\([^)]*(?:edition|ed\.|press|oxford|cambridge|with references)[^)]*\)\s*$/iu, '').trim()
+  t = t.replace(/\s*\([^)]{16,}\)\s*$/u, '').trim()
+  return t
 }
 
-function bookStyle(book, index) {
-  const h = hashString(`${book.title}:${book.author}:${index}`)
-  const palette = PALETTES[h % PALETTES.length]
-  const material = MATERIALS[h % MATERIALS.length]
-  const scale = widthScale()
-  // Vary heights but keep every book within a shared row band so bottoms align
-  const height = Math.min(180, Math.round((148 + (h % 32)) * Math.min(1, scale + 0.08)))
-  const width = Math.max(22, Math.round((28 + (h % 12)) * scale))
-  const titleLen = (book.spine || book.title || '').length
-  // Longer titles get a slightly smaller stamp so they stay centered and unclipped
-  const baseSize = Math.max(10, Math.min(13, width * 0.42))
-  const fontSize = titleLen > 22 ? baseSize * 0.88 : titleLen > 16 ? baseSize * 0.94 : baseSize
-  const inkMode = h % 2 === 0 ? 'foil' : 'ink' // always light — no dark blind stamps
-  const texture = spineTextureUrl({
-    key: `${book.title}:${index}`,
-    material,
-    bg: palette.bg,
-    band: palette.band,
-  })
-  // Optical padding: shorter titles sit with more end margin
-  const padRatio = titleLen < 10 ? 0.2 : titleLen < 18 ? 0.16 : 0.12
-  return { palette, material, height, width, fontSize, inkMode, texture, padRatio }
+/** Last resort only — keep as many whole words as possible */
+function shortenTitleLastResort(title, maxChars) {
+  if (title.length <= maxChars) return title
+  // Drop volume / part suffixes first (still readable as the work)
+  let t = title
+    .replace(/,?\s*Vols?\.\s*[IVXLC\d]+.*$/iu, '')
+    .replace(/,?\s*Volume\s+[IVXLC\d]+.*$/iu, '')
+    .replace(/:\s*.*$/u, '')
+    .trim()
+  if (t.length <= maxChars) return t
+  let out = ''
+  for (const word of t.split(' ')) {
+    const next = out ? `${out} ${word}` : word
+    if (next.length > maxChars) break
+    out = next
+  }
+  return out.length >= 12 ? out : t.slice(0, maxChars).trim()
 }
 
 function spineAuthor(author) {
   if (!author) return ''
   let a = author
     .replace(/^edited by\s+/i, '')
+    .replace(/^associated with\s+/i, '')
     .replace(/^tr\.?\s+/i, '')
     .replace(/\s*\(.*?\)\s*/g, ' ')
     .split(/[;,/]/)[0]
     .trim()
-  // Keep last two name parts when long
   const parts = a.split(/\s+/).filter(Boolean)
   if (parts.length > 3) a = parts.slice(-2).join(' ')
-  if (a.length > 28) a = `${a.slice(0, 26)}…`
+  if (a.length > 24) a = `${a.slice(0, 22)}…`
   return a
+}
+
+function bookStyle(book, index) {
+  const h = hashString(`${book.title}:${book.author}:${index}`)
+  const palette = PALETTES[h % PALETTES.length]
+  const material = MATERIALS[h % MATERIALS.length]
+
+  // Always start from the full title; size the book to fit
+  let titleLine = fullSpineTitle(book)
+  const authorSize = 11
+  const pad = 18
+  const authorReserve = authorSize * 1.4 + 10
+  const minH = 180
+  const maxH = 232
+  const maxW = 74
+
+  // Readable type; nudge down slightly only for very long titles
+  let fontSize = titleLine.length > 40 ? 12 : 13.5
+  let lineH = fontSize * 1.1
+
+  // Target 2–4 wrap columns so full wording fits without clipping
+  let columns = titleLine.length <= 12 ? 1 : titleLine.length <= 26 ? 2 : titleLine.length <= 40 ? 3 : 4
+  let height = Math.min(
+    maxH,
+    Math.max(minH, Math.round(pad * 2 + authorReserve + Math.ceil(titleLine.length / columns) * lineH + 4)),
+  )
+  let width = Math.min(maxW, Math.max(44, Math.round(columns * fontSize * 1.15 + 14 + (h % 4))))
+
+  const capacityOf = (w, ht, fs) => {
+    const cols = w >= 66 ? 4 : w >= 56 ? 3 : w >= 46 ? 2 : 1
+    const usable = ht - pad * 2 - authorReserve
+    const per = Math.max(5, Math.floor(usable / (fs * 1.1)))
+    return { cols, capacity: cols * per }
+  }
+
+  let { capacity } = capacityOf(width, height, fontSize)
+  if (titleLine.length > capacity) {
+    // Grow to max footprint before any shortening
+    height = maxH
+    width = maxW
+    fontSize = 12
+    ;({ capacity } = capacityOf(width, height, fontSize))
+    if (titleLine.length > capacity) {
+      titleLine = shortenTitleLastResort(titleLine, capacity)
+    }
+  }
+
+  const inkMode = h % 2 === 0 ? 'foil' : 'ink'
+  const texture = spineTextureUrl({
+    key: `${book.title}:${index}:v4`,
+    material,
+    bg: palette.bg,
+    band: palette.band,
+  })
+  return {
+    palette,
+    material,
+    height,
+    width,
+    fontSize,
+    authorSize,
+    inkMode,
+    texture,
+    pad,
+    titleLine,
+  }
 }
 
 function chunkIntoRows(shelf) {
@@ -221,7 +284,7 @@ function renderShelfSection(shelf) {
       </div>
       ${rows
         .map((row, rowIndex) => {
-          const rowMax = Math.max(...row.map(({ style }) => style.height), 148)
+          const rowMax = Math.max(...row.map(({ style }) => style.height), 172)
           return `
         <div class="bay-recess" data-row="${rowIndex}" style="--row-book-max: ${rowMax}px">
           <div class="bay-back" aria-hidden="true"></div>
@@ -263,20 +326,20 @@ function renderBook(shelf, book, index, style) {
         --book-band: ${style.palette.band};
         --book-pages: ${style.palette.pages};
         --spine-size: ${style.fontSize}px;
-        --spine-author-size: ${Math.max(8, style.fontSize * 0.7)}px;
-        --spine-pad: ${Math.round(style.height * style.padRatio)}px;
+        --spine-author-size: ${style.authorSize}px;
+        --spine-pad: ${style.pad}px;
         --spine-texture: url('${style.texture}');
       "
     >
       <span class="book-block">
         <span class="book-spine">
-          <span class="spine-skin"></span>
+          <span class="spine-skin" aria-hidden="true"></span>
+          <span class="spine-edge-light" aria-hidden="true"></span>
+          <span class="spine-wear" aria-hidden="true"></span>
           <span class="spine-copy">
-            <span class="spine-title">${escapeHtml(book.spine)}</span>
+            <span class="spine-title">${escapeHtml(style.titleLine)}</span>
             <span class="spine-author">${escapeHtml(authorLine)}</span>
           </span>
-          <span class="spine-edge-light"></span>
-          <span class="spine-wear"></span>
         </span>
         <span class="book-pages" aria-hidden="true"></span>
         <span class="book-head" aria-hidden="true"></span>

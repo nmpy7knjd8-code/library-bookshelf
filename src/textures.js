@@ -137,20 +137,20 @@ function addWear(ctx, w, h, rand) {
   ctx.fillRect(w - 1, 0, 1, h)
 }
 
+/** End-cap bands only — kept clear of the lettering zone in the middle third */
 function addBands(ctx, w, h, bandColor, rand) {
   const rgb = hexToRgb(bandColor)
-  const y1 = 14 + Math.floor(rand() * 10)
-  const y2 = h - 28 - Math.floor(rand() * 10)
-  for (const y of [y1, y2]) {
-    const grd = ctx.createLinearGradient(0, y, 0, y + 4)
-    grd.addColorStop(0, `rgba(${rgb.r},${rgb.g},${rgb.b},0.15)`)
-    grd.addColorStop(0.4, `rgba(${Math.min(255, rgb.r + 40)},${Math.min(255, rgb.g + 30)},${Math.min(255, rgb.b + 10)},0.95)`)
-    grd.addColorStop(1, `rgba(${rgb.r},${rgb.g},${rgb.b},0.2)`)
+  const caps = [
+    6 + Math.floor(rand() * 4),
+    h - 12 - Math.floor(rand() * 3),
+  ]
+  for (const y of caps) {
+    const grd = ctx.createLinearGradient(0, y, 0, y + 3)
+    grd.addColorStop(0, `rgba(${rgb.r},${rgb.g},${rgb.b},0.12)`)
+    grd.addColorStop(0.5, `rgba(${Math.min(255, rgb.r + 30)},${Math.min(255, rgb.g + 22)},${Math.min(255, rgb.b + 8)},0.55)`)
+    grd.addColorStop(1, `rgba(${rgb.r},${rgb.g},${rgb.b},0.12)`)
     ctx.fillStyle = grd
-    ctx.fillRect(3, y, w - 6, 3)
-    // Foil glint
-    ctx.fillStyle = 'rgba(255,255,255,0.35)'
-    ctx.fillRect(w * 0.35, y, w * 0.2, 1)
+    ctx.fillRect(4, y, w - 8, 2)
   }
 }
 
@@ -175,31 +175,8 @@ export function spineTextureUrl({ key, material, bg, band }) {
   else if (material === 'paper') paintPaper(ctx, w, h, base, rand)
   else paintBoard(ctx, w, h, base, rand)
 
-  addBands(ctx, w, h, band, rand)
+  // Clean spines: material grain only — no foil bands, labels, or ribs over lettering
   addWear(ctx, w, h, rand)
-
-  // Occasional paper library label (minority of spines)
-  if (rand() > 0.78) {
-    const ly = h * (0.4 + rand() * 0.15)
-    const lh = 26 + rand() * 16
-    ctx.fillStyle = `rgba(${200 + rand() * 25},${188 + rand() * 20},${155 + rand() * 18},${0.72 + rand() * 0.18})`
-    ctx.fillRect(6, ly, w - 12, lh)
-    ctx.strokeStyle = 'rgba(40,30,20,0.4)'
-    ctx.strokeRect(6.5, ly + 0.5, w - 13, lh - 1)
-  }
-
-  // Raised spine ribs on leather
-  if (material === 'leather' && rand() > 0.4) {
-    for (let i = 0; i < 3; i++) {
-      const y = 22 + i * ((h - 50) / 3)
-      const rib = ctx.createLinearGradient(0, y, 0, y + 5)
-      rib.addColorStop(0, 'rgba(0,0,0,0.35)')
-      rib.addColorStop(0.45, 'rgba(255,230,180,0.18)')
-      rib.addColorStop(1, 'rgba(0,0,0,0.4)')
-      ctx.fillStyle = rib
-      ctx.fillRect(2, y, w - 4, 5)
-    }
-  }
 
   const url = canvas.toDataURL('image/png')
   cache.set(cacheKey, url)

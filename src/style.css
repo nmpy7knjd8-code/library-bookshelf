@@ -550,10 +550,10 @@ body {
   align-items: flex-end;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  gap: 0;
-  height: var(--row-book-max, 180px);
-  min-height: var(--row-book-max, 180px);
-  max-height: var(--row-book-max, 180px);
+  gap: 1px;
+  height: var(--row-book-max, 220px);
+  min-height: var(--row-book-max, 220px);
+  max-height: var(--row-book-max, 220px);
   padding: 0 0.1rem;
   margin: 0;
   overflow: hidden;
@@ -614,14 +614,15 @@ body {
 
 /* ——— Books ——— */
 .book {
-  --book-h: 170px;
-  --book-w: 34px;
+  --book-h: 176px;
+  --book-w: 44px;
   --book-bg: #2a1a10;
-  --book-ink: #e8d5a8;
+  --book-ink: #f2ebd8;
   --book-band: #c4a35a;
   --book-pages: #e8e0d0;
-  --spine-size: 11px;
-  --spine-author-size: 8px;
+  --spine-size: 13px;
+  --spine-author-size: 10px;
+  --spine-pad: 22px;
   appearance: none;
   border: 0;
   padding: 0;
@@ -719,42 +720,49 @@ body {
 .spine-skin {
   position: absolute;
   inset: 0;
+  z-index: 0;
   background-image: var(--spine-texture);
   background-size: 100% 100%;
 }
 
 .spine-copy {
-  --spine-pad: 26px;
   position: absolute;
   top: var(--spine-pad);
   bottom: var(--spine-pad);
-  left: 0;
-  right: 0;
+  left: 2px;
+  right: 2px;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 0.45rem;
+  justify-content: space-between;
+  gap: 0.55rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   overflow: hidden;
   pointer-events: none;
   box-sizing: border-box;
-  padding: 0.15rem 0;
+  padding: 0.1rem 0;
 }
 
 .spine-title {
   font-family: var(--font-display);
   font-size: var(--spine-size);
-  font-weight: 600;
-  letter-spacing: 0.055em;
-  line-height: 1.08;
-  color: #f2ebd8;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  line-height: 1.12;
+  color: #f4ecd8;
   text-align: center;
-  max-height: 64%;
-  overflow: hidden;
-  text-overflow: clip;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.55);
+  flex: 1 1 auto;
+  min-height: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: manual;
+  text-shadow:
+    0 0 1px rgba(0, 0, 0, 0.85),
+    0 1px 2px rgba(0, 0, 0, 0.65);
 }
 
 .spine-author {
@@ -762,51 +770,42 @@ body {
   font-size: var(--spine-author-size);
   font-weight: 500;
   font-style: italic;
-  letter-spacing: 0.04em;
-  line-height: 1.12;
-  color: #e8dcc0;
-  opacity: 0.92;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  color: #efe6d0;
   text-align: center;
-  max-height: 28%;
+  flex: 0 0 auto;
+  max-width: 100%;
+  white-space: nowrap;
   overflow: hidden;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  text-shadow:
+    0 0 1px rgba(0, 0, 0, 0.85),
+    0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-/* Soft-gold foil stamp — still light on dark bindings */
+/* Soft-gold stamp — solid light gold (no clipped foil overlays) */
 .book.ink-foil .spine-title {
-  color: transparent;
-  background: linear-gradient(
-    180deg,
-    #efe0a8 0%,
-    #f7f0d0 40%,
-    #d8b86a 75%,
-    #c4a35a 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: none;
-  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.45));
+  color: #efe0a8;
 }
 
 .book.ink-foil .spine-author {
   color: #e6d4a0;
-  opacity: 0.95;
 }
 
 .spine-edge-light {
   position: absolute;
   inset: 0;
-  background: linear-gradient(100deg, transparent 30%, rgba(200, 220, 255, 0.08) 48%, transparent 62%);
+  z-index: 1;
+  /* Soft side sheen only — kept off the lettering face */
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), transparent 35%, transparent 70%, rgba(0, 0, 0, 0.18));
   pointer-events: none;
-  mix-blend-mode: screen;
 }
 
 .spine-wear {
   position: absolute;
   inset: 0;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.04), transparent 12%),
-    linear-gradient(180deg, transparent 88%, rgba(0, 0, 0, 0.25));
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.12), transparent 8%, transparent 92%, rgba(0, 0, 0, 0.16));
   pointer-events: none;
 }
 
