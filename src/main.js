@@ -1,5 +1,6 @@
 import './style.css'
 import { shelves, countBooks } from './catalog.js'
+import { relatedClusters, worthExploring } from './discoveries.js'
 
 const MATERIALS = ['leather', 'cloth', 'paper', 'board']
 const PALETTES = [
@@ -66,6 +67,21 @@ function renderApp() {
       ${shelves.map((shelf) => renderShelf(shelf)).join('')}
     </main>
 
+    <section class="discovery" aria-label="Further discovery">
+      ${renderDiscoveryPanel(
+        'related',
+        'Related books',
+        'Thematic clusters among volumes already on these shelves.',
+        renderRelatedBody(),
+      )}
+      ${renderDiscoveryPanel(
+        'explore',
+        'Worth exploring',
+        'Suggestions beyond the catalog, drawn from the same study themes.',
+        renderExploreBody(),
+      )}
+    </section>
+
     <footer class="colophon">
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
@@ -97,6 +113,101 @@ function renderApp() {
   `
 
   bindEvents()
+}
+
+function renderDiscoveryPanel(id, title, blurb, bodyHtml) {
+  return `
+    <div class="discovery-panel" data-discovery="${id}">
+      <button
+        type="button"
+        class="discovery-toggle"
+        id="discovery-toggle-${id}"
+        aria-expanded="false"
+        aria-controls="discovery-panel-${id}"
+      >
+        <span class="discovery-toggle-text">
+          <span class="discovery-title">${escapeHtml(title)}</span>
+          <span class="discovery-blurb">${escapeHtml(blurb)}</span>
+        </span>
+        <span class="discovery-chevron" aria-hidden="true"></span>
+      </button>
+      <div
+        class="discovery-body"
+        id="discovery-panel-${id}"
+        role="region"
+        aria-labelledby="discovery-toggle-${id}"
+        hidden
+      >
+        ${bodyHtml}
+      </div>
+    </div>
+  `
+}
+
+function lookupShelfBook(title) {
+  for (const shelf of shelves) {
+    const index = shelf.books.findIndex((b) => b.title === title)
+    if (index !== -1) {
+      return { shelf, book: shelf.books[index], index, id: bookId(shelf.id, index) }
+    }
+  }
+  return null
+}
+
+function renderRelatedBody() {
+  return `
+    <div class="cluster-list">
+      ${relatedClusters
+        .map(
+          (cluster) => `
+        <article class="cluster">
+          <h3 class="cluster-title">${escapeHtml(cluster.title)}</h3>
+          <p class="cluster-note">${escapeHtml(cluster.note)}</p>
+          <ul class="cluster-titles">
+            ${cluster.titles
+              .map((title) => {
+                const found = lookupShelfBook(title)
+                if (!found) {
+                  return `<li><span class="cluster-missing">${escapeHtml(title)}</span></li>`
+                }
+                return `
+                  <li>
+                    <button
+                      type="button"
+                      class="cluster-link"
+                      data-book-id="${escapeAttr(found.id)}"
+                    >
+                      <span class="cluster-link-title">${escapeHtml(found.book.title)}</span>
+                      <span class="cluster-link-author">${escapeHtml(found.book.author)}</span>
+                    </button>
+                  </li>`
+              })
+              .join('')}
+          </ul>
+        </article>`,
+        )
+        .join('')}
+    </div>
+  `
+}
+
+function renderExploreBody() {
+  return `
+    <ul class="explore-list">
+      ${worthExploring
+        .map(
+          (item) => `
+        <li class="explore-item">
+          <div class="explore-heading">
+            <span class="explore-title">${escapeHtml(item.title)}</span>
+            <span class="explore-author">${escapeHtml(item.author)}</span>
+          </div>
+          <p class="explore-why">${escapeHtml(item.why)}</p>
+        </li>`,
+        )
+        .join('')}
+    </ul>
+  `
 }
 
 function renderShelf(shelf) {
@@ -233,11 +344,49 @@ function closePanel() {
   }
 }
 
+function setDiscoveryOpen(panel, open) {
+  const toggle = panel.querySelector('.discovery-toggle')
+  const body = panel.querySelector('.discovery-body')
+  toggle.setAttribute('aria-expanded', String(open))
+  panel.classList.toggle('is-open', open)
+  if (open) {
+    body.hidden = false
+    requestAnimationFrame(() => body.classList.add('is-open'))
+  } else {
+    body.classList.remove('is-open')
+    window.setTimeout(() => {
+      if (!panel.classList.contains('is-open')) body.hidden = true
+    }, 280)
+  }
+}
+
 function bindEvents() {
   document.getElementById('room').addEventListener('click', (event) => {
     const btn = event.target.closest('.book')
     if (!btn) return
     openPanel(btn.dataset.bookId)
+  })
+
+  const discovery = document.querySelector('.discovery')
+  discovery.addEventListener('click', (event) => {
+    const toggle = event.target.closest('.discovery-toggle')
+    if (toggle) {
+      const panel = toggle.closest('.discovery-panel')
+      const open = toggle.getAttribute('aria-expanded') !== 'true'
+      // Accordion: one open at a time keeps the study uncluttered
+      discovery.querySelectorAll('.discovery-panel').forEach((other) => {
+        if (other !== panel) setDiscoveryOpen(other, false)
+      })
+      setDiscoveryOpen(panel, open)
+      return
+    }
+
+    const link = event.target.closest('.cluster-link')
+    if (link) {
+      openPanel(link.dataset.bookId)
+      const bookBtn = document.querySelector(`[data-book-id="${link.dataset.bookId}"]`)
+      bookBtn?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' })
+    }
   })
 
   document.getElementById('panel-close').addEventListener('click', closePanel)

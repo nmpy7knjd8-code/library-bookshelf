@@ -457,6 +457,232 @@ body {
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.45), transparent 70%);
 }
 
+.discovery {
+  position: relative;
+  z-index: 1;
+  width: min(920px, 100%);
+  margin: 0.5rem auto 0;
+  padding: 0 clamp(1rem, 4vw, 3rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.discovery-panel {
+  border-top: 1px solid rgba(212, 165, 116, 0.18);
+  border-bottom: 1px solid rgba(212, 165, 116, 0.08);
+}
+
+.discovery-toggle {
+  appearance: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 0.15rem;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.discovery-toggle:hover .discovery-title,
+.discovery-toggle:focus-visible .discovery-title {
+  color: var(--lamp);
+}
+
+.discovery-toggle:focus-visible {
+  outline: 1px solid rgba(212, 165, 116, 0.45);
+  outline-offset: 4px;
+}
+
+.discovery-toggle-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.discovery-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 3vw, 1.85rem);
+  font-weight: 600;
+  color: #f0e6d8;
+  transition: color 0.2s ease;
+}
+
+.discovery-blurb {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+.discovery-chevron {
+  flex: 0 0 auto;
+  width: 0.65rem;
+  height: 0.65rem;
+  border-right: 1.5px solid var(--amber);
+  border-bottom: 1.5px solid var(--amber);
+  transform: rotate(45deg);
+  transition: transform 0.28s ease;
+  margin-right: 0.35rem;
+  opacity: 0.85;
+}
+
+.discovery-panel.is-open .discovery-chevron {
+  transform: rotate(225deg);
+  margin-top: 0.35rem;
+}
+
+.discovery-body {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition:
+    max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.28s ease,
+    padding 0.28s ease;
+  padding: 0 0.15rem;
+}
+
+.discovery-body.is-open {
+  max-height: 2400px;
+  opacity: 1;
+  padding: 0 0.15rem 1.5rem;
+}
+
+.cluster-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cluster {
+  padding-top: 0.35rem;
+}
+
+.cluster + .cluster {
+  border-top: 1px solid rgba(212, 165, 116, 0.12);
+  padding-top: 1.35rem;
+}
+
+.cluster-title {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f3ebe0;
+}
+
+.cluster-note {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.cluster-titles {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.cluster-link {
+  appearance: none;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  padding: 0.45rem 0;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.cluster-link:hover .cluster-link-title,
+.cluster-link:focus-visible .cluster-link-title {
+  color: var(--lamp);
+}
+
+.cluster-link:focus-visible {
+  outline: 1px solid rgba(212, 165, 116, 0.4);
+  outline-offset: 2px;
+}
+
+.cluster-link-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: #e8ddd0;
+  transition: color 0.2s ease;
+}
+
+.cluster-link-author {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: var(--font-display);
+}
+
+.explore-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.explore-item {
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid rgba(212, 165, 116, 0.12);
+}
+
+.explore-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.explore-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.explore-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f0e6d8;
+}
+
+.explore-author {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.explore-why {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #e0d4c4;
+}
+
 .colophon {
   position: relative;
   z-index: 1;
