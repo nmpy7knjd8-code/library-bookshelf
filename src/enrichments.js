@@ -9708,7 +9708,7 @@ export const enrichments = {
     "otherByAuthor": []
   },
   "literature-17": {
-    "longDescription": "A literary work concerned with broken images and the reassembly of meaning in modern writing. Zolotow’s title signals critique of representation and memory. It belongs with mid-to-late century experiments in poetic and critical prose. This shelf copy sits among related works in literature, literary criticism, and poetry, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "longDescription": "Disenchanted Images considers how modern writing unsettles inherited pictures of the world—figures of charm, myth, and representation under critique. Zolotow’s title marks a turn from enchanted likeness toward analytic and elegiac image-making. It belongs with mid-to-late century experiments in poetic and critical prose.\n\nThis shelf copy sits among related works in literature, literary criticism, and poetry, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Zolotow",
       "bio": "Charlotte Zolotow was an American writer, poet, editor, and publisher of many books for children, including about 70 picture book texts.",

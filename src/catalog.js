@@ -567,11 +567,11 @@ export const shelves = [
           'A popular American anthology of widely memorized poems from the English canon and beyond. Designed for home and school, it fixed a shared repertoire of “famous” verse. Sentiment and oratory sit beside quieter lyrics.',
       },
       {
-        title: 'Dismantled Images',
-        spine: 'Dismantled Images',
+        title: 'Disenchanted Images',
+        spine: 'Disenchanted Images',
         author: 'Zolotow',
         description:
-          'A literary work concerned with broken images and the reassembly of meaning in modern writing. Zolotow’s title signals critique of representation and memory. It belongs with mid-to-late century experiments in poetic and critical prose.',
+          'A literary work concerned with disenchanted images and the reassembly of meaning in modern writing. Zolotow’s title signals critique of representation and memory. It belongs with mid-to-late century experiments in poetic and critical prose.',
       },
       {
         title: 'Modern American Criticism',

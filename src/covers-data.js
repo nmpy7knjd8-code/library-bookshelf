@@ -1008,10 +1008,17 @@ export const covers = {
     "note": null
   },
   "literature-17": {
-    "cover": null,
-    "source": null,
-    "match": null,
-    "gap": true
+    "cover": "covers/literature-17.jpg",
+    "spine": "covers/literature-17.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL2246062W",
+    "coverId": 9623638,
+    "match": {
+      "title": "Disenchanted images",
+      "author": "Theodore Ziolkowski"
+    },
+    "gap": false,
+    "note": null
   },
   "literature-18": {
     "cover": "covers/literature-18.jpg",
