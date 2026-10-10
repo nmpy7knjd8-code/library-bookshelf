@@ -197,66 +197,36 @@ function expandDescription(book, olText) {
   return `${base}${extra}`
 }
 
+/** Off-catalog only — never recommend titles already on the shelves */
 function similarFor(entry) {
+  // Prefer refresh-recommendations.mjs for production data.
+  // Kept here so full re-enrich stays consistent.
   const out = []
   const seen = new Set([norm(entry.title)])
-  for (const cluster of relatedClusters) {
-    if (!cluster.titles.some((t) => norm(t) === norm(entry.title))) continue
-    for (const t of cluster.titles) {
-      if (norm(t) === norm(entry.title)) continue
-      const hit = catalogIndex.find((c) => norm(c.title) === norm(t) || norm(c.spine) === norm(t))
-      if (!hit || seen.has(norm(hit.title))) continue
-      seen.add(norm(hit.title))
-      out.push({
-        title: hit.title,
-        author: hit.author,
-        cover: hit.cover,
-        bookId: hit.id,
-        source: 'catalog',
-      })
-      if (out.length >= 8) return out
-    }
-  }
-  // Same-shelf neighbors
-  if (out.length < 6) {
-    const shelfMates = catalogIndex.filter(
-      (c) => c.shelfId === entry.shelfId && c.id !== entry.id && !seen.has(norm(c.title)),
-    )
-    for (const hit of shelfMates.slice(0, 8 - out.length)) {
-      seen.add(norm(hit.title))
-      out.push({
-        title: hit.title,
-        author: hit.author,
-        cover: hit.cover,
-        bookId: hit.id,
-        source: 'catalog',
-      })
-    }
-  }
-  // Off-shelf suggestions from worthExploring
-  if (out.length < 8) {
-    for (const w of worthExploring) {
-      if (seen.has(norm(w.title))) continue
-      out.push({
-        title: w.title,
-        author: w.author,
-        cover: null,
-        bookId: null,
-        source: 'explore',
-        why: w.why,
-      })
-      if (out.length >= 8) break
-    }
+  for (const w of worthExploring) {
+    if (seen.has(norm(w.title))) continue
+    if (catalogIndex.some((c) => norm(c.title) === norm(w.title))) continue
+    seen.add(norm(w.title))
+    out.push({
+      title: w.title,
+      author: w.author,
+      cover: null,
+      bookId: null,
+      source: 'explore',
+      why: w.why,
+    })
+    if (out.length >= 8) break
   }
   return out
 }
 
 function otherByAuthor(entry) {
+  // Catalog matches only as a thin fallback; OL fill happens in olOtherWorks.
   const name = norm(entry.primary)
   if (!name || name.length < 3) return []
   return catalogIndex
     .filter((c) => c.id !== entry.id && norm(c.primary).includes(name.slice(0, 12)))
-    .slice(0, 8)
+    .slice(0, 2)
     .map((hit) => ({
       title: hit.title,
       author: hit.author,

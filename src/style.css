@@ -1367,10 +1367,6 @@ body {
 }
 
 @media (max-width: 720px) {
-  .hero {
-    min-height: 36vh;
-  }
-
   .case-body {
     grid-template-columns: 18px 1fr 18px;
   }
