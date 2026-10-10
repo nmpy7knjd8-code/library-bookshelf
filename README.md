@@ -28,3 +28,8 @@ All titles from the Library project catalog are included across four shelves:
 4. Essays & Older Editions  
 
 Click a book (or press Enter/Space when focused) to open its detail panel. Escape or the close control dismisses it.
+
+Below the shelves, two collapsed discovery panels expand on click:
+
+- **Related books** — thematic clusters among titles already on the shelves (click a title to open its panel).
+- **Worth exploring** — off-catalog reading suggestions aligned with the library’s themes.
