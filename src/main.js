@@ -94,41 +94,46 @@ function bookStyle(book, index) {
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
 
-  // Always start from the full title; size the book to fit
+  // Full title first; fit by tightening type inside a realistic spine, not by growing slabs
   let titleLine = fullSpineTitle(book)
-  const authorSize = 11
-  const pad = 18
-  const authorReserve = authorSize * 1.4 + 10
-  const minH = 180
-  const maxH = 232
-  const maxW = 74
+  const minH = 148
+  const maxH = 176
+  const minW = 28
+  const maxW = 40
 
-  // Readable type; nudge down slightly only for very long titles
-  let fontSize = titleLine.length > 40 ? 12 : 13.5
-  let lineH = fontSize * 1.1
+  // Compact stamp sizes — still light cream/gold and readable
+  let fontSize = titleLine.length > 34 ? 9.5 : titleLine.length > 22 ? 10.5 : 11
+  let authorSize = Math.max(7.5, fontSize * 0.72)
+  let pad = 12
+  const authorReserve = () => authorSize * 1.25 + 6
 
-  // Target 2–4 wrap columns so full wording fits without clipping
-  let columns = titleLine.length <= 12 ? 1 : titleLine.length <= 26 ? 2 : titleLine.length <= 40 ? 3 : 4
-  let height = Math.min(
-    maxH,
-    Math.max(minH, Math.round(pad * 2 + authorReserve + Math.ceil(titleLine.length / columns) * lineH + 4)),
-  )
-  let width = Math.min(maxW, Math.max(44, Math.round(columns * fontSize * 1.15 + 14 + (h % 4))))
-
-  const capacityOf = (w, ht, fs) => {
-    const cols = w >= 66 ? 4 : w >= 56 ? 3 : w >= 46 ? 2 : 1
-    const usable = ht - pad * 2 - authorReserve
-    const per = Math.max(5, Math.floor(usable / (fs * 1.1)))
+  const capacityOf = (w, ht, fs, as, pd) => {
+    const cols = w >= 37 ? 3 : w >= 31 ? 2 : 1
+    const usable = ht - pd * 2 - (as * 1.25 + 6)
+    const per = Math.max(5, Math.floor(usable / (fs * 1.05)))
     return { cols, capacity: cols * per }
   }
 
-  let { capacity } = capacityOf(width, height, fontSize)
+  // Modest height/width variation — real spines, not slabs
+  let height = Math.min(maxH, Math.max(minH, 154 + (h % 18)))
+  let width = Math.min(maxW, Math.max(minW, 30 + (h % 9)))
+
+  // Prefer wrap columns over widening: bump width only in small steps if needed
+  let { cols, capacity } = capacityOf(width, height, fontSize, authorSize, pad)
   if (titleLine.length > capacity) {
-    // Grow to max footprint before any shortening
+    fontSize = Math.max(9, fontSize - 0.5)
+    authorSize = Math.max(7.5, fontSize * 0.72)
+    pad = 11
     height = maxH
+    width = Math.min(maxW, width + 4)
+    ;({ cols, capacity } = capacityOf(width, height, fontSize, authorSize, pad))
+  }
+  if (titleLine.length > capacity) {
     width = maxW
-    fontSize = 12
-    ;({ capacity } = capacityOf(width, height, fontSize))
+    fontSize = 9
+    authorSize = 7.5
+    pad = 10
+    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
     if (titleLine.length > capacity) {
       titleLine = shortenTitleLastResort(titleLine, capacity)
     }
@@ -136,7 +141,7 @@ function bookStyle(book, index) {
 
   const inkMode = h % 2 === 0 ? 'foil' : 'ink'
   const texture = spineTextureUrl({
-    key: `${book.title}:${index}:v4`,
+    key: `${book.title}:${index}:v5`,
     material,
     bg: palette.bg,
     band: palette.band,
@@ -284,7 +289,7 @@ function renderShelfSection(shelf) {
       </div>
       ${rows
         .map((row, rowIndex) => {
-          const rowMax = Math.max(...row.map(({ style }) => style.height), 172)
+          const rowMax = Math.max(...row.map(({ style }) => style.height), 148)
           return `
         <div class="bay-recess" data-row="${rowIndex}" style="--row-book-max: ${rowMax}px">
           <div class="bay-back" aria-hidden="true"></div>

@@ -543,9 +543,9 @@ body {
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 1px;
-  height: var(--row-book-max, 220px);
-  min-height: var(--row-book-max, 220px);
-  max-height: var(--row-book-max, 220px);
+  height: var(--row-book-max, 176px);
+  min-height: var(--row-book-max, 176px);
+  max-height: var(--row-book-max, 176px);
   padding: 0 0.1rem;
   margin: 0;
   overflow: hidden;
@@ -606,15 +606,15 @@ body {
 
 /* ——— Books ——— */
 .book {
-  --book-h: 176px;
-  --book-w: 44px;
+  --book-h: 160px;
+  --book-w: 32px;
   --book-bg: #2a1a10;
   --book-ink: #f2ebd8;
   --book-band: #c4a35a;
   --book-pages: #e8e0d0;
-  --spine-size: 13px;
-  --spine-author-size: 10px;
-  --spine-pad: 22px;
+  --spine-size: 10.5px;
+  --spine-author-size: 8px;
+  --spine-pad: 12px;
   appearance: none;
   border: 0;
   padding: 0;
@@ -721,28 +721,28 @@ body {
   position: absolute;
   top: var(--spine-pad);
   bottom: var(--spine-pad);
-  left: 2px;
-  right: 2px;
+  left: 1px;
+  right: 1px;
   z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 0.55rem;
+  gap: 0.28rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   overflow: hidden;
   pointer-events: none;
   box-sizing: border-box;
-  padding: 0.1rem 0;
+  padding: 0;
 }
 
 .spine-title {
   font-family: var(--font-display);
   font-size: var(--spine-size);
-  font-weight: 650;
-  letter-spacing: 0.04em;
-  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.05;
   color: #f4ecd8;
   text-align: center;
   flex: 1 1 auto;
@@ -754,7 +754,7 @@ body {
   hyphens: manual;
   text-shadow:
     0 0 1px rgba(0, 0, 0, 0.85),
-    0 1px 2px rgba(0, 0, 0, 0.65);
+    0 1px 1px rgba(0, 0, 0, 0.55);
 }
 
 .spine-author {
@@ -762,8 +762,8 @@ body {
   font-size: var(--spine-author-size);
   font-weight: 500;
   font-style: italic;
-  letter-spacing: 0.03em;
-  line-height: 1.15;
+  letter-spacing: 0.015em;
+  line-height: 1.05;
   color: #efe6d0;
   text-align: center;
   flex: 0 0 auto;
@@ -772,7 +772,7 @@ body {
   overflow: hidden;
   text-shadow:
     0 0 1px rgba(0, 0, 0, 0.85),
-    0 1px 1px rgba(0, 0, 0, 0.6);
+    0 1px 1px rgba(0, 0, 0, 0.55);
 }
 
 /* Soft-gold stamp — solid light gold (no clipped foil overlays) */
