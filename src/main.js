@@ -23,10 +23,8 @@ const PALETTES = [
   { bg: '#241c14', ink: '#f0e4cc', band: '#a88848', pages: '#ebe4d4' },
 ]
 
-/** Inner width of book rows inside the upright case (px) */
-const CASE_ROW_WIDTH = 520
-
 let selectedId = null
+let lastRowWidth = 0
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
@@ -37,14 +35,30 @@ function assetUrl(rel) {
   return `${base}${rel.replace(/^\//, '')}`
 }
 
+/** Available width for books inside the case — never wider than the viewport. */
+function rowCapacity() {
+  const caseW = Math.min(window.innerWidth * 0.94, 560)
+  const upright = window.innerWidth < 720 ? 36 : 72
+  const pad = 28
+  return Math.max(200, Math.floor(caseW - upright - pad))
+}
+
+function widthScale() {
+  const cap = rowCapacity()
+  if (cap < 280) return 0.78
+  if (cap < 360) return 0.88
+  return 1
+}
+
 function bookStyle(book, index) {
   const h = hashString(`${book.title}:${book.author}:${index}`)
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
-  const height = 152 + (h % 48)
-  const width = 26 + (h % 18)
+  const scale = widthScale()
+  const height = Math.round((148 + (h % 44)) * Math.min(1, scale + 0.08))
+  const width = Math.max(18, Math.round((24 + (h % 14)) * scale))
   const lean = ((h >> 8) % 5) - 2
-  const fontSize = Math.max(8.5, Math.min(11.5, width * 0.36))
+  const fontSize = Math.max(8, Math.min(11, width * 0.36))
   const inkMode = h % 3 === 0 ? 'foil' : h % 3 === 1 ? 'blind' : 'ink'
   const texture = spineTextureUrl({
     key: `${book.title}:${index}`,
@@ -56,13 +70,14 @@ function bookStyle(book, index) {
 }
 
 function chunkIntoRows(shelf) {
+  const maxW = rowCapacity()
   const rows = []
   let current = []
   let used = 0
   shelf.books.forEach((book, index) => {
     const style = bookStyle(book, index)
-    const w = style.width + 3
-    if (current.length && used + w > CASE_ROW_WIDTH) {
+    const w = style.width + 2
+    if (current.length && used + w > maxW) {
       rows.push(current)
       current = []
       used = 0
@@ -82,85 +97,6 @@ function applyWoodAssets() {
   root.style.setProperty('--wood-grain', `url('${assetUrl('textures/wood-grain.jpg')}')`)
 }
 
-function renderApp() {
-  applyWoodAssets()
-  const app = document.querySelector('#app')
-  app.innerHTML = `
-    <div class="atmosphere" aria-hidden="true">
-      <div class="spot spot-a"></div>
-      <div class="spot spot-b"></div>
-      <div class="spot spot-c"></div>
-      <div class="vignette"></div>
-      <div class="grain"></div>
-    </div>
-
-    <header class="hero">
-      <p class="hero-eyebrow">A private study</p>
-      <h1 class="brand">Library</h1>
-      <p class="hero-tag">A tall case in cool light — real wood, real spines, volumes stacked floor to crown.</p>
-    </header>
-
-    <main class="room" id="room">
-      <div class="bookcase" id="bookcase">
-        <div class="case-crown" aria-hidden="true"></div>
-        <div class="case-body">
-          <div class="case-upright left" aria-hidden="true"></div>
-          <div class="case-bays">
-            ${shelves.map((shelf) => renderShelfSection(shelf)).join('')}
-          </div>
-          <div class="case-upright right" aria-hidden="true"></div>
-        </div>
-        <div class="case-plinth" aria-hidden="true"></div>
-      </div>
-    </main>
-
-    <section class="discovery" aria-label="Further discovery">
-      ${renderDiscoveryPanel(
-        'related',
-        'Related books',
-        'Thematic clusters among volumes already on these shelves.',
-        renderRelatedBody(),
-      )}
-      ${renderDiscoveryPanel(
-        'explore',
-        'Worth exploring',
-        'Suggestions beyond the catalog, drawn from the same study themes.',
-        renderExploreBody(),
-      )}
-    </section>
-
-    <footer class="colophon">
-      <span>${countBooks()} volumes</span>
-      <span aria-hidden="true">·</span>
-      <span>One upright case</span>
-    </footer>
-
-    <div class="panel-backdrop" id="panel-backdrop" hidden data-close></div>
-    <aside
-      class="detail-panel"
-      id="detail-panel"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="detail-title"
-      hidden
-    >
-      <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
-        <span aria-hidden="true">×</span>
-      </button>
-      <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
-        <img class="detail-cover" id="detail-cover" alt="" />
-      </div>
-      <p class="detail-category" id="detail-category"></p>
-      <h2 class="detail-title" id="detail-title"></h2>
-      <p class="detail-author" id="detail-author"></p>
-      <p class="detail-description" id="detail-description"></p>
-      <p class="detail-source" id="detail-source" hidden></p>
-    </aside>
-  `
-
-  bindEvents()
-}
-
 function renderDiscoveryPanel(id, title, blurb, bodyHtml) {
   return `
     <div class="discovery-panel" data-discovery="${id}">
@@ -171,11 +107,11 @@ function renderDiscoveryPanel(id, title, blurb, bodyHtml) {
         aria-expanded="false"
         aria-controls="discovery-panel-${id}"
       >
-        <span class="discovery-toggle-text">
+        <span class="discovery-label">
           <span class="discovery-title">${escapeHtml(title)}</span>
           <span class="discovery-blurb">${escapeHtml(blurb)}</span>
         </span>
-        <span class="discovery-chevron" aria-hidden="true"></span>
+        <span class="discovery-mark" aria-hidden="true"></span>
       </button>
       <div
         class="discovery-body"
@@ -478,13 +414,6 @@ function bindEvents() {
   document.getElementById('panel-close').addEventListener('click', closePanel)
   document.getElementById('panel-backdrop').addEventListener('click', closePanel)
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && selectedId) {
-      event.preventDefault()
-      closePanel()
-    }
-  })
-
   const room = document.getElementById('room')
   room.addEventListener(
     'pointermove',
@@ -495,6 +424,19 @@ function bindEvents() {
     },
     { passive: true },
   )
+}
+
+let globalsBound = false
+function bindGlobalsOnce() {
+  if (globalsBound) return
+  globalsBound = true
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && selectedId) {
+      event.preventDefault()
+      closePanel()
+    }
+  })
 
   let t = 0
   const drift = () => {
@@ -503,6 +445,108 @@ function bindEvents() {
     requestAnimationFrame(drift)
   }
   requestAnimationFrame(drift)
+
+  let resizeTimer = 0
+  window.addEventListener('resize', () => {
+    window.clearTimeout(resizeTimer)
+    resizeTimer = window.setTimeout(() => {
+      const next = rowCapacity()
+      if (Math.abs(next - lastRowWidth) < 12) return
+      const openId = selectedId
+      renderApp()
+      if (openId) openPanel(openId)
+    }, 120)
+  })
+}
+
+function renderApp() {
+  applyWoodAssets()
+  lastRowWidth = rowCapacity()
+  document.documentElement.style.setProperty(
+    '--case-width',
+    `${Math.min(window.innerWidth * 0.94, 560)}px`,
+  )
+  const app = document.querySelector('#app')
+  // Preserve selected state across reflow by rebuilding markup below
+  const html = buildAppHtml()
+  app.innerHTML = html
+  bindEvents()
+  bindGlobalsOnce()
+}
+
+function buildAppHtml() {
+  return `
+    <div class="atmosphere" aria-hidden="true">
+      <div class="spot spot-a"></div>
+      <div class="spot spot-b"></div>
+      <div class="spot spot-c"></div>
+      <div class="vignette"></div>
+      <div class="grain"></div>
+    </div>
+
+    <header class="hero">
+      <p class="hero-eyebrow">A private study</p>
+      <h1 class="brand">Library</h1>
+      <p class="hero-tag">A tall case in cool light — real wood, real spines, volumes stacked floor to crown.</p>
+    </header>
+
+    <main class="room" id="room">
+      <div class="bookcase" id="bookcase">
+        <div class="case-crown" aria-hidden="true"></div>
+        <div class="case-body">
+          <div class="case-upright left" aria-hidden="true"></div>
+          <div class="case-bays">
+            ${shelves.map((shelf) => renderShelfSection(shelf)).join('')}
+          </div>
+          <div class="case-upright right" aria-hidden="true"></div>
+        </div>
+        <div class="case-plinth" aria-hidden="true"></div>
+      </div>
+    </main>
+
+    <section class="discovery" aria-label="Further discovery">
+      ${renderDiscoveryPanel(
+        'related',
+        'Related books',
+        'Connections among volumes on these shelves',
+        renderRelatedBody(),
+      )}
+      ${renderDiscoveryPanel(
+        'explore',
+        'Worth exploring',
+        'Further reading beyond the case',
+        renderExploreBody(),
+      )}
+    </section>
+
+    <footer class="colophon">
+      <span>${countBooks()} volumes</span>
+      <span aria-hidden="true">·</span>
+      <span>One upright case</span>
+    </footer>
+
+    <div class="panel-backdrop" id="panel-backdrop" hidden data-close></div>
+    <aside
+      class="detail-panel"
+      id="detail-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="detail-title"
+      hidden
+    >
+      <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
+        <span aria-hidden="true">×</span>
+      </button>
+      <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
+        <img class="detail-cover" id="detail-cover" alt="" />
+      </div>
+      <p class="detail-category" id="detail-category"></p>
+      <h2 class="detail-title" id="detail-title"></h2>
+      <p class="detail-author" id="detail-author"></p>
+      <p class="detail-description" id="detail-description"></p>
+      <p class="detail-source" id="detail-source" hidden></p>
+    </aside>
+  `
 }
 
 renderApp()

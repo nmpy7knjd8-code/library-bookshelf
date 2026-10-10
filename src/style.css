@@ -10,7 +10,7 @@
   --wood-grain: url('/textures/wood-grain.jpg');
   --light-x: 50%;
   --light-drift: 50%;
-  --case-width: min(640px, 94vw);
+  --case-width: min(560px, 94vw);
   --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-ui: 'DM Sans', 'Segoe UI', sans-serif;
   color-scheme: dark;
@@ -26,6 +26,8 @@ html,
 body {
   margin: 0;
   min-height: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
@@ -161,12 +163,17 @@ body {
   z-index: 1;
   display: flex;
   justify-content: center;
-  padding: 0.5rem 0.75rem 2.5rem;
+  padding: 0.5rem 0.5rem 2.5rem;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .bookcase {
   position: relative;
   width: var(--case-width);
+  max-width: 100%;
+  overflow: hidden;
   filter: drop-shadow(0 32px 60px rgba(0, 0, 0, 0.9));
 }
 
@@ -363,10 +370,12 @@ body {
   align-items: flex-end;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  gap: 1px;
+  gap: 0;
   min-height: 175px;
-  padding: 0.35rem 0.2rem 0;
-  overflow: visible;
+  padding: 0.35rem 0.15rem 0;
+  overflow-x: hidden;
+  overflow-y: visible;
+  max-width: 100%;
 }
 
 /* Photoreal shelf board */
@@ -603,31 +612,31 @@ body {
   opacity: 0.85;
 }
 
-/* ——— Discovery ——— */
+/* ——— Discovery (quiet, refined) ——— */
 .discovery {
   position: relative;
   z-index: 1;
-  width: min(640px, 100%);
-  margin: 1.25rem auto 0;
-  padding: 0 clamp(1rem, 4vw, 2rem);
+  width: min(560px, 92vw);
+  margin: 2rem auto 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0;
+  border-top: 1px solid rgba(140, 160, 200, 0.14);
 }
 
 .discovery-panel {
-  border-top: 1px solid rgba(140, 160, 200, 0.18);
-  border-bottom: 1px solid rgba(140, 160, 200, 0.08);
+  border-bottom: 1px solid rgba(140, 160, 200, 0.1);
 }
 
 .discovery-toggle {
   appearance: none;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  gap: 1rem;
-  padding: 1.1rem 0.15rem;
+  gap: 1.25rem;
+  padding: 0.85rem 0.1rem;
   border: 0;
   background: transparent;
   color: inherit;
@@ -637,47 +646,65 @@ body {
 
 .discovery-toggle:hover .discovery-title,
 .discovery-toggle:focus-visible .discovery-title {
-  color: var(--cool);
+  color: #dce6f5;
 }
 
 .discovery-toggle:focus-visible {
-  outline: 1px solid rgba(160, 190, 255, 0.45);
-  outline-offset: 4px;
+  outline: none;
 }
 
-.discovery-toggle-text {
+.discovery-toggle:focus-visible .discovery-title {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(160, 190, 255, 0.45);
+}
+
+.discovery-label {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
+  min-width: 0;
 }
 
 .discovery-title {
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 3vw, 1.75rem);
-  font-weight: 600;
-  color: #e4ecf8;
+  font-size: 1.05rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #b8c4d6;
   transition: color 0.2s ease;
 }
 
 .discovery-blurb {
-  font-size: 0.9rem;
-  color: var(--muted);
-  line-height: 1.4;
+  font-size: 0.78rem;
+  color: #6a7688;
+  line-height: 1.35;
+  font-weight: 400;
 }
 
-.discovery-chevron {
-  width: 0.65rem;
-  height: 0.65rem;
-  border-right: 1.5px solid #9ab0d0;
-  border-bottom: 1.5px solid #9ab0d0;
-  transform: rotate(45deg);
-  transition: transform 0.28s ease;
-  margin-right: 0.35rem;
-}
-
-.discovery-panel.is-open .discovery-chevron {
-  transform: rotate(225deg);
+.discovery-mark {
+  flex: 0 0 auto;
+  width: 0.55rem;
+  height: 0.55rem;
   margin-top: 0.35rem;
+  border-right: 1px solid #7a8aa0;
+  border-bottom: 1px solid #7a8aa0;
+  transform: rotate(45deg);
+  opacity: 0.55;
+  transition: transform 0.25s ease, opacity 0.2s ease;
+}
+
+.discovery-toggle:hover .discovery-mark {
+  opacity: 0.85;
+}
+
+.discovery-panel.is-open .discovery-mark {
+  transform: rotate(225deg);
+  margin-top: 0.55rem;
+}
+
+.discovery-panel.is-open .discovery-title {
+  color: #e4ecf8;
 }
 
 .discovery-body {
@@ -688,13 +715,13 @@ body {
     max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     opacity 0.28s ease,
     padding 0.28s ease;
-  padding: 0 0.15rem;
+  padding: 0 0.1rem;
 }
 
 .discovery-body.is-open {
   max-height: 2400px;
   opacity: 1;
-  padding: 0 0.15rem 1.5rem;
+  padding: 0 0.1rem 1.25rem;
 }
 
 .cluster-list {
@@ -974,7 +1001,8 @@ body {
   .panel-backdrop,
   .spot-a,
   .bay-spotlight,
-  .discovery-body {
+  .discovery-body,
+  .discovery-mark {
     animation: none !important;
     transition: none !important;
   }
