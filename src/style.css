@@ -305,9 +305,13 @@ body {
 .bay-recess {
   position: relative;
   margin: 0 0.2rem;
-  padding: 0.25rem 0.35rem 0;
-  min-height: 200px;
+  padding: 0.2rem 0.3rem 0;
+  /* Fixed shelf bay — never a nested scrollport */
+  height: calc(var(--row-book-max, 180px) + 28px);
   overflow: hidden;
+  overflow: clip;
+  overscroll-behavior: none;
+  touch-action: pan-y;
   background: #070504;
   box-shadow:
     inset 0 20px 40px rgba(0, 0, 0, 0.8),
@@ -371,10 +375,15 @@ body {
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 0;
-  min-height: 175px;
-  padding: 0.35rem 0.15rem 0;
-  overflow-x: hidden;
-  overflow-y: visible;
+  height: var(--row-book-max, 180px);
+  min-height: var(--row-book-max, 180px);
+  max-height: var(--row-book-max, 180px);
+  padding: 0 0.1rem;
+  margin: 0;
+  overflow: hidden;
+  overflow: clip;
+  overscroll-behavior: none;
+  touch-action: pan-y;
   max-width: 100%;
 }
 
@@ -440,18 +449,24 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
+  margin-top: auto; /* pin to row baseline */
+  align-self: flex-end;
   flex: 0 0 auto;
+  position: relative;
+  top: auto;
+  bottom: 0;
   width: calc(var(--book-w) + 2px);
   height: var(--book-h);
+  max-height: 100%;
   cursor: pointer;
   background: transparent;
-  transform: translateY(0);
+  transform: none;
   transform-origin: bottom center;
-  transition:
-    transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
-    filter 0.28s ease;
+  transition: filter 0.28s ease;
   filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.65));
   z-index: 1;
+  touch-action: manipulation;
+  -webkit-user-drag: none;
 }
 
 .book::after {
@@ -459,31 +474,57 @@ body {
   position: absolute;
   left: 1px;
   right: 1px;
-  bottom: -2px;
-  height: 5px;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.75), transparent 70%);
+  bottom: 0;
+  height: 4px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.7), transparent 70%);
   pointer-events: none;
 }
 
-.book:hover,
-.book:focus-visible {
-  transform: translateY(-10px);
-  z-index: 5;
-  outline: none;
-  filter: drop-shadow(3px 10px 12px rgba(0, 0, 0, 0.8));
+/* Lift only on fine pointers — mobile stays on the shelf baseline */
+@media (hover: hover) and (pointer: fine) {
+  .book {
+    transition:
+      transform 0.28s cubic-bezier(0.22, 1, 0.36, 1),
+      filter 0.28s ease;
+  }
+
+  .book:hover,
+  .book:focus-visible {
+    transform: translateY(-8px);
+    z-index: 5;
+    outline: none;
+    filter: drop-shadow(3px 10px 12px rgba(0, 0, 0, 0.8));
+  }
+
+  .book.is-selected {
+    transform: translateY(-12px);
+    z-index: 6;
+    filter: drop-shadow(0 0 8px rgba(160, 190, 255, 0.28))
+      drop-shadow(3px 12px 14px rgba(0, 0, 0, 0.85));
+  }
 }
 
-.book.is-selected {
-  transform: translateY(-14px);
-  z-index: 6;
-  filter: drop-shadow(0 0 8px rgba(160, 190, 255, 0.28)) drop-shadow(3px 12px 14px rgba(0, 0, 0, 0.85));
+@media (hover: none), (pointer: coarse) {
+  .book:hover,
+  .book:focus-visible,
+  .book.is-selected {
+    transform: none;
+  }
+
+  .book.is-selected {
+    z-index: 6;
+    filter: drop-shadow(0 0 6px rgba(160, 190, 255, 0.35))
+      drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.7));
+  }
 }
 
 .book-block {
-  position: relative;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   display: block;
   width: var(--book-w);
-  height: 100%;
+  height: var(--book-h);
 }
 
 .book-spine {
@@ -607,8 +648,8 @@ body {
   position: absolute;
   left: 2px;
   right: 2px;
-  top: -2px;
-  height: 3px;
+  top: 0;
+  height: 2px;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), var(--book-pages), rgba(0, 0, 0, 0.25));
   border-radius: 1px 1px 0 0;
   opacity: 0.85;

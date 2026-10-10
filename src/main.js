@@ -55,7 +55,8 @@ function bookStyle(book, index) {
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
   const scale = widthScale()
-  const height = Math.round((148 + (h % 44)) * Math.min(1, scale + 0.08))
+  // Vary heights but keep every book within a shared row band so bottoms align
+  const height = Math.min(180, Math.round((148 + (h % 32)) * Math.min(1, scale + 0.08)))
   const width = Math.max(20, Math.round((26 + (h % 14)) * scale))
   const fontSize = Math.max(9.5, Math.min(12.5, width * 0.4))
   const inkMode = h % 3 === 0 ? 'foil' : h % 3 === 1 ? 'blind' : 'ink'
@@ -211,9 +212,10 @@ function renderShelfSection(shelf) {
         <p>${shelf.books.length}</p>
       </div>
       ${rows
-        .map(
-          (row, rowIndex) => `
-        <div class="bay-recess" data-row="${rowIndex}">
+        .map((row, rowIndex) => {
+          const rowMax = Math.max(...row.map(({ style }) => style.height), 148)
+          return `
+        <div class="bay-recess" data-row="${rowIndex}" style="--row-book-max: ${rowMax}px">
           <div class="bay-back" aria-hidden="true"></div>
           <div class="bay-spotlight" aria-hidden="true"></div>
           <div class="book-row" role="list" aria-label="${shelf.label} row ${rowIndex + 1}">
@@ -224,8 +226,8 @@ function renderShelfSection(shelf) {
             <div class="shelf-front-lip"></div>
             <div class="shelf-under-shadow"></div>
           </div>
-        </div>`,
-        )
+        </div>`
+        })
         .join('')}
     </section>
   `
