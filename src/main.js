@@ -27,7 +27,7 @@ const PALETTES = [
 
 let selectedId = null
 let lastRowWidth = 0
-let activeView = 'shelf' // 'shelf' | 'covers'
+let activeView = 'covers' // 'shelf' | 'covers'
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
@@ -658,20 +658,10 @@ function buildAppHtml() {
     </div>
 
     <header class="hero">
-      <p class="hero-eyebrow">A private study</p>
       <h1 class="brand">Library</h1>
-      <p class="hero-tag">A tall freestanding dark-wood case — cool light, upright spines, cream and gold lettering.</p>
     </header>
 
     <nav class="view-tabs" aria-label="Library views">
-      <button
-        type="button"
-        class="view-tab${shelfActive ? ' is-active' : ''}"
-        id="tab-shelf"
-        data-view="shelf"
-        aria-selected="${shelfActive}"
-        aria-controls="room"
-      >Bookshelf</button>
       <button
         type="button"
         class="view-tab${!shelfActive ? ' is-active' : ''}"
@@ -680,6 +670,14 @@ function buildAppHtml() {
         aria-selected="${!shelfActive}"
         aria-controls="covers-view"
       >Covers</button>
+      <button
+        type="button"
+        class="view-tab${shelfActive ? ' is-active' : ''}"
+        id="tab-shelf"
+        data-view="shelf"
+        aria-selected="${shelfActive}"
+        aria-controls="room"
+      >Bookshelf</button>
     </nav>
 
     ${
