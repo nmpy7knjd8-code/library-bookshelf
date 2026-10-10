@@ -5,22 +5,23 @@ import { spineTextureUrl, hashString } from './textures.js'
 import { coverFor } from './covers-data.js'
 
 const MATERIALS = ['leather', 'cloth', 'paper', 'board']
+/* Spine ink is always light (cream / soft gold) for contrast on dark bindings */
 const PALETTES = [
-  { bg: '#2a1814', ink: '#e8d4a8', band: '#c4a35a', pages: '#e8e0d0' },
-  { bg: '#1a2420', ink: '#d0d8c8', band: '#8a9a7a', pages: '#e6e2d6' },
-  { bg: '#1c1410', ink: '#f0e0c0', band: '#a67c52', pages: '#efe6d4' },
-  { bg: '#121820', ink: '#c8d4e4', band: '#6a8aaa', pages: '#e4e6ea' },
-  { bg: '#3a1414', ink: '#f0d0b0', band: '#c4a35a', pages: '#ebe4d4' },
-  { bg: '#1a1612', ink: '#e0d0b0', band: '#8a7040', pages: '#e8e2d4' },
-  { bg: '#101818', ink: '#d0ddd4', band: '#5a8a7a', pages: '#e2e6e0' },
-  { bg: '#2c2010', ink: '#f5e6c8', band: '#d4af37', pages: '#efe6d0' },
-  { bg: '#18101a', ink: '#e0d0d8', band: '#9a6a7a', pages: '#e8e0e4' },
-  { bg: '#221c14', ink: '#efe6d0', band: '#9a8a50', pages: '#ebe4d6' },
-  { bg: '#0e1814', ink: '#c8d8c8', band: '#4a7a5a', pages: '#e0e6e0' },
-  { bg: '#2a2218', ink: '#f2e8d0', band: '#b09050', pages: '#efe8d8' },
-  { bg: '#141010', ink: '#e0d4c8', band: '#7a5a4a', pages: '#e8e2d8' },
-  { bg: '#101420', ink: '#c8d0e8', band: '#5a6a9a', pages: '#e2e4ea' },
-  { bg: '#241c14', ink: '#f0e4cc', band: '#a88848', pages: '#ebe4d4' },
+  { bg: '#2a1814', ink: '#f0e6d0', band: '#c4a35a', pages: '#e8e0d0' },
+  { bg: '#1a2420', ink: '#ebe6d4', band: '#8a9a7a', pages: '#e6e2d6' },
+  { bg: '#1c1410', ink: '#f5ecd8', band: '#a67c52', pages: '#efe6d4' },
+  { bg: '#121820', ink: '#e8e4d4', band: '#6a8aaa', pages: '#e4e6ea' },
+  { bg: '#3a1414', ink: '#f2e4c8', band: '#c4a35a', pages: '#ebe4d4' },
+  { bg: '#1a1612', ink: '#efe6d2', band: '#8a7040', pages: '#e8e2d4' },
+  { bg: '#101818', ink: '#ebe8d8', band: '#5a8a7a', pages: '#e2e6e0' },
+  { bg: '#2c2010', ink: '#f7efd4', band: '#d4af37', pages: '#efe6d0' },
+  { bg: '#18101a', ink: '#f0e6dc', band: '#9a6a7a', pages: '#e8e0e4' },
+  { bg: '#221c14', ink: '#f2ebd6', band: '#9a8a50', pages: '#ebe4d6' },
+  { bg: '#0e1814', ink: '#e8ecd8', band: '#4a7a5a', pages: '#e0e6e0' },
+  { bg: '#2a2218', ink: '#f5eedc', band: '#b09050', pages: '#efe8d8' },
+  { bg: '#141010', ink: '#efe6d8', band: '#7a5a4a', pages: '#e8e2d8' },
+  { bg: '#101420', ink: '#eae6da', band: '#5a6a9a', pages: '#e2e4ea' },
+  { bg: '#241c14', ink: '#f4ecd4', band: '#a88848', pages: '#ebe4d4' },
 ]
 
 let selectedId = null
@@ -57,16 +58,21 @@ function bookStyle(book, index) {
   const scale = widthScale()
   // Vary heights but keep every book within a shared row band so bottoms align
   const height = Math.min(180, Math.round((148 + (h % 32)) * Math.min(1, scale + 0.08)))
-  const width = Math.max(20, Math.round((26 + (h % 14)) * scale))
-  const fontSize = Math.max(9.5, Math.min(12.5, width * 0.4))
-  const inkMode = h % 3 === 0 ? 'foil' : h % 3 === 1 ? 'blind' : 'ink'
+  const width = Math.max(22, Math.round((28 + (h % 12)) * scale))
+  const titleLen = (book.spine || book.title || '').length
+  // Longer titles get a slightly smaller stamp so they stay centered and unclipped
+  const baseSize = Math.max(10, Math.min(13, width * 0.42))
+  const fontSize = titleLen > 22 ? baseSize * 0.88 : titleLen > 16 ? baseSize * 0.94 : baseSize
+  const inkMode = h % 2 === 0 ? 'foil' : 'ink' // always light — no dark blind stamps
   const texture = spineTextureUrl({
     key: `${book.title}:${index}`,
     material,
     bg: palette.bg,
     band: palette.band,
   })
-  return { palette, material, height, width, fontSize, inkMode, texture }
+  // Optical padding: shorter titles sit with more end margin
+  const padRatio = titleLen < 10 ? 0.2 : titleLen < 18 ? 0.16 : 0.12
+  return { palette, material, height, width, fontSize, inkMode, texture, padRatio }
 }
 
 function spineAuthor(author) {
@@ -255,7 +261,8 @@ function renderBook(shelf, book, index, style) {
         --book-band: ${style.palette.band};
         --book-pages: ${style.palette.pages};
         --spine-size: ${style.fontSize}px;
-        --spine-author-size: ${Math.max(7.5, style.fontSize * 0.72)}px;
+        --spine-author-size: ${Math.max(8, style.fontSize * 0.7)}px;
+        --spine-pad: ${Math.round(style.height * style.padRatio)}px;
         --spine-texture: url('${style.texture}');
       "
     >
@@ -497,7 +504,7 @@ function buildAppHtml() {
     <header class="hero">
       <p class="hero-eyebrow">A private study</p>
       <h1 class="brand">Library</h1>
-      <p class="hero-tag">A tall freestanding case in cool light — dark wood, upright spines, title and author stamped in order.</p>
+      <p class="hero-tag">A tall freestanding dark-wood case — cool light, upright spines, cream and gold lettering.</p>
     </header>
 
     <main class="room" id="room">
