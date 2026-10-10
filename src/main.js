@@ -3,6 +3,7 @@ import { shelves, countBooks } from './catalog.js'
 import { relatedClusters, worthExploring } from './discoveries.js'
 import { spineTextureUrl, hashString } from './textures.js'
 import { coverFor } from './covers-data.js'
+import { enrichmentFor } from './enrichments.js'
 
 const MATERIALS = ['leather', 'cloth', 'paper', 'board']
 /* Spine ink is always light (cream / soft gold) for contrast on dark bindings */
@@ -305,6 +306,32 @@ function findBook(id) {
   return { shelf, book, index }
 }
 
+function renderRecoRow(container, items) {
+  if (!items?.length) {
+    container.innerHTML = ''
+    return false
+  }
+  container.innerHTML = items
+    .map((item) => {
+      const cover = item.cover
+        ? `<img class="reco-cover" src="${escapeAttr(assetUrl(item.cover))}" alt="" loading="lazy" />`
+        : `<span class="reco-cover reco-cover-fallback" aria-hidden="true"></span>`
+      const action = item.bookId
+        ? `type="button" class="reco-card is-linked" data-book-id="${escapeAttr(item.bookId)}"`
+        : `type="button" class="reco-card" disabled`
+      return `
+        <button ${action}>
+          ${cover}
+          <span class="reco-meta">
+            <span class="reco-title">${escapeHtml(item.title)}</span>
+            <span class="reco-author">${escapeHtml(item.author || '')}</span>
+          </span>
+        </button>`
+    })
+    .join('')
+  return true
+}
+
 function openPanel(id) {
   const found = findBook(id)
   if (!found) return
@@ -313,37 +340,77 @@ function openPanel(id) {
   const panel = document.getElementById('detail-panel')
   const backdrop = document.getElementById('panel-backdrop')
   const coverMeta = coverFor(shelf.id, index)
+  const enrich = enrichmentFor(shelf.id, index)
   const coverWrap = document.getElementById('detail-cover-wrap')
   const coverImg = document.getElementById('detail-cover')
   const sourceEl = document.getElementById('detail-source')
+  const photoWrap = document.getElementById('author-photo-wrap')
+  const photoImg = document.getElementById('author-photo')
 
   document.getElementById('detail-category').textContent = shelf.category
   document.getElementById('detail-title').textContent = book.title
   document.getElementById('detail-author').textContent = book.author
-  document.getElementById('detail-description').textContent = book.description
+
+  const longDesc = enrich?.longDescription || book.description
+  document.getElementById('detail-description').innerHTML = longDesc
+    .split(/\n\n+/)
+    .map((p) => `<p>${escapeHtml(p)}</p>`)
+    .join('')
+
+  const authorName = enrich?.author?.name || book.author
+  const authorBio =
+    enrich?.author?.bio ||
+    'Author profile unavailable for this edition; see the work description above.'
+  document.getElementById('author-card-name').textContent = authorName
+  document.getElementById('author-card-bio').textContent = authorBio
+
+  if (enrich?.author?.photo) {
+    photoImg.src = assetUrl(enrich.author.photo)
+    photoImg.alt = `Portrait of ${authorName}`
+    photoWrap.hidden = false
+  } else {
+    photoWrap.hidden = true
+    photoImg.removeAttribute('src')
+  }
+
+  const similarOk = renderRecoRow(
+    document.getElementById('similar-row'),
+    enrich?.similar || [],
+  )
+  document.getElementById('similar-section').hidden = !similarOk
+
+  const otherOk = renderRecoRow(
+    document.getElementById('other-row'),
+    enrich?.otherByAuthor || [],
+  )
+  document.getElementById('other-section').hidden = !otherOk
 
   if (coverMeta?.cover) {
     coverImg.src = assetUrl(coverMeta.cover)
     coverImg.alt = `Cover of ${book.title}`
     coverWrap.hidden = false
-    const bits = []
-    if (coverMeta.source) bits.push(`Cover: ${coverMeta.source}`)
-    if (coverMeta.note) bits.push(coverMeta.note)
-    if (bits.length) {
-      sourceEl.hidden = false
-      sourceEl.textContent = bits.join(' · ')
-    } else {
-      sourceEl.hidden = true
-    }
   } else {
     coverWrap.hidden = true
     coverImg.removeAttribute('src')
+  }
+
+  const credits = []
+  if (coverMeta?.source) credits.push(`Cover: ${coverMeta.source}`)
+  if (coverMeta?.note) credits.push(coverMeta.note)
+  if (enrich?.author?.photo) credits.push('Author photo: Open Library / Wikipedia')
+  if (credits.length) {
+    sourceEl.hidden = false
+    sourceEl.textContent = credits.join(' · ')
+  } else if (!coverMeta?.cover) {
     sourceEl.hidden = false
     sourceEl.textContent = 'Cover image not found in Open Library for this edition yet.'
+  } else {
+    sourceEl.hidden = true
   }
 
   panel.hidden = false
   backdrop.hidden = false
+  panel.scrollTop = 0
   requestAnimationFrame(() => {
     panel.classList.add('is-open')
     backdrop.classList.add('is-open')
@@ -430,6 +497,15 @@ function bindEvents() {
 
   document.getElementById('panel-close').addEventListener('click', closePanel)
   document.getElementById('panel-backdrop').addEventListener('click', closePanel)
+
+  document.getElementById('detail-panel').addEventListener('click', (event) => {
+    const card = event.target.closest('.reco-card.is-linked')
+    if (!card) return
+    openPanel(card.dataset.bookId)
+    document
+      .querySelector(`[data-book-id="${card.dataset.bookId}"].book`)
+      ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+  })
 
   const room = document.getElementById('room')
   room.addEventListener(
@@ -554,13 +630,40 @@ function buildAppHtml() {
       <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
         <span aria-hidden="true">×</span>
       </button>
-      <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
-        <img class="detail-cover" id="detail-cover" alt="" />
+      <div class="detail-hero">
+        <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
+          <img class="detail-cover" id="detail-cover" alt="" />
+        </div>
+        <div class="detail-hero-text">
+          <p class="detail-category" id="detail-category"></p>
+          <h2 class="detail-title" id="detail-title"></h2>
+          <p class="detail-author" id="detail-author"></p>
+        </div>
       </div>
-      <p class="detail-category" id="detail-category"></p>
-      <h2 class="detail-title" id="detail-title"></h2>
-      <p class="detail-author" id="detail-author"></p>
-      <p class="detail-description" id="detail-description"></p>
+      <section class="detail-section">
+        <h3 class="detail-section-label">About this book</h3>
+        <div class="detail-description" id="detail-description"></div>
+      </section>
+      <section class="detail-section detail-author-block" id="detail-author-block">
+        <h3 class="detail-section-label">About the author</h3>
+        <div class="author-card">
+          <div class="author-photo-wrap" id="author-photo-wrap" hidden>
+            <img class="author-photo" id="author-photo" alt="" />
+          </div>
+          <div class="author-card-text">
+            <p class="author-card-name" id="author-card-name"></p>
+            <p class="author-card-bio" id="author-card-bio"></p>
+          </div>
+        </div>
+      </section>
+      <section class="detail-section" id="similar-section" hidden>
+        <h3 class="detail-section-label">Similar books</h3>
+        <div class="reco-row" id="similar-row"></div>
+      </section>
+      <section class="detail-section" id="other-section" hidden>
+        <h3 class="detail-section-label">Other books by this author</h3>
+        <div class="reco-row" id="other-row"></div>
+      </section>
       <p class="detail-source" id="detail-source" hidden></p>
     </aside>
   `
