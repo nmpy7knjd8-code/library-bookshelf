@@ -61,32 +61,20 @@ body {
 }
 
 .spot-a {
-  width: 42vw;
-  height: 28vh;
+  width: 36vw;
+  height: 22vh;
   left: 50%;
-  top: -10%;
+  top: -12%;
   transform: translateX(-50%);
-  background: radial-gradient(ellipse at center, rgba(150, 180, 230, 0.22), rgba(90, 120, 180, 0.06) 45%, transparent 72%);
-  opacity: 0.45;
+  background: radial-gradient(ellipse at center, rgba(130, 160, 210, 0.14), transparent 70%);
+  opacity: 0.35;
   animation: spot-breathe 14s ease-in-out infinite;
 }
 
-.spot-b {
-  width: 22vw;
-  height: 24vh;
-  left: 18%;
-  top: 28%;
-  background: radial-gradient(ellipse at center, rgba(110, 140, 190, 0.08), transparent 70%);
-  opacity: 0.5;
-}
-
+/* Mid-page spots removed — they washed out Related books / body copy */
+.spot-b,
 .spot-c {
-  width: 24vw;
-  height: 26vh;
-  right: 10%;
-  top: 52%;
-  background: radial-gradient(ellipse at center, rgba(90, 120, 180, 0.06), transparent 70%);
-  opacity: 0.45;
+  display: none;
 }
 
 .vignette {
@@ -838,19 +826,17 @@ body {
 /* ——— Discovery (quiet, refined) ——— */
 .discovery {
   position: relative;
-  z-index: 1;
-  width: min(560px, 92vw);
-  margin: 2rem auto 0;
-  padding: 1.25rem 0.85rem 0.25rem;
+  z-index: 2;
+  width: 100%;
+  max-width: 100%;
+  margin: 2.5rem 0 0;
+  padding: 1.75rem max(1rem, calc((100% - 560px) / 2)) 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0;
-  border-top: 1px solid rgba(140, 160, 200, 0.14);
-  /* Solid dark bed so ambient spots never wash out body copy */
-  background:
-    linear-gradient(180deg, rgba(2, 3, 8, 0.92), rgba(1, 1, 4, 0.98));
-  border-radius: 2px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+  border-top: 1px solid rgba(140, 160, 200, 0.12);
+  /* Fully opaque — no ambient bloom behind Related / Worth exploring copy */
+  background: #010104;
 }
 
 .discovery-panel {
