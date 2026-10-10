@@ -27,6 +27,7 @@ const PALETTES = [
 
 let selectedId = null
 let lastRowWidth = 0
+let activeView = 'shelf' // 'shelf' | 'covers'
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
@@ -416,7 +417,7 @@ function openPanel(id) {
     backdrop.classList.add('is-open')
   })
 
-  document.querySelectorAll('.book').forEach((el) => {
+  document.querySelectorAll('.book, .cover-card').forEach((el) => {
     const match = el.dataset.bookId === id
     el.classList.toggle('is-selected', match)
     el.setAttribute('aria-pressed', String(match))
@@ -440,13 +441,15 @@ function closePanel() {
     }
   }, 280)
 
-  document.querySelectorAll('.book').forEach((el) => {
+  document.querySelectorAll('.book, .cover-card').forEach((el) => {
     el.classList.remove('is-selected')
     el.setAttribute('aria-pressed', 'false')
   })
 
   if (prev) {
-    document.querySelector(`[data-book-id="${prev}"]`)?.focus()
+    document
+      .querySelector(`.book[data-book-id="${prev}"], .cover-card[data-book-id="${prev}"]`)
+      ?.focus()
   }
 }
 
@@ -466,15 +469,36 @@ function setDiscoveryOpen(panel, open) {
   }
 }
 
+function setView(view) {
+  if (view !== 'shelf' && view !== 'covers') return
+  if (activeView === view) return
+  if (selectedId) closePanel()
+  activeView = view
+  renderApp()
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
 function bindEvents() {
-  document.getElementById('room').addEventListener('click', (event) => {
+  document.querySelector('.view-tabs')?.addEventListener('click', (event) => {
+    const tab = event.target.closest('.view-tab')
+    if (!tab) return
+    setView(tab.dataset.view)
+  })
+
+  document.getElementById('room')?.addEventListener('click', (event) => {
     const btn = event.target.closest('.book')
     if (!btn) return
     openPanel(btn.dataset.bookId)
   })
 
+  document.getElementById('covers-view')?.addEventListener('click', (event) => {
+    const card = event.target.closest('.cover-card')
+    if (!card) return
+    openPanel(card.dataset.bookId)
+  })
+
   const discovery = document.querySelector('.discovery')
-  discovery.addEventListener('click', (event) => {
+  discovery?.addEventListener('click', (event) => {
     const toggle = event.target.closest('.discovery-toggle')
     if (toggle) {
       const panel = toggle.closest('.discovery-panel')
@@ -567,7 +591,63 @@ function renderApp() {
   bindGlobalsOnce()
 }
 
+function renderCoversView() {
+  return `
+    <div class="covers-view" id="covers-view">
+      ${shelves
+        .map(
+          (shelf) => `
+        <section class="covers-section" aria-labelledby="covers-${shelf.id}">
+          <div class="covers-heading">
+            <h2 id="covers-${shelf.id}">${escapeHtml(shelf.label)}</h2>
+            <p>${shelf.books.length}</p>
+          </div>
+          <div class="covers-grid" role="list" aria-label="${escapeAttr(shelf.label)} covers">
+            ${shelf.books
+              .map((book, index) => renderCoverCard(shelf, book, index))
+              .join('')}
+          </div>
+        </section>`,
+        )
+        .join('')}
+    </div>
+  `
+}
+
+function renderCoverCard(shelf, book, index) {
+  const id = bookId(shelf.id, index)
+  const cover = coverFor(shelf.id, index)
+  const hasCover = Boolean(cover?.cover)
+  const selected = selectedId === id
+  return `
+    <button
+      type="button"
+      class="cover-card${hasCover ? '' : ' is-fallback'}${selected ? ' is-selected' : ''}"
+      role="listitem"
+      data-book-id="${id}"
+      data-shelf="${shelf.id}"
+      data-index="${index}"
+      aria-label="${escapeAttr(book.title)} by ${escapeAttr(book.author)}"
+      aria-pressed="${selected}"
+    >
+      ${
+        hasCover
+          ? `<img class="cover-card-img" src="${escapeAttr(assetUrl(cover.cover))}" alt="" loading="lazy" />`
+          : `<span class="cover-card-fallback" aria-hidden="true">
+              <span class="cover-card-fallback-title">${escapeHtml(book.spine || book.title)}</span>
+              <span class="cover-card-fallback-author">${escapeHtml(spineAuthor(book.author))}</span>
+            </span>`
+      }
+      <span class="cover-card-caption">
+        <span class="cover-card-title">${escapeHtml(book.title)}</span>
+        <span class="cover-card-author">${escapeHtml(book.author)}</span>
+      </span>
+    </button>
+  `
+}
+
 function buildAppHtml() {
+  const shelfActive = activeView === 'shelf'
   return `
     <div class="atmosphere" aria-hidden="true">
       <div class="spot spot-a"></div>
@@ -583,7 +663,28 @@ function buildAppHtml() {
       <p class="hero-tag">A tall freestanding dark-wood case — cool light, upright spines, cream and gold lettering.</p>
     </header>
 
-    <main class="room" id="room">
+    <nav class="view-tabs" aria-label="Library views">
+      <button
+        type="button"
+        class="view-tab${shelfActive ? ' is-active' : ''}"
+        id="tab-shelf"
+        data-view="shelf"
+        aria-selected="${shelfActive}"
+        aria-controls="room"
+      >Bookshelf</button>
+      <button
+        type="button"
+        class="view-tab${!shelfActive ? ' is-active' : ''}"
+        id="tab-covers"
+        data-view="covers"
+        aria-selected="${!shelfActive}"
+        aria-controls="covers-view"
+      >Covers</button>
+    </nav>
+
+    ${
+      shelfActive
+        ? `<main class="room" id="room">
       <div class="bookcase" id="bookcase">
         <div class="case-crown" aria-hidden="true"></div>
         <div class="case-body">
@@ -595,7 +696,9 @@ function buildAppHtml() {
         </div>
         <div class="case-plinth" aria-hidden="true"></div>
       </div>
-    </main>
+    </main>`
+        : renderCoversView()
+    }
 
     <section class="discovery" aria-label="Further discovery">
       ${renderDiscoveryPanel(
@@ -615,7 +718,7 @@ function buildAppHtml() {
     <footer class="colophon">
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
-      <span>One upright case</span>
+      <span>${shelfActive ? 'Bookshelf' : 'Cover gallery'}</span>
     </footer>
 
     <div class="panel-backdrop" id="panel-backdrop" hidden data-close></div>
