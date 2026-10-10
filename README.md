@@ -1,6 +1,9 @@
 # Library
 
-An interactive, visually realistic bookshelf for a private study — warm wood, soft lamp light, and clickable spines with short descriptions.
+An interactive, photoreal bookshelf for a private night study — cool spotlights on dark wood, textured spines, and clickable volumes with short descriptions.
+
+**GitHub:** https://github.com/nmpy7knjd8-code/library-bookshelf  
+**PR:** https://github.com/nmpy7knjd8-code/library-bookshelf/pull/1
 
 ## Run locally
 
