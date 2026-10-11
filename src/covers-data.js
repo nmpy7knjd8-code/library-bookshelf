@@ -1479,14 +1479,14 @@ export const covers = {
     "cover": "covers/essays-7.jpg",
     "spine": "covers/essays-7.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL14862669W",
-    "coverId": 5904516,
+    "sourceUrl": "https://openlibrary.org/works/OL20358651W",
+    "coverId": 9025365,
     "match": {
-      "title": "The lives of the most eminent English poets",
-      "author": "Samuel Johnson"
+      "title": "The Twelve Caesars",
+      "author": "Suetonius, Alexander Thomson"
     },
-    "gap": true,
-    "note": "Closest Open Library match: “The lives of the most eminent English poets” — Samuel Johnson"
+    "gap": false,
+    "note": null
   },
   "essays-8": {
     "cover": "covers/essays-8.jpg",

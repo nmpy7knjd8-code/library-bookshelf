@@ -826,11 +826,11 @@ export const shelves = [
           'A mid-nineteenth-century popular life of Boone and the Kentucky frontier hunters. Legend and narrative history blur in the making of an American pioneer myth. The 1854 date situates it in antebellum frontier literature.',
       },
       {
-        title: 'Lives of the English Poets',
-        spine: 'Lives Eng. Poets',
-        author: 'Samuel Johnson (Bohn’s Classical Library)',
+        title: 'Lives of the Caesars',
+        spine: 'Lives of the Caesars',
+        author: 'Suetonius',
         description:
-          'Johnson’s prefaces on poets from Cowley to Gray—biography fused with critical judgment. The Bohn Classical Library edition brought the Lives to Victorian readers in a standard series format. Still the model of the poet’s life as moral and aesthetic essay.',
+          'Suetonius’s De vita Caesarum—also known as The Twelve Caesars—portraits of Rome’s rulers from Julius Caesar through Domitian. Gossip, character, and imperial habit sit beside public deeds in the foundational Latin imperial biographies. Distinct from modern retellings; this is the ancient source itself.',
       },
       {
         title: 'The Iliad',

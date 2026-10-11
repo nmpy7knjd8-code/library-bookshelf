@@ -14192,11 +14192,11 @@ export const enrichments = {
     ]
   },
   "essays-7": {
-    "longDescription": "Johnson’s prefaces on poets from Cowley to Gray—biography fused with critical judgment. The Bohn Classical Library edition brought the Lives to Victorian readers in a standard series format. Still the model of the poet’s life as moral and aesthetic essay. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "longDescription": "Suetonius’s Lives of the Caesars (De vita Caesarum), widely known in English as The Twelve Caesars, offers vivid biographies of Rome’s rulers from Julius Caesar to Domitian. Court anecdote, character sketch, and imperial spectacle sit beside public deeds in the classic Latin source for early imperial lives.\n\nThis is the ancient biographical tradition itself—not a modern retelling. Readers often pair it with narrative histories of Greece and Rome and with later popularizations that draw on Suetonius’s portraits.",
     "author": {
-      "name": "Samuel Johnson",
-      "bio": "Samuel Johnson, often called Dr Johnson, was an English writer and polymath who made lasting contributions as a poet, playwright, essayist, moralist, literary critic, sermonist, biographer, editor, and lexicographer. The work for which he is best known is his 42,733-entry Dictionary of the English Language (1755). For this and other contributions in and to the English language, the Oxford Dictionary of National Biography has called him \"arguably the most distinguished man of letters in English history\".",
-      "photo": "authors/samuel-johnson.jpg"
+      "name": "Suetonius",
+      "bio": "late 1st/early 2nd-century Roman historian",
+      "photo": "authors/OL68512A.jpg"
     },
     "similar": [
       {
@@ -14264,64 +14264,7 @@ export const enrichments = {
         "why": "A literary meditation on memory and place that resonates with Eco’s semiotic abbey and Proust-to-Camus modernism."
       }
     ],
-    "otherByAuthor": [
-      {
-        "title": "Works of Samuel Johnson",
-        "author": "Samuel Johnson",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Letters of Samuel Johnson",
-        "author": "Samuel Johnson",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The history of the Yorubas",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "A dictionary of the English language",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The History of Rasselas, Prince of Abyssinia",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "A Journey to the Western Islands of Scotland",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The rambler",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The lives of the most eminent English poets",
-        "author": "Samuel Johnson",
-        "cover": "covers/extra/auth-essays-7-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
+    "otherByAuthor": []
   },
   "essays-8": {
     "longDescription": "Homer’s epic of the wrath of Achilles before Troy—honor, friendship, and the cost of war. Gods and mortals share a Bronze Age stage of glory and grief. The foundational poem of the Western literary tradition.\n\n<p>The <i>Iliad</i> is one of the oldest works of Western literature, dating back to classical antiquity. <a href=\"https://standardebooks.org/ebooks/homer\">Homer’s</a> epic poem belongs in a collection called the Epic Cycle, which includes the <i><a href=\"https://standardebooks.org/ebooks/homer/the-odyssey/william-cullen-bryant\">Odyssey</a></i>. It was originally written in ancient Greek and utilized a dactylic hexameter rhyme scheme. Although this rhyme scheme sounds beautiful in its native language, in modern English it can sound awkward and, as Eric McMillan humorously describes it, resembles “pumpkins rolling on a barn floor.” William Cullen Bryant avoided this problem by converting his translation into blank verse.</p> <p>This epic poem begins with the Achaean army sacking the city of Chryse and capturing two maidens as prizes of war. One of the maidens, Chryseis, is given to Agamemnon, the leader of the Achaeans, and the other maiden, Briseis, was given to the army’s best warrior, Achilles. Chryseis’ father, the city’s priest, prays to the god Apollo and asks for a plague on the Achaean army. To stop this plague, Agamemnon returns Chryseis to her father, but then orders Achilles to give him Briseis as compensation. Achilles refuses.</p>",
