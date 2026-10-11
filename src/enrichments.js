@@ -14597,6 +14597,106 @@ export const enrichments = {
         "why": null
       }
     ]
+  },
+  "philosophy-43": {
+    "longDescription": "Gödel, Escher, Bach: an Eternal Golden Braid (1979) is Douglas Hofstadter’s Pulitzer Prize–winning exploration of formal systems, self-reference, and consciousness. Through Bach’s canons, Escher’s visual paradoxes, and Gödel’s incompleteness theorems—interleaved with Lewis Carroll–style dialogues—Hofstadter argues that minds arise from “strange loops” in which symbols twist back upon themselves.\n\nIt sits on this philosophy shelf as related thought: less a treatise in the Continental style than a deep, playful inquiry into logic, meaning, and what it would take for a machine (or a brain) to say “I.”",
+    "author": {
+      "name": "Douglas Hofstadter",
+      "bio": "Douglas R. Hofstadter is an American cognitive scientist and author whose work spans consciousness, analogy, translation, and the limits of formal systems. Gödel, Escher, Bach (1979) won the Pulitzer Prize for general nonfiction; later books include Metamagical Themas and I Am a Strange Loop.",
+      "photo": "authors/douglas-hofstadter.jpg"
+    },
+    "similar": [
+      {
+        "title": "I Am a Strange Loop",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/sim-philosophy-43-iamastrangeloop.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Hofstadter’s later, tighter restatement of the strange-loop theory of the self."
+      },
+      {
+        "title": "The Emperor’s New Mind",
+        "author": "Roger Penrose",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Another landmark on minds, machines, and the limits of computation."
+      },
+      {
+        "title": "Consciousness Explained",
+        "author": "Daniel C. Dennett",
+        "cover": "covers/extra/sim-philosophy-43-consciousnessexplained.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A rival philosophical account of mind that dialogues with Hofstadter’s playful cognitivism."
+      },
+      {
+        "title": "Metamagical Themas",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/sim-philosophy-43-metamagicalthemas.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Hofstadter’s Scientific American columns—puzzles, analogies, and self-reference after GEB."
+      },
+      {
+        "title": "Tractatus Logico-Philosophicus",
+        "author": "Ludwig Wittgenstein",
+        "cover": "covers/extra/sim-philosophy-43-tractatuslogicophiloso.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Already kin to this shelf’s logic books; a austere counterpart to GEB’s playful formal systems."
+      },
+      {
+        "title": "The Society of Mind",
+        "author": "Marvin Minsky",
+        "cover": "covers/extra/sim-philosophy-43-thesocietyofmind.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "An AI pioneer’s modular theory of intelligence, adjacent to GEB’s machine-mind inquiries."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "I Am a Strange Loop",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-iamastrangeloop.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Metamagical Themas",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-metamagicalthemas.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Le Ton beau de Marot",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-letonbeaudemarot.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Surfaces and Essences",
+        "author": "Douglas Hofstadter",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Fluid Concepts and Creative Analogies",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-fluidconceptsandcreati.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
   }
 };
 

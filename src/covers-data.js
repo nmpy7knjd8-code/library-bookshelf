@@ -1526,6 +1526,19 @@ export const covers = {
     },
     "gap": false,
     "note": "Library of America Emerson: Essays and Lectures"
+  },
+  "philosophy-43": {
+    "cover": "covers/philosophy-43.jpg",
+    "spine": "covers/philosophy-43.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL716850W",
+    "coverId": 14368453,
+    "match": {
+      "title": "Gödel, Escher, Bach",
+      "author": "Douglas R. Hofstadter"
+    },
+    "gap": false,
+    "note": null
   }
 };
 

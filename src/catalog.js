@@ -307,6 +307,13 @@ export const shelves = [
         description:
           'Trotsky’s unfinished biography of Stalin is both indictment and political history of the Soviet bureaucracy. Written in exile, it portrays Stalin’s rise as the triumph of mediocrity and apparatus over revolutionary internationalism. It remains a primary document of the anti-Stalinist left.',
       },
+      {
+        title: 'Gödel, Escher, Bach',
+        spine: 'Gödel, Escher, Bach',
+        author: 'Douglas Hofstadter',
+        description:
+          'Gödel, Escher, Bach: an Eternal Golden Braid is Hofstadter’s Pulitzer Prize–winning fugue on minds and machines—linking Gödel’s incompleteness, Escher’s visual paradoxes, and Bach’s canons to strange loops, consciousness, and formal systems. Playful dialogues and deep technical digressions make it a classic of related thought beside philosophy of mind and logic.',
+      },
     ],
   },
   {
