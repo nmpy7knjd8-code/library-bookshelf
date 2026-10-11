@@ -1,6 +1,16 @@
 # Library
 
-An interactive, visually realistic bookshelf for a private study — warm wood, soft lamp light, and clickable spines with short descriptions.
+An interactive, photoreal bookshelf for a private night study — cool spotlights on dark wood, textured spines, and clickable volumes with short descriptions.
+
+## Live site
+
+**https://nmpy7knjd8-code.github.io/library-bookshelf/**
+
+## Links
+
+- **Live:** https://nmpy7knjd8-code.github.io/library-bookshelf/
+- **GitHub:** https://github.com/nmpy7knjd8-code/library-bookshelf
+- **PR:** https://github.com/nmpy7knjd8-code/library-bookshelf/pull/1
 
 ## Run locally
 
@@ -28,3 +38,10 @@ All titles from the Library project catalog are included across four shelves:
 4. Essays & Older Editions  
 
 Click a book (or press Enter/Space when focused) to open its detail panel. Escape or the close control dismisses it.
+
+Use the **Covers** and **Bookshelf** tabs to browse by cover grid or upright spines.
+
+Below the shelves, two collapsed discovery panels expand on click:
+
+- **Related books** — thematic clusters among titles already on the shelves (click a title to open its panel).
+- **Worth exploring** — off-catalog reading suggestions aligned with the library’s themes.
