@@ -746,7 +746,7 @@ export const shelves = [
         spine: 'Doktor Faustus',
         author: 'Thomas Mann',
         description:
-          'Mann’s novel of composer Adrian Leverkühn and a demonic pact that allegorizes modern German culture. Music, theology, and history converge in a tragic twentieth-century Faust. One of the great novels of art and damnation.',
+          'Thomas Mann’s Doktor Faustus (Doctor Faustus): the life of composer Adrian Leverkühn and a demonic pact that allegorizes modern German culture. Music, theology, and history converge in a tragic twentieth-century Faust—Mann’s late masterpiece of art and damnation, distinct from critical studies of the novel.',
       },
       {
         title: 'Autobiography of Bertrand Russell',

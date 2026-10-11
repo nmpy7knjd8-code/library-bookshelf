@@ -12768,7 +12768,7 @@ export const enrichments = {
     ]
   },
   "literature-42": {
-    "longDescription": "Mann’s novel of composer Adrian Leverkühn and a demonic pact that allegorizes modern German culture. Music, theology, and history converge in a tragic twentieth-century Faust. One of the great novels of art and damnation. This shelf copy sits among related works in literature, literary criticism, and poetry, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "longDescription": "Thomas Mann’s Doktor Faustus (Doctor Faustus) tells the life of the German composer Adrian Leverkühn as narrated by his friend Serenus Zeitblom. Leverkühn’s demonic bargain for artistic breakthrough becomes an allegory of modern German culture’s pact with destructive genius—music, theology, and history braided into a tragic twentieth-century Faust.\n\nDistinct from critical studies such as Fetzer’s Music, Love, Death and Mann’s Doctor Faustus, this is Mann’s own late masterpiece of art and damnation: a novel of composition, infection, and national catastrophe written in exile and published in 1947.",
     "author": {
       "name": "Thomas Mann",
       "bio": "Thomas Mann was a German novelist, short story writer, social critic, philanthropist, essayist, and 1929 Nobel Prize laureate, known for his series of highly symbolic and ironic epic novels and novellas, noted for their insight into the psychology of the artist and the intellectual. His analysis and critique of the European and German soul used modernized German and Biblical stories, as well as the ideas of Goethe, Nietzsche, and Schopenhauer.\r\n\r\nHis older brother was the radical writer Heinrich Mann, and three of his six children, Erika Mann, Klaus Mann and Golo Mann, also became important German writers.\r\n\r\nWhen Hitler came to power in 1933, the anti-fascist Mann fled to Switzerland. When World War II broke out in 1939, he emigrated to the United States, from where he returned to Switzerland in 1952. Thomas Mann is one of the most known exponents of the so called…",
@@ -12776,126 +12776,94 @@ export const enrichments = {
     },
     "similar": [
       {
-        "title": "Notes from Underground",
+        "title": "The Magic Mountain",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/sim-literature-42-themagicmountain.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Mann’s earlier masterpiece of illness, time, and European culture before the Faustus reckoning."
+      },
+      {
+        "title": "Death in Venice",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/sim-literature-42-deathinvenice.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A shorter Mann parable of beauty, desire, and dissolution that foreshadows Faustus’s artist-damnation themes."
+      },
+      {
+        "title": "Faust",
+        "author": "Johann Wolfgang von Goethe",
+        "cover": "covers/extra/sim-literature-42-faust.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The German Faust tradition Mann rewrites for the twentieth century."
+      },
+      {
+        "title": "The Master and Margarita",
+        "author": "Mikhail Bulgakov",
+        "cover": "covers/extra/sim-literature-42-themasterandmargarita.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Another modern Faust compact—art, devilry, and political nightmare in novel form."
+      },
+      {
+        "title": "Demons",
         "author": "Fyodor Dostoevsky",
-        "cover": "covers/extra/sim-literature-9-7-notesfromundergrou.jpg",
+        "cover": "covers/extra/sim-literature-42-demons.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Ideological possession and national catastrophe as novelistic tragedy."
+      },
+      {
+        "title": "Under the Volcano",
+        "author": "Malcolm Lowry",
+        "cover": "covers/extra/sim-literature-42-underthevolcano.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A mid-century descent into damnation and cultural collapse told through a ruined consciousness."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Buddenbrooks",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/auth-literature-42-buddenbrooks.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
       },
       {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "title": "The Magic Mountain",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/auth-literature-42-themagicmountain.jpg",
         "bookId": null,
         "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+        "why": null
       },
       {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "title": "Death in Venice",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/auth-literature-42-deathinvenice.jpg",
         "bookId": null,
         "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+        "why": null
       },
       {
-        "title": "The Myth of Sisyphus",
-        "author": "Albert Camus",
-        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
+        "title": "Joseph and His Brothers",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/auth-literature-42-josephandhisbrothers.jpg",
         "bookId": null,
         "source": "explore",
-        "why": "The essay companion to The Rebel — absurdity before revolt, lucidly argued."
+        "why": null
       },
       {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "title": "Confessions of Felix Krull",
+        "author": "Thomas Mann",
+        "cover": "covers/extra/auth-literature-42-confessionsoffelixkrul.jpg",
         "bookId": null,
         "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "Der Erwählte, Bekenntnisse Des Hochstaplers Felix Krull",
-        "author": "Thomas Mann",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Der Zauberberg",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Buddenbrooks",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Tod in Venedig",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Doctor Faustus",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Joseph und seine Brüder",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Lotte in Weimar",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Mario und der Zauberer",
-        "author": "Thomas Mann",
-        "cover": "covers/extra/auth-literature-42-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
+        "why": null
       }
     ]
   },

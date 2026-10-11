@@ -1336,14 +1336,14 @@ export const covers = {
     "cover": "covers/literature-42.jpg",
     "spine": "covers/literature-42.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL14867041W",
-    "coverId": 6897819,
+    "sourceUrl": "https://openlibrary.org/works/OL20667777W",
+    "coverId": 9335505,
     "match": {
-      "title": "Die Entstehung des Doktor Faustus",
+      "title": "Doktor Faustus",
       "author": "Thomas Mann"
     },
     "gap": false,
-    "note": null
+    "note": "Fischer Klassik edition of the novel (not Die Entstehung)"
   },
   "literature-43": {
     "cover": "covers/literature-43.jpg",
