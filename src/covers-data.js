@@ -1385,8 +1385,8 @@ export const covers = {
     "note": null
   },
   "essays-10": {
-    "cover": "covers/essays-9.jpg",
-    "spine": "covers/essays-9.jpg",
+    "cover": "covers/essays-10.jpg",
+    "spine": "covers/essays-10.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL15672750W",
     "coverId": 6684391,
@@ -1398,8 +1398,8 @@ export const covers = {
     "note": null
   },
   "essays-9": {
-    "cover": "covers/essays-8.jpg",
-    "spine": "covers/essays-8.jpg",
+    "cover": "covers/essays-9.jpg",
+    "spine": "covers/essays-9.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL27292338W",
     "coverId": 12621988,
@@ -1411,8 +1411,8 @@ export const covers = {
     "note": null
   },
   "essays-8": {
-    "cover": "covers/essays-7.jpg",
-    "spine": "covers/essays-7.jpg",
+    "cover": "covers/essays-8.jpg",
+    "spine": "covers/essays-8.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL20358651W",
     "coverId": 9025365,
@@ -1424,8 +1424,8 @@ export const covers = {
     "note": null
   },
   "essays-7": {
-    "cover": "covers/essays-6.jpg",
-    "spine": "covers/essays-6.jpg",
+    "cover": "covers/essays-7.jpg",
+    "spine": "covers/essays-7.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL234993W",
     "coverId": 5876769,
@@ -1437,8 +1437,8 @@ export const covers = {
     "note": "Closest Open Library match: “Daniel Boone and the hunters of Kentucky” — W. H. Bogart"
   },
   "essays-6": {
-    "cover": "covers/essays-5.jpg",
-    "spine": "covers/essays-5.jpg",
+    "cover": "covers/essays-6.jpg",
+    "spine": "covers/essays-6.jpg",
     "source": "Internet Archive",
     "sourceUrl": "https://archive.org/details/destroyerofsecon0000hugo",
     "coverId": null,
@@ -1450,8 +1450,8 @@ export const covers = {
     "note": null
   },
   "essays-5": {
-    "cover": "covers/essays-4.jpg",
-    "spine": "covers/essays-4.jpg",
+    "cover": "covers/essays-5.jpg",
+    "spine": "covers/essays-5.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL10424893W",
     "coverId": 9530764,
@@ -1463,8 +1463,8 @@ export const covers = {
     "note": null
   },
   "essays-4": {
-    "cover": "covers/essays-3.jpg",
-    "spine": "covers/essays-3.jpg",
+    "cover": "covers/essays-4.jpg",
+    "spine": "covers/essays-4.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1105907W",
     "coverId": 8980957,
@@ -1476,8 +1476,8 @@ export const covers = {
     "note": null
   },
   "essays-3": {
-    "cover": "covers/essays-2.jpg",
-    "spine": "covers/essays-2.jpg",
+    "cover": "covers/essays-3.jpg",
+    "spine": "covers/essays-3.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1105904W",
     "coverId": 5941475,
@@ -1489,8 +1489,8 @@ export const covers = {
     "note": null
   },
   "essays-2": {
-    "cover": "covers/essays-1.jpg",
-    "spine": "covers/essays-1.jpg",
+    "cover": "covers/essays-2.jpg",
+    "spine": "covers/essays-2.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1105899W",
     "coverId": 2755671,
@@ -1502,8 +1502,8 @@ export const covers = {
     "note": null
   },
   "essays-1": {
-    "cover": "covers/essays-0.jpg",
-    "spine": "covers/essays-0.jpg",
+    "cover": "covers/essays-1.jpg",
+    "spine": "covers/essays-1.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1105898W",
     "coverId": 6130081,
