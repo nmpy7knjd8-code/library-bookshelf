@@ -354,12 +354,12 @@ export const covers = {
   "philosophy-27": {
     "cover": "covers/philosophy-27.jpg",
     "spine": "covers/philosophy-27.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL403956W",
-    "coverId": 13140479,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "The earth has a soul",
-      "author": "Carl Gustav Jung"
+      "title": "The Earth Has a Soul",
+      "author": "C. G. Jung, edited by Meredith Sabini"
     },
     "gap": false,
     "note": null
