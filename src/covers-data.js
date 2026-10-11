@@ -1205,15 +1205,15 @@ export const covers = {
   "literature-32": {
     "cover": "covers/literature-32.jpg",
     "spine": "covers/literature-32.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL5351459W",
-    "coverId": 9286341,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "A casebook on Mark Twain's wound",
-      "author": "Lewis Gaston Leary"
+      "title": "Mark Twain’s Wound: A Casebook",
+      "author": "Edited by Lewis Leary"
     },
-    "gap": true,
-    "note": "Closest Open Library match: “A casebook on Mark Twain's wound” — Lewis Gaston Leary"
+    "gap": false,
+    "note": null
   },
   "literature-33": {
     "cover": "covers/literature-33.jpg",
