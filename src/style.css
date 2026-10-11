@@ -612,9 +612,9 @@ body {
   --book-ink: #f2ebd8;
   --book-band: #c4a35a;
   --book-pages: #e8e0d0;
-  --spine-size: 10.5px;
-  --spine-author-size: 8px;
-  --spine-pad: 12px;
+  --spine-size: 12px;
+  --spine-author-size: 9.5px;
+  --spine-pad: 10px;
   appearance: none;
   border: 0;
   padding: 0;
@@ -728,7 +728,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 0.28rem;
+  gap: 0.22rem;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   overflow: hidden;
@@ -740,10 +740,10 @@ body {
 .spine-title {
   font-family: var(--font-display);
   font-size: var(--spine-size);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.05;
-  color: #f4ecd8;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: #f6efdc;
   text-align: center;
   flex: 1 1 auto;
   min-height: 0;
@@ -753,26 +753,26 @@ body {
   word-break: break-word;
   hyphens: manual;
   text-shadow:
-    0 0 1px rgba(0, 0, 0, 0.85),
-    0 1px 1px rgba(0, 0, 0, 0.55);
+    0 0 1px rgba(0, 0, 0, 0.9),
+    0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 .spine-author {
   font-family: var(--font-display);
   font-size: var(--spine-author-size);
-  font-weight: 500;
+  font-weight: 550;
   font-style: italic;
-  letter-spacing: 0.015em;
-  line-height: 1.05;
-  color: #efe6d0;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  color: #f0e6c8;
   text-align: center;
   flex: 0 0 auto;
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-shadow:
-    0 0 1px rgba(0, 0, 0, 0.85),
-    0 1px 1px rgba(0, 0, 0, 0.55);
+    0 0 1px rgba(0, 0, 0, 0.9),
+    0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* Soft-gold stamp — solid light gold (no clipped foil overlays) */

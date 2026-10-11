@@ -94,45 +94,46 @@ function bookStyle(book, index) {
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
 
-  // Full title first; fit by tightening type inside a realistic spine, not by growing slabs
+  // Larger cream/gold lettering inside the same realistic spine footprint
   let titleLine = fullSpineTitle(book)
   const minH = 148
   const maxH = 176
   const minW = 28
   const maxW = 40
 
-  // Compact stamp sizes — still light cream/gold and readable
-  let fontSize = titleLine.length > 34 ? 9.5 : titleLine.length > 22 ? 10.5 : 11
-  let authorSize = Math.max(7.5, fontSize * 0.72)
-  let pad = 12
-  const authorReserve = () => authorSize * 1.25 + 6
+  // Bigger stamp; fit by wrap + tight leading, not by growing slabs
+  let fontSize = titleLine.length > 36 ? 11 : titleLine.length > 24 ? 12 : 13
+  let authorSize = Math.max(9, Math.round(fontSize * 0.78 * 10) / 10)
+  let pad = 10
 
   const capacityOf = (w, ht, fs, as, pd) => {
-    const cols = w >= 37 ? 3 : w >= 31 ? 2 : 1
-    const usable = ht - pd * 2 - (as * 1.25 + 6)
-    const per = Math.max(5, Math.floor(usable / (fs * 1.05)))
+    const cols = w >= 36 ? 3 : w >= 30 ? 2 : 1
+    const usable = ht - pd * 2 - (as * 1.15 + 5)
+    const per = Math.max(5, Math.floor(usable / (fs * 1.0)))
     return { cols, capacity: cols * per }
   }
 
-  // Modest height/width variation — real spines, not slabs
+  // Keep prior realistic spine sizes
   let height = Math.min(maxH, Math.max(minH, 154 + (h % 18)))
   let width = Math.min(maxW, Math.max(minW, 30 + (h % 9)))
 
-  // Prefer wrap columns over widening: bump width only in small steps if needed
-  let { cols, capacity } = capacityOf(width, height, fontSize, authorSize, pad)
+  let { capacity } = capacityOf(width, height, fontSize, authorSize, pad)
   if (titleLine.length > capacity) {
-    fontSize = Math.max(9, fontSize - 0.5)
-    authorSize = Math.max(7.5, fontSize * 0.72)
-    pad = 11
+    // Nudge to max footprint within the same slab budget, then slightly reduce type
     height = maxH
-    width = Math.min(maxW, width + 4)
-    ;({ cols, capacity } = capacityOf(width, height, fontSize, authorSize, pad))
+    width = Math.min(maxW, Math.max(width, 34))
+    pad = 9
+    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
   }
   if (titleLine.length > capacity) {
+    fontSize = Math.max(10.5, fontSize - 1)
+    authorSize = Math.max(8.5, Math.round(fontSize * 0.78 * 10) / 10)
     width = maxW
-    fontSize = 9
-    authorSize = 7.5
-    pad = 10
+    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
+  }
+  if (titleLine.length > capacity) {
+    fontSize = 10.5
+    authorSize = 8.5
     ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
     if (titleLine.length > capacity) {
       titleLine = shortenTitleLastResort(titleLine, capacity)
@@ -141,7 +142,7 @@ function bookStyle(book, index) {
 
   const inkMode = h % 2 === 0 ? 'foil' : 'ink'
   const texture = spineTextureUrl({
-    key: `${book.title}:${index}:v5`,
+    key: `${book.title}:${index}:v6`,
     material,
     bg: palette.bg,
     band: palette.band,
