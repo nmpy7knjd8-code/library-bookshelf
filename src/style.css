@@ -10,7 +10,7 @@
   --wood-grain: url('/textures/wood-grain.jpg');
   --light-x: 50%;
   --light-drift: 50%;
-  --case-width: min(560px, 94vw);
+  --case-width: min(960px, 96vw);
   --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --font-ui: 'DM Sans', 'Segoe UI', sans-serif;
   color-scheme: dark;
@@ -325,7 +325,7 @@ body {
   }
 }
 
-/* ——— Tall upright bookcase ——— */
+/* ——— Twin horizontal bookcase (two long stacks) ——— */
 .room {
   position: relative;
   z-index: 1;
@@ -343,6 +343,10 @@ body {
   max-width: 100%;
   overflow: hidden;
   filter: drop-shadow(0 32px 60px rgba(0, 0, 0, 0.9));
+}
+
+.bookcase--twin {
+  width: var(--case-width);
 }
 
 .case-crown,
@@ -386,13 +390,19 @@ body {
 
 .case-body {
   display: grid;
-  grid-template-columns: 36px 1fr 36px;
+  grid-template-columns: 28px 1fr 28px;
   background-image:
     linear-gradient(180deg, rgba(0, 0, 0, 0.35), transparent 12%, rgba(0, 0, 0, 0.25)),
     var(--wood-case);
   background-size: auto, cover;
   background-position: center;
   box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.55);
+}
+
+@media (min-width: 720px) {
+  .case-body {
+    grid-template-columns: 36px 1fr 36px;
+  }
 }
 
 .case-upright {
@@ -439,7 +449,11 @@ body {
   background:
     linear-gradient(180deg, rgba(0, 0, 0, 0.4), transparent 8%),
     #0a0705;
-  min-height: 70vh;
+  min-height: 0;
+}
+
+.bookcase--twin .case-bays {
+  gap: 0.15rem;
 }
 
 .bay-section {
@@ -451,7 +465,7 @@ body {
   align-items: baseline;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 0.7rem 0.65rem 0.25rem;
+  padding: 0.55rem 0.65rem 0.2rem;
 }
 
 .bay-heading h2 {
@@ -474,8 +488,7 @@ body {
   position: relative;
   margin: 0 0.2rem;
   padding: 0.2rem 0.3rem 0;
-  /* Fixed shelf bay — never a nested scrollport */
-  height: calc(var(--row-book-max, 180px) + 28px);
+  height: calc(var(--row-book-max, 172px) + 28px);
   overflow: hidden;
   overflow: clip;
   overscroll-behavior: none;
@@ -484,6 +497,30 @@ body {
   box-shadow:
     inset 0 20px 40px rgba(0, 0, 0, 0.8),
     inset 0 -8px 14px rgba(0, 0, 0, 0.45);
+}
+
+/* Horizontal browse within each of the two stacks */
+.bay-recess--scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(180, 160, 120, 0.35) rgba(0, 0, 0, 0.35);
+}
+
+.bay-recess--scroll::-webkit-scrollbar {
+  height: 7px;
+}
+
+.bay-recess--scroll::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+}
+
+.bay-recess--scroll::-webkit-scrollbar-thumb {
+  background: rgba(180, 160, 120, 0.4);
+  border-radius: 4px;
 }
 
 .bay-back {
@@ -543,9 +580,9 @@ body {
   justify-content: flex-start;
   flex-wrap: nowrap;
   gap: 1px;
-  height: var(--row-book-max, 176px);
-  min-height: var(--row-book-max, 176px);
-  max-height: var(--row-book-max, 176px);
+  height: var(--row-book-max, 172px);
+  min-height: var(--row-book-max, 172px);
+  max-height: var(--row-book-max, 172px);
   padding: 0 0.1rem;
   margin: 0;
   overflow: hidden;
@@ -553,6 +590,13 @@ body {
   overscroll-behavior: none;
   touch-action: pan-y;
   max-width: 100%;
+}
+
+.book-row--scroll {
+  width: max-content;
+  max-width: none;
+  overflow: visible;
+  touch-action: pan-x;
 }
 
 /* Photoreal shelf board */
@@ -606,14 +650,14 @@ body {
 
 /* ——— Books ——— */
 .book {
-  --book-h: 160px;
-  --book-w: 32px;
+  --book-h: 176px;
+  --book-w: 38px;
   --book-bg: #2a1a10;
   --book-ink: #f2ebd8;
   --book-band: #c4a35a;
   --book-pages: #e8e0d0;
-  --spine-size: 12px;
-  --spine-author-size: 9.5px;
+  --spine-size: 14px;
+  --spine-author-size: 10.5px;
   --spine-pad: 10px;
   appearance: none;
   border: 0;
