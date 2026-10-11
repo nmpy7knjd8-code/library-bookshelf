@@ -4,11 +4,13 @@
   --muted: #a8b4c6;
   --cool: #c8d8f0;
   --spot: rgba(140, 170, 220, 0.18);
+  --lamp: rgba(170, 200, 235, 0.22);
   --wood-case: url('/textures/wood-case.jpg');
   --wood-dark: url('/textures/wood-dark.jpg');
   --wood-plank: url('/textures/wood-plank.jpg');
   --wood-grain: url('/textures/wood-grain.jpg');
   --light-x: 50%;
+  --light-y: 12%;
   --light-drift: 50%;
   --case-width: min(560px, 94vw);
   --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
@@ -42,8 +44,17 @@ body {
   min-height: 100vh;
   isolation: isolate;
   background:
-    radial-gradient(ellipse 55% 28% at 50% -10%, rgba(120, 150, 200, 0.06), transparent 60%),
-    linear-gradient(180deg, #000000 0%, #030408 55%, #010104 100%);
+    radial-gradient(
+      ellipse 78% 48% at var(--light-x) -6%,
+      rgba(125, 160, 210, 0.2),
+      transparent 64%
+    ),
+    radial-gradient(
+      ellipse 52% 34% at var(--light-drift) 6%,
+      rgba(70, 105, 155, 0.12),
+      transparent 58%
+    ),
+    linear-gradient(180deg, #02050c 0%, #040812 38%, #010104 100%);
 }
 
 .atmosphere {
@@ -51,6 +62,49 @@ body {
   position: fixed;
   inset: 0;
   z-index: 0;
+  overflow: hidden;
+}
+
+/* Soft room haze — depth without washing mid-page copy */
+.haze {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 95% 60% at 50% 0%,
+      rgba(110, 145, 195, 0.14),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(10, 16, 28, 0.55) 0%,
+      transparent 32%,
+      transparent 70%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+}
+
+/* Volumetric cool shaft from a high study lamp */
+.shaft {
+  position: absolute;
+  left: var(--light-x);
+  top: -18%;
+  width: min(78vw, 820px);
+  height: 72vh;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    180deg,
+    rgba(195, 220, 255, 0.28) 0%,
+    rgba(140, 175, 225, 0.12) 26%,
+    rgba(80, 115, 165, 0.05) 52%,
+    transparent 76%
+  );
+  clip-path: polygon(36% 0%, 64% 0%, 94% 100%, 6% 100%);
+  filter: blur(16px);
+  opacity: 0.75;
+  mix-blend-mode: screen;
+  animation: shaft-drift 18s ease-in-out infinite;
+  transition: left 0.55s ease-out;
 }
 
 .spot {
@@ -61,18 +115,35 @@ body {
 }
 
 .spot-a {
-  width: 36vw;
-  height: 22vh;
-  left: 50%;
-  top: -12%;
+  width: 48vw;
+  height: 30vh;
+  left: var(--light-x);
+  top: -14%;
   transform: translateX(-50%);
-  background: radial-gradient(ellipse at center, rgba(130, 160, 210, 0.14), transparent 70%);
-  opacity: 0.35;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(200, 225, 255, 0.34),
+    rgba(130, 170, 220, 0.14) 42%,
+    transparent 72%
+  );
+  opacity: 0.7;
   animation: spot-breathe 14s ease-in-out infinite;
+  transition: left 0.55s ease-out;
 }
 
-/* Mid-page spots removed — they washed out Related books / body copy */
-.spot-b,
+/* Narrow secondary cool wash — stays in the hero band only */
+.spot-b {
+  display: block;
+  width: 28vw;
+  height: 16vh;
+  left: 58%;
+  top: 2%;
+  background: radial-gradient(ellipse at center, rgba(140, 175, 220, 0.1), transparent 70%);
+  opacity: 0.28;
+  filter: blur(8px);
+  animation: spot-soft 18s ease-in-out infinite;
+}
+
 .spot-c {
   display: none;
 }
@@ -80,13 +151,26 @@ body {
 .vignette {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 65% at 50% 35%, transparent 25%, rgba(0, 0, 0, 0.82) 100%);
+  background:
+    radial-gradient(
+      ellipse 68% 58% at 50% 28%,
+      transparent 18%,
+      rgba(0, 0, 0, 0.55) 72%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.55) 0%,
+      transparent 18%,
+      transparent 82%,
+      rgba(0, 0, 0, 0.55) 100%
+    );
 }
 
 .grain {
   position: absolute;
   inset: 0;
-  opacity: 0.08;
+  opacity: 0.09;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   mix-blend-mode: overlay;
 }
@@ -94,38 +178,89 @@ body {
 @keyframes spot-breathe {
   0%,
   100% {
-    opacity: 0.35;
+    opacity: 0.45;
     transform: translateX(-50%) scale(1);
   }
   50% {
-    opacity: 0.5;
-    transform: translateX(-50%) scale(1.02);
+    opacity: 0.7;
+    transform: translateX(-50%) scale(1.04);
   }
 }
 
-/* ——— Hero (compact so the tall case can enter the first viewport) ——— */
+@keyframes shaft-drift {
+  0%,
+  100% {
+    opacity: 0.42;
+    filter: blur(18px);
+  }
+  50% {
+    opacity: 0.62;
+    filter: blur(22px);
+  }
+}
+
+@keyframes spot-soft {
+  0%,
+  100% {
+    opacity: 0.22;
+  }
+  50% {
+    opacity: 0.38;
+  }
+}
+
+@keyframes brand-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    letter-spacing: 0.04em;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    letter-spacing: 0.01em;
+  }
+}
+
+/* ——— Hero: brand as the only signal in the first band ——— */
 .hero {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   text-align: center;
-  padding: clamp(1.75rem, 5vw, 2.75rem) clamp(1rem, 4vw, 2rem) clamp(0.5rem, 2vw, 0.85rem);
+  min-height: min(38vh, 320px);
+  padding: clamp(2.5rem, 8vw, 4.5rem) clamp(1rem, 4vw, 2rem) clamp(1rem, 2.8vw, 1.5rem);
+  background:
+    radial-gradient(
+      ellipse 90% 75% at var(--light-x) var(--light-y),
+      rgba(155, 190, 235, 0.18),
+      transparent 58%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(4, 8, 16, 0.2) 0%,
+      rgba(2, 4, 10, 0.25) 55%,
+      rgba(1, 1, 4, 0.7) 100%
+    );
 }
 
 .brand {
   margin: 0;
+  position: relative;
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(3.8rem, 12vw, 7rem);
-  line-height: 0.9;
-  letter-spacing: -0.02em;
-  color: #f2f6fc;
+  font-size: clamp(5rem, 16vw, 9.25rem);
+  line-height: 0.86;
+  letter-spacing: 0.012em;
+  color: #f7f9fc;
   text-shadow:
-    0 0 40px rgba(160, 190, 255, 0.22),
-    0 2px 24px rgba(0, 0, 0, 0.85);
+    0 0 48px rgba(160, 195, 245, 0.28),
+    0 0 120px rgba(90, 130, 190, 0.16),
+    0 3px 32px rgba(0, 0, 0, 0.92);
+  animation: brand-rise 1.1s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
 /* ——— View tabs ——— */
@@ -1387,10 +1522,14 @@ body {
   .detail-panel,
   .panel-backdrop,
   .spot-a,
+  .spot-b,
+  .shaft,
+  .brand,
   .bay-spotlight,
   .discovery-body,
   .discovery-mark {
     animation: none !important;
     transition: none !important;
   }
+
 }

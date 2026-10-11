@@ -600,10 +600,11 @@ function bindEvents() {
       ?.scrollIntoView({ behavior: 'smooth', block: 'center' })
   })
 
-  const room = document.getElementById('room')
-  room.addEventListener(
+  // Room-scoped light for the bookcase; page-wide tracking lives in bindGlobalsOnce
+  document.getElementById('room')?.addEventListener(
     'pointermove',
     (event) => {
+      const room = event.currentTarget
       const rect = room.getBoundingClientRect()
       const x = ((event.clientX - rect.left) / rect.width) * 100
       document.documentElement.style.setProperty('--light-x', `${x}%`)
@@ -631,6 +632,18 @@ function bindGlobalsOnce() {
     requestAnimationFrame(drift)
   }
   requestAnimationFrame(drift)
+
+  // Cool study lamp follows the pointer across the whole page (Covers + Bookshelf)
+  document.addEventListener(
+    'pointermove',
+    (event) => {
+      const x = (event.clientX / window.innerWidth) * 100
+      const y = (event.clientY / window.innerHeight) * 100
+      document.documentElement.style.setProperty('--light-x', `${x}%`)
+      document.documentElement.style.setProperty('--light-y', `${Math.min(42, Math.max(8, y * 0.45))}%`)
+    },
+    { passive: true },
+  )
 
   let resizeTimer = 0
   window.addEventListener('resize', () => {
@@ -719,6 +732,8 @@ function buildAppHtml() {
   const shelfActive = activeView === 'shelf'
   return `
     <div class="atmosphere" aria-hidden="true">
+      <div class="haze"></div>
+      <div class="shaft"></div>
       <div class="spot spot-a"></div>
       <div class="spot spot-b"></div>
       <div class="spot spot-c"></div>
