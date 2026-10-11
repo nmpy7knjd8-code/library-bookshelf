@@ -199,11 +199,11 @@ export const covers = {
     "cover": "covers/philosophy-15.jpg",
     "spine": "covers/philosophy-15.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL4447099W",
-    "coverId": 7005544,
+    "sourceUrl": "https://openlibrary.org/works/OL748585W",
+    "coverId": 116494,
     "match": {
-      "title": "The sacred and the profane",
-      "author": "William Michaels"
+      "title": "The Sacred and The Profane",
+      "author": "Mircea Eliade"
     },
     "gap": false,
     "note": null
