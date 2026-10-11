@@ -838,8 +838,8 @@ body {
   z-index: 2;
   width: 100%;
   max-width: 100%;
-  margin: 2.75rem 0 0;
-  padding: 1.35rem max(1rem, calc((100% - 560px) / 2)) 0.75rem;
+  margin: 1.5rem 0 0;
+  padding: 1.15rem max(1rem, calc((100% - 560px) / 2)) 0.75rem;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
