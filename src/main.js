@@ -605,7 +605,7 @@ function bindEvents() {
   })
 
   const room = document.getElementById('room')
-  room.addEventListener(
+  room?.addEventListener(
     'pointermove',
     (event) => {
       const rect = room.getBoundingClientRect()
