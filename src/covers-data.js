@@ -81,15 +81,15 @@ export const covers = {
   "philosophy-6": {
     "cover": "covers/philosophy-6.jpg",
     "spine": "covers/philosophy-6.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL16697439W",
-    "coverId": 103390,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "Ethics (Penguin Classics)",
-      "author": "Benedictus de Spinoza"
+      "title": "Ethics",
+      "author": "Benedict de Spinoza"
     },
     "gap": false,
-    "note": null
+    "note": "Yellow geometric jacket; Elwes association OK on cover"
   },
   "philosophy-7": {
     "cover": "covers/philosophy-7.jpg",
