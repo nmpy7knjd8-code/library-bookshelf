@@ -777,6 +777,13 @@ export const shelves = [
     category: 'American and British essays, older editions, and historical literature',
     books: [
       {
+        title: 'Essays and Lectures',
+        spine: 'Emerson Essays',
+        author: 'Ralph Waldo Emerson (Library of America)',
+        description:
+          'Library of America’s Emerson: Essays and Lectures collects Nature; Addresses, and Lectures; Essays: First and Second Series; Representative Men; English Traits; and The Conduct of Life. The omnibus gathers Emerson’s central public prose—from Nature and the American Scholar through Self-Reliance and the later conduct essays—in one Transcendentalist volume. Kept beside any standalone Representative Men copy as the LOA Essays and Lectures edition.',
+      },
+      {
         title: 'Fireside Travels',
         spine: 'Fireside Travels',
         author: 'James Russell Lowell',
