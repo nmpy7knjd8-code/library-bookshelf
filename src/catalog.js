@@ -343,11 +343,11 @@ export const shelves = [
           'A collective volume on the enduring contributions of Israel to religion, law, and culture in the West. Essays typically treat Hebrew scripture, prophecy, and historical peoplehood as civilizational inheritance. It belongs to early twentieth-century efforts to map “legacies” of ancient peoples.',
       },
       {
-        title: 'Famous Rulers',
+        title: 'Living Biographies of Famous Rulers',
         spine: 'Famous Rulers',
         author: 'Henry Thomas and Dana Lee Thomas',
         description:
-          'Biographical sketches of notable sovereigns and leaders across eras. The Thomases write for a general audience seeking memorable characters rather than archival minutiae. The book is a popular gallery of power and personality in history.',
+          'Living Biographies of Famous Rulers collects dramatic sketches of sovereigns and conquerors from ancient times to the modern age—Solomon and Caesar through Napoleon, Victoria, and beyond. Henry and Dana Lee Thomas write for a general audience seeking memorable character over archival minutiae, with illustrations by Gordon Ross.',
       },
       {
         title: 'Myths of Crete & Pre-Hellenic Europe',

@@ -607,12 +607,12 @@ export const covers = {
   "history-4": {
     "cover": "covers/history-4.jpg",
     "spine": "covers/history-4.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL26133049W",
-    "coverId": 12085902,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "The Boys' Book of Famous Rulers",
-      "author": "Lydia Hoyt Farmer"
+      "title": "Living Biographies of Famous Rulers",
+      "author": "Henry Thomas and Dana Lee Thomas"
     },
     "gap": false,
     "note": null

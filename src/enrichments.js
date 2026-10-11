@@ -5858,7 +5858,7 @@ export const enrichments = {
     "otherByAuthor": []
   },
   "history-4": {
-    "longDescription": "Biographical sketches of notable sovereigns and leaders across eras. The Thomases write for a general audience seeking memorable characters rather than archival minutiae. The book is a popular gallery of power and personality in history. This shelf copy sits among related works in ancient history, general history, and political thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "longDescription": "Living Biographies of Famous Rulers presents dramatic stories of important kings, conquerors, and rulers from ancient times to the modern day—figures such as Solomon, Julius Caesar, Charlemagne, Elizabeth, Napoleon, and others. Henry Thomas and Dana Lee Thomas write popular biography for a general audience, emphasizing memorable character and narrative over archival minutiae.\n\nThis Harper-era living-biographies volume (illustrated by Gordon Ross) sits among other accessible histories on the shelf as a gallery of power and personality across eras.",
     "author": {
       "name": "Henry Thomas and Dana Lee Thomas",
       "bio": "Author or editor associated with “Famous Rulers.”",
