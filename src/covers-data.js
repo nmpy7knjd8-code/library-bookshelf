@@ -289,11 +289,11 @@ export const covers = {
   "philosophy-22": {
     "cover": "covers/philosophy-22.jpg",
     "spine": "covers/philosophy-22.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL18360973W",
-    "coverId": 8356679,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "The World of Humanism, 1453-1517 (The Rise of Modern Europe)",
+      "title": "The World of Humanism, 1453–1517",
       "author": "Myron P. Gilmore"
     },
     "gap": false,
@@ -373,12 +373,12 @@ export const covers = {
   "philosophy-29": {
     "cover": "covers/philosophy-29.jpg",
     "spine": "covers/philosophy-29.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL95157W",
-    "coverId": 6534585,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
       "title": "Man and His Symbols",
-      "author": "Carl Gustav Jung"
+      "author": "Carl G. Jung"
     },
     "gap": false,
     "note": null
