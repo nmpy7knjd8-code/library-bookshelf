@@ -646,11 +646,11 @@ export const covers = {
   "history-7": {
     "cover": "covers/history-7.jpg",
     "spine": "covers/history-7.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL6628607W",
-    "coverId": 1582212,
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
     "match": {
-      "title": "Awakened China",
+      "title": "China",
       "author": "Felix Greene"
     },
     "gap": false,
