@@ -687,10 +687,10 @@ export const covers = {
     "spine": "covers/history-10.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1073905W",
-    "coverId": 15070150,
+    "coverId": 405392,
     "match": {
-      "title": "The Story of Civilization [complete]",
-      "author": "Will Durant"
+      "title": "The Story of Civilization XI / The Age of Napoleon",
+      "author": "Will Durant, Ariel Durant"
     },
     "gap": false,
     "note": null

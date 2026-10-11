@@ -6593,9 +6593,9 @@ export const enrichments = {
     ]
   },
   "history-10": {
-    "longDescription": "The Durants chronicle Europe from the French Revolution through Napoleon’s fall, weaving politics with culture and manners. Their Story of Civilization style favors readable synthesis over archival debate. Volume XI captures the Romantic age’s violence and grandeur. This shelf copy sits among related works in ancient history, general history, and political thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "longDescription": "The Age of Napoleon — Volume XI of Will and Ariel Durant’s The Story of Civilization — chronicles Europe from the French Revolution through Napoleon’s rise and fall. Politics, culture, and manners are woven into a single panoramic narrative in the Durants’ signature readable style.\n\nWill Durant wrote the series with Ariel Durant; this volume captures the Romantic age’s violence and grandeur while remaining a synthesis for general readers rather than a specialist archival study. It sits naturally beside other Durant volumes and broad histories of the modern West.",
     "author": {
-      "name": "Will and Ariel Durant",
+      "name": "Will Durant (with Ariel Durant)",
       "bio": "Author or editor associated with “The Story of Civilization, Vol. XI: The Age of Napoleon.”",
       "photo": null
     },

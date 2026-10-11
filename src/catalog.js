@@ -385,11 +385,11 @@ export const shelves = [
           'Grant retells the lives of Rome’s first twelve emperors in the tradition of Suetonius for modern readers. Character, scandal, and statecraft drive a narrative of the early Principate. A lively bridge between ancient biography and popular Roman history.',
       },
       {
-        title: 'The Story of Civilization, Vol. XI: The Age of Napoleon',
-        spine: 'Age of Napoleon',
-        author: 'Will and Ariel Durant',
+        title: 'The Age of Napoleon',
+        spine: 'The Age of Napoleon',
+        author: 'Will Durant (with Ariel Durant)',
         description:
-          'The Durants chronicle Europe from the French Revolution through Napoleon’s fall, weaving politics with culture and manners. Their Story of Civilization style favors readable synthesis over archival debate. Volume XI captures the Romantic age’s violence and grandeur.',
+          'Volume XI of The Story of Civilization: Will Durant, with Ariel Durant, chronicle Europe from the French Revolution through Napoleon’s fall, weaving politics with culture and manners. Their series style favors readable synthesis over archival debate. This volume captures the Romantic age’s violence and grandeur.',
       },
       {
         title: 'Rethinking the Scientific Revolution',
