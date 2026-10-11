@@ -329,14 +329,14 @@ export const covers = {
     "cover": "covers/philosophy-25.jpg",
     "spine": "covers/philosophy-25.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL1410283W",
-    "coverId": 12810975,
+    "sourceUrl": "https://openlibrary.org/works/OL2203892W",
+    "coverId": 12755445,
     "match": {
-      "title": "Major Works",
-      "author": "Ludwig Wittgenstein"
+      "title": "The works of Joseph de Maistre",
+      "author": "Joseph de Maistre"
     },
     "gap": false,
-    "note": null
+    "note": "Closest de Maistre edition cover: “The works of Joseph de Maistre”"
   },
   "philosophy-26": {
     "cover": "covers/philosophy-26.jpg",
