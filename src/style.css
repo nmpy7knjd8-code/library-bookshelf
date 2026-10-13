@@ -1862,3 +1862,24 @@ body {
 
 .bookcase--real .book-pages { display: none; }
 .bookcase--real .book-head { opacity: 0.35; }
+
+/* Legibility pass — brighter foil, deeper ink, debossed separation */
+.bookcase--real .spine-title { font-weight: 700; letter-spacing: 0.015em; }
+.bookcase--real .spine-author { opacity: 1; font-weight: 700; }
+.bookcase--real .book.ink-gold .spine-title,
+.bookcase--real .book.ink-gold .spine-author {
+  background: linear-gradient(90deg, #b8913f, #ffeeb8 38%, #fff8dc 50%, #e8c56e 72%, #a8822f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.85)) drop-shadow(0 -0.5px 0 rgba(255, 240, 200, 0.25));
+}
+.bookcase--real .book.ink-light .spine-title,
+.bookcase--real .book.ink-light .spine-author {
+  color: #fffaf0;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), 0 0 2px rgba(0, 0, 0, 0.45);
+}
+.bookcase--real .book.ink-dark .spine-title,
+.bookcase--real .book.ink-dark .spine-author {
+  color: #120c07;
+  text-shadow: 0 1px 0 rgba(255, 250, 235, 0.45), 0 -0.5px 0 rgba(0, 0, 0, 0.25);
+}

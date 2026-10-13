@@ -107,7 +107,7 @@ function bookStyle(book, index) {
   const height = 212 + (h2 % 57)
   const lines = len > 34 ? 3 : len > 17 ? 2 : 1
   const usable = height - 2 * 14 - 30 - (deco === 'bands' ? 30 : 0)
-  const tSize = NARROW() ? 15 : SPINE_TITLE_SIZE
+  const tSize = NARROW() ? 16 : SPINE_TITLE_SIZE
   const perLine = Math.floor(usable / (tSize * 0.52))
   let fitLines = Math.max(lines, Math.ceil(len / perLine))
   fitLines = Math.min(fitLines, 4)
@@ -118,7 +118,7 @@ function bookStyle(book, index) {
   if (len > perLine * fitLines) text = shortenTitleLastResort(titleLine, perLine * fitLines)
 
   const texture = spineTextureUrl({ key: `${book.title}:${index}:v8`, material, bg, band })
-  return { palette, material, height, width, fontSize: tSize, authorSize: NARROW() ? 11 : SPINE_AUTHOR_SIZE,
+  return { palette, material, height, width, fontSize: tSize, authorSize: NARROW() ? 11.5 : SPINE_AUTHOR_SIZE,
     inkMode: tone, deco, texture, pad: NARROW() ? 10 : 14, titleLine: text, lean: 0 }
 }
 
