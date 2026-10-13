@@ -307,6 +307,13 @@ export const shelves = [
         description:
           'Trotsky’s unfinished biography of Stalin is both indictment and political history of the Soviet bureaucracy. Written in exile, it portrays Stalin’s rise as the triumph of mediocrity and apparatus over revolutionary internationalism. It remains a primary document of the anti-Stalinist left.',
       },
+      {
+        title: 'Gödel, Escher, Bach',
+        spine: 'Gödel, Escher, Bach',
+        author: 'Douglas Hofstadter',
+        description:
+          'Gödel, Escher, Bach: an Eternal Golden Braid is Hofstadter’s Pulitzer Prize–winning fugue on minds and machines—linking Gödel’s incompleteness, Escher’s visual paradoxes, and Bach’s canons to strange loops, consciousness, and formal systems. Playful dialogues and deep technical digressions make it a classic of related thought beside philosophy of mind and logic.',
+      },
     ],
   },
   {
@@ -343,11 +350,11 @@ export const shelves = [
           'A collective volume on the enduring contributions of Israel to religion, law, and culture in the West. Essays typically treat Hebrew scripture, prophecy, and historical peoplehood as civilizational inheritance. It belongs to early twentieth-century efforts to map “legacies” of ancient peoples.',
       },
       {
-        title: 'Famous Rulers',
+        title: 'Living Biographies of Famous Rulers',
         spine: 'Famous Rulers',
         author: 'Henry Thomas and Dana Lee Thomas',
         description:
-          'Biographical sketches of notable sovereigns and leaders across eras. The Thomases write for a general audience seeking memorable characters rather than archival minutiae. The book is a popular gallery of power and personality in history.',
+          'Living Biographies of Famous Rulers collects dramatic sketches of sovereigns and conquerors from ancient times to the modern age—Solomon and Caesar through Napoleon, Victoria, and beyond. Henry and Dana Lee Thomas write for a general audience seeking memorable character over archival minutiae, with illustrations by Gordon Ross.',
       },
       {
         title: 'Myths of Crete & Pre-Hellenic Europe',
@@ -385,11 +392,11 @@ export const shelves = [
           'Grant retells the lives of Rome’s first twelve emperors in the tradition of Suetonius for modern readers. Character, scandal, and statecraft drive a narrative of the early Principate. A lively bridge between ancient biography and popular Roman history.',
       },
       {
-        title: 'The Story of Civilization, Vol. XI: The Age of Napoleon',
-        spine: 'Age of Napoleon',
-        author: 'Will and Ariel Durant',
+        title: 'The Age of Napoleon',
+        spine: 'The Age of Napoleon',
+        author: 'Will Durant (with Ariel Durant)',
         description:
-          'The Durants chronicle Europe from the French Revolution through Napoleon’s fall, weaving politics with culture and manners. Their Story of Civilization style favors readable synthesis over archival debate. Volume XI captures the Romantic age’s violence and grandeur.',
+          'Volume XI of The Story of Civilization: Will Durant, with Ariel Durant, chronicle Europe from the French Revolution through Napoleon’s fall, weaving politics with culture and manners. Their series style favors readable synthesis over archival debate. This volume captures the Romantic age’s violence and grandeur.',
       },
       {
         title: 'Rethinking the Scientific Revolution',
@@ -567,11 +574,11 @@ export const shelves = [
           'A popular American anthology of widely memorized poems from the English canon and beyond. Designed for home and school, it fixed a shared repertoire of “famous” verse. Sentiment and oratory sit beside quieter lyrics.',
       },
       {
-        title: 'Dismantled Images',
-        spine: 'Dismantled Images',
+        title: 'Disenchanted Images',
+        spine: 'Disenchanted Images',
         author: 'Zolotow',
         description:
-          'A literary work concerned with broken images and the reassembly of meaning in modern writing. Zolotow’s title signals critique of representation and memory. It belongs with mid-to-late century experiments in poetic and critical prose.',
+          'A literary work concerned with disenchanted images and the reassembly of meaning in modern writing. Zolotow’s title signals critique of representation and memory. It belongs with mid-to-late century experiments in poetic and critical prose.',
       },
       {
         title: 'Modern American Criticism',
@@ -746,7 +753,7 @@ export const shelves = [
         spine: 'Doktor Faustus',
         author: 'Thomas Mann',
         description:
-          'Mann’s novel of composer Adrian Leverkühn and a demonic pact that allegorizes modern German culture. Music, theology, and history converge in a tragic twentieth-century Faust. One of the great novels of art and damnation.',
+          'Thomas Mann’s Doktor Faustus (Doctor Faustus): the life of composer Adrian Leverkühn and a demonic pact that allegorizes modern German culture. Music, theology, and history converge in a tragic twentieth-century Faust—Mann’s late masterpiece of art and damnation, distinct from critical studies of the novel.',
       },
       {
         title: 'Autobiography of Bertrand Russell',
@@ -776,6 +783,13 @@ export const shelves = [
     label: 'Essays & Older Editions',
     category: 'American and British essays, older editions, and historical literature',
     books: [
+      {
+        title: 'Essays and Lectures',
+        spine: 'Emerson Essays',
+        author: 'Ralph Waldo Emerson (Library of America)',
+        description:
+          'Library of America’s Emerson: Essays and Lectures collects Nature; Addresses, and Lectures; Essays: First and Second Series; Representative Men; English Traits; and The Conduct of Life. The omnibus gathers Emerson’s central public prose—from Nature and the American Scholar through Self-Reliance and the later conduct essays—in one Transcendentalist volume. Kept beside any standalone Representative Men copy as the LOA Essays and Lectures edition.',
+      },
       {
         title: 'Fireside Travels',
         spine: 'Fireside Travels',
@@ -826,11 +840,11 @@ export const shelves = [
           'A mid-nineteenth-century popular life of Boone and the Kentucky frontier hunters. Legend and narrative history blur in the making of an American pioneer myth. The 1854 date situates it in antebellum frontier literature.',
       },
       {
-        title: 'Lives of the English Poets',
-        spine: 'Lives Eng. Poets',
-        author: 'Samuel Johnson (Bohn’s Classical Library)',
+        title: 'Lives of the Caesars',
+        spine: 'Lives of the Caesars',
+        author: 'Suetonius',
         description:
-          'Johnson’s prefaces on poets from Cowley to Gray—biography fused with critical judgment. The Bohn Classical Library edition brought the Lives to Victorian readers in a standard series format. Still the model of the poet’s life as moral and aesthetic essay.',
+          'Suetonius’s De vita Caesarum—also known as The Twelve Caesars—portraits of Rome’s rulers from Julius Caesar through Domitian. Gossip, character, and imperial habit sit beside public deeds in the foundational Latin imperial biographies. Distinct from modern retellings; this is the ancient source itself.',
       },
       {
         title: 'The Iliad',
