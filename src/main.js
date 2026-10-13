@@ -184,7 +184,11 @@ function renderDiscoveryPanel(id, title, blurb, bodyHtml) {
           <span class="discovery-title">${escapeHtml(title)}</span>
           <span class="discovery-blurb">${escapeHtml(blurb)}</span>
         </span>
-        <span class="discovery-mark" aria-hidden="true"></span>
+        <span class="discovery-mark" aria-hidden="true">
+          <svg class="discovery-chevron" viewBox="0 0 16 16" width="14" height="14" focusable="false">
+            <path d="M3.2 5.6 8 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
       </button>
       <div
         class="discovery-body"
@@ -484,7 +488,7 @@ function closePanel() {
       panel.hidden = true
       backdrop.hidden = true
     }
-  }, 280)
+  }, 340)
 
   document.querySelectorAll('.book, .cover-card').forEach((el) => {
     el.classList.remove('is-selected')
@@ -510,7 +514,7 @@ function setDiscoveryOpen(panel, open) {
     body.classList.remove('is-open')
     window.setTimeout(() => {
       if (!panel.classList.contains('is-open')) body.hidden = true
-    }, 280)
+    }, 360)
   }
 }
 
@@ -770,9 +774,12 @@ function buildAppHtml() {
       aria-labelledby="detail-title"
       hidden
     >
-      <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
-        <span aria-hidden="true">×</span>
-      </button>
+      <div class="panel-chrome">
+        <span class="panel-chrome-label">Shelf detail</span>
+        <button type="button" class="panel-close" id="panel-close" aria-label="Close book details">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
       <div class="detail-hero">
         <div class="detail-cover-wrap" id="detail-cover-wrap" hidden>
           <img class="detail-cover" id="detail-cover" alt="" />
