@@ -20,7 +20,7 @@ function assetUrl(rel) {
 
 /** Visible case width — two long horizontal stacks scroll inside the bays. */
 function caseWidthPx() {
-  return Math.min(window.innerWidth * 0.96, 960)
+  return Math.min(window.innerWidth * 0.96, 520)
 }
 
 /** Full title for the spine — keep wording; strip only edition/series noise */
@@ -67,9 +67,9 @@ function spineAuthor(author) {
 }
 
 /** Realistic spine generation — varied heights, widths, bindings; fixed legible type. */
-const SPINE_TITLE_SIZE = 13
-const SPINE_AUTHOR_SIZE = 9.5
-const ROW_MAX_H = 224
+const SPINE_TITLE_SIZE = 17
+const SPINE_AUTHOR_SIZE = 12
+const ROW_MAX_H = 270
 
 /* Real-world binding colourways: [bg, ink, band, pages, inkTone] */
 const BINDINGS = [
@@ -103,13 +103,13 @@ function bookStyle(book, index) {
   const titleLine = fullSpineTitle(book)
   const len = titleLine.length
   // heights 168–224 like real trade/octavo/quarto volumes
-  const height = 168 + (h2 % 57)
+  const height = 212 + (h2 % 57)
   const lines = len > 34 ? 3 : len > 17 ? 2 : 1
-  const usable = height - 2 * 14 - 22 - (deco === 'bands' ? 30 : 0)
+  const usable = height - 2 * 14 - 30 - (deco === 'bands' ? 30 : 0)
   const perLine = Math.floor(usable / (SPINE_TITLE_SIZE * 0.52))
   let fitLines = Math.max(lines, Math.ceil(len / perLine))
   fitLines = Math.min(fitLines, 4)
-  const width = Math.max(34, Math.min(62, 14 + fitLines * 14 + (h % 7)))
+  const width = Math.max(42, Math.min(84, 18 + fitLines * 19 + (h % 7)))
   let text = titleLine
   if (len > perLine * fitLines) text = shortenTitleLastResort(titleLine, perLine * fitLines)
 
@@ -120,7 +120,7 @@ function bookStyle(book, index) {
 
 /** Pack every catalog book, in order, into shelf rows that fit the case width. */
 function buildShelfRows() {
-  const inner = caseWidthPx() - (window.innerWidth >= 720 ? 72 : 44) - 20
+  const inner = caseWidthPx() - (window.innerWidth >= 720 ? 72 : 44) - 14
   const rows = []
   let cur = []
   let used = 0
@@ -142,7 +142,7 @@ function buildShelfRows() {
   rows.forEach((row, r) => {
     if (r === rows.length - 1) return
     const sum = row.reduce((a, b) => a + b.style.width + 3, 0)
-    const add = Math.min(16, Math.floor((inner - sum) / row.length))
+    const add = Math.min(40, Math.floor((inner - sum) / row.length))
     if (add > 0) row.forEach((b) => { b.style.width += add })
   })
   return rows
