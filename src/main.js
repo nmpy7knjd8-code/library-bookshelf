@@ -20,7 +20,7 @@ function assetUrl(rel) {
 
 /** Visible case width — two long horizontal stacks scroll inside the bays. */
 function caseWidthPx() {
-  return Math.min(window.innerWidth * 0.96, 520)
+  return Math.min(window.innerWidth * 0.96, 650)
 }
 
 /** Full title for the spine — keep wording; strip only edition/series noise */
@@ -67,6 +67,7 @@ function spineAuthor(author) {
 }
 
 /** Realistic spine generation — varied heights, widths, bindings; fixed legible type. */
+const NARROW = () => window.innerWidth < 500
 const SPINE_TITLE_SIZE = 17
 const SPINE_AUTHOR_SIZE = 12
 const ROW_MAX_H = 270
@@ -106,16 +107,19 @@ function bookStyle(book, index) {
   const height = 212 + (h2 % 57)
   const lines = len > 34 ? 3 : len > 17 ? 2 : 1
   const usable = height - 2 * 14 - 30 - (deco === 'bands' ? 30 : 0)
-  const perLine = Math.floor(usable / (SPINE_TITLE_SIZE * 0.52))
+  const tSize = NARROW() ? 15 : SPINE_TITLE_SIZE
+  const perLine = Math.floor(usable / (tSize * 0.52))
   let fitLines = Math.max(lines, Math.ceil(len / perLine))
   fitLines = Math.min(fitLines, 4)
-  const width = Math.max(42, Math.min(84, 18 + fitLines * 19 + (h % 7)))
+  const width = NARROW()
+    ? Math.max(32, Math.min(70, 10 + fitLines * 16 + (h % 3)))
+    : Math.max(42, Math.min(84, 18 + fitLines * 19 + (h % 7)))
   let text = titleLine
   if (len > perLine * fitLines) text = shortenTitleLastResort(titleLine, perLine * fitLines)
 
   const texture = spineTextureUrl({ key: `${book.title}:${index}:v8`, material, bg, band })
-  return { palette, material, height, width, fontSize: SPINE_TITLE_SIZE, authorSize: SPINE_AUTHOR_SIZE,
-    inkMode: tone, deco, texture, pad: 14, titleLine: text, lean: 0 }
+  return { palette, material, height, width, fontSize: tSize, authorSize: NARROW() ? 11 : SPINE_AUTHOR_SIZE,
+    inkMode: tone, deco, texture, pad: NARROW() ? 10 : 14, titleLine: text, lean: 0 }
 }
 
 /** Pack every catalog book, in order, into shelf rows that fit the case width. */
