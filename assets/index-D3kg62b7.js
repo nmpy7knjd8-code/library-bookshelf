@@ -120,7 +120,7 @@ Though a committed conservative royalist when he was young, Hugo grew more liber
 
 From the early manifesto of Nature and the American Scholar address through the great Essays (“Self-Reliance,” “The Poet,” “Experience”) and the later character studies of Representative Men, the collection traces Transcendentalist thought as lectures, essays, and national self-portrait. Distinct from a standalone Representative Men copy elsewhere on the shelf, this LOA book is the omnibus Essays and Lectures edition.`,author:{name:`Ralph Waldo Emerson`,bio:`Ralph Waldo Emerson (1803–1882) was an American essayist, lecturer, and poet, and a central figure of New England Transcendentalism. His essays and addresses—Nature, Self-Reliance, The American Scholar, The Poet—helped define a democratic, experiential American philosophy and literary culture.`,photo:`authors/ralph-waldo-emerson.jpg`},similar:[{title:`Walden`,author:`Henry David Thoreau`,cover:`covers/extra/sim-essays-0-walden.jpg`,bookId:null,source:`explore`,why:`The classic Transcendentalist companion to Emerson’s Nature and self-reliance essays.`},{title:`Leaves of Grass`,author:`Walt Whitman`,cover:`covers/extra/sim-essays-0-leavesofgrass.jpg`,bookId:null,source:`explore`,why:`Whitman’s democratic song answers Emerson’s call for an original American literature.`},{title:`The Varieties of Religious Experience`,author:`William James`,cover:`covers/extra/sim-essays-0-thevarietiesofreligiou.jpg`,bookId:null,source:`explore`,why:`A later American inquiry into spiritual life that extends Emerson’s essayistic religion of experience.`},{title:`Self-Reliance and Other Essays`,author:`Ralph Waldo Emerson`,cover:`covers/extra/sim-essays-0-selfrelianceandotheres.jpg`,bookId:null,source:`explore`,why:`A compact sampling if you want a pocket gateway into the LOA omnibus.`},{title:`Democracy in America`,author:`Alexis de Tocqueville`,cover:`covers/extra/sim-essays-0-democracyinamerica.jpg`,bookId:null,source:`explore`,why:`The great European reading of the American character Emerson helped define from within.`},{title:`The American Scholar`,author:`Ralph Waldo Emerson`,cover:`covers/extra/sim-essays-0-theamericanscholar.jpg`,bookId:null,source:`explore`,why:`Often anthologized alone; here it belongs inside the Addresses and Lectures of the LOA volume.`}],otherByAuthor:[{title:`The Journals of Ralph Waldo Emerson`,author:`Ralph Waldo Emerson`,cover:`covers/extra/auth-essays-0-thejournalsofralphwald.jpg`,bookId:null,source:`explore`,why:null},{title:`Poems`,author:`Ralph Waldo Emerson`,cover:`covers/extra/auth-essays-0-poems.jpg`,bookId:null,source:`explore`,why:null},{title:`Society and Solitude`,author:`Ralph Waldo Emerson`,cover:`covers/extra/auth-essays-0-societyandsolitude.jpg`,bookId:null,source:`explore`,why:null},{title:`Letters and Social Aims`,author:`Ralph Waldo Emerson`,cover:`covers/extra/auth-essays-0-lettersandsocialaims.jpg`,bookId:null,source:`explore`,why:null},{title:`The Complete Works of Ralph Waldo Emerson`,author:`Ralph Waldo Emerson`,cover:`covers/extra/auth-essays-0-thecompleteworksofralp.jpg`,bookId:null,source:`explore`,why:null}]},"philosophy-43":{longDescription:`Gödel, Escher, Bach: an Eternal Golden Braid (1979) is Douglas Hofstadter’s Pulitzer Prize–winning exploration of formal systems, self-reference, and consciousness. Through Bach’s canons, Escher’s visual paradoxes, and Gödel’s incompleteness theorems—interleaved with Lewis Carroll–style dialogues—Hofstadter argues that minds arise from “strange loops” in which symbols twist back upon themselves.
 
-It sits on this philosophy shelf as related thought: less a treatise in the Continental style than a deep, playful inquiry into logic, meaning, and what it would take for a machine (or a brain) to say “I.”`,author:{name:`Douglas Hofstadter`,bio:`Douglas R. Hofstadter is an American cognitive scientist and author whose work spans consciousness, analogy, translation, and the limits of formal systems. Gödel, Escher, Bach (1979) won the Pulitzer Prize for general nonfiction; later books include Metamagical Themas and I Am a Strange Loop.`,photo:`authors/douglas-hofstadter.jpg`},similar:[{title:`I Am a Strange Loop`,author:`Douglas Hofstadter`,cover:`covers/extra/sim-philosophy-43-iamastrangeloop.jpg`,bookId:null,source:`explore`,why:`Hofstadter’s later, tighter restatement of the strange-loop theory of the self.`},{title:`The Emperor’s New Mind`,author:`Roger Penrose`,cover:null,bookId:null,source:`explore`,why:`Another landmark on minds, machines, and the limits of computation.`},{title:`Consciousness Explained`,author:`Daniel C. Dennett`,cover:`covers/extra/sim-philosophy-43-consciousnessexplained.jpg`,bookId:null,source:`explore`,why:`A rival philosophical account of mind that dialogues with Hofstadter’s playful cognitivism.`},{title:`Metamagical Themas`,author:`Douglas Hofstadter`,cover:`covers/extra/sim-philosophy-43-metamagicalthemas.jpg`,bookId:null,source:`explore`,why:`Hofstadter’s Scientific American columns—puzzles, analogies, and self-reference after GEB.`},{title:`Tractatus Logico-Philosophicus`,author:`Ludwig Wittgenstein`,cover:`covers/extra/sim-philosophy-43-tractatuslogicophiloso.jpg`,bookId:null,source:`explore`,why:`Already kin to this shelf’s logic books; a austere counterpart to GEB’s playful formal systems.`},{title:`The Society of Mind`,author:`Marvin Minsky`,cover:`covers/extra/sim-philosophy-43-thesocietyofmind.jpg`,bookId:null,source:`explore`,why:`An AI pioneer’s modular theory of intelligence, adjacent to GEB’s machine-mind inquiries.`}],otherByAuthor:[{title:`I Am a Strange Loop`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-iamastrangeloop.jpg`,bookId:null,source:`explore`,why:null},{title:`Metamagical Themas`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-metamagicalthemas.jpg`,bookId:null,source:`explore`,why:null},{title:`Le Ton beau de Marot`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-letonbeaudemarot.jpg`,bookId:null,source:`explore`,why:null},{title:`Surfaces and Essences`,author:`Douglas Hofstadter`,cover:null,bookId:null,source:`explore`,why:null},{title:`Fluid Concepts and Creative Analogies`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-fluidconceptsandcreati.jpg`,bookId:null,source:`explore`,why:null}]}};function v(e,t){return _[`${e}-${t}`]||null}var y=null,b=0,x=`covers`;function S(e,t){return`${e}-${t}`}function C(e){return`/library-bookshelf/${e.replace(/^\//,``)}`}function w(){return Math.min(window.innerWidth*.96,520)}function T(e){let t=(e.title||``).replace(/\s+/g,` `).replace(/[’‘]/g,`'`).trim();return t=t.replace(/\s*\([^)]*(?:edition|ed\.|press|oxford|cambridge|with references)[^)]*\)\s*$/iu,``).trim(),t=t.replace(/\s*\([^)]{16,}\)\s*$/u,``).trim(),t}function E(e,t){if(e.length<=t)return e;let n=e.replace(/,?\s*Vols?\.\s*[IVXLC\d]+.*$/iu,``).replace(/,?\s*Volume\s+[IVXLC\d]+.*$/iu,``).replace(/:\s*.*$/u,``).trim();if(n.length<=t)return n;let r=``;for(let e of n.split(` `)){let n=r?`${r} ${e}`:e;if(n.length>t)break;r=n}return r.length>=12?r:n.slice(0,t).trim()}function D(e){if(!e)return``;let t=e.replace(/^edited by\s+/i,``).replace(/^associated with\s+/i,``).replace(/^tr\.?\s+/i,``).replace(/\s*\(.*?\)\s*/g,` `).split(/[;,/]/)[0].trim(),n=t.split(/\s+/).filter(Boolean);return n.length>3&&(t=n.slice(-2).join(` `)),t.length>24&&(t=`${t.slice(0,22)}…`),t}var O=17,k=12,A=270,j=[[`#5a1a17`,`#ecd8a0`,`#c9a24e`,`#e9dfc9`,`gold`],[`#1d2b45`,`#e8d7a4`,`#c4a35a`,`#ebe3d0`,`gold`],[`#23382b`,`#ead9a6`,`#b8984f`,`#e6dfcc`,`gold`],[`#6b4a2b`,`#f1e3bd`,`#d9b46a`,`#efe5cf`,`gold`],[`#2a221d`,`#e9d9ad`,`#b4924e`,`#e6ddc9`,`gold`],[`#e9e1cc`,`#2a211a`,`#8a2a22`,`#f1eadb`,`dark`],[`#c8b38a`,`#2b2117`,`#5b3a22`,`#efe6d1`,`dark`],[`#8c2f22`,`#f3e7c8`,`#e3c27a`,`#ece2cd`,`gold`],[`#3b4a5c`,`#f1ead6`,`#d2c39a`,`#eae4d6`,`light`],[`#d9cfb8`,`#1d1d1d`,`#1d1d1d`,`#f3eee2`,`dark`],[`#14161a`,`#f2efe6`,`#c9b37a`,`#e9e3d6`,`light`],[`#7a6a3a`,`#f4ead0`,`#e8d39a`,`#efe7d2`,`light`],[`#4a2b42`,`#efdfb6`,`#caa860`,`#ebe2d0`,`gold`],[`#a77a3f`,`#20160c`,`#4a2c12`,`#f0e6cf`,`dark`],[`#2f4d57`,`#f0e7cc`,`#d6bf86`,`#e8e2d3`,`light`]],M=[`bands`,`label`,`plain`,`modern`,`bands`,`label`];function N(e,t){let n=a(`${e.title}:${e.author}:${t}`),r=a(`${e.author}|${t}|r`),[i,o,s,c,l]=j[n%j.length],u={bg:i,ink:o,band:s,pages:c},d=M[r%M.length],f=d===`bands`?`leather`:d===`modern`||l===`dark`?`paper`:`cloth`,p=T(e),h=p.length,g=212+r%57,_=h>34?3:h>17?2:1,v=g-28-30-(d===`bands`?30:0),y=Math.floor(v/(O*.52)),b=Math.max(_,Math.ceil(h/y));b=Math.min(b,4);let x=Math.max(42,Math.min(84,18+b*19+n%7)),S=p;return h>y*b&&(S=E(p,y*b)),{palette:u,material:f,height:g,width:x,fontSize:O,authorSize:k,inkMode:l,deco:d,texture:m({key:`${e.title}:${t}:v8`,material:f,bg:i,band:s}),pad:14,titleLine:S,lean:0}}function P(){let t=w()-(window.innerWidth>=720?72:44)-14,n=[],r=[],i=0;for(let a of e)a.books.forEach((e,o)=>{let s=N(e,o),c=s.width+3;i+c>t&&r.length&&(n.push(r),r=[],i=0),r.push({shelf:a,book:e,index:o,style:s}),i+=c});return r.length&&n.push(r),n.forEach((e,r)=>{if(r===n.length-1)return;let i=e.reduce((e,t)=>e+t.style.width+3,0),a=Math.min(40,Math.floor((t-i)/e.length));a>0&&e.forEach(e=>{e.style.width+=a})}),n}function F(){let e=document.documentElement;e.style.setProperty(`--wood-case`,`url('${C(`textures/wood-case.jpg`)}')`),e.style.setProperty(`--wood-dark`,`url('${C(`textures/wood-dark.jpg`)}')`),e.style.setProperty(`--wood-plank`,`url('${C(`textures/wood-plank.jpg`)}')`),e.style.setProperty(`--wood-grain`,`url('${C(`textures/wood-grain.jpg`)}')`)}function I(e,t,n,r){return`
+It sits on this philosophy shelf as related thought: less a treatise in the Continental style than a deep, playful inquiry into logic, meaning, and what it would take for a machine (or a brain) to say “I.”`,author:{name:`Douglas Hofstadter`,bio:`Douglas R. Hofstadter is an American cognitive scientist and author whose work spans consciousness, analogy, translation, and the limits of formal systems. Gödel, Escher, Bach (1979) won the Pulitzer Prize for general nonfiction; later books include Metamagical Themas and I Am a Strange Loop.`,photo:`authors/douglas-hofstadter.jpg`},similar:[{title:`I Am a Strange Loop`,author:`Douglas Hofstadter`,cover:`covers/extra/sim-philosophy-43-iamastrangeloop.jpg`,bookId:null,source:`explore`,why:`Hofstadter’s later, tighter restatement of the strange-loop theory of the self.`},{title:`The Emperor’s New Mind`,author:`Roger Penrose`,cover:null,bookId:null,source:`explore`,why:`Another landmark on minds, machines, and the limits of computation.`},{title:`Consciousness Explained`,author:`Daniel C. Dennett`,cover:`covers/extra/sim-philosophy-43-consciousnessexplained.jpg`,bookId:null,source:`explore`,why:`A rival philosophical account of mind that dialogues with Hofstadter’s playful cognitivism.`},{title:`Metamagical Themas`,author:`Douglas Hofstadter`,cover:`covers/extra/sim-philosophy-43-metamagicalthemas.jpg`,bookId:null,source:`explore`,why:`Hofstadter’s Scientific American columns—puzzles, analogies, and self-reference after GEB.`},{title:`Tractatus Logico-Philosophicus`,author:`Ludwig Wittgenstein`,cover:`covers/extra/sim-philosophy-43-tractatuslogicophiloso.jpg`,bookId:null,source:`explore`,why:`Already kin to this shelf’s logic books; a austere counterpart to GEB’s playful formal systems.`},{title:`The Society of Mind`,author:`Marvin Minsky`,cover:`covers/extra/sim-philosophy-43-thesocietyofmind.jpg`,bookId:null,source:`explore`,why:`An AI pioneer’s modular theory of intelligence, adjacent to GEB’s machine-mind inquiries.`}],otherByAuthor:[{title:`I Am a Strange Loop`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-iamastrangeloop.jpg`,bookId:null,source:`explore`,why:null},{title:`Metamagical Themas`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-metamagicalthemas.jpg`,bookId:null,source:`explore`,why:null},{title:`Le Ton beau de Marot`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-letonbeaudemarot.jpg`,bookId:null,source:`explore`,why:null},{title:`Surfaces and Essences`,author:`Douglas Hofstadter`,cover:null,bookId:null,source:`explore`,why:null},{title:`Fluid Concepts and Creative Analogies`,author:`Douglas Hofstadter`,cover:`covers/extra/auth-philosophy-43-fluidconceptsandcreati.jpg`,bookId:null,source:`explore`,why:null}]}};function v(e,t){return _[`${e}-${t}`]||null}var y=null,b=0,x=`covers`;function S(e,t){return`${e}-${t}`}function C(e){return`/library-bookshelf/${e.replace(/^\//,``)}`}function w(){return Math.min(window.innerWidth*.96,650)}function T(e){let t=(e.title||``).replace(/\s+/g,` `).replace(/[’‘]/g,`'`).trim();return t=t.replace(/\s*\([^)]*(?:edition|ed\.|press|oxford|cambridge|with references)[^)]*\)\s*$/iu,``).trim(),t=t.replace(/\s*\([^)]{16,}\)\s*$/u,``).trim(),t}function E(e,t){if(e.length<=t)return e;let n=e.replace(/,?\s*Vols?\.\s*[IVXLC\d]+.*$/iu,``).replace(/,?\s*Volume\s+[IVXLC\d]+.*$/iu,``).replace(/:\s*.*$/u,``).trim();if(n.length<=t)return n;let r=``;for(let e of n.split(` `)){let n=r?`${r} ${e}`:e;if(n.length>t)break;r=n}return r.length>=12?r:n.slice(0,t).trim()}function D(e){if(!e)return``;let t=e.replace(/^edited by\s+/i,``).replace(/^associated with\s+/i,``).replace(/^tr\.?\s+/i,``).replace(/\s*\(.*?\)\s*/g,` `).split(/[;,/]/)[0].trim(),n=t.split(/\s+/).filter(Boolean);return n.length>3&&(t=n.slice(-2).join(` `)),t.length>24&&(t=`${t.slice(0,22)}…`),t}var O=()=>window.innerWidth<500,k=17,A=12,j=270,M=[[`#5a1a17`,`#ecd8a0`,`#c9a24e`,`#e9dfc9`,`gold`],[`#1d2b45`,`#e8d7a4`,`#c4a35a`,`#ebe3d0`,`gold`],[`#23382b`,`#ead9a6`,`#b8984f`,`#e6dfcc`,`gold`],[`#6b4a2b`,`#f1e3bd`,`#d9b46a`,`#efe5cf`,`gold`],[`#2a221d`,`#e9d9ad`,`#b4924e`,`#e6ddc9`,`gold`],[`#e9e1cc`,`#2a211a`,`#8a2a22`,`#f1eadb`,`dark`],[`#c8b38a`,`#2b2117`,`#5b3a22`,`#efe6d1`,`dark`],[`#8c2f22`,`#f3e7c8`,`#e3c27a`,`#ece2cd`,`gold`],[`#3b4a5c`,`#f1ead6`,`#d2c39a`,`#eae4d6`,`light`],[`#d9cfb8`,`#1d1d1d`,`#1d1d1d`,`#f3eee2`,`dark`],[`#14161a`,`#f2efe6`,`#c9b37a`,`#e9e3d6`,`light`],[`#7a6a3a`,`#f4ead0`,`#e8d39a`,`#efe7d2`,`light`],[`#4a2b42`,`#efdfb6`,`#caa860`,`#ebe2d0`,`gold`],[`#a77a3f`,`#20160c`,`#4a2c12`,`#f0e6cf`,`dark`],[`#2f4d57`,`#f0e7cc`,`#d6bf86`,`#e8e2d3`,`light`]],N=[`bands`,`label`,`plain`,`modern`,`bands`,`label`];function P(e,t){let n=a(`${e.title}:${e.author}:${t}`),r=a(`${e.author}|${t}|r`),[i,o,s,c,l]=M[n%M.length],u={bg:i,ink:o,band:s,pages:c},d=N[r%N.length],f=d===`bands`?`leather`:d===`modern`||l===`dark`?`paper`:`cloth`,p=T(e),h=p.length,g=212+r%57,_=h>34?3:h>17?2:1,v=g-28-30-(d===`bands`?30:0),y=O()?15:k,b=Math.floor(v/(y*.52)),x=Math.max(_,Math.ceil(h/b));x=Math.min(x,4);let S=O()?Math.max(32,Math.min(70,10+x*16+n%3)):Math.max(42,Math.min(84,18+x*19+n%7)),C=p;h>b*x&&(C=E(p,b*x));let w=m({key:`${e.title}:${t}:v8`,material:f,bg:i,band:s});return{palette:u,material:f,height:g,width:S,fontSize:y,authorSize:O()?11:A,inkMode:l,deco:d,texture:w,pad:O()?10:14,titleLine:C,lean:0}}function F(){let t=w()-(window.innerWidth>=720?72:44)-14,n=[],r=[],i=0;for(let a of e)a.books.forEach((e,o)=>{let s=P(e,o),c=s.width+3;i+c>t&&r.length&&(n.push(r),r=[],i=0),r.push({shelf:a,book:e,index:o,style:s}),i+=c});return r.length&&n.push(r),n.forEach((e,r)=>{if(r===n.length-1)return;let i=e.reduce((e,t)=>e+t.style.width+3,0),a=Math.min(40,Math.floor((t-i)/e.length));a>0&&e.forEach(e=>{e.style.width+=a})}),n}function I(){let e=document.documentElement;e.style.setProperty(`--wood-case`,`url('${C(`textures/wood-case.jpg`)}')`),e.style.setProperty(`--wood-dark`,`url('${C(`textures/wood-dark.jpg`)}')`),e.style.setProperty(`--wood-plank`,`url('${C(`textures/wood-plank.jpg`)}')`),e.style.setProperty(`--wood-grain`,`url('${C(`textures/wood-grain.jpg`)}')`)}function L(e,t,n,r){return`
     <div class="discovery-panel" data-discovery="${e}">
       <button
         type="button"
@@ -130,8 +130,8 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
         aria-controls="discovery-panel-${e}"
       >
         <span class="discovery-label">
-          <span class="discovery-title">${H(t)}</span>
-          <span class="discovery-blurb">${H(n)}</span>
+          <span class="discovery-title">${U(t)}</span>
+          <span class="discovery-blurb">${U(n)}</span>
         </span>
         <span class="discovery-mark" aria-hidden="true">
           <svg class="discovery-chevron" viewBox="0 0 16 16" width="14" height="14" focusable="false">
@@ -149,41 +149,41 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
         ${r}
       </div>
     </div>
-  `}function L(t){for(let n of e){let e=n.books.findIndex(e=>e.title===t);if(e!==-1)return{shelf:n,book:n.books[e],index:e,id:S(n.id,e)}}return null}function R(){return`
+  `}function R(t){for(let n of e){let e=n.books.findIndex(e=>e.title===t);if(e!==-1)return{shelf:n,book:n.books[e],index:e,id:S(n.id,e)}}return null}function z(){return`
     <div class="cluster-list">
       ${n.map(e=>`
         <article class="cluster">
-          <h3 class="cluster-title">${H(e.title)}</h3>
-          <p class="cluster-note">${H(e.note)}</p>
+          <h3 class="cluster-title">${U(e.title)}</h3>
+          <p class="cluster-note">${U(e.note)}</p>
           <ul class="cluster-titles">
-            ${e.titles.map(e=>{let t=L(e);return t?`
+            ${e.titles.map(e=>{let t=R(e);return t?`
                   <li>
-                    <button type="button" class="cluster-link" data-book-id="${U(t.id)}">
-                      <span class="cluster-link-title">${H(t.book.title)}</span>
-                      <span class="cluster-link-author">${H(t.book.author)}</span>
+                    <button type="button" class="cluster-link" data-book-id="${W(t.id)}">
+                      <span class="cluster-link-title">${U(t.book.title)}</span>
+                      <span class="cluster-link-author">${U(t.book.author)}</span>
                     </button>
-                  </li>`:`<li><span class="cluster-missing">${H(e)}</span></li>`}).join(``)}
+                  </li>`:`<li><span class="cluster-missing">${U(e)}</span></li>`}).join(``)}
           </ul>
         </article>`).join(``)}
     </div>
-  `}function z(){return`
+  `}function B(){return`
     <ul class="explore-list">
       ${r.map(e=>`
         <li class="explore-item">
           <div class="explore-heading">
-            <span class="explore-title">${H(e.title)}</span>
-            <span class="explore-author">${H(e.author)}</span>
+            <span class="explore-title">${U(e.title)}</span>
+            <span class="explore-author">${U(e.author)}</span>
           </div>
-          <p class="explore-why">${H(e.why)}</p>
+          <p class="explore-why">${U(e.why)}</p>
         </li>`).join(``)}
     </ul>
-  `}function B(e,t){return`
+  `}function V(e,t){return`
     <section class="bay-section shelf-row" aria-label="Shelf ${t+1}">
-      <div class="bay-recess" style="--row-book-max: ${A}px">
+      <div class="bay-recess" style="--row-book-max: ${j}px">
         <div class="bay-back" aria-hidden="true"></div>
         <div class="bay-lamp" aria-hidden="true"></div>
         <div class="book-row" role="list" aria-label="Shelf ${t+1}">
-          ${e.map(({shelf:e,book:t,index:n,style:r})=>V(e,t,n,r)).join(``)}
+          ${e.map(({shelf:e,book:t,index:n,style:r})=>H(e,t,n,r)).join(``)}
         </div>
         <div class="bay-ceiling-shadow" aria-hidden="true"></div>
       </div>
@@ -192,7 +192,7 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
         <div class="shelf-front-lip"></div>
         <div class="shelf-under-shadow"></div>
       </div>
-    </section>`}function V(e,t,n,r){let i=S(e.id,n),a=y===i,o=D(t.author);return`
+    </section>`}function H(e,t,n,r){let i=S(e.id,n),a=y===i,o=D(t.author);return`
     <button
       type="button"
       class="book material-${r.material} ink-${r.inkMode} deco-${r.deco}${a?` is-selected`:``}"
@@ -200,7 +200,7 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
       data-book-id="${i}"
       data-shelf="${e.id}"
       data-index="${n}"
-      aria-label="${U(t.title)} by ${U(t.author)}"
+      aria-label="${W(t.title)} by ${W(t.author)}"
       aria-pressed="${a}"
       style="
         --book-h: ${r.height}px;
@@ -222,35 +222,35 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
           <span class="spine-wear" aria-hidden="true"></span>
           <span class="spine-deco" aria-hidden="true"></span>
           <span class="spine-copy">
-            <span class="spine-title">${H(r.titleLine)}</span>
-            <span class="spine-author">${H(o)}</span>
+            <span class="spine-title">${U(r.titleLine)}</span>
+            <span class="spine-author">${U(o)}</span>
           </span>
         </span>
         <span class="book-pages" aria-hidden="true"></span>
         <span class="book-head" aria-hidden="true"></span>
       </span>
     </button>
-  `}function H(e){return String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`)}function U(e){return H(e).replaceAll(`'`,`&#39;`)}function W(t){let[n,r]=t.split(/-(?=\d+$)/),i=e.find(e=>e.id===n);if(!i)return null;let a=Number(r),o=i.books[a];return o?{shelf:i,book:o,index:a}:null}function G(e,t){return t?.length?(e.innerHTML=t.map(e=>{let t=e.cover?`<img class="reco-cover" src="${U(C(e.cover))}" alt="" loading="lazy" />`:`<span class="reco-cover reco-cover-fallback" aria-hidden="true"></span>`;return`
-        <button ${e.bookId?`type="button" class="reco-card is-linked" data-book-id="${U(e.bookId)}"`:`type="button" class="reco-card" disabled`}>
+  `}function U(e){return String(e).replaceAll(`&`,`&amp;`).replaceAll(`<`,`&lt;`).replaceAll(`>`,`&gt;`).replaceAll(`"`,`&quot;`)}function W(e){return U(e).replaceAll(`'`,`&#39;`)}function G(t){let[n,r]=t.split(/-(?=\d+$)/),i=e.find(e=>e.id===n);if(!i)return null;let a=Number(r),o=i.books[a];return o?{shelf:i,book:o,index:a}:null}function K(e,t){return t?.length?(e.innerHTML=t.map(e=>{let t=e.cover?`<img class="reco-cover" src="${W(C(e.cover))}" alt="" loading="lazy" />`:`<span class="reco-cover reco-cover-fallback" aria-hidden="true"></span>`;return`
+        <button ${e.bookId?`type="button" class="reco-card is-linked" data-book-id="${W(e.bookId)}"`:`type="button" class="reco-card" disabled`}>
           ${t}
           <span class="reco-meta">
-            <span class="reco-title">${H(e.title)}</span>
-            <span class="reco-author">${H(e.author||``)}</span>
+            <span class="reco-title">${U(e.title)}</span>
+            <span class="reco-author">${U(e.author||``)}</span>
           </span>
-        </button>`}).join(``),!0):(e.innerHTML=``,!1)}function K(e){let t=W(e);if(!t)return;y=e;let{shelf:n,book:r,index:i}=t,a=document.getElementById(`detail-panel`),o=document.getElementById(`panel-backdrop`),s=g(n.id,i),c=v(n.id,i),l=document.getElementById(`detail-cover-wrap`),u=document.getElementById(`detail-cover`),d=document.getElementById(`detail-source`),f=document.getElementById(`author-photo-wrap`),p=document.getElementById(`author-photo`);document.getElementById(`detail-category`).textContent=n.category,document.getElementById(`detail-title`).textContent=r.title,document.getElementById(`detail-author`).textContent=r.author;let m=c?.longDescription||r.description;document.getElementById(`detail-description`).innerHTML=m.split(/\n\n+/).map(e=>`<p>${H(e)}</p>`).join(``);let h=c?.author?.name||r.author,_=c?.author?.bio||`Author profile unavailable for this edition; see the work description above.`;document.getElementById(`author-card-name`).textContent=h,document.getElementById(`author-card-bio`).textContent=_,c?.author?.photo?(p.src=C(c.author.photo),p.alt=`Portrait of ${h}`,f.hidden=!1):(f.hidden=!0,p.removeAttribute(`src`));let b=G(document.getElementById(`similar-row`),c?.similar||[]);document.getElementById(`similar-section`).hidden=!b;let x=G(document.getElementById(`other-row`),c?.otherByAuthor||[]);document.getElementById(`other-section`).hidden=!x,s?.cover?(u.src=C(s.cover),u.alt=`Cover of ${r.title}`,l.hidden=!1):(l.hidden=!0,u.removeAttribute(`src`));let S=[];s?.source&&S.push(`Cover: ${s.source}`),s?.note&&S.push(s.note),c?.author?.photo&&S.push(`Author photo: Open Library / Wikipedia`),S.length?(d.hidden=!1,d.textContent=S.join(` · `)):s?.cover?d.hidden=!0:(d.hidden=!1,d.textContent=`Cover image not found in Open Library for this edition yet.`),a.hidden=!1,o.hidden=!1,a.scrollTop=0,requestAnimationFrame(()=>{a.classList.add(`is-open`),o.classList.add(`is-open`)}),document.querySelectorAll(`.book, .cover-card`).forEach(t=>{let n=t.dataset.bookId===e;t.classList.toggle(`is-selected`,n),t.setAttribute(`aria-pressed`,String(n))}),document.getElementById(`panel-close`).focus()}function q(){let e=document.getElementById(`detail-panel`),t=document.getElementById(`panel-backdrop`),n=y;y=null,e.classList.remove(`is-open`),t.classList.remove(`is-open`),window.setTimeout(()=>{y||(e.hidden=!0,t.hidden=!0)},340),document.querySelectorAll(`.book, .cover-card`).forEach(e=>{e.classList.remove(`is-selected`),e.setAttribute(`aria-pressed`,`false`)}),n&&document.querySelector(`.book[data-book-id="${n}"], .cover-card[data-book-id="${n}"]`)?.focus()}function J(e,t){let n=e.querySelector(`.discovery-toggle`),r=e.querySelector(`.discovery-body`);n.setAttribute(`aria-expanded`,String(t)),e.classList.toggle(`is-open`,t),t?(r.hidden=!1,requestAnimationFrame(()=>r.classList.add(`is-open`))):(r.classList.remove(`is-open`),window.setTimeout(()=>{e.classList.contains(`is-open`)||(r.hidden=!0)},360))}function Y(e){(e===`shelf`||e===`covers`)&&x!==e&&(y&&q(),x=e,$(),window.scrollTo({top:0,behavior:`smooth`}))}function X(){document.querySelector(`.view-tabs`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.view-tab`);t&&Y(t.dataset.view)}),document.getElementById(`room`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.book`);t&&K(t.dataset.bookId)}),document.getElementById(`covers-view`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.cover-card`);t&&K(t.dataset.bookId)});let e=document.querySelector(`.discovery`);e?.addEventListener(`click`,t=>{let n=t.target.closest(`.discovery-toggle`);if(n){let t=n.closest(`.discovery-panel`),r=n.getAttribute(`aria-expanded`)!==`true`;e.querySelectorAll(`.discovery-panel`).forEach(e=>{e!==t&&J(e,!1)}),J(t,r);return}let r=t.target.closest(`.cluster-link`);r&&(K(r.dataset.bookId),document.querySelector(`[data-book-id="${r.dataset.bookId}"]`)?.scrollIntoView({behavior:`smooth`,block:`center`,inline:`nearest`}))}),document.getElementById(`panel-close`).addEventListener(`click`,q),document.getElementById(`panel-backdrop`).addEventListener(`click`,q),document.getElementById(`detail-panel`).addEventListener(`click`,e=>{let t=e.target.closest(`.reco-card.is-linked`);t&&(K(t.dataset.bookId),document.querySelector(`[data-book-id="${t.dataset.bookId}"].book`)?.scrollIntoView({behavior:`smooth`,block:`center`}))});let t=document.getElementById(`room`);t?.addEventListener(`pointermove`,e=>{let n=t.getBoundingClientRect(),r=(e.clientX-n.left)/n.width*100;document.documentElement.style.setProperty(`--light-x`,`${r}%`)},{passive:!0})}var Z=!1;function Q(){if(Z)return;Z=!0,document.addEventListener(`keydown`,e=>{e.key===`Escape`&&y&&(e.preventDefault(),q())});let e=0,t=()=>{e+=.0035,document.documentElement.style.setProperty(`--light-drift`,`${48+Math.sin(e)*10}%`),requestAnimationFrame(t)};requestAnimationFrame(t);let n=0;window.addEventListener(`resize`,()=>{window.clearTimeout(n),n=window.setTimeout(()=>{let e=w();if(Math.abs(e-b)<16)return;let t=y;$(),t&&K(t)},120)})}function $(){F(),b=w(),document.documentElement.style.setProperty(`--case-width`,`${b}px`);let e=document.querySelector(`#app`);e.innerHTML=ne(),X(),Q()}function ee(){return`
+        </button>`}).join(``),!0):(e.innerHTML=``,!1)}function q(e){let t=G(e);if(!t)return;y=e;let{shelf:n,book:r,index:i}=t,a=document.getElementById(`detail-panel`),o=document.getElementById(`panel-backdrop`),s=g(n.id,i),c=v(n.id,i),l=document.getElementById(`detail-cover-wrap`),u=document.getElementById(`detail-cover`),d=document.getElementById(`detail-source`),f=document.getElementById(`author-photo-wrap`),p=document.getElementById(`author-photo`);document.getElementById(`detail-category`).textContent=n.category,document.getElementById(`detail-title`).textContent=r.title,document.getElementById(`detail-author`).textContent=r.author;let m=c?.longDescription||r.description;document.getElementById(`detail-description`).innerHTML=m.split(/\n\n+/).map(e=>`<p>${U(e)}</p>`).join(``);let h=c?.author?.name||r.author,_=c?.author?.bio||`Author profile unavailable for this edition; see the work description above.`;document.getElementById(`author-card-name`).textContent=h,document.getElementById(`author-card-bio`).textContent=_,c?.author?.photo?(p.src=C(c.author.photo),p.alt=`Portrait of ${h}`,f.hidden=!1):(f.hidden=!0,p.removeAttribute(`src`));let b=K(document.getElementById(`similar-row`),c?.similar||[]);document.getElementById(`similar-section`).hidden=!b;let x=K(document.getElementById(`other-row`),c?.otherByAuthor||[]);document.getElementById(`other-section`).hidden=!x,s?.cover?(u.src=C(s.cover),u.alt=`Cover of ${r.title}`,l.hidden=!1):(l.hidden=!0,u.removeAttribute(`src`));let S=[];s?.source&&S.push(`Cover: ${s.source}`),s?.note&&S.push(s.note),c?.author?.photo&&S.push(`Author photo: Open Library / Wikipedia`),S.length?(d.hidden=!1,d.textContent=S.join(` · `)):s?.cover?d.hidden=!0:(d.hidden=!1,d.textContent=`Cover image not found in Open Library for this edition yet.`),a.hidden=!1,o.hidden=!1,a.scrollTop=0,requestAnimationFrame(()=>{a.classList.add(`is-open`),o.classList.add(`is-open`)}),document.querySelectorAll(`.book, .cover-card`).forEach(t=>{let n=t.dataset.bookId===e;t.classList.toggle(`is-selected`,n),t.setAttribute(`aria-pressed`,String(n))}),document.getElementById(`panel-close`).focus()}function J(){let e=document.getElementById(`detail-panel`),t=document.getElementById(`panel-backdrop`),n=y;y=null,e.classList.remove(`is-open`),t.classList.remove(`is-open`),window.setTimeout(()=>{y||(e.hidden=!0,t.hidden=!0)},340),document.querySelectorAll(`.book, .cover-card`).forEach(e=>{e.classList.remove(`is-selected`),e.setAttribute(`aria-pressed`,`false`)}),n&&document.querySelector(`.book[data-book-id="${n}"], .cover-card[data-book-id="${n}"]`)?.focus()}function Y(e,t){let n=e.querySelector(`.discovery-toggle`),r=e.querySelector(`.discovery-body`);n.setAttribute(`aria-expanded`,String(t)),e.classList.toggle(`is-open`,t),t?(r.hidden=!1,requestAnimationFrame(()=>r.classList.add(`is-open`))):(r.classList.remove(`is-open`),window.setTimeout(()=>{e.classList.contains(`is-open`)||(r.hidden=!0)},360))}function X(e){(e===`shelf`||e===`covers`)&&x!==e&&(y&&J(),x=e,$(),window.scrollTo({top:0,behavior:`smooth`}))}function Z(){document.querySelector(`.view-tabs`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.view-tab`);t&&X(t.dataset.view)}),document.getElementById(`room`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.book`);t&&q(t.dataset.bookId)}),document.getElementById(`covers-view`)?.addEventListener(`click`,e=>{let t=e.target.closest(`.cover-card`);t&&q(t.dataset.bookId)});let e=document.querySelector(`.discovery`);e?.addEventListener(`click`,t=>{let n=t.target.closest(`.discovery-toggle`);if(n){let t=n.closest(`.discovery-panel`),r=n.getAttribute(`aria-expanded`)!==`true`;e.querySelectorAll(`.discovery-panel`).forEach(e=>{e!==t&&Y(e,!1)}),Y(t,r);return}let r=t.target.closest(`.cluster-link`);r&&(q(r.dataset.bookId),document.querySelector(`[data-book-id="${r.dataset.bookId}"]`)?.scrollIntoView({behavior:`smooth`,block:`center`,inline:`nearest`}))}),document.getElementById(`panel-close`).addEventListener(`click`,J),document.getElementById(`panel-backdrop`).addEventListener(`click`,J),document.getElementById(`detail-panel`).addEventListener(`click`,e=>{let t=e.target.closest(`.reco-card.is-linked`);t&&(q(t.dataset.bookId),document.querySelector(`[data-book-id="${t.dataset.bookId}"].book`)?.scrollIntoView({behavior:`smooth`,block:`center`}))});let t=document.getElementById(`room`);t?.addEventListener(`pointermove`,e=>{let n=t.getBoundingClientRect(),r=(e.clientX-n.left)/n.width*100;document.documentElement.style.setProperty(`--light-x`,`${r}%`)},{passive:!0})}var Q=!1;function ee(){if(Q)return;Q=!0,document.addEventListener(`keydown`,e=>{e.key===`Escape`&&y&&(e.preventDefault(),J())});let e=0,t=()=>{e+=.0035,document.documentElement.style.setProperty(`--light-drift`,`${48+Math.sin(e)*10}%`),requestAnimationFrame(t)};requestAnimationFrame(t);let n=0;window.addEventListener(`resize`,()=>{window.clearTimeout(n),n=window.setTimeout(()=>{let e=w();if(Math.abs(e-b)<16)return;let t=y;$(),t&&q(t)},120)})}function $(){I(),b=w(),document.documentElement.style.setProperty(`--case-width`,`${b}px`);let e=document.querySelector(`#app`);e.innerHTML=re(),Z(),ee()}function te(){return`
     <div class="covers-view" id="covers-view">
       ${e.map(e=>`
         <section class="covers-section" aria-labelledby="covers-${e.id}">
           <div class="covers-heading">
-            <h2 id="covers-${e.id}">${H(e.label)}</h2>
+            <h2 id="covers-${e.id}">${U(e.label)}</h2>
             <p>${e.books.length}</p>
           </div>
-          <div class="covers-grid" role="list" aria-label="${U(e.label)} covers">
-            ${e.books.map((t,n)=>te(e,t,n)).join(``)}
+          <div class="covers-grid" role="list" aria-label="${W(e.label)} covers">
+            ${e.books.map((t,n)=>ne(e,t,n)).join(``)}
           </div>
         </section>`).join(``)}
     </div>
-  `}function te(e,t,n){let r=S(e.id,n),i=g(e.id,n),a=!!i?.cover,o=y===r;return`
+  `}function ne(e,t,n){let r=S(e.id,n),i=g(e.id,n),a=!!i?.cover,o=y===r;return`
     <button
       type="button"
       class="cover-card${a?``:` is-fallback`}${o?` is-selected`:``}"
@@ -258,19 +258,19 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
       data-book-id="${r}"
       data-shelf="${e.id}"
       data-index="${n}"
-      aria-label="${U(t.title)} by ${U(t.author)}"
+      aria-label="${W(t.title)} by ${W(t.author)}"
       aria-pressed="${o}"
     >
-      ${a?`<img class="cover-card-img" src="${U(C(i.cover))}" alt="" loading="lazy" />`:`<span class="cover-card-fallback" aria-hidden="true">
-              <span class="cover-card-fallback-title">${H(t.title)}</span>
-              <span class="cover-card-fallback-author">${H(t.author)}</span>
+      ${a?`<img class="cover-card-img" src="${W(C(i.cover))}" alt="" loading="lazy" />`:`<span class="cover-card-fallback" aria-hidden="true">
+              <span class="cover-card-fallback-title">${U(t.title)}</span>
+              <span class="cover-card-fallback-author">${U(t.author)}</span>
             </span>`}
       <span class="cover-card-caption">
-        <span class="cover-card-title">${H(t.title)}</span>
-        <span class="cover-card-author">${H(t.author)}</span>
+        <span class="cover-card-title">${U(t.title)}</span>
+        <span class="cover-card-author">${U(t.author)}</span>
       </span>
     </button>
-  `}function ne(){let e=x===`shelf`;return`
+  `}function re(){let e=x===`shelf`;return`
     <div class="atmosphere" aria-hidden="true">
       <div class="spot spot-a"></div>
       <div class="spot spot-b"></div>
@@ -308,17 +308,17 @@ It sits on this philosophy shelf as related thought: less a treatise in the Cont
         <div class="case-body">
           <div class="case-upright left" aria-hidden="true"></div>
           <div class="case-bays">
-            ${P().map((e,t)=>B(e,t)).join(``)}
+            ${F().map((e,t)=>V(e,t)).join(``)}
           </div>
           <div class="case-upright right" aria-hidden="true"></div>
         </div>
         <div class="case-plinth" aria-hidden="true"></div>
       </div>
-    </main>`:ee()}
+    </main>`:te()}
 
     <section class="discovery" aria-label="Further discovery">
-      ${I(`related`,`Related books`,`Connections among volumes on these shelves`,R())}
-      ${I(`explore`,`Worth exploring`,`Further reading beyond the case`,z())}
+      ${L(`related`,`Related books`,`Connections among volumes on these shelves`,z())}
+      ${L(`explore`,`Worth exploring`,`Further reading beyond the case`,B())}
     </section>
 
     <footer class="colophon">
