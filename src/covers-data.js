@@ -1539,6 +1539,110 @@ export const covers = {
     },
     "gap": false,
     "note": null
+  },
+  "literature-46": {
+    "cover": "covers/literature-46.jpg",
+    "spine": "covers/literature-46.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL14956656W",
+    "coverId": 6496333,
+    "match": {
+      "title": "Euripides III",
+      "author": "Euripides"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-47": {
+    "cover": "covers/literature-47.jpg",
+    "spine": "covers/literature-47.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL8034970W",
+    "coverId": 9473765,
+    "match": {
+      "title": "The New Pocket Anthology of American Verse",
+      "author": "Oscar Williams"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-48": {
+    "cover": "covers/literature-48.jpg",
+    "spine": "covers/literature-48.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL7351047W",
+    "coverId": 7351047,
+    "match": {
+      "title": "James Joyce",
+      "author": "Richard Ellmann"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-49": {
+    "cover": "covers/literature-49.jpg",
+    "spine": "covers/literature-49.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL6717086W",
+    "coverId": 6717086,
+    "match": {
+      "title": "The Life of Oscar Wilde",
+      "author": "Hesketh Pearson"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-50": {
+    "cover": "covers/literature-50.jpg",
+    "spine": "covers/literature-50.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL41996W",
+    "coverId": 41996,
+    "match": {
+      "title": "Wheelock's Latin",
+      "author": "Frederic M. Wheelock"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-51": {
+    "cover": "covers/literature-51.jpg",
+    "spine": "covers/literature-51.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL174216W",
+    "coverId": 174216,
+    "match": {
+      "title": "Hemlock and After",
+      "author": "Angus Wilson"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-52": {
+    "cover": "covers/literature-52.jpg",
+    "spine": "covers/literature-52.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL5866790W",
+    "coverId": 5918673,
+    "match": {
+      "title": "Reminiscences",
+      "author": "Thomas Carlyle"
+    },
+    "gap": false,
+    "note": null
+  },
+  "literature-53": {
+    "cover": "covers/literature-53.jpg",
+    "spine": "covers/literature-53.jpg",
+    "source": "Little, Brown edition jacket (composed from Internet Archive thumb)",
+    "sourceUrl": "https://archive.org/details/unset0000unse_z0e5",
+    "coverId": null,
+    "match": {
+      "title": "Whatever Is Moving",
+      "author": "Howard Moss"
+    },
+    "gap": false,
+    "note": "Little, Brown 1981; OL cover ID mismatched cloth art, so Archive-based jacket used"
   }
 };
 
