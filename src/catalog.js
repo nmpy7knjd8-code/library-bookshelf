@@ -832,6 +832,13 @@ export const shelves = [
         description:
           'Howard Moss’s Whatever Is Moving (Little, Brown, 1981) gathers essays by the longtime poetry editor of The New Yorker—on poets, poems, and the moving life of literary attention. A late-century critic’s prose from a major New York house.',
       },
+      {
+        title: 'Infinite Jest',
+        spine: 'Infinite Jest',
+        author: 'David Foster Wallace',
+        description:
+          'David Foster Wallace’s Infinite Jest is a vast comic-tragic novel of addiction, entertainment, tennis academies, and Quebecois separatism in a near-future North America. Encyclopedic, footnote-laden, and emotionally fierce, it became the defining late-twentieth-century maximalist American novel.',
+      },
     ],
   },
   {
