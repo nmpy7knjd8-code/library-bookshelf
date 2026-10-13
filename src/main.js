@@ -521,10 +521,21 @@ function bindEvents() {
     openPanel(btn.dataset.bookId)
   })
 
-  document.getElementById('covers-view')?.addEventListener('click', (event) => {
+  const coversView = document.getElementById('covers-view')
+  coversView?.addEventListener('click', (event) => {
     const card = event.target.closest('.cover-card')
     if (!card) return
     openPanel(card.dataset.bookId)
+  })
+  coversView?.querySelectorAll('[data-cover-img]').forEach((img) => {
+    const fail = () => {
+      const card = img.closest('.cover-card')
+      if (!card) return
+      card.classList.add('is-fallback', 'is-broken')
+      img.setAttribute('hidden', '')
+    }
+    if (img.complete && img.naturalWidth === 0) fail()
+    else img.addEventListener('error', fail, { once: true })
   })
 
   const discovery = document.querySelector('.discovery')
@@ -618,20 +629,52 @@ function renderApp() {
   bindGlobalsOnce()
 }
 
+const FALLBACK_TONES = [
+  { a: '#1a2438', b: '#0c1018', ink: '#e8eef6', mute: '#9aabbe' },
+  { a: '#18222c', b: '#0a0e14', ink: '#e4ecf4', mute: '#8fa0b4' },
+  { a: '#1c1a2a', b: '#0e0c14', ink: '#ece8f4', mute: '#a498b4' },
+  { a: '#142028', b: '#0a1014', ink: '#e2eef0', mute: '#8a9ea4' },
+  { a: '#201820', b: '#100c12', ink: '#f0e8ee', mute: '#a8909c' },
+  { a: '#181c24', b: '#0c0e14', ink: '#e6eaf2', mute: '#929eb0' },
+]
+
+function fallbackTone(book, index) {
+  const h = hashString(`${book.title}:${book.author}:${index}`)
+  return FALLBACK_TONES[h % FALLBACK_TONES.length]
+}
+
 function renderCoversView() {
+  let stagger = 0
   return `
     <div class="covers-view" id="covers-view">
+      <nav class="covers-jump" aria-label="Browse by category">
+        ${shelves
+          .map(
+            (shelf) => `
+          <a class="covers-jump-link" href="#covers-${escapeAttr(shelf.id)}">
+            <span class="covers-jump-label">${escapeHtml(shelf.label)}</span>
+            <span class="covers-jump-count">${shelf.books.length}</span>
+          </a>`,
+          )
+          .join('<span class="covers-jump-sep" aria-hidden="true"></span>')}
+      </nav>
       ${shelves
         .map(
           (shelf) => `
-        <section class="covers-section" aria-labelledby="covers-${shelf.id}">
-          <div class="covers-heading">
-            <h2 id="covers-${shelf.id}">${escapeHtml(shelf.label)}</h2>
-            <p>${shelf.books.length}</p>
-          </div>
+        <section class="covers-section" id="section-${shelf.id}" aria-labelledby="covers-${shelf.id}">
+          <header class="covers-heading">
+            <div class="covers-heading-text">
+              <h2 id="covers-${shelf.id}">${escapeHtml(shelf.label)}</h2>
+              <p class="covers-heading-category">${escapeHtml(shelf.category)}</p>
+            </div>
+            <p class="covers-heading-count"><span>${shelf.books.length}</span> volumes</p>
+          </header>
           <div class="covers-grid" role="list" aria-label="${escapeAttr(shelf.label)} covers">
             ${shelf.books
-              .map((book, index) => renderCoverCard(shelf, book, index))
+              .map((book, index) => {
+                const delay = stagger++
+                return renderCoverCard(shelf, book, index, delay)
+              })
               .join('')}
           </div>
         </section>`,
@@ -641,11 +684,26 @@ function renderCoversView() {
   `
 }
 
-function renderCoverCard(shelf, book, index) {
+function renderCoverFallback(book, index) {
+  const tone = fallbackTone(book, index)
+  return `
+    <span
+      class="cover-card-fallback"
+      aria-hidden="true"
+      style="--fb-a: ${tone.a}; --fb-b: ${tone.b}; --fb-ink: ${tone.ink}; --fb-mute: ${tone.mute}"
+    >
+      <span class="cover-card-fallback-mark"></span>
+      <span class="cover-card-fallback-title">${escapeHtml(book.title)}</span>
+      <span class="cover-card-fallback-author">${escapeHtml(book.author)}</span>
+    </span>`
+}
+
+function renderCoverCard(shelf, book, index, staggerIndex = 0) {
   const id = bookId(shelf.id, index)
   const cover = coverFor(shelf.id, index)
   const hasCover = Boolean(cover?.cover)
   const selected = selectedId === id
+  const delay = Math.min(staggerIndex, 36) * 18
   return `
     <button
       type="button"
@@ -654,17 +712,25 @@ function renderCoverCard(shelf, book, index) {
       data-book-id="${id}"
       data-shelf="${shelf.id}"
       data-index="${index}"
+      style="--cover-delay: ${delay}ms"
       aria-label="${escapeAttr(book.title)} by ${escapeAttr(book.author)}"
       aria-pressed="${selected}"
     >
-      ${
-        hasCover
-          ? `<img class="cover-card-img" src="${escapeAttr(assetUrl(cover.cover))}" alt="" loading="lazy" />`
-          : `<span class="cover-card-fallback" aria-hidden="true">
-              <span class="cover-card-fallback-title">${escapeHtml(book.title)}</span>
-              <span class="cover-card-fallback-author">${escapeHtml(book.author)}</span>
-            </span>`
-      }
+      <span class="cover-card-media">
+        ${
+          hasCover
+            ? `<img
+                class="cover-card-img"
+                src="${escapeAttr(assetUrl(cover.cover))}"
+                alt=""
+                loading="lazy"
+                data-cover-img
+              />
+              ${renderCoverFallback(book, index)}`
+            : renderCoverFallback(book, index)
+        }
+        <span class="cover-card-sheen" aria-hidden="true"></span>
+      </span>
       <span class="cover-card-caption">
         <span class="cover-card-title">${escapeHtml(book.title)}</span>
         <span class="cover-card-author">${escapeHtml(book.author)}</span>
