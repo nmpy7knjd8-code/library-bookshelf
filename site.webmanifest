@@ -5,8 +5,8 @@
   "start_url": "/library-bookshelf/",
   "scope": "/library-bookshelf/",
   "display": "standalone",
-  "background_color": "#010104",
-  "theme_color": "#010104",
+  "background_color": "#142442",
+  "theme_color": "#142442",
   "icons": [
     {
       "src": "/library-bookshelf/icons/icon-192.png",
