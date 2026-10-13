@@ -14697,6 +14697,438 @@ export const enrichments = {
         "why": null
       }
     ]
+  },
+  "literature-46": {
+    "longDescription": "Euripides III in The Complete Greek Tragedies, edited by David Grene and Richmond Lattimore, presents modern English verse translations of Euripidean drama for students and general readers. The Chicago-series paperback on the shelf is the familiar mid-century classroom format.\n\nPlays in the classic Euripides III paperback sequence include Hecuba, Andromache, The Trojan Women, and Ion—tragedy of war, captivity, and recognition.",
+    "author": {
+      "name": "Euripides",
+      "bio": "Euripides (c. 480–406 BCE) was the youngest of the three great Athenian tragedians. His surviving plays—Medea, The Bacchae, The Trojan Women, and many others—are known for psychological realism, rhetorical intensity, and skeptical treatment of myth.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "Euripides I",
+        "author": "Euripides",
+        "cover": "covers/extra/sim-literature-46-euripidesi.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The opening Chicago-series volume of Euripides in the Grene & Lattimore Complete Greek Tragedies."
+      },
+      {
+        "title": "Greek Tragedies",
+        "author": "David Grene",
+        "cover": "covers/extra/sim-literature-46-greektragedies.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Selections across Aeschylus, Sophocles, and Euripides in the same translation tradition."
+      },
+      {
+        "title": "The Iliad",
+        "author": "Homer",
+        "cover": "covers/extra/sim-literature-46-theiliad.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Already on this shelf’s older-editions neighbors as epic backdrop to tragic myth."
+      },
+      {
+        "title": "The Oresteia",
+        "author": "Aeschylus",
+        "cover": "covers/extra/sim-literature-46-theoresteia.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Aeschylus’s trilogy as the other pole of Athenian tragic form."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Medea",
+        "author": "Euripides",
+        "cover": "covers/extra/auth-literature-46-medea.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Bacchae",
+        "author": "Euripides",
+        "cover": "covers/extra/auth-literature-46-thebacchae.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Hippolytus",
+        "author": "Euripides",
+        "cover": "covers/extra/auth-literature-46-hippolytus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-47": {
+    "longDescription": "The New Pocket Anthology of American Verse, edited by Oscar Williams, packs a wide survey of American poetry into a portable Washington Square / Pocket Books paperback—from colonial beginnings through modernists such as Frost, Stevens, and their contemporaries.\n\nIt is a mid-century teaching and travel anthology: broad rather than scholarly-complete, and meant to put American verse in a coat pocket.",
+    "author": {
+      "name": "Oscar Williams",
+      "bio": "Oscar Williams (1900–1964) was an American poet and influential anthology editor whose Pocket and Mentor collections shaped mid-century popular reading of British and American verse.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Oxford Book of American Verse",
+        "author": "F. O. Matthiessen",
+        "cover": "covers/extra/sim-literature-47-theoxfordbookofamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A more academic mid-century survey of the same national tradition."
+      },
+      {
+        "title": "Leaves of Grass",
+        "author": "Walt Whitman",
+        "cover": "covers/extra/sim-literature-47-leavesofgrass.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Whitman anchors Williams’s American lineage."
+      },
+      {
+        "title": "The Complete Poems of Emily Dickinson",
+        "author": "Emily Dickinson",
+        "cover": "covers/extra/sim-literature-47-thecompletepoemsofemil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Dickinson is among the anthology’s portrait gallery of American originals."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "A Little Treasury of Modern Poetry",
+        "author": "Oscar Williams",
+        "cover": "covers/extra/auth-literature-47-alittletreasuryofmoder.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Immortal Poems of the English Language",
+        "author": "Oscar Williams",
+        "cover": "covers/extra/auth-literature-47-immortalpoemsoftheengl.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-48": {
+    "longDescription": "Richard Ellmann’s James Joyce remains the definitive literary biography of the author of Dubliners, A Portrait of the Artist as a Young Man, Ulysses, and Finnegans Wake. First published by Oxford, it combines archival detail with critical narrative.\n\nThe shelf copy matches the Oxford blue-cloth biography tradition—distinct from Joyce’s own fiction, and essential for readers of the modernist life.",
+    "author": {
+      "name": "Richard Ellmann",
+      "bio": "Richard Ellmann (1918–1987) was an American literary critic and biographer, best known for James Joyce and later lives of Yeats and Wilde. His Joyce biography won the National Book Award.",
+      "photo": "authors/richard-ellmann.jpg"
+    },
+    "similar": [
+      {
+        "title": "Ulysses",
+        "author": "James Joyce",
+        "cover": "covers/extra/sim-literature-48-ulysses.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The novel at the center of Ellmann’s life of Joyce."
+      },
+      {
+        "title": "Oscar Wilde",
+        "author": "Richard Ellmann",
+        "cover": "covers/extra/sim-literature-48-oscarwilde.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Ellmann’s later biography of Wilde, kin to this shelf’s Pearson Wilde."
+      },
+      {
+        "title": "A Portrait of the Artist as a Young Man",
+        "author": "James Joyce",
+        "cover": "covers/extra/sim-literature-48-aportraitoftheartistas.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Joyce’s autobiographical novel that Ellmann’s life continually illuminates."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Oscar Wilde",
+        "author": "Richard Ellmann",
+        "cover": "covers/extra/auth-literature-48-oscarwilde.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Yeats: The Man and the Masks",
+        "author": "Richard Ellmann",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-49": {
+    "longDescription": "Hesketh Pearson’s Oscar Wilde (The Life of Oscar Wilde) is a popular mid-century biography of the playwright and aesthete—from society triumph through the Queensberry scandal to exile.\n\nReadable and anecdotal rather than archival-maximalist, it sits beside Ellmann’s Joyce as another shelf biography of a late-Victorian / modernist legend.",
+    "author": {
+      "name": "Hesketh Pearson",
+      "bio": "Hesketh Pearson (1887–1964) was a British actor-turned-biographer known for lively lives of literary and historical figures, including Oscar Wilde, Dickens, and Shakespeare.",
+      "photo": "authors/hesketh-pearson.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "cover": "covers/extra/sim-literature-49-thepictureofdoriangray.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Wilde’s novel of aestheticism and double lives."
+      },
+      {
+        "title": "De Profundis",
+        "author": "Oscar Wilde",
+        "cover": "covers/extra/sim-literature-49-deprofundis.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Wilde’s prison letter, the emotional climax of any Wilde life."
+      },
+      {
+        "title": "James Joyce",
+        "author": "Richard Ellmann",
+        "cover": "covers/extra/sim-literature-49-jamesjoyce.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Companion shelf biography of another Irish modernist myth."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Dickens",
+        "author": "Hesketh Pearson",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Man Whistler",
+        "author": "Hesketh Pearson",
+        "cover": "covers/extra/auth-literature-49-themanwhistler.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-50": {
+    "longDescription": "Wheelock’s Latin is the standard American introductory Latin course book—grammar, syntax, vocabulary, and readings toward classical prose and poetry. Generations of students have learned declensions from its chapters.\n\nIt pairs naturally with Thirty-Eight Latin Stories already on this shelf as a grammar-and-reader toolkit.",
+    "author": {
+      "name": "Frederic M. Wheelock",
+      "bio": "Frederic M. Wheelock (1902–1987) was an American Latinist whose textbook Wheelock’s Latin became the dominant introductory Latin grammar in the United States.",
+      "photo": "authors/frederic-wheelock.jpg"
+    },
+    "similar": [
+      {
+        "title": "Thirty-Eight Latin Stories",
+        "author": "Anne H. Groton",
+        "cover": "covers/extra/sim-literature-50-thirtyeightlatinstorie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Already on this shelf—graded Latin readings that often accompany Wheelock."
+      },
+      {
+        "title": "Allen and Greenough’s New Latin Grammar",
+        "author": "J. B. Greenough",
+        "cover": "covers/extra/sim-literature-50-allenandgreenoughsnewl.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A fuller reference grammar once students leave the primer."
+      },
+      {
+        "title": "Lingua Latina per se Illustrata",
+        "author": "Hans Ørberg",
+        "cover": "covers/extra/sim-literature-50-lingualatinaperseillus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "An inductive alternative path into Latin."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Wheelock’s Latin Reader",
+        "author": "Frederic M. Wheelock",
+        "cover": "covers/extra/auth-literature-50-wheelockslatinreader.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-51": {
+    "longDescription": "Hemlock and After (1952) is Angus Wilson’s debut novel: Bernard Sands, a newly celebrated English man of letters, navigates fame, desire, and the hypocrisies of postwar literary England. Dark comedy and social observation mark Wilson’s arrival.\n\nThe Penguin paperback on the shelf is the familiar yellow-spined edition of this early Wilson classic.",
+    "author": {
+      "name": "Angus Wilson",
+      "bio": "Sir Angus Wilson (1913–1991) was an English novelist and short-story writer whose satirical fiction includes Hemlock and After, Anglo-Saxon Attitudes, and The Middle Age of Mrs Eliot.",
+      "photo": "authors/angus-wilson.jpg"
+    },
+    "similar": [
+      {
+        "title": "Anglo-Saxon Attitudes",
+        "author": "Angus Wilson",
+        "cover": "covers/extra/sim-literature-51-anglosaxonattitudes.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Wilson’s next major comic novel of English hypocrisy."
+      },
+      {
+        "title": "Lucky Jim",
+        "author": "Kingsley Amis",
+        "cover": "covers/extra/sim-literature-51-luckyjim.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Another postwar English satire of manners and institutions."
+      },
+      {
+        "title": "The History Man",
+        "author": "Malcolm Bradbury",
+        "cover": "covers/extra/sim-literature-51-thehistoryman.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Campus and cultural satire in a later key."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Anglo-Saxon Attitudes",
+        "author": "Angus Wilson",
+        "cover": "covers/extra/auth-literature-51-anglosaxonattitudes.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Middle Age of Mrs Eliot",
+        "author": "Angus Wilson",
+        "cover": "covers/extra/auth-literature-51-themiddleageofmrseliot.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-52": {
+    "longDescription": "Thomas Carlyle’s Reminiscences, published after his death, gather autobiographical fragments and memorial sketches—most famously of Jane Welsh Carlyle—along with portraits from his circle. They are among the most intimate documents of the Victorian sage.\n\nDistinct from Carlyle’s French Revolution or On Heroes, this is personal reminiscence rather than public history.",
+    "author": {
+      "name": "Thomas Carlyle",
+      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His Reminiscences were edited posthumously.",
+      "photo": "authors/thomas-carlyle.jpg"
+    },
+    "similar": [
+      {
+        "title": "Sartor Resartus",
+        "author": "Thomas Carlyle",
+        "cover": "covers/extra/sim-literature-52-sartorresartus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s philosophical fiction of clothes and belief."
+      },
+      {
+        "title": "On Heroes, Hero-Worship, and the Heroic in History",
+        "author": "Thomas Carlyle",
+        "cover": "covers/extra/sim-literature-52-onheroesheroworshipand.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The public lecture series that converses with Emerson’s Representative Men."
+      },
+      {
+        "title": "Representative Men",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-literature-52-representativemen.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Emerson’s answer to Carlyle’s hero-worship, already on this shelf."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The French Revolution",
+        "author": "Thomas Carlyle",
+        "cover": "covers/extra/auth-literature-52-thefrenchrevolution.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Sartor Resartus",
+        "author": "Thomas Carlyle",
+        "cover": "covers/extra/auth-literature-52-sartorresartus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Past and Present",
+        "author": "Thomas Carlyle",
+        "cover": "covers/extra/auth-literature-52-pastandpresent.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "literature-53": {
+    "longDescription": "Whatever Is Moving (Little, Brown, 1981) collects essays by Howard Moss, poet and longtime poetry editor of The New Yorker. The pieces turn on poets, poems, and the restless attention that keeps literature alive.\n\nA late-century New York house essay volume—quiet, urbane, and keyed to modern poetry rather than academic theory.",
+    "author": {
+      "name": "Howard Moss",
+      "bio": "Howard Moss (1922–1987) was an American poet, critic, and poetry editor of The New Yorker from 1950 until his death. His books include Finding Them Lost and the essay collection Whatever Is Moving.",
+      "photo": "authors/howard-moss.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Poet’s Story",
+        "author": "Howard Moss",
+        "cover": "covers/extra/sim-literature-53-thepoetsstory.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Moss’s fiction anthology of stories by poets."
+      },
+      {
+        "title": "Minor Monuments",
+        "author": "Howard Moss",
+        "cover": "covers/extra/sim-literature-53-minormonuments.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Another Moss prose collection of literary essays."
+      },
+      {
+        "title": "The New Pocket Anthology of American Verse",
+        "author": "Oscar Williams",
+        "cover": "covers/extra/sim-literature-53-thenewpocketanthologyo.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Shelf neighbor for mid-century American poetry culture."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Minor Monuments",
+        "author": "Howard Moss",
+        "cover": "covers/extra/auth-literature-53-minormonuments.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Finding Them Lost",
+        "author": "Howard Moss",
+        "cover": "covers/extra/auth-literature-53-findingthemlost.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
   }
 };
 

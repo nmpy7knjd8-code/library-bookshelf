@@ -776,6 +776,62 @@ export const shelves = [
         description:
           'Emerson’s lectures on Plato, Swedenborg, Montaigne, Shakespeare, Napoleon, and Goethe as types of genius. The book converses with Carlyle’s hero-worship while insisting on democratic possibility. A key statement of Transcendentalist humanism.',
       },
+      {
+        title: 'Euripides III',
+        spine: 'Euripides III',
+        author: 'Euripides (ed. David Grene and Richmond Lattimore)',
+        description:
+          'Euripides III in The Complete Greek Tragedies (University of Chicago / Grene & Lattimore) gathers modern verse translations of later Euripidean dramas—Hecuba, Andromache, The Trojan Women, and Ion in the classic paperback sequence. A standard classroom and shelf companion for Greek tragedy in English.',
+      },
+      {
+        title: 'The New Pocket Anthology of American Verse',
+        spine: 'American Verse',
+        author: 'Edited by Oscar Williams',
+        description:
+          'Oscar Williams’s New Pocket Anthology of American Verse surveys American poetry from colonial days to the mid-twentieth century in a mass-market Washington Square / Pocket Books format. Dickinson, Whitman, Poe, Frost, and their heirs sit in a portable classroom classic.',
+      },
+      {
+        title: 'James Joyce',
+        spine: 'James Joyce',
+        author: 'Richard Ellmann',
+        description:
+          'Richard Ellmann’s James Joyce is the landmark Oxford biography of the Irish modernist—from Dublin and Trieste through Ulysses and Finnegans Wake. Documentary richness and critical tact made it the standard life for generations of Joyce readers.',
+      },
+      {
+        title: 'Oscar Wilde',
+        spine: 'Oscar Wilde',
+        author: 'Hesketh Pearson',
+        description:
+          'Hesketh Pearson’s biography of Oscar Wilde (often titled The Life of Oscar Wilde) recounts the wit, success, trial, and exile of the Victorian aesthete. A readable mid-century life that helped keep Wilde’s legend in popular circulation.',
+      },
+      {
+        title: 'Wheelock’s Latin',
+        spine: 'Wheelock’s Latin',
+        author: 'Frederic M. Wheelock',
+        description:
+          'Wheelock’s Latin is the long-standard introductory Latin grammar and reader for American students—morphology, syntax, and graded sentences toward classical authors. A practical companion beside other Latin readers on this shelf.',
+      },
+      {
+        title: 'Hemlock and After',
+        spine: 'Hemlock and After',
+        author: 'Angus Wilson',
+        description:
+          'Angus Wilson’s Hemlock and After follows a celebrated English novelist whose public honor collides with private desire and postwar social change. A sharp Penguin-era comedy of manners and one of Wilson’s defining early novels.',
+      },
+      {
+        title: 'Reminiscences',
+        spine: 'Reminiscences',
+        author: 'Thomas Carlyle',
+        description:
+          'Thomas Carlyle’s Reminiscences collect autobiographical sketches and memorial portraits—above all of Jane Welsh Carlyle and circle figures—edited after his death. Classic Victorian reminiscence: intimate, opinionated, and a primary document of Carlyle’s world.',
+      },
+      {
+        title: 'Whatever Is Moving',
+        spine: 'Whatever Is Moving',
+        author: 'Howard Moss',
+        description:
+          'Howard Moss’s Whatever Is Moving (Little, Brown, 1981) gathers essays by the longtime poetry editor of The New Yorker—on poets, poems, and the moving life of literary attention. A late-century critic’s prose from a major New York house.',
+      },
     ],
   },
   {
