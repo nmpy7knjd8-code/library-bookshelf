@@ -38,12 +38,9 @@ function assetUrl(rel) {
   return `${base}${rel.replace(/^\//, '')}`
 }
 
-/** Available width for books inside the case — never wider than the viewport. */
-function rowCapacity() {
-  const caseW = Math.min(window.innerWidth * 0.94, 560)
-  const upright = window.innerWidth < 720 ? 36 : 72
-  const pad = 28
-  return Math.max(200, Math.floor(caseW - upright - pad))
+/** Visible case width — two long horizontal stacks scroll inside the bays. */
+function caseWidthPx() {
+  return Math.min(window.innerWidth * 0.96, 960)
 }
 
 /** Full title for the spine — keep wording; strip only edition/series noise */
@@ -89,60 +86,49 @@ function spineAuthor(author) {
   return a
 }
 
+/** Uniform spine typography — never scale type down per book. */
+const SPINE_TITLE_SIZE = 14
+const SPINE_AUTHOR_SIZE = 10.5
+const SPINE_HEIGHT = 176
+const SPINE_WIDTH_MIN = 36
+const SPINE_WIDTH_MAX = 50
+
 function bookStyle(book, index) {
   const h = hashString(`${book.title}:${book.author}:${index}`)
   const palette = PALETTES[h % PALETTES.length]
   const material = MATERIALS[h % MATERIALS.length]
 
-  // Larger cream/gold lettering inside the same realistic spine footprint
   let titleLine = fullSpineTitle(book)
-  const minH = 148
-  const maxH = 176
-  const minW = 28
-  const maxW = 40
-
-  // Bigger stamp; fit by wrap + tight leading, not by growing slabs
-  let fontSize = titleLine.length > 36 ? 11 : titleLine.length > 24 ? 12 : 13
-  let authorSize = Math.max(9, Math.round(fontSize * 0.78 * 10) / 10)
+  const fontSize = SPINE_TITLE_SIZE
+  const authorSize = SPINE_AUTHOR_SIZE
+  const height = SPINE_HEIGHT
   let pad = 10
 
-  const capacityOf = (w, ht, fs, as, pd) => {
-    const cols = w >= 36 ? 3 : w >= 30 ? 2 : 1
-    const usable = ht - pd * 2 - (as * 1.15 + 5)
-    const per = Math.max(5, Math.floor(usable / (fs * 1.0)))
-    return { cols, capacity: cols * per }
+  const capacityOf = (w) => {
+    const cols = w >= 44 ? 3 : w >= 36 ? 2 : 1
+    const usable = height - pad * 2 - (authorSize * 1.15 + 5)
+    const per = Math.max(5, Math.floor(usable / (fontSize * 1.0)))
+    return cols * per
   }
 
-  // Keep prior realistic spine sizes
-  let height = Math.min(maxH, Math.max(minH, 154 + (h % 18)))
-  let width = Math.min(maxW, Math.max(minW, 30 + (h % 9)))
-
-  let { capacity } = capacityOf(width, height, fontSize, authorSize, pad)
+  // Fit long titles by widening the spine, not by shrinking type
+  let width = SPINE_WIDTH_MIN + (h % 5)
+  let capacity = capacityOf(width)
+  while (titleLine.length > capacity && width < SPINE_WIDTH_MAX) {
+    width = Math.min(SPINE_WIDTH_MAX, width + 2)
+    capacity = capacityOf(width)
+  }
   if (titleLine.length > capacity) {
-    // Nudge to max footprint within the same slab budget, then slightly reduce type
-    height = maxH
-    width = Math.min(maxW, Math.max(width, 34))
     pad = 9
-    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
+    capacity = capacityOf(width)
   }
   if (titleLine.length > capacity) {
-    fontSize = Math.max(10.5, fontSize - 1)
-    authorSize = Math.max(8.5, Math.round(fontSize * 0.78 * 10) / 10)
-    width = maxW
-    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
-  }
-  if (titleLine.length > capacity) {
-    fontSize = 10.5
-    authorSize = 8.5
-    ;({ capacity } = capacityOf(width, height, fontSize, authorSize, pad))
-    if (titleLine.length > capacity) {
-      titleLine = shortenTitleLastResort(titleLine, capacity)
-    }
+    titleLine = shortenTitleLastResort(titleLine, capacity)
   }
 
   const inkMode = h % 2 === 0 ? 'foil' : 'ink'
   const texture = spineTextureUrl({
-    key: `${book.title}:${index}:v6`,
+    key: `${book.title}:${index}:v7`,
     material,
     bg: palette.bg,
     band: palette.band,
@@ -161,24 +147,19 @@ function bookStyle(book, index) {
   }
 }
 
-function chunkIntoRows(shelf) {
-  const maxW = rowCapacity()
-  const rows = []
-  let current = []
-  let used = 0
-  shelf.books.forEach((book, index) => {
-    const style = bookStyle(book, index)
-    const w = style.width + 2
-    if (current.length && used + w > maxW) {
-      rows.push(current)
-      current = []
-      used = 0
-    }
-    current.push({ book, index, style })
-    used += w
-  })
-  if (current.length) rows.push(current)
-  return rows
+/** Flatten catalog order into two roughly equal horizontal stacks. */
+function buildTwinStacks() {
+  const all = []
+  for (const shelf of shelves) {
+    shelf.books.forEach((book, index) => {
+      all.push({ shelf, book, index, style: bookStyle(book, index) })
+    })
+  }
+  const mid = Math.ceil(all.length / 2)
+  return [
+    { id: 'upper', label: 'Upper shelf', books: all.slice(0, mid) },
+    { id: 'lower', label: 'Lower shelf', books: all.slice(mid) },
+  ]
 }
 
 function applyWoodAssets() {
@@ -284,32 +265,27 @@ function renderExploreBody() {
   `
 }
 
-function renderShelfSection(shelf) {
-  const rows = chunkIntoRows(shelf)
+function renderStackBay(stack) {
   return `
-    <section class="bay-section" data-shelf="${shelf.id}" aria-labelledby="shelf-${shelf.id}">
+    <section class="bay-section stack-bay" data-stack="${stack.id}" aria-labelledby="stack-${stack.id}">
       <div class="bay-heading">
-        <h2 id="shelf-${shelf.id}">${shelf.label}</h2>
-        <p>${shelf.books.length}</p>
+        <h2 id="stack-${stack.id}">${escapeHtml(stack.label)}</h2>
+        <p>${stack.books.length}</p>
       </div>
-      ${rows
-        .map((row, rowIndex) => {
-          const rowMax = Math.max(...row.map(({ style }) => style.height), 148)
-          return `
-        <div class="bay-recess" data-row="${rowIndex}" style="--row-book-max: ${rowMax}px">
-          <div class="bay-back" aria-hidden="true"></div>
-          <div class="bay-spotlight" aria-hidden="true"></div>
-          <div class="book-row" role="list" aria-label="${shelf.label} row ${rowIndex + 1}">
-            ${row.map(({ book, index, style }) => renderBook(shelf, book, index, style)).join('')}
-          </div>
-          <div class="shelf-board" aria-hidden="true">
-            <div class="shelf-top-face"></div>
-            <div class="shelf-front-lip"></div>
-            <div class="shelf-under-shadow"></div>
-          </div>
-        </div>`
-        })
-        .join('')}
+      <div class="bay-recess bay-recess--scroll" style="--row-book-max: ${SPINE_HEIGHT}px">
+        <div class="bay-back" aria-hidden="true"></div>
+        <div class="bay-spotlight" aria-hidden="true"></div>
+        <div class="book-row book-row--scroll" role="list" aria-label="${escapeAttr(stack.label)}">
+          ${stack.books
+            .map(({ shelf, book, index, style }) => renderBook(shelf, book, index, style))
+            .join('')}
+        </div>
+        <div class="shelf-board" aria-hidden="true">
+          <div class="shelf-top-face"></div>
+          <div class="shelf-front-lip"></div>
+          <div class="shelf-under-shadow"></div>
+        </div>
+      </div>
     </section>
   `
 }
@@ -640,8 +616,8 @@ function bindGlobalsOnce() {
   window.addEventListener('resize', () => {
     window.clearTimeout(resizeTimer)
     resizeTimer = window.setTimeout(() => {
-      const next = rowCapacity()
-      if (Math.abs(next - lastRowWidth) < 12) return
+      const next = caseWidthPx()
+      if (Math.abs(next - lastRowWidth) < 16) return
       const openId = selectedId
       renderApp()
       if (openId) openPanel(openId)
@@ -651,11 +627,8 @@ function bindGlobalsOnce() {
 
 function renderApp() {
   applyWoodAssets()
-  lastRowWidth = rowCapacity()
-  document.documentElement.style.setProperty(
-    '--case-width',
-    `${Math.min(window.innerWidth * 0.94, 560)}px`,
-  )
+  lastRowWidth = caseWidthPx()
+  document.documentElement.style.setProperty('--case-width', `${lastRowWidth}px`)
   const app = document.querySelector('#app')
   // Preserve selected state across reflow by rebuilding markup below
   const html = buildAppHtml()
@@ -756,12 +729,12 @@ function buildAppHtml() {
     ${
       shelfActive
         ? `<main class="room" id="room">
-      <div class="bookcase" id="bookcase">
+      <div class="bookcase bookcase--twin" id="bookcase">
         <div class="case-crown" aria-hidden="true"></div>
         <div class="case-body">
           <div class="case-upright left" aria-hidden="true"></div>
           <div class="case-bays">
-            ${shelves.map((shelf) => renderShelfSection(shelf)).join('')}
+            ${buildTwinStacks().map((stack) => renderStackBay(stack)).join('')}
           </div>
           <div class="case-upright right" aria-hidden="true"></div>
         </div>

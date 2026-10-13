@@ -1384,113 +1384,22 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "essays-0": {
-    "cover": "covers/essays-0.jpg",
-    "spine": "covers/essays-0.jpg",
+  "essays-10": {
+    "cover": "covers/essays-10.jpg",
+    "spine": "covers/essays-10.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL1105898W",
-    "coverId": 6130081,
+    "sourceUrl": "https://openlibrary.org/works/OL15672750W",
+    "coverId": 6684391,
     "match": {
-      "title": "Fireside travels",
-      "author": "James Russell Lowell"
+      "title": "John Steinbeck",
+      "author": "Don Noble"
     },
     "gap": false,
     "note": null
   },
-  "essays-1": {
-    "cover": "covers/essays-1.jpg",
-    "spine": "covers/essays-1.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL1105899W",
-    "coverId": 2755671,
-    "match": {
-      "title": "Political essays",
-      "author": "James Russell Lowell"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-2": {
-    "cover": "covers/essays-2.jpg",
-    "spine": "covers/essays-2.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL1105904W",
-    "coverId": 5941475,
-    "match": {
-      "title": "My study windows",
-      "author": "James Russell Lowell"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-3": {
-    "cover": "covers/essays-3.jpg",
-    "spine": "covers/essays-3.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL1105907W",
-    "coverId": 8980957,
-    "match": {
-      "title": "Among my books",
-      "author": "James Russell Lowell"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-4": {
-    "cover": "covers/essays-4.jpg",
-    "spine": "covers/essays-4.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL10424893W",
-    "coverId": 9530764,
-    "match": {
-      "title": "Essays, moral, economical, and political",
-      "author": "Francis Bacon"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-5": {
-    "cover": "covers/essays-5.jpg",
-    "spine": "covers/essays-5.jpg",
-    "source": "Internet Archive",
-    "sourceUrl": "https://archive.org/details/destroyerofsecon0000hugo",
-    "coverId": null,
-    "match": {
-      "title": "The destroyer of the second republic; being Napoleon the Little",
-      "author": "Hugo, Victor, 1802-1885"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-6": {
-    "cover": "covers/essays-6.jpg",
-    "spine": "covers/essays-6.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL234993W",
-    "coverId": 5876769,
-    "match": {
-      "title": "Daniel Boone and the hunters of Kentucky",
-      "author": "W. H. Bogart"
-    },
-    "gap": true,
-    "note": "Closest Open Library match: “Daniel Boone and the hunters of Kentucky” — W. H. Bogart"
-  },
-  "essays-7": {
-    "cover": "covers/essays-7.jpg",
-    "spine": "covers/essays-7.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL20358651W",
-    "coverId": 9025365,
-    "match": {
-      "title": "The Twelve Caesars",
-      "author": "Suetonius, Alexander Thomson"
-    },
-    "gap": false,
-    "note": null
-  },
-  "essays-8": {
-    "cover": "covers/essays-8.jpg",
-    "spine": "covers/essays-8.jpg",
+  "essays-9": {
+    "cover": "covers/essays-9.jpg",
+    "spine": "covers/essays-9.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL27292338W",
     "coverId": 12621988,
@@ -1501,15 +1410,132 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "essays-9": {
-    "cover": "covers/essays-9.jpg",
-    "spine": "covers/essays-9.jpg",
+  "essays-8": {
+    "cover": "covers/essays-8.jpg",
+    "spine": "covers/essays-8.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL15672750W",
-    "coverId": 6684391,
+    "sourceUrl": "https://openlibrary.org/works/OL20358651W",
+    "coverId": 9025365,
     "match": {
-      "title": "John Steinbeck",
-      "author": "Don Noble"
+      "title": "The Twelve Caesars",
+      "author": "Suetonius, Alexander Thomson"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-7": {
+    "cover": "covers/essays-7.jpg",
+    "spine": "covers/essays-7.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL234993W",
+    "coverId": 5876769,
+    "match": {
+      "title": "Daniel Boone and the hunters of Kentucky",
+      "author": "W. H. Bogart"
+    },
+    "gap": true,
+    "note": "Closest Open Library match: “Daniel Boone and the hunters of Kentucky” — W. H. Bogart"
+  },
+  "essays-6": {
+    "cover": "covers/essays-6.jpg",
+    "spine": "covers/essays-6.jpg",
+    "source": "Internet Archive",
+    "sourceUrl": "https://archive.org/details/destroyerofsecon0000hugo",
+    "coverId": null,
+    "match": {
+      "title": "The destroyer of the second republic; being Napoleon the Little",
+      "author": "Hugo, Victor, 1802-1885"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-5": {
+    "cover": "covers/essays-5.jpg",
+    "spine": "covers/essays-5.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL10424893W",
+    "coverId": 9530764,
+    "match": {
+      "title": "Essays, moral, economical, and political",
+      "author": "Francis Bacon"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-4": {
+    "cover": "covers/essays-4.jpg",
+    "spine": "covers/essays-4.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL1105907W",
+    "coverId": 8980957,
+    "match": {
+      "title": "Among my books",
+      "author": "James Russell Lowell"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-3": {
+    "cover": "covers/essays-3.jpg",
+    "spine": "covers/essays-3.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL1105904W",
+    "coverId": 5941475,
+    "match": {
+      "title": "My study windows",
+      "author": "James Russell Lowell"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-2": {
+    "cover": "covers/essays-2.jpg",
+    "spine": "covers/essays-2.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL1105899W",
+    "coverId": 2755671,
+    "match": {
+      "title": "Political essays",
+      "author": "James Russell Lowell"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-1": {
+    "cover": "covers/essays-1.jpg",
+    "spine": "covers/essays-1.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL1105898W",
+    "coverId": 6130081,
+    "match": {
+      "title": "Fireside travels",
+      "author": "James Russell Lowell"
+    },
+    "gap": false,
+    "note": null
+  },
+  "essays-0": {
+    "cover": "covers/essays-0.jpg",
+    "spine": "covers/essays-0.jpg",
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
+    "match": {
+      "title": "Essays and Lectures",
+      "author": "Ralph Waldo Emerson"
+    },
+    "gap": false,
+    "note": "Library of America Emerson: Essays and Lectures"
+  },
+  "philosophy-43": {
+    "cover": "covers/philosophy-43.jpg",
+    "spine": "covers/philosophy-43.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL716850W",
+    "coverId": 14368453,
+    "match": {
+      "title": "Gödel, Escher, Bach",
+      "author": "Douglas R. Hofstadter"
     },
     "gap": false,
     "note": null

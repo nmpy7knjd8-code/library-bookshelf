@@ -307,6 +307,13 @@ export const shelves = [
         description:
           'Trotsky’s unfinished biography of Stalin is both indictment and political history of the Soviet bureaucracy. Written in exile, it portrays Stalin’s rise as the triumph of mediocrity and apparatus over revolutionary internationalism. It remains a primary document of the anti-Stalinist left.',
       },
+      {
+        title: 'Gödel, Escher, Bach',
+        spine: 'Gödel, Escher, Bach',
+        author: 'Douglas Hofstadter',
+        description:
+          'Gödel, Escher, Bach: an Eternal Golden Braid is Hofstadter’s Pulitzer Prize–winning fugue on minds and machines—linking Gödel’s incompleteness, Escher’s visual paradoxes, and Bach’s canons to strange loops, consciousness, and formal systems. Playful dialogues and deep technical digressions make it a classic of related thought beside philosophy of mind and logic.',
+      },
     ],
   },
   {
@@ -776,6 +783,13 @@ export const shelves = [
     label: 'Essays & Older Editions',
     category: 'American and British essays, older editions, and historical literature',
     books: [
+      {
+        title: 'Essays and Lectures',
+        spine: 'Emerson Essays',
+        author: 'Ralph Waldo Emerson (Library of America)',
+        description:
+          'Library of America’s Emerson: Essays and Lectures collects Nature; Addresses, and Lectures; Essays: First and Second Series; Representative Men; English Traits; and The Conduct of Life. The omnibus gathers Emerson’s central public prose—from Nature and the American Scholar through Self-Reliance and the later conduct essays—in one Transcendentalist volume. Kept beside any standalone Representative Men copy as the LOA Essays and Lectures edition.',
+      },
       {
         title: 'Fireside Travels',
         spine: 'Fireside Travels',

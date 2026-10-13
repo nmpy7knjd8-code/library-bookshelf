@@ -13263,926 +13263,14 @@ export const enrichments = {
       }
     ]
   },
-  "essays-0": {
-    "longDescription": "Lowell’s travel sketches and reflective prose for the fireside reader. European impressions mix with the essayist’s genial learning. A window onto mid-nineteenth-century American letters abroad. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+  "essays-10": {
+    "longDescription": "Warren French’s biographical study of John Steinbeck, author of The Grapes of Wrath and Of Mice and Men. It traces the California writer’s career, politics, and craft. A secondary source for readers of Steinbeck’s fiction and life. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
-      "name": "James Russell Lowell",
-      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
-      "photo": "authors/OL113959A.jpg"
-    },
-    "similar": [
-      {
-        "title": "The Liberal Imagination",
-        "author": "Lionel Trilling",
-        "cover": "covers/extra/sim-essays-0-0-theliberalimaginat.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Uses of Literature",
-        "author": "Italo Calvino",
-        "cover": "covers/extra/sim-essays-0-1-theusesofliteratur.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "Self-Reliance",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Myth of Sisyphus",
-        "author": "Albert Camus",
-        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
-      },
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "The Biglow papers",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The complete poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Letters of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The function of the poet and other essays",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The vision of Sir Launfal",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The anti-slavery papers of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Poems",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-0-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-1": {
-    "longDescription": "Lowell on politics, war, and civic conscience—including Civil War–era concerns. The Brahmin poet appears as public moralist and satirist. The essays document New England liberal opinion in formation. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "James Russell Lowell",
-      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
-      "photo": "authors/OL113959A.jpg"
-    },
-    "similar": [
-      {
-        "title": "The Uses of Literature",
-        "author": "Italo Calvino",
-        "cover": "covers/extra/sim-essays-0-1-theusesofliteratur.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "Self-Reliance",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Myth of Sisyphus",
-        "author": "Albert Camus",
-        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
-      },
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "The Biglow papers",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The complete poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Letters of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The function of the poet and other essays",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The vision of Sir Launfal",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The anti-slavery papers of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Poems",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-1-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-2": {
-    "longDescription": "Familiar essays looking out from the scholar’s study onto literature and nature. Lowell’s conversational learning epitomizes the nineteenth-century man of letters. The title became synonymous with civilized periodical prose. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "James Russell Lowell",
-      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
-      "photo": "authors/OL113959A.jpg"
-    },
-    "similar": [
-      {
-        "title": "Self-Reliance",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Myth of Sisyphus",
-        "author": "Albert Camus",
-        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
-      },
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "The Biglow papers",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The complete poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Letters of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The function of the poet and other essays",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The vision of Sir Launfal",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The anti-slavery papers of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Poems",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-2-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-3": {
-    "longDescription": "Critical essays on Dante, Chaucer, Spenser, Wordsworth, and others. Lowell reads as a poet-critic with historical sympathy and style. A companion volume to his other essay collections on this shelf. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "James Russell Lowell",
-      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
-      "photo": "authors/OL113959A.jpg"
-    },
-    "similar": [
-      {
-        "title": "The Myth of Sisyphus",
-        "author": "Albert Camus",
-        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
-      },
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      },
-      {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "The Biglow papers",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The complete poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The poetical works of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Letters of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The function of the poet and other essays",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The vision of Sir Launfal",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The anti-slavery papers of James Russell Lowell",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Poems",
-        "author": "James Russell Lowell",
-        "cover": "covers/extra/auth-essays-3-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-4": {
-    "longDescription": "Bacon’s classic essays in a Boston 1833 printing—compact counsel on truth, revenge, studies, and power. Aphoristic Renaissance prose for the early American bookshelf. The edition marks the transatlantic life of a Tudor master. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "Francis Bacon",
-      "bio": "An English philosopher, statesman, scientist, lawyer, jurist and author known as the father of Empiricism.",
-      "photo": "authors/OL23720A.jpg"
-    },
-    "similar": [
-      {
-        "title": "The Republic",
-        "author": "Plato",
-        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
-      },
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      },
-      {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
-      },
-      {
-        "title": "The Waste Land",
-        "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "The advancement of learning",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Nova Atlantis",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Novum organum",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The works of Francis Bacon",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Sylva sylvarum",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Francis Bacon",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The essays of Francis Bacon",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Historie of the raigne of King Henry the Seventh",
-        "author": "Francis Bacon",
-        "cover": "covers/extra/auth-essays-4-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-5": {
-    "longDescription": "Hugo’s fierce pamphlet against Louis-Napoléon Bonaparte after the 1851 coup. Satire and moral outrage brand the nephew a diminished tyrant. The 1882 London edition keeps exile’s anger in English circulation. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "Victor Hugo",
-      "bio": "Victor-Marie Hugo was a French poet, playwright, novelist, essayist, visual artist, statesman, human rights activist and exponent of the Romantic movement in France.\r\n\r\nIn France, Hugo's literary fame comes first from his poetry but also rests upon his novels and his dramatic achievements. Among many volumes of poetry, Les Contemplations and La Légende des siècles stand particularly high in critical esteem, and Hugo is sometimes identified as the greatest French poet. Outside France, his best-known works are the novels Les Misérables and Notre-Dame de Paris (known in English also as The Hunchback of Notre-Dame).\r\n\r\nThough a committed conservative royalist when he was young, Hugo grew more liberal as the decades passed; he became a passionate supporter of republicanism, and his work touches upon most of the political and social issues and artistic trends of his time.…",
-      "photo": "authors/OL107571A.jpg"
-    },
-    "similar": [
-      {
-        "title": "Beyond Good and Evil",
-        "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
-      },
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      },
-      {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
-      },
-      {
-        "title": "The Waste Land",
-        "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
-      },
-      {
-        "title": "Orthodoxy",
-        "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "Misérables de Victor Hugo",
-        "author": "Victor Hugo",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Les Misérables",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Notre Dame de Paris",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Quatrevingt-treize",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Hernani",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "L'homme qui rit",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "La légende des siècles",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Travailleurs de la mer",
-        "author": "Victor Hugo",
-        "cover": "covers/extra/auth-essays-5-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-6": {
-    "longDescription": "A mid-nineteenth-century popular life of Boone and the Kentucky frontier hunters. Legend and narrative history blur in the making of an American pioneer myth. The 1854 date situates it in antebellum frontier literature. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "W. H. Bogart",
-      "bio": "\nWilliam Henry Bogart, was a lawyer, legislator, journalist, historian and one of the first trustees of Wells College.",
+      "name": "Warren French",
+      "bio": "Warren French is a New Zealand former professional darts player. He used the nickname Frog for his matches.",
       "photo": null
     },
     "similar": [
-      {
-        "title": "The Human Condition",
-        "author": "Hannah Arendt",
-        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
-      },
-      {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
-      },
-      {
-        "title": "The Waste Land",
-        "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
-      },
-      {
-        "title": "Orthodoxy",
-        "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
-      },
-      {
-        "title": "The Peloponnesian War",
-        "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "Quentin Durward",
-        "author": "W. H. Bogart",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The border boy and how he became the great pioneer of the West",
-        "author": "W. H. Bogart",
-        "cover": "covers/extra/auth-essays-6-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Index to the laws of the State of New-York, 1842 to 1855, inclusive",
-        "author": "W. H. Bogart",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "L'accès à la justice pour le nouveau siècle",
-        "author": "W. H. Bogart",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "essays-7": {
-    "longDescription": "Suetonius’s Lives of the Caesars (De vita Caesarum), widely known in English as The Twelve Caesars, offers vivid biographies of Rome’s rulers from Julius Caesar to Domitian. Court anecdote, character sketch, and imperial spectacle sit beside public deeds in the classic Latin source for early imperial lives.\n\nThis is the ancient biographical tradition itself—not a modern retelling. Readers often pair it with narrative histories of Greece and Rome and with later popularizations that draw on Suetonius’s portraits.",
-    "author": {
-      "name": "Suetonius",
-      "bio": "late 1st/early 2nd-century Roman historian",
-      "photo": "authors/OL68512A.jpg"
-    },
-    "similar": [
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
@@ -14230,11 +13318,84 @@ export const enrichments = {
         "bookId": null,
         "source": "explore",
         "why": "A literary meditation on memory and place that resonates with Eco’s semiotic abbey and Proust-to-Camus modernism."
+      },
+      {
+        "title": "Essays",
+        "author": "Michel de Montaigne",
+        "cover": "covers/extra/sim-essays-8-7-essays.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The American Scholar",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-9-7-theamericanscholar.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
       }
     ],
-    "otherByAuthor": []
+    "otherByAuthor": [
+      {
+        "title": "Eckert animal physiology",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The social novel at the end of an era",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "J.D. Salinger",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "A Companion to Grapes of Wrath",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "A companion to The grapes of wrath",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Twentieth Century American Literature",
+        "author": "Warren French",
+        "cover": null,
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The twenties",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The fifties: fiction, poetry, drama",
+        "author": "Warren French",
+        "cover": "covers/extra/auth-essays-9-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
   },
-  "essays-8": {
+  "essays-9": {
     "longDescription": "Homer’s epic of the wrath of Achilles before Troy—honor, friendship, and the cost of war. Gods and mortals share a Bronze Age stage of glory and grief. The foundational poem of the Western literary tradition.\n\n<p>The <i>Iliad</i> is one of the oldest works of Western literature, dating back to classical antiquity. <a href=\"https://standardebooks.org/ebooks/homer\">Homer’s</a> epic poem belongs in a collection called the Epic Cycle, which includes the <i><a href=\"https://standardebooks.org/ebooks/homer/the-odyssey/william-cullen-bryant\">Odyssey</a></i>. It was originally written in ancient Greek and utilized a dactylic hexameter rhyme scheme. Although this rhyme scheme sounds beautiful in its native language, in modern English it can sound awkward and, as Eric McMillan humorously describes it, resembles “pumpkins rolling on a barn floor.” William Cullen Bryant avoided this problem by converting his translation into blank verse.</p> <p>This epic poem begins with the Achaean army sacking the city of Chryse and capturing two maidens as prizes of war. One of the maidens, Chryseis, is given to Agamemnon, the leader of the Achaeans, and the other maiden, Briseis, was given to the army’s best warrior, Achilles. Chryseis’ father, the city’s priest, prays to the god Apollo and asks for a plague on the Achaean army. To stop this plague, Agamemnon returns Chryseis to her father, but then orders Achilles to give him Briseis as compensation. Achilles refuses.</p>",
     "author": {
       "name": "Homer",
@@ -14366,14 +13527,30 @@ export const enrichments = {
       }
     ]
   },
-  "essays-9": {
-    "longDescription": "Warren French’s biographical study of John Steinbeck, author of The Grapes of Wrath and Of Mice and Men. It traces the California writer’s career, politics, and craft. A secondary source for readers of Steinbeck’s fiction and life. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+  "essays-8": {
+    "longDescription": "Suetonius’s Lives of the Caesars (De vita Caesarum), widely known in English as The Twelve Caesars, offers vivid biographies of Rome’s rulers from Julius Caesar to Domitian. Court anecdote, character sketch, and imperial spectacle sit beside public deeds in the classic Latin source for early imperial lives.\n\nThis is the ancient biographical tradition itself—not a modern retelling. Readers often pair it with narrative histories of Greece and Rome and with later popularizations that draw on Suetonius’s portraits.",
     "author": {
-      "name": "Warren French",
-      "bio": "Warren French is a New Zealand former professional darts player. He used the nickname Frog for his matches.",
-      "photo": null
+      "name": "Suetonius",
+      "bio": "late 1st/early 2nd-century Roman historian",
+      "photo": "authors/OL68512A.jpg"
     },
     "similar": [
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
@@ -14421,80 +13598,1103 @@ export const enrichments = {
         "bookId": null,
         "source": "explore",
         "why": "A literary meditation on memory and place that resonates with Eco’s semiotic abbey and Proust-to-Camus modernism."
-      },
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-7": {
+    "longDescription": "A mid-nineteenth-century popular life of Boone and the Kentucky frontier hunters. Legend and narrative history blur in the making of an American pioneer myth. The 1854 date situates it in antebellum frontier literature. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "W. H. Bogart",
+      "bio": "\nWilliam Henry Bogart, was a lawyer, legislator, journalist, historian and one of the first trustees of Wells College.",
+      "photo": null
+    },
+    "similar": [
       {
-        "title": "Essays",
-        "author": "Michel de Montaigne",
-        "cover": "covers/extra/sim-essays-8-7-essays.jpg",
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
         "bookId": null,
         "source": "explore",
-        "why": null
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
       },
       {
-        "title": "The American Scholar",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/sim-essays-9-7-theamericanscholar.jpg",
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
-        "why": null
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
+      },
+      {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
+      },
+      {
+        "title": "The Waste Land",
+        "author": "T. S. Eliot",
+        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
+      },
+      {
+        "title": "Orthodoxy",
+        "author": "G. K. Chesterton",
+        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
+      },
+      {
+        "title": "The Peloponnesian War",
+        "author": "Thucydides",
+        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
       }
     ],
     "otherByAuthor": [
       {
-        "title": "Eckert animal physiology",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-0.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The social novel at the end of an era",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "J.D. Salinger",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "A Companion to Grapes of Wrath",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "A companion to The grapes of wrath",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Twentieth Century American Literature",
-        "author": "Warren French",
+        "title": "Quentin Durward",
+        "author": "W. H. Bogart",
         "cover": null,
         "bookId": null,
         "source": "openlibrary"
       },
       {
-        "title": "The twenties",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-6.jpg",
+        "title": "The border boy and how he became the great pioneer of the West",
+        "author": "W. H. Bogart",
+        "cover": "covers/extra/auth-essays-6-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
-        "title": "The fifties: fiction, poetry, drama",
-        "author": "Warren French",
-        "cover": "covers/extra/auth-essays-9-7.jpg",
+        "title": "Index to the laws of the State of New-York, 1842 to 1855, inclusive",
+        "author": "W. H. Bogart",
+        "cover": null,
         "bookId": null,
         "source": "openlibrary"
+      },
+      {
+        "title": "L'accès à la justice pour le nouveau siècle",
+        "author": "W. H. Bogart",
+        "cover": null,
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-6": {
+    "longDescription": "Hugo’s fierce pamphlet against Louis-Napoléon Bonaparte after the 1851 coup. Satire and moral outrage brand the nephew a diminished tyrant. The 1882 London edition keeps exile’s anger in English circulation. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "Victor Hugo",
+      "bio": "Victor-Marie Hugo was a French poet, playwright, novelist, essayist, visual artist, statesman, human rights activist and exponent of the Romantic movement in France.\r\n\r\nIn France, Hugo's literary fame comes first from his poetry but also rests upon his novels and his dramatic achievements. Among many volumes of poetry, Les Contemplations and La Légende des siècles stand particularly high in critical esteem, and Hugo is sometimes identified as the greatest French poet. Outside France, his best-known works are the novels Les Misérables and Notre-Dame de Paris (known in English also as The Hunchback of Notre-Dame).\r\n\r\nThough a committed conservative royalist when he was young, Hugo grew more liberal as the decades passed; he became a passionate supporter of republicanism, and his work touches upon most of the political and social issues and artistic trends of his time.…",
+      "photo": "authors/OL107571A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
+      },
+      {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
+      },
+      {
+        "title": "The Waste Land",
+        "author": "T. S. Eliot",
+        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
+      },
+      {
+        "title": "Orthodoxy",
+        "author": "G. K. Chesterton",
+        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Misérables de Victor Hugo",
+        "author": "Victor Hugo",
+        "cover": null,
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Les Misérables",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Notre Dame de Paris",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Quatrevingt-treize",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Hernani",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "L'homme qui rit",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "La légende des siècles",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Travailleurs de la mer",
+        "author": "Victor Hugo",
+        "cover": "covers/extra/auth-essays-5-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-5": {
+    "longDescription": "Bacon’s classic essays in a Boston 1833 printing—compact counsel on truth, revenge, studies, and power. Aphoristic Renaissance prose for the early American bookshelf. The edition marks the transatlantic life of a Tudor master. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "Francis Bacon",
+      "bio": "An English philosopher, statesman, scientist, lawyer, jurist and author known as the father of Empiricism.",
+      "photo": "authors/OL23720A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
+      },
+      {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
+      },
+      {
+        "title": "The Waste Land",
+        "author": "T. S. Eliot",
+        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The advancement of learning",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Nova Atlantis",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Novum organum",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The works of Francis Bacon",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Sylva sylvarum",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Francis Bacon",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The essays of Francis Bacon",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Historie of the raigne of King Henry the Seventh",
+        "author": "Francis Bacon",
+        "cover": "covers/extra/auth-essays-4-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-4": {
+    "longDescription": "Critical essays on Dante, Chaucer, Spenser, Wordsworth, and others. Lowell reads as a poet-critic with historical sympathy and style. A companion volume to his other essay collections on this shelf. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Myth of Sisyphus",
+        "author": "Albert Camus",
+        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
+      },
+      {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Biglow papers",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The complete poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Letters of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The function of the poet and other essays",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The vision of Sir Launfal",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The anti-slavery papers of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Poems",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-3-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-3": {
+    "longDescription": "Familiar essays looking out from the scholar’s study onto literature and nature. Lowell’s conversational learning epitomizes the nineteenth-century man of letters. The title became synonymous with civilized periodical prose. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Self-Reliance",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Myth of Sisyphus",
+        "author": "Albert Camus",
+        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Biglow papers",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The complete poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Letters of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The function of the poet and other essays",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The vision of Sir Launfal",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The anti-slavery papers of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Poems",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-2-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-2": {
+    "longDescription": "Lowell on politics, war, and civic conscience—including Civil War–era concerns. The Brahmin poet appears as public moralist and satirist. The essays document New England liberal opinion in formation. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Uses of Literature",
+        "author": "Italo Calvino",
+        "cover": "covers/extra/sim-essays-0-1-theusesofliteratur.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Self-Reliance",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Myth of Sisyphus",
+        "author": "Albert Camus",
+        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Biglow papers",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The complete poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Letters of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The function of the poet and other essays",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The vision of Sir Launfal",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The anti-slavery papers of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Poems",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-1-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-1": {
+    "longDescription": "Lowell’s travel sketches and reflective prose for the fireside reader. European impressions mix with the essayist’s genial learning. A window onto mid-nineteenth-century American letters abroad. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Liberal Imagination",
+        "author": "Lionel Trilling",
+        "cover": "covers/extra/sim-essays-0-0-theliberalimaginat.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Uses of Literature",
+        "author": "Italo Calvino",
+        "cover": "covers/extra/sim-essays-0-1-theusesofliteratur.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Self-Reliance",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-0-2-selfreliance.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Myth of Sisyphus",
+        "author": "Albert Camus",
+        "cover": "covers/extra/sim-philosophy-0-5-themythofsisyphus.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Republic",
+        "author": "Plato",
+        "cover": "covers/extra/sim-philosophy-0-1-therepublic.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city."
+      },
+      {
+        "title": "Beyond Good and Evil",
+        "author": "Friedrich Nietzsche",
+        "cover": "covers/extra/sim-philosophy-0-2-beyondgoodandevil.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice."
+      },
+      {
+        "title": "The Human Condition",
+        "author": "Hannah Arendt",
+        "cover": "covers/extra/sim-philosophy-3-7-thehumancondition.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Labor, work, and action as a modern political metaphysics that speaks to Ellul, Lasch, and Rousseau on this shelf."
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Biglow papers",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The complete poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The poetical works of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Letters of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The function of the poet and other essays",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The vision of Sir Launfal",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The anti-slavery papers of James Russell Lowell",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Poems",
+        "author": "James Russell Lowell",
+        "cover": "covers/extra/auth-essays-0-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "essays-0": {
+    "longDescription": "Library of America’s Emerson: Essays and Lectures gathers the core of Ralph Waldo Emerson’s public prose in one volume: Nature; Addresses, and Lectures; Essays: First and Second Series; Representative Men; English Traits; and The Conduct of Life.\n\nFrom the early manifesto of Nature and the American Scholar address through the great Essays (“Self-Reliance,” “The Poet,” “Experience”) and the later character studies of Representative Men, the collection traces Transcendentalist thought as lectures, essays, and national self-portrait. Distinct from a standalone Representative Men copy elsewhere on the shelf, this LOA book is the omnibus Essays and Lectures edition.",
+    "author": {
+      "name": "Ralph Waldo Emerson",
+      "bio": "Ralph Waldo Emerson (1803–1882) was an American essayist, lecturer, and poet, and a central figure of New England Transcendentalism. His essays and addresses—Nature, Self-Reliance, The American Scholar, The Poet—helped define a democratic, experiential American philosophy and literary culture.",
+      "photo": "authors/ralph-waldo-emerson.jpg"
+    },
+    "similar": [
+      {
+        "title": "Walden",
+        "author": "Henry David Thoreau",
+        "cover": "covers/extra/sim-essays-0-walden.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic Transcendentalist companion to Emerson’s Nature and self-reliance essays."
+      },
+      {
+        "title": "Leaves of Grass",
+        "author": "Walt Whitman",
+        "cover": "covers/extra/sim-essays-0-leavesofgrass.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Whitman’s democratic song answers Emerson’s call for an original American literature."
+      },
+      {
+        "title": "The Varieties of Religious Experience",
+        "author": "William James",
+        "cover": "covers/extra/sim-essays-0-thevarietiesofreligiou.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A later American inquiry into spiritual life that extends Emerson’s essayistic religion of experience."
+      },
+      {
+        "title": "Self-Reliance and Other Essays",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-0-selfrelianceandotheres.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A compact sampling if you want a pocket gateway into the LOA omnibus."
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-essays-0-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The great European reading of the American character Emerson helped define from within."
+      },
+      {
+        "title": "The American Scholar",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/sim-essays-0-theamericanscholar.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Often anthologized alone; here it belongs inside the Addresses and Lectures of the LOA volume."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Journals of Ralph Waldo Emerson",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/auth-essays-0-thejournalsofralphwald.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Poems",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/auth-essays-0-poems.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Society and Solitude",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/auth-essays-0-societyandsolitude.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Letters and Social Aims",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/auth-essays-0-lettersandsocialaims.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Complete Works of Ralph Waldo Emerson",
+        "author": "Ralph Waldo Emerson",
+        "cover": "covers/extra/auth-essays-0-thecompleteworksofralp.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
+  },
+  "philosophy-43": {
+    "longDescription": "Gödel, Escher, Bach: an Eternal Golden Braid (1979) is Douglas Hofstadter’s Pulitzer Prize–winning exploration of formal systems, self-reference, and consciousness. Through Bach’s canons, Escher’s visual paradoxes, and Gödel’s incompleteness theorems—interleaved with Lewis Carroll–style dialogues—Hofstadter argues that minds arise from “strange loops” in which symbols twist back upon themselves.\n\nIt sits on this philosophy shelf as related thought: less a treatise in the Continental style than a deep, playful inquiry into logic, meaning, and what it would take for a machine (or a brain) to say “I.”",
+    "author": {
+      "name": "Douglas Hofstadter",
+      "bio": "Douglas R. Hofstadter is an American cognitive scientist and author whose work spans consciousness, analogy, translation, and the limits of formal systems. Gödel, Escher, Bach (1979) won the Pulitzer Prize for general nonfiction; later books include Metamagical Themas and I Am a Strange Loop.",
+      "photo": "authors/douglas-hofstadter.jpg"
+    },
+    "similar": [
+      {
+        "title": "I Am a Strange Loop",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/sim-philosophy-43-iamastrangeloop.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Hofstadter’s later, tighter restatement of the strange-loop theory of the self."
+      },
+      {
+        "title": "The Emperor’s New Mind",
+        "author": "Roger Penrose",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Another landmark on minds, machines, and the limits of computation."
+      },
+      {
+        "title": "Consciousness Explained",
+        "author": "Daniel C. Dennett",
+        "cover": "covers/extra/sim-philosophy-43-consciousnessexplained.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A rival philosophical account of mind that dialogues with Hofstadter’s playful cognitivism."
+      },
+      {
+        "title": "Metamagical Themas",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/sim-philosophy-43-metamagicalthemas.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Hofstadter’s Scientific American columns—puzzles, analogies, and self-reference after GEB."
+      },
+      {
+        "title": "Tractatus Logico-Philosophicus",
+        "author": "Ludwig Wittgenstein",
+        "cover": "covers/extra/sim-philosophy-43-tractatuslogicophiloso.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Already kin to this shelf’s logic books; a austere counterpart to GEB’s playful formal systems."
+      },
+      {
+        "title": "The Society of Mind",
+        "author": "Marvin Minsky",
+        "cover": "covers/extra/sim-philosophy-43-thesocietyofmind.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "An AI pioneer’s modular theory of intelligence, adjacent to GEB’s machine-mind inquiries."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "I Am a Strange Loop",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-iamastrangeloop.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Metamagical Themas",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-metamagicalthemas.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Le Ton beau de Marot",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-letonbeaudemarot.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Surfaces and Essences",
+        "author": "Douglas Hofstadter",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Fluid Concepts and Creative Analogies",
+        "author": "Douglas Hofstadter",
+        "cover": "covers/extra/auth-philosophy-43-fluidconceptsandcreati.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
       }
     ]
   }
