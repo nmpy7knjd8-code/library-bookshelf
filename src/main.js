@@ -5,26 +5,6 @@ import { spineTextureUrl, hashString } from './textures.js'
 import { coverFor } from './covers-data.js'
 import { enrichmentFor } from './enrichments.js'
 
-const MATERIALS = ['leather', 'cloth', 'paper', 'board']
-/* Spine ink is always light (cream / soft gold) for contrast on dark bindings */
-const PALETTES = [
-  { bg: '#2a1814', ink: '#f0e6d0', band: '#c4a35a', pages: '#e8e0d0' },
-  { bg: '#1a2420', ink: '#ebe6d4', band: '#8a9a7a', pages: '#e6e2d6' },
-  { bg: '#1c1410', ink: '#f5ecd8', band: '#a67c52', pages: '#efe6d4' },
-  { bg: '#121820', ink: '#e8e4d4', band: '#6a8aaa', pages: '#e4e6ea' },
-  { bg: '#3a1414', ink: '#f2e4c8', band: '#c4a35a', pages: '#ebe4d4' },
-  { bg: '#1a1612', ink: '#efe6d2', band: '#8a7040', pages: '#e8e2d4' },
-  { bg: '#101818', ink: '#ebe8d8', band: '#5a8a7a', pages: '#e2e6e0' },
-  { bg: '#2c2010', ink: '#f7efd4', band: '#d4af37', pages: '#efe6d0' },
-  { bg: '#18101a', ink: '#f0e6dc', band: '#9a6a7a', pages: '#e8e0e4' },
-  { bg: '#221c14', ink: '#f2ebd6', band: '#9a8a50', pages: '#ebe4d6' },
-  { bg: '#0e1814', ink: '#e8ecd8', band: '#4a7a5a', pages: '#e0e6e0' },
-  { bg: '#2a2218', ink: '#f5eedc', band: '#b09050', pages: '#efe8d8' },
-  { bg: '#141010', ink: '#efe6d8', band: '#7a5a4a', pages: '#e8e2d8' },
-  { bg: '#101420', ink: '#eae6da', band: '#5a6a9a', pages: '#e2e4ea' },
-  { bg: '#241c14', ink: '#f4ecd4', band: '#a88848', pages: '#ebe4d4' },
-]
-
 let selectedId = null
 let lastRowWidth = 0
 let activeView = 'covers' // 'shelf' | 'covers'
@@ -40,12 +20,12 @@ function assetUrl(rel) {
 
 /** Visible case width — two long horizontal stacks scroll inside the bays. */
 function caseWidthPx() {
-  return Math.min(window.innerWidth * 0.96, 960)
+  return Math.min(window.innerWidth * 0.96, 520)
 }
 
 /** Full title for the spine — keep wording; strip only edition/series noise */
 function fullSpineTitle(book) {
-  let t = (book.title || '').replace(/\s+/g, ' ').trim()
+  let t = (book.title || '').replace(/\s+/g, ' ').replace(/[’‘]/g, "'").trim()
   // Remove trailing parenthetical edition notes
   t = t.replace(/\s*\([^)]*(?:edition|ed\.|press|oxford|cambridge|with references)[^)]*\)\s*$/iu, '').trim()
   t = t.replace(/\s*\([^)]{16,}\)\s*$/u, '').trim()
@@ -86,80 +66,86 @@ function spineAuthor(author) {
   return a
 }
 
-/** Uniform spine typography — never scale type down per book. */
-const SPINE_TITLE_SIZE = 14
-const SPINE_AUTHOR_SIZE = 10.5
-const SPINE_HEIGHT = 176
-const SPINE_WIDTH_MIN = 36
-const SPINE_WIDTH_MAX = 50
+/** Realistic spine generation — varied heights, widths, bindings; fixed legible type. */
+const SPINE_TITLE_SIZE = 17
+const SPINE_AUTHOR_SIZE = 12
+const ROW_MAX_H = 270
+
+/* Real-world binding colourways: [bg, ink, band, pages, inkTone] */
+const BINDINGS = [
+  ['#5a1a17', '#ecd8a0', '#c9a24e', '#e9dfc9', 'gold'],   // oxblood leather
+  ['#1d2b45', '#e8d7a4', '#c4a35a', '#ebe3d0', 'gold'],   // navy cloth
+  ['#23382b', '#ead9a6', '#b8984f', '#e6dfcc', 'gold'],   // forest green
+  ['#6b4a2b', '#f1e3bd', '#d9b46a', '#efe5cf', 'gold'],   // tan calf
+  ['#2a221d', '#e9d9ad', '#b4924e', '#e6ddc9', 'gold'],   // black-brown
+  ['#e9e1cc', '#2a211a', '#8a2a22', '#f1eadb', 'dark'],   // cream paper (LoA/Penguin-ish)
+  ['#c8b38a', '#2b2117', '#5b3a22', '#efe6d1', 'dark'],   // buckram natural
+  ['#8c2f22', '#f3e7c8', '#e3c27a', '#ece2cd', 'gold'],   // brick red
+  ['#3b4a5c', '#f1ead6', '#d2c39a', '#eae4d6', 'light'],  // slate cloth
+  ['#d9cfb8', '#1d1d1d', '#1d1d1d', '#f3eee2', 'dark'],   // off-white modern
+  ['#14161a', '#f2efe6', '#c9b37a', '#e9e3d6', 'light'],  // black modern
+  ['#7a6a3a', '#f4ead0', '#e8d39a', '#efe7d2', 'light'],  // olive
+  ['#4a2b42', '#efdfb6', '#caa860', '#ebe2d0', 'gold'],   // plum
+  ['#a77a3f', '#20160c', '#4a2c12', '#f0e6cf', 'dark'],   // ochre
+  ['#2f4d57', '#f0e7cc', '#d6bf86', '#e8e2d3', 'light'],  // teal
+]
+const STYLES = ['bands', 'label', 'plain', 'modern', 'bands', 'label']
 
 function bookStyle(book, index) {
   const h = hashString(`${book.title}:${book.author}:${index}`)
-  const palette = PALETTES[h % PALETTES.length]
-  const material = MATERIALS[h % MATERIALS.length]
+  const h2 = hashString(`${book.author}|${index}|r`)
+  const [bg, ink, band, pages, tone] = BINDINGS[h % BINDINGS.length]
+  const palette = { bg, ink, band, pages }
+  const deco = STYLES[h2 % STYLES.length]
+  const material =
+    deco === 'bands' ? 'leather' : deco === 'modern' ? 'paper' : tone === 'dark' ? 'paper' : 'cloth'
 
-  let titleLine = fullSpineTitle(book)
-  const fontSize = SPINE_TITLE_SIZE
-  const authorSize = SPINE_AUTHOR_SIZE
-  const height = SPINE_HEIGHT
-  let pad = 10
+  const titleLine = fullSpineTitle(book)
+  const len = titleLine.length
+  // heights 168–224 like real trade/octavo/quarto volumes
+  const height = 212 + (h2 % 57)
+  const lines = len > 34 ? 3 : len > 17 ? 2 : 1
+  const usable = height - 2 * 14 - 30 - (deco === 'bands' ? 30 : 0)
+  const perLine = Math.floor(usable / (SPINE_TITLE_SIZE * 0.52))
+  let fitLines = Math.max(lines, Math.ceil(len / perLine))
+  fitLines = Math.min(fitLines, 4)
+  const width = Math.max(42, Math.min(84, 18 + fitLines * 19 + (h % 7)))
+  let text = titleLine
+  if (len > perLine * fitLines) text = shortenTitleLastResort(titleLine, perLine * fitLines)
 
-  const capacityOf = (w) => {
-    const cols = w >= 44 ? 3 : w >= 36 ? 2 : 1
-    const usable = height - pad * 2 - (authorSize * 1.15 + 5)
-    const per = Math.max(5, Math.floor(usable / (fontSize * 1.0)))
-    return cols * per
-  }
-
-  // Fit long titles by widening the spine, not by shrinking type
-  let width = SPINE_WIDTH_MIN + (h % 5)
-  let capacity = capacityOf(width)
-  while (titleLine.length > capacity && width < SPINE_WIDTH_MAX) {
-    width = Math.min(SPINE_WIDTH_MAX, width + 2)
-    capacity = capacityOf(width)
-  }
-  if (titleLine.length > capacity) {
-    pad = 9
-    capacity = capacityOf(width)
-  }
-  if (titleLine.length > capacity) {
-    titleLine = shortenTitleLastResort(titleLine, capacity)
-  }
-
-  const inkMode = h % 2 === 0 ? 'foil' : 'ink'
-  const texture = spineTextureUrl({
-    key: `${book.title}:${index}:v7`,
-    material,
-    bg: palette.bg,
-    band: palette.band,
-  })
-  return {
-    palette,
-    material,
-    height,
-    width,
-    fontSize,
-    authorSize,
-    inkMode,
-    texture,
-    pad,
-    titleLine,
-  }
+  const texture = spineTextureUrl({ key: `${book.title}:${index}:v8`, material, bg, band })
+  return { palette, material, height, width, fontSize: SPINE_TITLE_SIZE, authorSize: SPINE_AUTHOR_SIZE,
+    inkMode: tone, deco, texture, pad: 14, titleLine: text, lean: 0 }
 }
 
-/** Flatten catalog order into two roughly equal horizontal stacks. */
-function buildTwinStacks() {
-  const all = []
+/** Pack every catalog book, in order, into shelf rows that fit the case width. */
+function buildShelfRows() {
+  const inner = caseWidthPx() - (window.innerWidth >= 720 ? 72 : 44) - 14
+  const rows = []
+  let cur = []
+  let used = 0
   for (const shelf of shelves) {
     shelf.books.forEach((book, index) => {
-      all.push({ shelf, book, index, style: bookStyle(book, index) })
+      const style = bookStyle(book, index)
+      const w = style.width + 3
+      if (used + w > inner && cur.length) {
+        rows.push(cur)
+        cur = []
+        used = 0
+      }
+      cur.push({ shelf, book, index, style })
+      used += w
     })
   }
-  const mid = Math.ceil(all.length / 2)
-  return [
-    { id: 'upper', label: 'Upper shelf', books: all.slice(0, mid) },
-    { id: 'lower', label: 'Lower shelf', books: all.slice(mid) },
-  ]
+  if (cur.length) rows.push(cur)
+  // Fill each full shelf edge to edge like a real packed shelf
+  rows.forEach((row, r) => {
+    if (r === rows.length - 1) return
+    const sum = row.reduce((a, b) => a + b.style.width + 3, 0)
+    const add = Math.min(40, Math.floor((inner - sum) / row.length))
+    if (add > 0) row.forEach((b) => { b.style.width += add })
+  })
+  return rows
 }
 
 function applyWoodAssets() {
@@ -265,29 +251,23 @@ function renderExploreBody() {
   `
 }
 
-function renderStackBay(stack) {
+function renderShelfRow(row, i) {
   return `
-    <section class="bay-section stack-bay" data-stack="${stack.id}" aria-labelledby="stack-${stack.id}">
-      <div class="bay-heading">
-        <h2 id="stack-${stack.id}">${escapeHtml(stack.label)}</h2>
-        <p>${stack.books.length}</p>
-      </div>
-      <div class="bay-recess bay-recess--scroll" style="--row-book-max: ${SPINE_HEIGHT}px">
+    <section class="bay-section shelf-row" aria-label="Shelf ${i + 1}">
+      <div class="bay-recess" style="--row-book-max: ${ROW_MAX_H}px">
         <div class="bay-back" aria-hidden="true"></div>
-        <div class="bay-spotlight" aria-hidden="true"></div>
-        <div class="book-row book-row--scroll" role="list" aria-label="${escapeAttr(stack.label)}">
-          ${stack.books
-            .map(({ shelf, book, index, style }) => renderBook(shelf, book, index, style))
-            .join('')}
+        <div class="bay-lamp" aria-hidden="true"></div>
+        <div class="book-row" role="list" aria-label="Shelf ${i + 1}">
+          ${row.map(({ shelf, book, index, style }) => renderBook(shelf, book, index, style)).join('')}
         </div>
-        <div class="shelf-board" aria-hidden="true">
-          <div class="shelf-top-face"></div>
-          <div class="shelf-front-lip"></div>
-          <div class="shelf-under-shadow"></div>
-        </div>
+        <div class="bay-ceiling-shadow" aria-hidden="true"></div>
       </div>
-    </section>
-  `
+      <div class="shelf-board" aria-hidden="true">
+        <div class="shelf-top-face"></div>
+        <div class="shelf-front-lip"></div>
+        <div class="shelf-under-shadow"></div>
+      </div>
+    </section>`
 }
 
 function renderBook(shelf, book, index, style) {
@@ -297,7 +277,7 @@ function renderBook(shelf, book, index, style) {
   return `
     <button
       type="button"
-      class="book material-${style.material} ink-${style.inkMode}${selected ? ' is-selected' : ''}"
+      class="book material-${style.material} ink-${style.inkMode} deco-${style.deco}${selected ? ' is-selected' : ''}"
       role="listitem"
       data-book-id="${id}"
       data-shelf="${shelf.id}"
@@ -322,6 +302,7 @@ function renderBook(shelf, book, index, style) {
           <span class="spine-skin" aria-hidden="true"></span>
           <span class="spine-edge-light" aria-hidden="true"></span>
           <span class="spine-wear" aria-hidden="true"></span>
+          <span class="spine-deco" aria-hidden="true"></span>
           <span class="spine-copy">
             <span class="spine-title">${escapeHtml(style.titleLine)}</span>
             <span class="spine-author">${escapeHtml(authorLine)}</span>
@@ -729,12 +710,12 @@ function buildAppHtml() {
     ${
       shelfActive
         ? `<main class="room" id="room">
-      <div class="bookcase bookcase--twin" id="bookcase">
+      <div class="bookcase bookcase--real" id="bookcase">
         <div class="case-crown" aria-hidden="true"></div>
         <div class="case-body">
           <div class="case-upright left" aria-hidden="true"></div>
           <div class="case-bays">
-            ${buildTwinStacks().map((stack) => renderStackBay(stack)).join('')}
+            ${buildShelfRows().map((row, i) => renderShelfRow(row, i)).join('')}
           </div>
           <div class="case-upright right" aria-hidden="true"></div>
         </div>
