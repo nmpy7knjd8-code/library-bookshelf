@@ -15129,6 +15129,98 @@ export const enrichments = {
         "why": null
       }
     ]
+  },
+  "literature-54": {
+    "longDescription": "Infinite Jest (1996) is David Foster Wallace’s monumental novel of addiction, entertainment, and the search for meaning in a subsidized near-future North America. At Enfield Tennis Academy and Ennet House recovery center, Wallace braids athletic ambition, AA testimony, and the lethal lure of a film so entertaining it destroys its viewers.\n\nMaximalist in form—endnotes, digressions, lexicographic play—it is also a book of devastating feeling about loneliness, irony, and the need to be free of one’s own head.",
+    "author": {
+      "name": "David Foster Wallace",
+      "bio": "David Foster Wallace (1962–2008) was an American novelist and essayist. Infinite Jest made him the defining voice of 1990s literary maximalism; his nonfiction includes A Supposedly Fun Thing I’ll Never Do Again and Consider the Lobster. The Pale King was published posthumously.",
+      "photo": "authors/david-foster-wallace.jpg"
+    },
+    "similar": [
+      {
+        "title": "Gravity’s Rainbow",
+        "author": "Thomas Pynchon",
+        "cover": "covers/extra/sim-literature-54-gravitysrainbow.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The encyclopedic postwar American novel Wallace writes in the shadow of—and against."
+      },
+      {
+        "title": "Underworld",
+        "author": "Don DeLillo",
+        "cover": "covers/extra/sim-literature-54-underworld.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Another late-century American epic of waste, media, and national anxiety."
+      },
+      {
+        "title": "A Supposedly Fun Thing I’ll Never Do Again",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/sim-literature-54-asupposedlyfunthingill.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Wallace’s essay voice at full comic and observational power."
+      },
+      {
+        "title": "Mason & Dixon",
+        "author": "Thomas Pynchon",
+        "cover": "covers/extra/sim-literature-54-masondixon.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Already on this shelf—Pynchon’s companion maximalist American novel."
+      },
+      {
+        "title": "The Corrections",
+        "author": "Jonathan Franzen",
+        "cover": "covers/extra/sim-literature-54-thecorrections.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "A peer novel of American family and late-century crisis that dialogued with Wallace’s moment."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "A Supposedly Fun Thing I’ll Never Do Again",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/auth-literature-54-asupposedlyfunthingill.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Brief Interviews with Hideous Men",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/auth-literature-54-briefinterviewswithhid.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Pale King",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/auth-literature-54-thepaleking.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Consider the Lobster",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/auth-literature-54-considerthelobster.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Girl with Curious Hair",
+        "author": "David Foster Wallace",
+        "cover": "covers/extra/auth-literature-54-girlwithcurioushair.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      }
+    ]
   }
 };
 

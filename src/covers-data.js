@@ -1643,6 +1643,19 @@ export const covers = {
     },
     "gap": false,
     "note": "Little, Brown 1981; OL cover ID mismatched cloth art, so Archive-based jacket used"
+  },
+  "literature-54": {
+    "cover": "covers/literature-54.jpg",
+    "spine": "covers/literature-54.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL2943602W",
+    "coverId": 8237639,
+    "match": {
+      "title": "Infinite Jest",
+      "author": "David Foster Wallace"
+    },
+    "gap": false,
+    "note": null
   }
 };
 
