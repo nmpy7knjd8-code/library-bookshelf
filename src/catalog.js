@@ -812,13 +812,6 @@ export const shelves = [
           'Wheelock’s Latin is the long-standard introductory Latin grammar and reader for American students—morphology, syntax, and graded sentences toward classical authors. A practical companion beside other Latin readers on this shelf.',
       },
       {
-        title: 'Hemlock and After',
-        spine: 'Hemlock and After',
-        author: 'Angus Wilson',
-        description:
-          'Angus Wilson’s Hemlock and After follows a celebrated English novelist whose public honor collides with private desire and postwar social change. A sharp Penguin-era comedy of manners and one of Wilson’s defining early novels.',
-      },
-      {
         title: 'Reminiscences',
         spine: 'Reminiscences',
         author: 'Thomas Carlyle',

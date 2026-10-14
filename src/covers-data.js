@@ -1609,19 +1609,6 @@ export const covers = {
     "cover": "covers/literature-51.jpg",
     "spine": "covers/literature-51.jpg",
     "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL174216W",
-    "coverId": 174216,
-    "match": {
-      "title": "Hemlock and After",
-      "author": "Angus Wilson"
-    },
-    "gap": false,
-    "note": null
-  },
-  "literature-52": {
-    "cover": "covers/literature-52.jpg",
-    "spine": "covers/literature-52.jpg",
-    "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL5866790W",
     "coverId": 5918673,
     "match": {
@@ -1631,9 +1618,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "literature-53": {
-    "cover": "covers/literature-53.jpg",
-    "spine": "covers/literature-53.jpg",
+  "literature-52": {
+    "cover": "covers/literature-52.jpg",
+    "spine": "covers/literature-52.jpg",
     "source": "Little, Brown edition jacket (composed from Internet Archive thumb)",
     "sourceUrl": "https://archive.org/details/unset0000unse_z0e5",
     "coverId": null,
@@ -1644,9 +1631,9 @@ export const covers = {
     "gap": false,
     "note": "Little, Brown 1981; OL cover ID mismatched cloth art, so Archive-based jacket used"
   },
-  "literature-54": {
-    "cover": "covers/literature-54.jpg",
-    "spine": "covers/literature-54.jpg",
+  "literature-53": {
+    "cover": "covers/literature-53.jpg",
+    "spine": "covers/literature-53.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL2943602W",
     "coverId": 8237639,

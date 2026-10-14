@@ -14967,58 +14967,6 @@ export const enrichments = {
     ]
   },
   "literature-51": {
-    "longDescription": "Hemlock and After (1952) is Angus Wilson’s debut novel: Bernard Sands, a newly celebrated English man of letters, navigates fame, desire, and the hypocrisies of postwar literary England. Dark comedy and social observation mark Wilson’s arrival.\n\nThe Penguin paperback on the shelf is the familiar yellow-spined edition of this early Wilson classic.",
-    "author": {
-      "name": "Angus Wilson",
-      "bio": "Sir Angus Wilson (1913–1991) was an English novelist and short-story writer whose satirical fiction includes Hemlock and After, Anglo-Saxon Attitudes, and The Middle Age of Mrs Eliot.",
-      "photo": "authors/angus-wilson.jpg"
-    },
-    "similar": [
-      {
-        "title": "Anglo-Saxon Attitudes",
-        "author": "Angus Wilson",
-        "cover": "covers/extra/sim-literature-51-anglosaxonattitudes.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Wilson’s next major comic novel of English hypocrisy."
-      },
-      {
-        "title": "Lucky Jim",
-        "author": "Kingsley Amis",
-        "cover": "covers/extra/sim-literature-51-luckyjim.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Another postwar English satire of manners and institutions."
-      },
-      {
-        "title": "The History Man",
-        "author": "Malcolm Bradbury",
-        "cover": "covers/extra/sim-literature-51-thehistoryman.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Campus and cultural satire in a later key."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "Anglo-Saxon Attitudes",
-        "author": "Angus Wilson",
-        "cover": "covers/extra/auth-literature-51-anglosaxonattitudes.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Middle Age of Mrs Eliot",
-        "author": "Angus Wilson",
-        "cover": "covers/extra/auth-literature-51-themiddleageofmrseliot.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      }
-    ]
-  },
-  "literature-52": {
     "longDescription": "Thomas Carlyle’s Reminiscences, published after his death, gather autobiographical fragments and memorial sketches—most famously of Jane Welsh Carlyle—along with portraits from his circle. They are among the most intimate documents of the Victorian sage.\n\nDistinct from Carlyle’s French Revolution or On Heroes, this is personal reminiscence rather than public history.",
     "author": {
       "name": "Thomas Carlyle",
@@ -15029,7 +14977,7 @@ export const enrichments = {
       {
         "title": "Sartor Resartus",
         "author": "Thomas Carlyle",
-        "cover": "covers/extra/sim-literature-52-sartorresartus.jpg",
+        "cover": "covers/extra/sim-literature-51-sartorresartus.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Carlyle’s philosophical fiction of clothes and belief."
@@ -15037,7 +14985,7 @@ export const enrichments = {
       {
         "title": "On Heroes, Hero-Worship, and the Heroic in History",
         "author": "Thomas Carlyle",
-        "cover": "covers/extra/sim-literature-52-onheroesheroworshipand.jpg",
+        "cover": "covers/extra/sim-literature-51-onheroesheroworshipand.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The public lecture series that converses with Emerson’s Representative Men."
@@ -15045,7 +14993,7 @@ export const enrichments = {
       {
         "title": "Representative Men",
         "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/sim-literature-52-representativemen.jpg",
+        "cover": "covers/extra/sim-literature-51-representativemen.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Emerson’s answer to Carlyle’s hero-worship, already on this shelf."
@@ -15055,7 +15003,7 @@ export const enrichments = {
       {
         "title": "The French Revolution",
         "author": "Thomas Carlyle",
-        "cover": "covers/extra/auth-literature-52-thefrenchrevolution.jpg",
+        "cover": "covers/extra/auth-literature-51-thefrenchrevolution.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15063,7 +15011,7 @@ export const enrichments = {
       {
         "title": "Sartor Resartus",
         "author": "Thomas Carlyle",
-        "cover": "covers/extra/auth-literature-52-sartorresartus.jpg",
+        "cover": "covers/extra/auth-literature-51-sartorresartus.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15071,14 +15019,14 @@ export const enrichments = {
       {
         "title": "Past and Present",
         "author": "Thomas Carlyle",
-        "cover": "covers/extra/auth-literature-52-pastandpresent.jpg",
+        "cover": "covers/extra/auth-literature-51-pastandpresent.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
       }
     ]
   },
-  "literature-53": {
+  "literature-52": {
     "longDescription": "Whatever Is Moving (Little, Brown, 1981) collects essays by Howard Moss, poet and longtime poetry editor of The New Yorker. The pieces turn on poets, poems, and the restless attention that keeps literature alive.\n\nA late-century New York house essay volume—quiet, urbane, and keyed to modern poetry rather than academic theory.",
     "author": {
       "name": "Howard Moss",
@@ -15089,7 +15037,7 @@ export const enrichments = {
       {
         "title": "The Poet’s Story",
         "author": "Howard Moss",
-        "cover": "covers/extra/sim-literature-53-thepoetsstory.jpg",
+        "cover": "covers/extra/sim-literature-52-thepoetsstory.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Moss’s fiction anthology of stories by poets."
@@ -15097,7 +15045,7 @@ export const enrichments = {
       {
         "title": "Minor Monuments",
         "author": "Howard Moss",
-        "cover": "covers/extra/sim-literature-53-minormonuments.jpg",
+        "cover": "covers/extra/sim-literature-52-minormonuments.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Another Moss prose collection of literary essays."
@@ -15105,7 +15053,7 @@ export const enrichments = {
       {
         "title": "The New Pocket Anthology of American Verse",
         "author": "Oscar Williams",
-        "cover": "covers/extra/sim-literature-53-thenewpocketanthologyo.jpg",
+        "cover": "covers/extra/sim-literature-52-thenewpocketanthologyo.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Shelf neighbor for mid-century American poetry culture."
@@ -15115,7 +15063,7 @@ export const enrichments = {
       {
         "title": "Minor Monuments",
         "author": "Howard Moss",
-        "cover": "covers/extra/auth-literature-53-minormonuments.jpg",
+        "cover": "covers/extra/auth-literature-52-minormonuments.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15123,14 +15071,14 @@ export const enrichments = {
       {
         "title": "Finding Them Lost",
         "author": "Howard Moss",
-        "cover": "covers/extra/auth-literature-53-findingthemlost.jpg",
+        "cover": "covers/extra/auth-literature-52-findingthemlost.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
       }
     ]
   },
-  "literature-54": {
+  "literature-53": {
     "longDescription": "Infinite Jest (1996) is David Foster Wallace’s monumental novel of addiction, entertainment, and the search for meaning in a subsidized near-future North America. At Enfield Tennis Academy and Ennet House recovery center, Wallace braids athletic ambition, AA testimony, and the lethal lure of a film so entertaining it destroys its viewers.\n\nMaximalist in form—endnotes, digressions, lexicographic play—it is also a book of devastating feeling about loneliness, irony, and the need to be free of one’s own head.",
     "author": {
       "name": "David Foster Wallace",
@@ -15141,7 +15089,7 @@ export const enrichments = {
       {
         "title": "Gravity’s Rainbow",
         "author": "Thomas Pynchon",
-        "cover": "covers/extra/sim-literature-54-gravitysrainbow.jpg",
+        "cover": "covers/extra/sim-literature-53-gravitysrainbow.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The encyclopedic postwar American novel Wallace writes in the shadow of—and against."
@@ -15149,7 +15097,7 @@ export const enrichments = {
       {
         "title": "Underworld",
         "author": "Don DeLillo",
-        "cover": "covers/extra/sim-literature-54-underworld.jpg",
+        "cover": "covers/extra/sim-literature-53-underworld.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Another late-century American epic of waste, media, and national anxiety."
@@ -15157,7 +15105,7 @@ export const enrichments = {
       {
         "title": "A Supposedly Fun Thing I’ll Never Do Again",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/sim-literature-54-asupposedlyfunthingill.jpg",
+        "cover": "covers/extra/sim-literature-53-asupposedlyfunthingill.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Wallace’s essay voice at full comic and observational power."
@@ -15165,7 +15113,7 @@ export const enrichments = {
       {
         "title": "Mason & Dixon",
         "author": "Thomas Pynchon",
-        "cover": "covers/extra/sim-literature-54-masondixon.jpg",
+        "cover": "covers/extra/sim-literature-53-masondixon.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Already on this shelf—Pynchon’s companion maximalist American novel."
@@ -15173,7 +15121,7 @@ export const enrichments = {
       {
         "title": "The Corrections",
         "author": "Jonathan Franzen",
-        "cover": "covers/extra/sim-literature-54-thecorrections.jpg",
+        "cover": "covers/extra/sim-literature-53-thecorrections.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A peer novel of American family and late-century crisis that dialogued with Wallace’s moment."
@@ -15183,7 +15131,7 @@ export const enrichments = {
       {
         "title": "A Supposedly Fun Thing I’ll Never Do Again",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/auth-literature-54-asupposedlyfunthingill.jpg",
+        "cover": "covers/extra/auth-literature-53-asupposedlyfunthingill.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15191,7 +15139,7 @@ export const enrichments = {
       {
         "title": "Brief Interviews with Hideous Men",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/auth-literature-54-briefinterviewswithhid.jpg",
+        "cover": "covers/extra/auth-literature-53-briefinterviewswithhid.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15199,7 +15147,7 @@ export const enrichments = {
       {
         "title": "The Pale King",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/auth-literature-54-thepaleking.jpg",
+        "cover": "covers/extra/auth-literature-53-thepaleking.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15207,7 +15155,7 @@ export const enrichments = {
       {
         "title": "Consider the Lobster",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/auth-literature-54-considerthelobster.jpg",
+        "cover": "covers/extra/auth-literature-53-considerthelobster.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -15215,7 +15163,7 @@ export const enrichments = {
       {
         "title": "Girl with Curious Hair",
         "author": "David Foster Wallace",
-        "cover": "covers/extra/auth-literature-54-girlwithcurioushair.jpg",
+        "cover": "covers/extra/auth-literature-53-girlwithcurioushair.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
