@@ -65,7 +65,7 @@ export const shelves = [
       {
         title: 'The Metaphysics',
         spine: 'Metaphysics',
-        author: 'Aristotle',
+        author: 'Aristotle (tr. Hugh Lawson-Tancred, Penguin Classics)',
         description:
           'Aristotle’s Metaphysics investigates being as being, substance, cause, and the unmoved mover. It gathers earlier inquiries into first principles and offers the classic account of form, matter, potentiality, and actuality. The text shaped scholastic theology and remains central to ontology.',
       },

@@ -107,11 +107,11 @@ export const covers = {
   "philosophy-8": {
     "cover": "covers/philosophy-8.jpg",
     "spine": "covers/philosophy-8.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL20966539W",
-    "coverId": 10702956,
+    "source": "Open Library (Penguin Classics ISBN 9780140446197)",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/9780140446197-L.jpg",
+    "coverId": 14368419,
     "match": {
-      "title": "The Metaphysics ...",
+      "title": "The Metaphysics (Penguin Classics, tr. Hugh Lawson-Tancred)",
       "author": "Aristotle"
     },
     "gap": false,
