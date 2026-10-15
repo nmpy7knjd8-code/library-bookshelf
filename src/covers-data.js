@@ -1540,6 +1540,19 @@ export const covers = {
     "gap": false,
     "note": null
   },
+  "philosophy-44": {
+    "cover": "covers/philosophy-44.jpg",
+    "spine": "covers/philosophy-44.jpg",
+    "source": "Open Library (Zero Books edition)",
+    "sourceUrl": "https://covers.openlibrary.org/b/id/6707037-L.jpg",
+    "coverId": 6707037,
+    "match": {
+      "title": "Capitalist Realism: Is There No Alternative?",
+      "author": "Mark Fisher"
+    },
+    "gap": false,
+    "note": null
+  },
   "literature-46": {
     "cover": "covers/literature-46.jpg",
     "spine": "covers/literature-46.jpg",

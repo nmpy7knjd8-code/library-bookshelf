@@ -314,6 +314,13 @@ export const shelves = [
         description:
           'Gödel, Escher, Bach: an Eternal Golden Braid is Hofstadter’s Pulitzer Prize–winning fugue on minds and machines—linking Gödel’s incompleteness, Escher’s visual paradoxes, and Bach’s canons to strange loops, consciousness, and formal systems. Playful dialogues and deep technical digressions make it a classic of related thought beside philosophy of mind and logic.',
       },
+      {
+        title: 'Capitalist Realism: Is There No Alternative?',
+        spine: 'Capitalist Realism',
+        author: 'Mark Fisher',
+        description:
+          'Mark Fisher’s Capitalist Realism (Zero Books, 2009) diagnoses the pervasive sense that there is no alternative to capitalism—that it is easier to imagine the end of the world than the end of capitalism. Through film, music, education, bureaucracy, and mental health, it reads that resignation as ideology and looks for the cracks where a different future might show through.',
+      },
     ],
   },
   {

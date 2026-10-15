@@ -14698,6 +14698,66 @@ export const enrichments = {
       }
     ]
   },
+  "philosophy-44": {
+    "longDescription": "Capitalist Realism: Is There No Alternative? (Zero Books, 2009) is Mark Fisher’s short, incendiary essay on the sense that capitalism is the only viable system—that it is easier to imagine the end of the world than the end of capitalism. Drawing on film, music, education, bureaucracy, and the politics of mental health, Fisher argues that this ‘realism’ is an ideological atmosphere that forecloses the future, and that cracks in it—depression, precarity, and failing institutions—point toward alternatives. Brief and widely read, it became a touchstone of twenty-first-century cultural criticism.",
+    "author": {
+      "name": "Mark Fisher",
+      "bio": "Mark Fisher (1968–2017) was an English writer, critic, and teacher whose k-punk blog and books—Capitalist Realism, Ghosts of My Life, and The Weird and the Eerie—shaped a generation of cultural and political criticism.",
+      "photo": "authors/mark-fisher.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Culture of Narcissism",
+        "author": "Christopher Lasch",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Another diagnosis of a culture’s psychic life under late capitalism—already on this shelf."
+      },
+      {
+        "title": "Simulacra and Simulation",
+        "author": "Jean Baudrillard",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A precursor account of a reality saturated by signs and spectacle."
+      },
+      {
+        "title": "Postmodernism, or, The Cultural Logic of Late Capitalism",
+        "author": "Fredric Jameson",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Fisher’s key source on culture’s loss of historical futurity."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Ghosts of My Life",
+        "author": "Mark Fisher",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Essays on hauntology, depression, and lost futures in music and film."
+      },
+      {
+        "title": "The Weird and the Eerie",
+        "author": "Mark Fisher",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A study of two modes of the strange in fiction and film."
+      },
+      {
+        "title": "k-punk",
+        "author": "Mark Fisher",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Collected writings from Fisher’s influential blog and beyond."
+      }
+    ]
+  },
   "literature-46": {
     "longDescription": "Euripides III in The Complete Greek Tragedies, edited by David Grene and Richmond Lattimore, presents modern English verse translations of Euripidean drama for students and general readers. The Chicago-series paperback on the shelf is the familiar mid-century classroom format.\n\nPlays in the classic Euripides III paperback sequence include Hecuba, Andromache, The Trojan Women, and Ion—tragedy of war, captivity, and recognition.",
     "author": {
