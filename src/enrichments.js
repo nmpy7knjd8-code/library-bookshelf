@@ -13132,11 +13132,11 @@ export const enrichments = {
     ]
   },
   "literature-45": {
-    "longDescription": "Emerson’s lectures on Plato, Swedenborg, Montaigne, Shakespeare, Napoleon, and Goethe as types of genius. The book converses with Carlyle’s hero-worship while insisting on democratic possibility. A key statement of Transcendentalist humanism.\n\nAn excellent book about some of the world's greatest men, including Plato, Swedenborg, Montaigne, Shakspeare, Napoleon and Goethe.Please Note: This book is easy to read in true text, not scanned images that can sometimes be difficult to decipher. The Microsoft eBook has a contents page linked to the chapter headings for easy navigation. The Adobe eBook has bookmarks at chapter headings and is printable up to two full copies per year. Both versions are text searchable.",
+    "longDescription": "Joel Porte’s Representative Man: Ralph Waldo Emerson in His Time (Oxford University Press, 1979) is a critical biography that follows Emerson through his own words: journals, sermons, lectures, and the great essays.\n\nRather than the serene Concord sage of legend, Porte presents a writer of tensions and self-doubt, shaped by loss, vocation, and the pressures of his age. The title answers Emerson’s Representative Men by making Emerson himself the representative figure of his era.",
     "author": {
-      "name": "Ralph Waldo Emerson",
-      "bio": "Ralph Waldo Emerson was an American philosopher, essayist, and poet, best remembered for leading the Transcendentalist movement of the mid-19th century. His teachings directly influenced the growing New Thought movement of the mid-1800s. He was seen as a champion of individualism and a prescient critic of the countervailing pressures of society.\r\n\r\nEmerson gradually moved away from the religious and social beliefs of his contemporaries, formulating and expressing the philosophy of Transcendentalism in his 1836 essay, Nature. As a result of this ground-breaking work he gave a speech entitled The American Scholar in 1837, which Oliver Wendell Holmes, Sr. considered to be America's \"Intellectual Declaration of Independence\". Considered one of the great orators of the time, Emerson's enthusiasm and respect for his audience enraptured crowds. His support for abolitionism…",
-      "photo": "authors/OL18405A.jpg"
+      "name": "Joel Porte",
+      "bio": "Joel Porte (1933–2007) was an American literary scholar who taught at Harvard and Cornell. A leading authority on Emerson and the American Renaissance, he wrote Emerson and Thoreau: Transcendentalists in Conflict and edited the Library of America edition of Emerson’s Essays and Lectures.",
+      "photo": null
     },
     "similar": [
       {
@@ -13204,64 +13204,7 @@ export const enrichments = {
         "why": null
       }
     ],
-    "otherByAuthor": [
-      {
-        "title": "Journals of Ralph Waldo Emerson",
-        "author": "Ralph Waldo Emerson",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Essays",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Self-reliance",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-2.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Poems",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Nature",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The conduct of life",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The works of Ralph Waldo Emerson",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "English traits",
-        "author": "Ralph Waldo Emerson",
-        "cover": "covers/extra/auth-literature-45-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
+    "otherByAuthor": []
   },
   "essays-10": {
     "longDescription": "Warren French’s biographical study of John Steinbeck, author of The Grapes of Wrath and Of Mice and Men. It traces the California writer’s career, politics, and craft. A secondary source for readers of Steinbeck’s fiction and life. This shelf copy sits among related works in american and british essays, older editions, and historical literature, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",

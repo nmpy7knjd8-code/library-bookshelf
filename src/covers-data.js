@@ -1374,12 +1374,12 @@ export const covers = {
   "literature-45": {
     "cover": "covers/literature-45.jpg",
     "spine": "covers/literature-45.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/works/OL62248W",
-    "coverId": 8231452,
+    "source": "AbeBooks (OUP 1979 dust jacket photo, perspective-corrected)",
+    "sourceUrl": "https://openlibrary.org/works/OL4461133W",
+    "coverId": null,
     "match": {
-      "title": "Representative men",
-      "author": "Ralph Waldo Emerson"
+      "title": "Representative man: Ralph Waldo Emerson in his time",
+      "author": "Joel Porte"
     },
     "gap": false,
     "note": null

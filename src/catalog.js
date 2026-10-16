@@ -777,11 +777,11 @@ export const shelves = [
           'A critical study of the Metaphysical poet of The Temple. Stewart situates Herbert’s sacred lyrics in devotion, form, and seventeenth-century context. Helpful for readers moving from anthology pieces to deeper engagement.',
       },
       {
-        title: 'Representative Men',
-        spine: 'Representative Men',
-        author: 'Ralph Waldo Emerson (Porte / Carlyle association)',
+        title: 'Representative Man: Ralph Waldo Emerson in His Time',
+        spine: 'Representative Man',
+        author: 'Joel Porte',
         description:
-          'Emerson’s lectures on Plato, Swedenborg, Montaigne, Shakespeare, Napoleon, and Goethe as types of genius. The book converses with Carlyle’s hero-worship while insisting on democratic possibility. A key statement of Transcendentalist humanism.',
+          'Joel Porte’s 1979 study of Emerson (Oxford University Press) reads the life through the work: the journals, lectures, and essays traced from the young minister to the Concord sage. Porte attends to Emerson’s language, doubts, and public role, presenting a living writer rather than a marble monument. A classic of Emerson scholarship that borrows its title from Emerson’s own Representative Men.',
       },
       {
         title: 'Euripides III',
