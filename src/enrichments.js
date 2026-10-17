@@ -15172,6 +15172,627 @@ export const enrichments = {
         "why": null
       }
     ]
+  },
+  "essays-11": {
+    "longDescription": "Volume II of the Literary Essays in Houghton Mifflin’s Riverside edition of The Writings of James Russell Lowell (1890) collects essays first written for the North American Review and other journals.\n\nThe contents run from “New England Two Centuries Ago” and a long essay on Carlyle to “Swinburne’s Tragedies,” “The Life and Letters of James Gates Percival,” “Lessing,” “Rousseau and the Sentimentalists,” “A Great Public Character” (on Josiah Quincy), and “Witchcraft.” Lowell writes as scholar and conversationalist at once, moving between European letters and New England history.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Among My Books",
+        "author": "James Russell Lowell",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The earlier collection in which several of these essays first appeared."
+      },
+      {
+        "title": "Literary and Social Essays",
+        "author": "George William Curtis",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Another Atlantic-era man of letters writing on books and public life."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-12": {
+    "longDescription": "Volume IV of the Literary Essays in the Riverside edition of Lowell’s Writings (Houghton Mifflin, 1890) gathers five long studies of major poets: Pope, Milton, Dante, Spenser, and Wordsworth.\n\nLowell taught modern languages at Harvard and his essay on Dante grew from years of lecturing on the Commedia. Together the pieces show the range of his reading across English and European poetry and his habit of combining close quotation with broad judgment.",
+    "author": {
+      "name": "James Russell Lowell",
+      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
+      "photo": "authors/OL113959A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Divine Comedy",
+        "author": "Dante Alighieri",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The subject of the volume’s longest essay."
+      },
+      {
+        "title": "The Faerie Queene",
+        "author": "Edmund Spenser",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Lowell’s Spenser essay is a classic appreciation of the poem."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-13": {
+    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume I of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume III on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
+    "author": {
+      "name": "Thomas Carlyle",
+      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
+      "photo": "authors/thomas-carlyle.jpg"
+    },
+    "similar": [
+      {
+        "title": "The French Revolution",
+        "author": "Thomas Carlyle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s earlier and more famous history."
+      },
+      {
+        "title": "Frederick the Great: King of Prussia",
+        "author": "Tim Blanning",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern biography that tests Carlyle’s portrait."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-14": {
+    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume II of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume IV on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
+    "author": {
+      "name": "Thomas Carlyle",
+      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
+      "photo": "authors/thomas-carlyle.jpg"
+    },
+    "similar": [
+      {
+        "title": "The French Revolution",
+        "author": "Thomas Carlyle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s earlier and more famous history."
+      },
+      {
+        "title": "Frederick the Great: King of Prussia",
+        "author": "Tim Blanning",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern biography that tests Carlyle’s portrait."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-15": {
+    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume III of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume V on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
+    "author": {
+      "name": "Thomas Carlyle",
+      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
+      "photo": "authors/thomas-carlyle.jpg"
+    },
+    "similar": [
+      {
+        "title": "The French Revolution",
+        "author": "Thomas Carlyle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s earlier and more famous history."
+      },
+      {
+        "title": "Frederick the Great: King of Prussia",
+        "author": "Tim Blanning",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern biography that tests Carlyle’s portrait."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-16": {
+    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume IV of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume VI on the spine). This volume is bound with Past and Present and Miscellanies, as the spine notes. The four Lovell volumes on this shelf form a complete run of the Frederick.",
+    "author": {
+      "name": "Thomas Carlyle",
+      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
+      "photo": "authors/thomas-carlyle.jpg"
+    },
+    "similar": [
+      {
+        "title": "The French Revolution",
+        "author": "Thomas Carlyle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s earlier and more famous history."
+      },
+      {
+        "title": "Frederick the Great: King of Prussia",
+        "author": "Tim Blanning",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern biography that tests Carlyle’s portrait."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-18": {
+    "longDescription": "The Era of Franklin D. Roosevelt: A Chronicle of the New Deal and Global War (Yale University Press, 1950) is volume 52 of the Chronicles of America series, the Allan Nevins edition that extended the original Yale set into the twentieth century.\n\nDenis Brogan narrates the Depression, the New Deal programs, the politics of the 1930s, and American entry into and conduct of the Second World War. Writing as a Cambridge scholar of American politics, he brings an outside observer’s perspective to the Roosevelt years.",
+    "author": {
+      "name": "Denis W. Brogan",
+      "bio": "Sir Denis William Brogan (1900–1974) was a Scottish historian and political scientist at Cambridge, best known for his writing on American and French politics, including The American Character (1944).",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Age of Roosevelt",
+        "author": "Arthur M. Schlesinger Jr.",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic multi-volume history of the New Deal."
+      },
+      {
+        "title": "Freedom from Fear",
+        "author": "David M. Kennedy",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern single-volume history of the same years."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-19": {
+    "longDescription": "Page Smith’s John Adams (Doubleday, 1962) was among the first full biographies to draw on the newly opened Adams family papers. Volume I covers 1735–1784: Adams’s youth in Braintree, Harvard, his legal career, his role in the resistance to Britain and the Continental Congress, and his missions to France and the Netherlands.\n\nThe two volumes won the Bancroft Prize. Smith writes a warm, detailed narrative that gives Abigail Adams and the family letters a central place.",
+    "author": {
+      "name": "Page Smith",
+      "bio": "Page Smith (1917–1995) was an American historian and the founding provost of Cowell College at UC Santa Cruz. His two-volume John Adams won the Bancroft Prize; he later wrote an eight-volume popular history of the United States.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "John Adams",
+        "author": "David McCullough",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The later bestselling biography built on the same papers."
+      },
+      {
+        "title": "My Dearest Friend: Letters of Abigail and John Adams",
+        "author": "Abigail and John Adams",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The correspondence at the heart of Smith’s account."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "John Adams, Vol. II (1784–1826)",
+        "author": "Page Smith",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The second volume, also on this shelf."
+      }
+    ]
+  },
+  "history-20": {
+    "longDescription": "Volume II of Page Smith’s John Adams (Doubleday, 1962) covers 1784–1826: Adams as minister to Britain, the first vice president, and the second president, with the Quasi-War with France, the Alien and Sedition Acts, and the bitter election of 1800.\n\nThe book closes with the long Quincy retirement and the renewed correspondence with Thomas Jefferson; both men died on July 4, 1826.",
+    "author": {
+      "name": "Page Smith",
+      "bio": "Page Smith (1917–1995) was an American historian and the founding provost of Cowell College at UC Santa Cruz. His two-volume John Adams won the Bancroft Prize; he later wrote an eight-volume popular history of the United States.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Adams-Jefferson Letters",
+        "author": "ed. Lester J. Cappon",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The late correspondence the volume ends with."
+      },
+      {
+        "title": "The Age of Federalism",
+        "author": "Stanley Elkins and Eric McKitrick",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The politics of the Adams presidency in depth."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "John Adams, Vol. I (1735–1784)",
+        "author": "Page Smith",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The first volume, also on this shelf."
+      }
+    ]
+  },
+  "history-21": {
+    "longDescription": "George Washington: The Making of an American Symbol (Free Press, 1987) asks how Washington’s reputation was built and what it meant to the early republic. Barry Schwartz reads the commemorations, pulpit oratory, newspapers, and visual images of the Revolutionary and early national eras.\n\nHis argument is that Americans made Washington a symbol of the values they wanted their new nation to stand for, especially self-restraint and the voluntary surrender of power.",
+    "author": {
+      "name": "Barry Schwartz",
+      "bio": "Barry Schwartz was an American sociologist known for his work on collective memory, including studies of how George Washington and Abraham Lincoln became national symbols.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "Inventing George Washington",
+        "author": "Edward G. Lengel",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A later study of the myths that grew around Washington."
+      },
+      {
+        "title": "Abraham Lincoln and the Forge of National Memory",
+        "author": "Barry Schwartz",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Schwartz applies the same approach to Lincoln."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-22": {
+    "longDescription": "Impressions of Lenin (University of Michigan Press, 1964) is a short memoir by Angelica Balabanoff, translated by Isotta Cesari, with a foreword by Bertram D. Wolfe.\n\nBalabanoff worked alongside Lenin as secretary of the Communist International in 1919–20 before breaking with the Bolsheviks. Her portrait is personal and critical: admiring of his single-mindedness, troubled by the ruthlessness she saw in the new regime.",
+    "author": {
+      "name": "Angelica Balabanoff",
+      "bio": "Angelica Balabanoff (1878–1965) was a Russian-Italian socialist activist. She served as secretary of the Comintern from 1919 to 1920 and later led a socialist party in Italy. Her memoir My Life as a Rebel appeared in 1938.",
+      "photo": "authors/angelica-balabanoff.jpg"
+    },
+    "similar": [
+      {
+        "title": "To the Finland Station",
+        "author": "Edmund Wilson",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The intellectual road to Lenin’s revolution."
+      },
+      {
+        "title": "Lenin: A Biography",
+        "author": "Robert Service",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern full-length life."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "My Life as a Rebel",
+        "author": "Angelica Balabanoff",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Her longer autobiography."
+      }
+    ]
+  },
+  "history-23": {
+    "longDescription": "The Age of Ideas: From Reaction to Revolution in Eighteenth-Century France (first published 1955) is George R. Havens’s survey of the French Enlightenment for general readers.\n\nHavens moves from the late reign of Louis XIV through the philosophes—Montesquieu, Voltaire, Diderot, Rousseau, and others—showing how their criticism of church and monarchy prepared the ground for the Revolution.",
+    "author": {
+      "name": "George R. Havens",
+      "bio": "George R. Havens was an American scholar of French literature, known for his work on Voltaire and Rousseau.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Enlightenment: An Interpretation",
+        "author": "Peter Gay",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The standard modern synthesis."
+      },
+      {
+        "title": "Candide",
+        "author": "Voltaire",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The era’s best-known satire."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-24": {
+    "longDescription": "Kenneth Scott Latourette’s A History of Christianity was first published in 1953; the Harper & Row revised edition divides it into two paperbacks. Volume I runs from the background and life of Jesus through the first five centuries, the spread of the faith in Europe and Asia, and the medieval church up to 1500.\n\nLatourette, a historian of missions, treats Christianity as a worldwide movement and pays close attention to its expansion beyond the Mediterranean.",
+    "author": {
+      "name": "Kenneth Scott Latourette",
+      "bio": "Kenneth Scott Latourette (1884–1968) was an American Baptist historian at Yale who specialized in the history of China and of world Christianity. His major work is the seven-volume A History of the Expansion of Christianity.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Story of Christianity",
+        "author": "Justo L. González",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A widely used modern two-volume survey."
+      },
+      {
+        "title": "The Rise of Western Christendom",
+        "author": "Peter Brown",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A close study of the early medieval centuries."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-25": {
+    "longDescription": "The Scientific Renaissance 1450–1630 (first published 1962; Dover edition, ISBN 0-486-28115-9) was written for the Rise of Modern Science series. Marie Boas Hall covers the period between the recovery of ancient learning and the work of Galileo and Kepler.\n\nShe treats Copernican astronomy, Vesalian anatomy, natural magic, chemistry, and mathematics together, showing a science still bound up with humanism and tradition yet moving toward observation and experiment.",
+    "author": {
+      "name": "Marie Boas Hall",
+      "bio": "Marie Boas Hall (1919–2009) was an American historian of science, a pioneer of postwar study of the Scientific Revolution, and long a professor at Imperial College London. She often collaborated with her husband, A. Rupert Hall.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "The Copernican Revolution",
+        "author": "Thomas S. Kuhn",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The astronomical side of the story in depth."
+      },
+      {
+        "title": "The Scientific Revolution",
+        "author": "Steven Shapin",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A short modern rethinking of the period."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "history-26": {
+    "longDescription": "The Origins of Modern Science, 1300–1800 grew out of lectures Herbert Butterfield gave at Cambridge and was first published in 1949. It helped establish the Scientific Revolution as a central subject for historians.\n\nButterfield follows the problem of motion from medieval impetus theory to Galileo, the Copernican debate, Harvey on the circulation of the blood, Bacon and Descartes on method, and the Newtonian synthesis, then the later chemical revolution.",
+    "author": {
+      "name": "Herbert Butterfield",
+      "bio": "Sir Herbert Butterfield (1900–1979) was an English historian and philosopher of history, Regius Professor of Modern History at Cambridge, and author of The Whig Interpretation of History (1931) and The Origins of Modern Science (1949).",
+      "photo": "authors/herbert-butterfield.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Scientific Revolution 1500–1800",
+        "author": "A. Rupert Hall",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A companion survey of the same period."
+      },
+      {
+        "title": "The Mechanization of the World Picture",
+        "author": "E. J. Dijksterhuis",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A deeper study of the rise of mechanism."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Whig Interpretation of History",
+        "author": "Herbert Butterfield",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "His influential essay on reading the past through the present."
+      }
+    ]
+  },
+  "history-27": {
+    "longDescription": "Greek Science in Antiquity (first published 1955; Dover edition, ISBN 0-486-41973-8) is Marshall Clagett’s short survey of ancient scientific thought.\n\nThe first part covers Greek natural philosophy, mathematics, astronomy, and medicine from the Presocratics through Aristotle, Euclid, Archimedes, Ptolemy, and Galen. The second follows how Roman encyclopedists and early medieval writers preserved and reshaped that inheritance for the Latin West.",
+    "author": {
+      "name": "Marshall Clagett",
+      "bio": "Marshall Clagett (1916–2005) was an American historian of science who specialized first in medieval science and later in ancient Egyptian science. He taught at the University of Wisconsin and the Institute for Advanced Study.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "Early Greek Science: Thales to Aristotle",
+        "author": "G. E. R. Lloyd",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern introduction to the same ground."
+      },
+      {
+        "title": "The Elements",
+        "author": "Euclid",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The founding text of Greek mathematics."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Science of Mechanics in the Middle Ages",
+        "author": "Marshall Clagett",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "His major study of medieval mechanics."
+      }
+    ]
+  },
+  "literature-54": {
+    "longDescription": "Carlyle (W. W. Norton, 1932) is Emery Neff’s life-and-works study of Thomas Carlyle, published soon after his Carlyle and Mill.\n\nNeff traces Carlyle’s Scottish upbringing, his marriage to Jane Welsh, the move to London, and the major books—Sartor Resartus, The French Revolution, Past and Present, Frederick the Great—setting them in the social and religious turmoil of nineteenth-century Britain.",
+    "author": {
+      "name": "Emery Neff",
+      "bio": "Emery Neff was an American literary scholar who wrote on Victorian thought, including Carlyle and Mill (1924), Carlyle (1932), and The Poetry of History (1947).",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "Sartor Resartus",
+        "author": "Thomas Carlyle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Carlyle’s strange, central book."
+      },
+      {
+        "title": "Thomas Carlyle: A History of His Life in London",
+        "author": "James Anthony Froude",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The famous early biography by Carlyle’s friend."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Carlyle and Mill",
+        "author": "Emery Neff",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Neff’s earlier comparative study of the two Victorians."
+      }
+    ]
+  },
+  "literature-55": {
+    "longDescription": "Faguet’s Flaubert first appeared in 1899 in the Hachette series Les Grands Écrivains français and was translated into English in 1914.\n\nThe study covers Flaubert’s life, his long labour over style, and each of the major works, from Madame Bovary and Salammbô to L’Éducation sentimentale, La Tentation de saint Antoine, Trois Contes, and Bouvard et Pécuchet. Faguet sees in him a Romantic temperament held in check by a fierce artistic conscience.",
+    "author": {
+      "name": "Émile Faguet",
+      "bio": "Émile Faguet (1847–1916) was a French literary critic and historian of literature, a professor at the Sorbonne and a member of the Académie française from 1900.",
+      "photo": "authors/emile-faguet.jpg"
+    },
+    "similar": [
+      {
+        "title": "Madame Bovary",
+        "author": "Gustave Flaubert",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The novel at the centre of Faguet’s study."
+      },
+      {
+        "title": "Flaubert’s Parrot",
+        "author": "Julian Barnes",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A modern novelist’s playful meditation on Flaubert."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "literature-56": {
+    "longDescription": "This Educate.ie edition of The Tragedy of King Lear (Castleisland, Co. Kerry, 2014) is part of the publisher’s Shakespeare Series for Leaving Certificate English in Ireland, with introduction and notes by Mary Barron.\n\nAlongside the complete text it gives explanations of key scenes, analysis of each act, modern-English versions of important passages, questions and classroom activities, character and theme notes, and sample exam essays.",
+    "author": {
+      "name": "William Shakespeare",
+      "bio": "William Shakespeare (1564–1616) was an English poet and playwright, widely regarded as the greatest writer in the English language. His surviving works include 38 plays, 154 sonnets, and two long narrative poems. This edition’s introduction and notes are by Mary Barron, written for Irish Leaving Certificate students.",
+      "photo": "authors/OL9388A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Shakespearean Tragedy",
+        "author": "A. C. Bradley",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Classic lectures with a famous chapter on Lear."
+      },
+      {
+        "title": "King Lear (Arden Shakespeare)",
+        "author": "ed. R. A. Foakes",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A full scholarly edition of the play."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "philosophy-45": {
+    "longDescription": "A Philosophy of Music Education was first published in 1970; this is the second edition (Prentice Hall, 1989). Bennett Reimer argues that music education should be grounded in aesthetic education: the main reason to teach music is to develop students’ capacity for the felt, meaningful experience that musical works offer.\n\nThe book works through aesthetic theory, the nature of musical meaning, and what such a philosophy implies for general music, performance programs, and the curriculum. It became a standard text in music-education courses.",
+    "author": {
+      "name": "Bennett Reimer",
+      "bio": "Bennett Reimer (1932–2013) was an American music educator who chaired music education at Northwestern University, where he held the John W. Beattie Chair, and was a leading advocate of music education as aesthetic education.",
+      "photo": null
+    },
+    "similar": [
+      {
+        "title": "Philosophy in a New Key",
+        "author": "Susanne K. Langer",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A key source for Reimer’s view of musical meaning."
+      },
+      {
+        "title": "Music Matters",
+        "author": "David J. Elliott",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The best-known “praxial” reply to Reimer."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "philosophy-46": {
+    "longDescription": "A Return to Love: Reflections on the Principles of “A Course in Miracles” (HarperCollins, 1992) was Marianne Williamson’s first book and became a New York Times bestseller after Oprah Winfrey promoted it.\n\nWilliamson retells her own path to A Course in Miracles and applies its central idea—that love is real and fear an illusion—to relationships, work, the body, and spiritual life. The book is the source of the widely quoted passage “Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.”",
+    "author": {
+      "name": "Marianne Williamson",
+      "bio": "Marianne Williamson (born 1952) is an American author, spiritual teacher, and political activist. A Return to Love (1992) was her first New York Times bestseller; she later ran for the Democratic presidential nomination.",
+      "photo": "authors/marianne-williamson.jpg"
+    },
+    "similar": [
+      {
+        "title": "A Course in Miracles",
+        "author": "Helen Schucman",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The text Williamson’s book reflects on."
+      },
+      {
+        "title": "The Power of Now",
+        "author": "Eckhart Tolle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Another widely read modern spiritual guide."
+      }
+    ],
+    "otherByAuthor": []
   }
 };
 

@@ -321,6 +321,22 @@ export const shelves = [
         description:
           'Mark Fisher’s Capitalist Realism (Zero Books, 2009) diagnoses the pervasive sense that there is no alternative to capitalism—that it is easier to imagine the end of the world than the end of capitalism. Through film, music, education, bureaucracy, and mental health, it reads that resignation as ideology and looks for the cracks where a different future might show through.',
       },
+      {
+        title: 'A Philosophy of Music Education (Second Edition)',
+        spine: 'Philosophy of Music Ed.',
+        author: 'Bennett Reimer',
+        description:
+          'Bennett Reimer’s influential case for music education as aesthetic education, second edition (Prentice Hall, 1989). Drawing on aesthetics from Langer and Dewey, Reimer argues that music’s value lies in the feelingful experience it offers, and builds a curriculum philosophy on that ground.',
+        binding: { bg: '#ece6d5', ink: '#2c5888', band: '#2c5888', pages: '#f1eadb', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'A Return to Love',
+        spine: 'A Return to Love',
+        author: 'Marianne Williamson',
+        description:
+          'Marianne Williamson’s reflections on the principles of A Course in Miracles (HarperCollins hardcover, 1992). Love as the answer to fear across relationships, work, the body, and heaven, including the much-quoted passage beginning “Our deepest fear is not that we are inadequate.”',
+        binding: { bg: '#e6dde6', ink: '#3b2c4a', band: '#7a2c5a', pages: '#f1eadb', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
     ],
   },
   {
@@ -453,6 +469,86 @@ export const shelves = [
         author: 'Valerio Massimo Manfredi',
         description:
           'A historical novel of Alexander the Great pushing to the edges of the known world. Manfredi blends campaign narrative with character drama for a wide readership. It belongs to modern popular retellings of the Macedonian conquest.',
+      },
+      {
+        title: 'The Era of Franklin D. Roosevelt',
+        spine: 'Era of F. D. Roosevelt',
+        author: 'Denis W. Brogan',
+        description:
+          'Volume 52 of Yale’s Chronicles of America series (1950). Brogan, a British historian of the United States, surveys the New Deal and the Second World War from Roosevelt’s first inauguration to victory. A brisk, readable chronicle written while the era was still fresh.',
+        binding: { bg: '#7e7c56', ink: '#22324a', band: '#22324a', pages: '#e6dfcc', tone: 'dark', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'John Adams, Vol. I (1735–1784)',
+        spine: 'John Adams I',
+        author: 'Page Smith',
+        description:
+          'The first volume of Page Smith’s Bancroft Prize–winning life of John Adams (Doubleday, 1962). It follows Adams from his Braintree boyhood and law practice through the Revolution, the Continental Congress, and his diplomatic years in Europe. Drawn closely from the Adams Papers.',
+        binding: { bg: '#ddd3bc', ink: '#a3302a', band: '#a3302a', pages: '#ece4d0', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'John Adams, Vol. II (1784–1826)',
+        spine: 'John Adams II',
+        author: 'Page Smith',
+        description:
+          'The second volume of Page Smith’s John Adams carries the story from 1784 to Adams’s death on July 4, 1826. Diplomacy in London, the vice presidency, the embattled presidency, retirement, and the late reconciliation with Jefferson. Winner, with Volume I, of the Bancroft Prize.',
+        binding: { bg: '#ddd3bc', ink: '#a3302a', band: '#a3302a', pages: '#ece4d0', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'George Washington: The Making of an American Symbol',
+        spine: 'Washington: American Symbol',
+        author: 'Barry Schwartz',
+        description:
+          'Barry Schwartz’s study (Free Press, 1987) of how George Washington became a national symbol in his own lifetime and just after. A sociologist of collective memory, Schwartz traces sermons, eulogies, portraits, and celebrations that turned a general into an emblem of republican virtue.',
+        binding: { bg: '#a19840', ink: '#22397a', band: '#8a2a22', pages: '#ece4d0', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'Impressions of Lenin',
+        spine: 'Impressions of Lenin',
+        author: 'Angelica Balabanoff',
+        description:
+          'Angelica Balabanoff’s memoir of Lenin (University of Michigan Press, 1964), translated by Isotta Cesari with a foreword by Bertram D. Wolfe. Balabanoff, secretary of the Comintern in 1919–20, recalls Lenin up close and explains her break with Bolshevism.',
+        binding: { bg: '#25485f', ink: '#ecd58e', band: '#c9a24e', pages: '#e8e0cc', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'The Age of Ideas',
+        spine: 'The Age of Ideas',
+        author: 'George R. Havens',
+        description:
+          'George R. Havens’s The Age of Ideas: From Reaction to Revolution in Eighteenth-Century France (1955). A survey of the French Enlightenment through its writers: Bayle and Fontenelle, Montesquieu, Voltaire, Diderot, Rousseau, and the road to 1789.',
+        binding: { bg: '#2f6f7f', ink: '#f1ece0', band: '#d6bf86', pages: '#e8e2d3', tone: 'light', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'A History of Christianity, Volume I: Beginnings to 1500',
+        spine: 'History of Christianity I',
+        author: 'Kenneth Scott Latourette',
+        description:
+          'The first of two Harper & Row paperback volumes of Latourette’s survey of Christian history (revised edition). From Jesus and the early church through the conversion of Europe and the medieval church to 1500. Broad, irenic, and global in outlook.',
+        binding: { bg: '#5a1d3d', ink: '#f07aa8', band: '#e2b84f', pages: '#ebe2d0', tone: 'light', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'The Scientific Renaissance 1450–1630',
+        spine: 'Scientific Renaissance',
+        author: 'Marie Boas Hall',
+        description:
+          'Marie Boas Hall’s classic history of science from the Renaissance to the eve of the Scientific Revolution (Dover reprint of the 1962 original). Copernicus, Vesalius, the new anatomy and astronomy, magic and chemistry, and the rise of experiment before Galileo and Kepler’s full triumph.',
+        binding: { bg: '#ece5d2', ink: '#1f2f57', band: '#8a2a22', pages: '#f1eadb', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'The Origins of Modern Science',
+        spine: 'Origins of Modern Science',
+        author: 'Herbert Butterfield',
+        description:
+          'Butterfield’s lectures on the Scientific Revolution, 1300–1800 (Free Press paperback of the revised edition; first published 1949). He argues the revolution “outshines everything since the rise of Christianity” and traces it from medieval impetus theory through Newton.',
+        binding: { bg: '#78bd3f', ink: '#141414', band: '#141414', pages: '#efe8d4', tone: 'dark', material: 'paper', deco: 'modern' },
+      },
+      {
+        title: 'Greek Science in Antiquity',
+        spine: 'Greek Science in Antiquity',
+        author: 'Marshall Clagett',
+        description:
+          'Marshall Clagett’s concise history of Greek science and its afterlife (Dover reprint of the 1955 original). From the Presocratics, Aristotle, Euclid, Archimedes, and Ptolemy to the Roman and early medieval transmission of Greek learning.',
+        binding: { bg: '#3f8acb', ink: '#10203c', band: '#10203c', pages: '#eee7d4', tone: 'dark', material: 'paper', deco: 'modern' },
       },
     ],
   },
@@ -839,6 +935,30 @@ export const shelves = [
         description:
           'David Foster Wallace’s Infinite Jest is a vast comic-tragic novel of addiction, entertainment, tennis academies, and Quebecois separatism in a near-future North America. Encyclopedic, footnote-laden, and emotionally fierce, it became the defining late-twentieth-century maximalist American novel.',
       },
+      {
+        title: 'Carlyle',
+        spine: 'Carlyle',
+        author: 'Emery Neff',
+        description:
+          'Emery Neff’s critical biography of Thomas Carlyle (W. W. Norton, 1932). It follows Carlyle from Ecclefechan to Chelsea and reads his books against his life and the Victorian social crisis. Ex–Grand Rapids Public Library copy with a frontispiece portrait of Carlyle in 1846.',
+        binding: { bg: '#2c4a34', ink: '#e8d7a2', band: '#b8984f', pages: '#e6dfcc', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Flaubert',
+        spine: 'Flaubert',
+        author: 'Émile Faguet',
+        description:
+          'Émile Faguet’s study of Gustave Flaubert (1899), a classic of French academic criticism. Faguet reads Madame Bovary, Salammbô, L’Éducation sentimentale, and the rest as the work of a Romantic who disciplined himself into a realist. Orange library-bound ex-library copy.',
+        binding: { bg: '#d6643a', ink: '#22160e', band: '#22160e', pages: '#efe5cf', tone: 'dark', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'The Tragedy of King Lear',
+        spine: 'King Lear',
+        author: 'William Shakespeare (intro & notes by Mary Barron)',
+        description:
+          'Educate.ie Shakespeare Series edition of King Lear for the Irish Leaving Certificate, with introduction and notes by Mary Barron (2014). The complete play with act-by-act analysis, modern-English versions of key scenes, character and theme studies, and sample exam essays.',
+        binding: { bg: '#1f4e42', ink: '#f2efe6', band: '#e3c56e', pages: '#f1eadb', tone: 'light', material: 'paper', deco: 'modern' },
+      },
     ],
   },
   {
@@ -922,6 +1042,54 @@ export const shelves = [
         author: 'Warren French',
         description:
           'Warren French’s biographical study of John Steinbeck, author of The Grapes of Wrath and Of Mice and Men. It traces the California writer’s career, politics, and craft. A secondary source for readers of Steinbeck’s fiction and life.',
+      },
+      {
+        title: 'Literary Essays, Vol. II',
+        spine: 'Lowell Lit. Essays II',
+        author: 'James Russell Lowell',
+        description:
+          'Volume II of Lowell’s Literary Essays in the Riverside edition of his prose. It gathers “New England Two Centuries Ago,” “Carlyle,” “Swinburne’s Tragedies,” “Lessing,” “Rousseau and the Sentimentalists,” “Witchcraft,” and other pieces. Learned, witty Brahmin criticism from the Atlantic and North American Review years.',
+        binding: { bg: '#8e2b27', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Literary Essays, Vol. IV',
+        spine: 'Lowell Lit. Essays IV',
+        author: 'James Russell Lowell',
+        description:
+          'Volume IV of Lowell’s Literary Essays in the Riverside edition, devoted to the great poets: Pope, Milton, Dante, Spenser, and Wordsworth. The Dante essay is among the finest nineteenth-century American readings of the Commedia. Criticism as generous, erudite appreciation.',
+        binding: { bg: '#8e2b27', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Frederick the Great, Vol. I',
+        spine: 'Frederick the Great I',
+        author: 'Thomas Carlyle',
+        description:
+          'Volume I of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works III). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
+        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Frederick the Great, Vol. II',
+        spine: 'Frederick the Great II',
+        author: 'Thomas Carlyle',
+        description:
+          'Volume II of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works IV). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
+        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Frederick the Great, Vol. III',
+        spine: 'Frederick the Great III',
+        author: 'Thomas Carlyle',
+        description:
+          'Volume III of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works V). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
+        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Frederick the Great, Vol. IV',
+        spine: 'Frederick the Great IV',
+        author: 'Thomas Carlyle',
+        description:
+          'Volume IV of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works VI). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose. This volume is bound with Past and Present and Miscellanies, as the spine notes.',
+        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
       },
     ],
   },

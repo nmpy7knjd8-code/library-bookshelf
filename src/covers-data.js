@@ -1656,6 +1656,219 @@ export const covers = {
     },
     "gap": false,
     "note": null
+  },
+  "essays-11": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Riverside edition; no front-board image of this printing found"
+  },
+  "essays-12": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Riverside edition; no front-board image of this printing found"
+  },
+  "essays-13": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
+  },
+  "essays-14": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
+  },
+  "essays-15": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
+  },
+  "essays-16": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
+  },
+  "history-18": {
+    "cover": "covers/history-18.jpg",
+    "spine": "covers/history-18.jpg",
+    "source": "Internet Archive",
+    "sourceUrl": "https://archive.org/details/bwb_S0-BPA-957",
+    "coverId": null,
+    "match": {
+      "title": "The Era of Franklin D. Roosevelt",
+      "author": "D. W. Brogan"
+    },
+    "gap": false,
+    "note": "Olive cloth, Chronicles of America (Allan Nevins edition) — matches owner’s copy"
+  },
+  "history-19": {
+    "cover": "covers/history-19.jpg",
+    "spine": "covers/history-19.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL18510627W",
+    "coverId": null,
+    "match": {
+      "title": "John Adams, Volume I 1735–1784",
+      "author": "Page Smith"
+    },
+    "gap": false,
+    "note": "Ex-library dust jacket (sticker visible), same jacket as owner’s copy"
+  },
+  "history-20": {
+    "cover": "covers/history-20.jpg",
+    "spine": "covers/history-20.jpg",
+    "source": "Internet Archive",
+    "sourceUrl": "https://archive.org/details/bwb_S0-AVH-051_2",
+    "coverId": null,
+    "match": {
+      "title": "John Adams, Volume II 1784–1826",
+      "author": "Page Smith"
+    },
+    "gap": false,
+    "note": "Dust jacket composed from Internet Archive thumbnail"
+  },
+  "history-21": {
+    "cover": "covers/history-21.jpg",
+    "spine": "covers/history-21.jpg",
+    "source": "Internet Archive",
+    "sourceUrl": "https://archive.org/details/georgewashington00schw",
+    "coverId": null,
+    "match": {
+      "title": "George Washington: The Making of an American Symbol",
+      "author": "Barry Schwartz"
+    },
+    "gap": false,
+    "note": "Free Press dust jacket composed from Internet Archive thumbnail"
+  },
+  "history-22": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Blue cloth Michigan hardcover; only the later paperback jacket and title page found online"
+  },
+  "history-23": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Teal library binding; online images are of the Free Press paperback, not this copy"
+  },
+  "history-24": {
+    "cover": "covers/history-24.jpg",
+    "spine": "covers/history-24.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/0060649526-L.jpg",
+    "coverId": null,
+    "match": {
+      "title": "A History of Christianity, Volume I: Beginnings to 1500 (Revised Edition)",
+      "author": "Kenneth Scott Latourette"
+    },
+    "gap": false,
+    "note": "Harper & Row purple paperback"
+  },
+  "history-25": {
+    "cover": "covers/history-25.jpg",
+    "spine": "covers/history-25.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/0486281159-L.jpg",
+    "coverId": null,
+    "match": {
+      "title": "The Scientific Renaissance, 1450–1630",
+      "author": "Marie Boas Hall"
+    },
+    "gap": false,
+    "note": "Dover edition, ISBN 0-486-28115-9 (matches spine)"
+  },
+  "history-26": {
+    "cover": "covers/history-26.jpg",
+    "spine": "covers/history-26.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/0029050707-L.jpg",
+    "coverId": null,
+    "match": {
+      "title": "The Origins of Modern Science (Revised Edition)",
+      "author": "Herbert Butterfield"
+    },
+    "gap": false,
+    "note": "Free Press paperback, ISBN 0-02-905070-7 (matches spine)"
+  },
+  "history-27": {
+    "cover": "covers/history-27.jpg",
+    "spine": "covers/history-27.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/0486419738-L.jpg",
+    "coverId": null,
+    "match": {
+      "title": "Greek Science in Antiquity",
+      "author": "Marshall Clagett"
+    },
+    "gap": false,
+    "note": "Dover edition, ISBN 0-486-41973-8 (matches spine)"
+  },
+  "literature-54": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Norton 1932 cloth; only title-page scans found online"
+  },
+  "literature-55": {
+    "cover": null,
+    "source": null,
+    "match": null,
+    "gap": true,
+    "note": "Orange library rebinding; no matching cover image"
+  },
+  "literature-56": {
+    "cover": "covers/literature-56.jpg",
+    "spine": "covers/literature-56.jpg",
+    "source": "User-provided edition cover",
+    "sourceUrl": null,
+    "coverId": null,
+    "match": {
+      "title": "The Tragedy of King Lear (Educate.ie Shakespeare Series)",
+      "author": "Mary Barron (intro & notes)"
+    },
+    "gap": false,
+    "note": "Cropped from the owner’s photo of this copy"
+  },
+  "philosophy-45": {
+    "cover": "covers/philosophy-45.jpg",
+    "spine": "covers/philosophy-45.jpg",
+    "source": "AbeBooks",
+    "sourceUrl": "https://pictures.abebooks.com/isbn/9780136638810-us.jpg",
+    "coverId": null,
+    "match": {
+      "title": "A Philosophy of Music Education, Second Edition",
+      "author": "Bennett Reimer"
+    },
+    "gap": false,
+    "note": "Prentice Hall second edition"
+  },
+  "philosophy-46": {
+    "cover": "covers/philosophy-46.jpg",
+    "spine": "covers/philosophy-46.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL11425726W",
+    "coverId": null,
+    "match": {
+      "title": "A Return to Love: Reflections on the Principles of A Course in Miracles",
+      "author": "Marianne Williamson"
+    },
+    "gap": false,
+    "note": "1992 HarperCollins hardcover jacket (matches owner’s spine)"
   }
 };
 

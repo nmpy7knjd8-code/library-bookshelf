@@ -95,11 +95,16 @@ const STYLES = ['bands', 'label', 'plain', 'modern', 'bands', 'label']
 function bookStyle(book, index) {
   const h = hashString(`${book.title}:${book.author}:${index}`)
   const h2 = hashString(`${book.author}|${index}|r`)
-  const [bg, ink, band, pages, tone] = BINDINGS[h % BINDINGS.length]
+  // Optional per-book binding (real spine colour from the owner's copy); otherwise hashed colourway
+  const own = book.binding
+  const [bg, ink, band, pages, tone] = own
+    ? [own.bg, own.ink, own.band || own.ink, own.pages || '#ebe3d0', own.tone || 'gold']
+    : BINDINGS[h % BINDINGS.length]
   const palette = { bg, ink, band, pages }
-  const deco = STYLES[h2 % STYLES.length]
+  const deco = own?.deco || STYLES[h2 % STYLES.length]
   const material =
-    deco === 'bands' ? 'leather' : deco === 'modern' ? 'paper' : tone === 'dark' ? 'paper' : 'cloth'
+    own?.material ||
+    (deco === 'bands' ? 'leather' : deco === 'modern' ? 'paper' : tone === 'dark' ? 'paper' : 'cloth')
 
   const titleLine = fullSpineTitle(book)
   const len = titleLine.length
