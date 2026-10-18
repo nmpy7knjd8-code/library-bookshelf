@@ -1044,51 +1044,21 @@ export const shelves = [
           'Warren French’s biographical study of John Steinbeck, author of The Grapes of Wrath and Of Mice and Men. It traces the California writer’s career, politics, and craft. A secondary source for readers of Steinbeck’s fiction and life.',
       },
       {
-        title: 'Literary Essays, Vol. II',
-        spine: 'Lowell Lit. Essays II',
+        title: 'Literary Essays (Vols. II & IV)',
+        spine: 'Lowell Lit. Essays II & IV',
         author: 'James Russell Lowell',
+        volumes: 2,
         description:
-          'Volume II of Lowell’s Literary Essays in the Riverside edition of his prose. It gathers “New England Two Centuries Ago,” “Carlyle,” “Swinburne’s Tragedies,” “Lessing,” “Rousseau and the Sentimentalists,” “Witchcraft,” and other pieces. Learned, witty Brahmin criticism from the Atlantic and North American Review years.',
+          'Volumes II and IV of Lowell’s Literary Essays in the Riverside edition of his prose, kept together as one set. Vol. II gathers “New England Two Centuries Ago,” “Carlyle,” “Swinburne’s Tragedies,” “Lessing,” “Rousseau and the Sentimentalists,” “Witchcraft,” and other pieces; Vol. IV is devoted to the great poets: Pope, Milton, Dante, Spenser, and Wordsworth. Learned, witty Brahmin criticism from the Atlantic and North American Review years, with the Dante essay among the finest nineteenth-century American readings of the Commedia.',
         binding: { bg: '#8e2b27', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
       },
       {
-        title: 'Literary Essays, Vol. IV',
-        spine: 'Lowell Lit. Essays IV',
-        author: 'James Russell Lowell',
-        description:
-          'Volume IV of Lowell’s Literary Essays in the Riverside edition, devoted to the great poets: Pope, Milton, Dante, Spenser, and Wordsworth. The Dante essay is among the finest nineteenth-century American readings of the Commedia. Criticism as generous, erudite appreciation.',
-        binding: { bg: '#8e2b27', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
-      },
-      {
-        title: 'Frederick the Great, Vol. I',
-        spine: 'Frederick the Great I',
+        title: 'Frederick the Great (Vols. I–IV)',
+        spine: 'Frederick the Great I–IV',
         author: 'Thomas Carlyle',
+        volumes: 4,
         description:
-          'Volume I of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works III). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
-        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
-      },
-      {
-        title: 'Frederick the Great, Vol. II',
-        spine: 'Frederick the Great II',
-        author: 'Thomas Carlyle',
-        description:
-          'Volume II of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works IV). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
-        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
-      },
-      {
-        title: 'Frederick the Great, Vol. III',
-        spine: 'Frederick the Great III',
-        author: 'Thomas Carlyle',
-        description:
-          'Volume III of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works V). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose.',
-        binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
-      },
-      {
-        title: 'Frederick the Great, Vol. IV',
-        spine: 'Frederick the Great IV',
-        author: 'Thomas Carlyle',
-        description:
-          'Volume IV of Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, in the Lovell edition of Carlyle’s Works (spine: Works VI). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose. This volume is bound with Past and Present and Miscellanies, as the spine notes.',
+          'Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, complete in four volumes in the Lovell edition of Carlyle’s Works (spines: Works III–VI). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose. Vol. IV is bound with Past and Present and Miscellanies, as the spine notes.',
         binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
       },
     ],
@@ -1096,5 +1066,6 @@ export const shelves = [
 ];
 
 export function countBooks() {
-  return shelves.reduce((n, s) => n + s.books.length, 0);
+  // Multi-volume sets are one entry/cover but count every physical volume.
+  return shelves.reduce((n, s) => n + s.books.reduce((m, b) => m + (b.volumes || 1), 0), 0);
 }

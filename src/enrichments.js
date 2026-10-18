@@ -15174,7 +15174,7 @@ export const enrichments = {
     ]
   },
   "essays-11": {
-    "longDescription": "Volume II of the Literary Essays in Houghton Mifflin’s Riverside edition of The Writings of James Russell Lowell (1890) collects essays first written for the North American Review and other journals.\n\nThe contents run from “New England Two Centuries Ago” and a long essay on Carlyle to “Swinburne’s Tragedies,” “The Life and Letters of James Gates Percival,” “Lessing,” “Rousseau and the Sentimentalists,” “A Great Public Character” (on Josiah Quincy), and “Witchcraft.” Lowell writes as scholar and conversationalist at once, moving between European letters and New England history.",
+    "longDescription": "Volumes II and IV of the Literary Essays in Houghton Mifflin’s Riverside edition of The Writings of James Russell Lowell (1890), kept together as one set on this shelf. The essays were first written for the North American Review, the Atlantic, and other journals.\n\nVolume II runs from “New England Two Centuries Ago” and a long essay on Carlyle to “Swinburne’s Tragedies,” “The Life and Letters of James Gates Percival,” “Lessing,” “Rousseau and the Sentimentalists,” “A Great Public Character” (on Josiah Quincy), and “Witchcraft.” Volume IV gathers five long studies of major poets: Pope, Milton, Dante, Spenser, and Wordsworth; the Dante essay grew from Lowell’s years of lecturing on the Commedia at Harvard.\n\nTogether the two volumes show Lowell as scholar and conversationalist at once, moving between European letters and New England history and combining close quotation with broad judgment.",
     "author": {
       "name": "James Russell Lowell",
       "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
@@ -15196,18 +15196,7 @@ export const enrichments = {
         "bookId": null,
         "source": "explore",
         "why": "Another Atlantic-era man of letters writing on books and public life."
-      }
-    ],
-    "otherByAuthor": []
-  },
-  "essays-12": {
-    "longDescription": "Volume IV of the Literary Essays in the Riverside edition of Lowell’s Writings (Houghton Mifflin, 1890) gathers five long studies of major poets: Pope, Milton, Dante, Spenser, and Wordsworth.\n\nLowell taught modern languages at Harvard and his essay on Dante grew from years of lecturing on the Commedia. Together the pieces show the range of his reading across English and European poetry and his habit of combining close quotation with broad judgment.",
-    "author": {
-      "name": "James Russell Lowell",
-      "bio": "James Russell Lowell was an American Romantic poet, critic, editor, and diplomat. He is associated with the fireside poets, a group of New England writers who were among the first American poets to rival the popularity of British poets. These writers usually used conventional forms and meters in their poetry, making them suitable for families entertaining at their firesides.",
-      "photo": "authors/OL113959A.jpg"
-    },
-    "similar": [
+      },
       {
         "title": "The Divine Comedy",
         "author": "Dante Alighieri",
@@ -15227,89 +15216,8 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "essays-13": {
-    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume I of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume III on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
-    "author": {
-      "name": "Thomas Carlyle",
-      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
-      "photo": "authors/thomas-carlyle.jpg"
-    },
-    "similar": [
-      {
-        "title": "The French Revolution",
-        "author": "Thomas Carlyle",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "Carlyle’s earlier and more famous history."
-      },
-      {
-        "title": "Frederick the Great: King of Prussia",
-        "author": "Tim Blanning",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "A modern biography that tests Carlyle’s portrait."
-      }
-    ],
-    "otherByAuthor": []
-  },
-  "essays-14": {
-    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume II of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume IV on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
-    "author": {
-      "name": "Thomas Carlyle",
-      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
-      "photo": "authors/thomas-carlyle.jpg"
-    },
-    "similar": [
-      {
-        "title": "The French Revolution",
-        "author": "Thomas Carlyle",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "Carlyle’s earlier and more famous history."
-      },
-      {
-        "title": "Frederick the Great: King of Prussia",
-        "author": "Tim Blanning",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "A modern biography that tests Carlyle’s portrait."
-      }
-    ],
-    "otherByAuthor": []
-  },
-  "essays-15": {
-    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume III of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume V on the spine). The four Lovell volumes on this shelf form a complete run of the Frederick.",
-    "author": {
-      "name": "Thomas Carlyle",
-      "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",
-      "photo": "authors/thomas-carlyle.jpg"
-    },
-    "similar": [
-      {
-        "title": "The French Revolution",
-        "author": "Thomas Carlyle",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "Carlyle’s earlier and more famous history."
-      },
-      {
-        "title": "Frederick the Great: King of Prussia",
-        "author": "Tim Blanning",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "A modern biography that tests Carlyle’s portrait."
-      }
-    ],
-    "otherByAuthor": []
-  },
-  "essays-16": {
-    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis copy is Volume IV of the history in John W. Lovell’s American set of Carlyle’s Works (Works volume VI on the spine). This volume is bound with Past and Present and Miscellanies, as the spine notes. The four Lovell volumes on this shelf form a complete run of the Frederick.",
+  "essays-12": {
+    "longDescription": "Carlyle spent more than a decade on the History of Friedrich II of Prussia, called Frederick the Great, published 1858–65. It is his longest work: a vast narrative of the Hohenzollern inheritance, Frederick’s harsh upbringing, and the wars that made Prussia a European power.\n\nThis set is Volumes I–IV of the history in John W. Lovell’s American set of Carlyle’s Works (Works volumes III–VI on the spines), a complete run of the Frederick in four volumes. Volume IV is bound with Past and Present and Miscellanies, as its spine notes.",
     "author": {
       "name": "Thomas Carlyle",
       "bio": "Thomas Carlyle (1795–1881) was a Scottish essayist and historian, author of Sartor Resartus, The French Revolution, and On Heroes, Hero-Worship, and the Heroic in History. His History of Friedrich II of Prussia, called Frederick the Great (1858–65), was his last major work.",

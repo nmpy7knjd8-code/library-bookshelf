@@ -1662,42 +1662,14 @@ export const covers = {
     "source": null,
     "match": null,
     "gap": true,
-    "note": "Red cloth Riverside edition; no front-board image of this printing found"
+    "note": "Red cloth Riverside edition (Literary Essays, Vols. II and IV); no front-board image of this printing found"
   },
   "essays-12": {
     "cover": null,
     "source": null,
     "match": null,
     "gap": true,
-    "note": "Red cloth Riverside edition; no front-board image of this printing found"
-  },
-  "essays-13": {
-    "cover": null,
-    "source": null,
-    "match": null,
-    "gap": true,
-    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
-  },
-  "essays-14": {
-    "cover": null,
-    "source": null,
-    "match": null,
-    "gap": true,
-    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
-  },
-  "essays-15": {
-    "cover": null,
-    "source": null,
-    "match": null,
-    "gap": true,
-    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
-  },
-  "essays-16": {
-    "cover": null,
-    "source": null,
-    "match": null,
-    "gap": true,
-    "note": "Red cloth Lovell “Carlyle’s Works” set; no cover image of this edition found"
+    "note": "Red cloth Lovell “Carlyle’s Works” set (Frederick the Great, Vols. I–IV); no cover image of this edition found"
   },
   "history-18": {
     "cover": "covers/history-18.jpg",
