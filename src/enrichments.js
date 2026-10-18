@@ -15701,6 +15701,114 @@ export const enrichments = {
       }
     ],
     "otherByAuthor": []
+  },
+  "philosophy-47": {
+    "longDescription": "The Birth of Tragedy (1872) was Nietzsche’s first book. It reads Attic tragedy as the union of two drives, the Apollonian art of form, image, and individuation and the Dionysian rapture that dissolves the self, and argues that Euripides and Socrates killed tragedy by putting reason and optimism in its place. Nietzsche ends by hoping that Wagner’s music drama would bring tragedy back. The 1886 edition added the “Attempt at a Self-Criticism,” in which he exposes the book’s youthful excesses.\n\nThe Case of Wagner (1888), written in his last productive year, reverses the early hope: Wagner is now the decadent, theatrical sickness of modern culture, set against the healthy clarity of Bizet. Walter Kaufmann’s Vintage edition translates both works with his introductions and notes, so the volume shows the beginning and the end of Nietzsche’s long argument with Wagner and with modern art.",
+    "author": {
+      "name": "Friedrich Nietzsche",
+      "bio": "Friedrich Wilhelm Nietzsche was a German philosopher and writer who started his career as a classical philologist and turned to philosophy early in his academic career. In 1869, at age 24, he was appointed Professor of Classical Philology at the University of Basel. Plagued by health problems for most of his life, he resigned from the university in 1879. He afterward lived as an independent writer, spending much of his life in relative solitude and financial insecurity while moving between Switzerland, Italy, and southern France in search of climates that might alleviate his condition, and in the following decade, he completed much of his core writing. In 1889, aged 44, he suffered a neurological collapse, and thereafter a complete loss of his mental faculties, with paralysis and vascular dementia; he lived out his remaining 11 years, first under the care of his…",
+      "photo": "authors/OL20157A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Bacchae",
+        "author": "Euripides",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The Dionysian tragedy at the center of Nietzsche’s argument."
+      },
+      {
+        "title": "Nietzsche contra Wagner",
+        "author": "Friedrich Nietzsche",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "His last word on Wagner, compiled from earlier writings."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "philosophy-48": {
+    "longDescription": "On the Aesthetic Education of Man (1795) began as letters to Schiller’s patron, the Danish Prince Friedrich Christian of Augustenburg. Schiller starts from the failure of the French Revolution: a people torn between brute sense and cold abstraction is not ready for freedom. Drawing on Kant’s Critique of Judgment, he proposes a third, mediating “play drive” between the sensuous and the formal drives, whose object is living form, or beauty.\n\n“Man only plays when he is in the fullest sense of the word a human being, and he is only fully a human being when he plays.” Through art and beauty, Schiller argues, people can recover the wholeness that modern specialization destroyed, and only such whole people can make a free state. The book became a founding text of German Idealist and Romantic aesthetics. This is the Dover paperback edition.",
+    "author": {
+      "name": "Friedrich Schiller",
+      "bio": "Friedrich Schiller (1759–1805) was a German poet, playwright, historian, and philosopher. Author of The Robbers, Don Carlos, Wallenstein, Mary Stuart, and the “Ode to Joy,” he was Goethe’s close friend and collaborator in Weimar Classicism, and his essays on aesthetics, written after an intense study of Kant, shaped German Idealism and Romanticism.",
+      "photo": "authors/OL2414180A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Critique of Judgment",
+        "author": "Immanuel Kant",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The Kantian aesthetics Schiller builds on."
+      },
+      {
+        "title": "On Naive and Sentimental Poetry",
+        "author": "Friedrich Schiller",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "His companion essay on ancient and modern poetry."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "literature-57": {
+    "longDescription": "Ulysses (1922) follows three Dubliners through 16 June 1904: Stephen Dedalus, the young artist from A Portrait; Leopold Bloom, a Jewish advertising canvasser wandering the city; and Bloom’s wife Molly, whose unpunctuated monologue ends the book with “yes.” Each of its eighteen episodes corresponds to an episode of Homer’s Odyssey and is written in its own style, from interior monologue to newspaper headlines, a history of English prose, a hallucinatory play, and a catechism.\n\nThis Vintage paperback prints the Corrected Text edited by Hans Walter Gabler, which tried to remove thousands of errors that had crept into earlier printings. Ellmann’s James Joyce, already on this shelf, is the standard biography to read alongside it.",
+    "author": {
+      "name": "James Joyce",
+      "bio": "James Joyce (1882–1941) was an Irish novelist and poet, author of Dubliners, A Portrait of the Artist as a Young Man, Ulysses, and Finnegans Wake. Living in exile in Trieste, Zurich, and Paris, he became one of the most influential writers of the twentieth-century modernist avant-garde.",
+      "photo": "authors/OL31827A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Odyssey",
+        "author": "Homer",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The epic Joyce maps onto a single Dublin day."
+      },
+      {
+        "title": "A Portrait of the Artist as a Young Man",
+        "author": "James Joyce",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Stephen Dedalus’s earlier story."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "essays-13": {
+    "longDescription": "Walden; or, Life in the Woods (1854) distills the two years, two months, and two days Thoreau spent in a cabin he built on Emerson’s land at Walden Pond. Arranged as a single year from summer to spring, it moves from the economics of a simple life to beans, sounds, solitude, winter animals, and the thawing of the pond, and argues that “the mass of men lead lives of quiet desperation.”\n\nThis Bantam Classic, edited and introduced by Joseph Wood Krutch, prints Walden in full along with “Civil Disobedience,” his essay on resisting an unjust state that later shaped Gandhi and King, and “Life Without Principle,” plus other selections. It sits naturally beside the Library of America Emerson on this shelf.",
+    "author": {
+      "name": "Henry David Thoreau",
+      "bio": "Henry David Thoreau (1817–1862) was an American essayist, naturalist, and Transcendentalist from Concord, Massachusetts. A friend and protégé of Emerson, he is best known for Walden and for “Civil Disobedience,” his argument for individual resistance to unjust government.",
+      "photo": "authors/OL19690A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Nature",
+        "author": "Ralph Waldo Emerson",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The Transcendentalist manifesto Thoreau lived out."
+      },
+      {
+        "title": "Leaves of Grass",
+        "author": "Walt Whitman",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Thoreau’s contemporary and fellow American visionary."
+      }
+    ],
+    "otherByAuthor": []
   }
 };
 

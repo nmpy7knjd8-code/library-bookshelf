@@ -1841,6 +1841,58 @@ export const covers = {
     },
     "gap": false,
     "note": "1992 HarperCollins hardcover jacket (matches owner’s spine)"
+  },
+  "philosophy-47": {
+    "cover": "covers/philosophy-47.jpg",
+    "spine": "covers/philosophy-47.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL98152W",
+    "coverId": 10192681,
+    "match": {
+      "title": "The Birth of Tragedy and The Case of Wagner",
+      "author": "Friedrich Nietzsche"
+    },
+    "gap": false,
+    "note": "Vintage Books paperback, Walter Kaufmann translation (ISBN 9780394703695)"
+  },
+  "philosophy-48": {
+    "cover": "covers/philosophy-48.jpg",
+    "spine": "covers/philosophy-48.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL15381368W",
+    "coverId": 314265,
+    "match": {
+      "title": "On the Aesthetic Education of Man",
+      "author": "Friedrich Schiller"
+    },
+    "gap": false,
+    "note": "Dover Publications paperback, 2004 (ISBN 9780486437392)"
+  },
+  "literature-57": {
+    "cover": "covers/literature-57.jpg",
+    "spine": "covers/literature-57.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL86318W",
+    "coverId": 13119418,
+    "match": {
+      "title": "Ulysses",
+      "author": "James Joyce"
+    },
+    "gap": false,
+    "note": "Vintage Books paperback, the Corrected Text (ISBN 9780394743127)"
+  },
+  "essays-13": {
+    "cover": "covers/essays-13.jpg",
+    "spine": "covers/essays-13.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/works/OL55713W",
+    "coverId": 7115728,
+    "match": {
+      "title": "Walden and Other Writings",
+      "author": "Henry David Thoreau"
+    },
+    "gap": false,
+    "note": "Bantam Classic paperback, edited by Joseph Wood Krutch (ISBN 9780553212464)"
   }
 };
 

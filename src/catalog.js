@@ -337,6 +337,20 @@ export const shelves = [
           'Marianne Williamson’s reflections on the principles of A Course in Miracles (HarperCollins hardcover, 1992). Love as the answer to fear across relationships, work, the body, and heaven, including the much-quoted passage beginning “Our deepest fear is not that we are inadequate.”',
         binding: { bg: '#e6dde6', ink: '#3b2c4a', band: '#7a2c5a', pages: '#f1eadb', tone: 'dark', material: 'paper', deco: 'modern' },
       },
+      {
+        title: 'The Birth of Tragedy and The Case of Wagner',
+        spine: 'Birth of Tragedy',
+        author: 'Friedrich Nietzsche',
+        description:
+          'Nietzsche’s first book argues that Greek tragedy was born from the meeting of Apollonian form and Dionysian frenzy, and died at the hands of Socratic reason. Walter Kaufmann’s Vintage translation pairs it with the late polemic The Case of Wagner, in which Nietzsche turns on the composer he once championed. Together they bracket his whole career, from youthful Wagnerian to his sharpest critic.',
+      },
+      {
+        title: 'On the Aesthetic Education of Man',
+        spine: 'Aesthetic Education',
+        author: 'Friedrich Schiller',
+        description:
+          'Schiller’s 1795 letters argue that only beauty and the play drive can reconcile reason and sense, and that a free political order must begin with the aesthetic education of the individual. Written in the shadow of the French Revolution and in dialogue with Kant, the treatise shaped Goethe, the Romantics, Hegel, and later aesthetic thought. Dover paperback edition.',
+      },
     ],
   },
   {
@@ -959,6 +973,13 @@ export const shelves = [
           'Educate.ie Shakespeare Series edition of King Lear for the Irish Leaving Certificate, with introduction and notes by Mary Barron (2014). The complete play with act-by-act analysis, modern-English versions of key scenes, character and theme studies, and sample exam essays.',
         binding: { bg: '#1f4e42', ink: '#f2efe6', band: '#e3c56e', pages: '#f1eadb', tone: 'light', material: 'paper', deco: 'modern' },
       },
+      {
+        title: 'Ulysses',
+        spine: 'Ulysses',
+        author: 'James Joyce',
+        description:
+          'Joyce’s modernist epic follows Leopold Bloom, Stephen Dedalus, and Molly Bloom through a single Dublin day, 16 June 1904, each episode shadowing a book of the Odyssey in a different style. This Vintage paperback prints the Gabler “Corrected Text.” The novel remade what fiction could do with consciousness, language, and the ordinary day.',
+      },
     ],
   },
   {
@@ -1060,6 +1081,13 @@ export const shelves = [
         description:
           'Carlyle’s History of Friedrich II of Prussia, called Frederick the Great, complete in four volumes in the Lovell edition of Carlyle’s Works (spines: Works III–VI). Carlyle’s last great history follows the Prussian king through dynasty, war, and statecraft in his torrential, opinionated prose. Vol. IV is bound with Past and Present and Miscellanies, as the spine notes.',
         binding: { bg: '#9a2f29', ink: '#ecd39a', band: '#c9a24e', pages: '#e9dfc9', tone: 'gold', material: 'cloth', deco: 'plain' },
+      },
+      {
+        title: 'Walden and Other Writings',
+        spine: 'Walden',
+        author: 'Henry David Thoreau',
+        description:
+          'Thoreau’s account of two years in a cabin at Walden Pond, learning to “live deliberately,” together with “Civil Disobedience” and “Life Without Principle.” This Bantam Classic, edited by Joseph Wood Krutch, gathers the Transcendentalist’s case for simplicity, self-honesty, and harmony with nature. The practical twin to the Emerson on this shelf.',
       },
     ],
   },
