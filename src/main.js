@@ -753,6 +753,8 @@ function buildAppHtml() {
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
       <span>${shelfActive ? 'Bookshelf' : 'Cover gallery'}</span>
+      <span aria-hidden="true">·</span>
+      <a href="${import.meta.env.BASE_URL}topics.html" style="color:inherit">Topic index</a>
     </footer>
 
     <div class="panel-backdrop" id="panel-backdrop" hidden data-close></div>
