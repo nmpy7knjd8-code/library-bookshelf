@@ -11,3 +11,4 @@ Generated 2026-10-10T22:34:22.997Z
 - James Joyce (OL31827A.jpg): Open Library author photo OL31827A
 - Henry David Thoreau (OL19690A.jpg): Open Library author photo OL19690A
 - Friedrich Schiller (OL2414180A.jpg): Open Library author photo OL2414180A
+- Plato (OL12823A.jpg): Open Library author photo OL12823A
