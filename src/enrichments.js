@@ -15729,6 +15729,33 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
+  "philosophy-49": {
+    "longDescription": "The Republic (c. 375 BC) opens with the question of what justice is. After Thrasymachus argues that justice is merely the advantage of the stronger, Glaucon and Adeimantus challenge Socrates to show that justice is worth having for its own sake. Socrates answers by building a city in words, with rulers, auxiliaries and producers, and finds justice in each part doing its own work; the just soul likewise has reason ruling spirit and appetite.\n\nThe central books argue that philosophers must rule, and explain knowledge of the Form of the Good through the images of the sun, the divided line and the cave. Later books trace the decline of constitutions from aristocracy to tyranny, banish imitative poetry, and close with the Myth of Er on the soul's judgment and rebirth. This is the Penguin Classics translation by Desmond Lee.",
+    "author": {
+      "name": "Plato",
+      "bio": "Plato (c. 428–348 BC) was an Athenian philosopher, student of Socrates and teacher of Aristotle. He founded the Academy, and his dialogues, from the Apology and Symposium to the Republic and Laws, laid the foundations of Western philosophy.",
+      "photo": "authors/OL12823A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Laws",
+        "author": "Plato",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Plato's late, more practical blueprint for a city."
+      },
+      {
+        "title": "Politics",
+        "author": "Aristotle",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Aristotle's critique of the Republic's ideal city."
+      }
+    ],
+    "otherByAuthor": []
+  },
   "philosophy-48": {
     "longDescription": "On the Aesthetic Education of Man (1795) began as letters to Schiller’s patron, the Danish Prince Friedrich Christian of Augustenburg. Schiller starts from the failure of the French Revolution: a people torn between brute sense and cold abstraction is not ready for freedom. Drawing on Kant’s Critique of Judgment, he proposes a third, mediating “play drive” between the sensuous and the formal drives, whose object is living form, or beauty.\n\n“Man only plays when he is in the fullest sense of the word a human being, and he is only fully a human being when he plays.” Through art and beauty, Schiller argues, people can recover the wholeness that modern specialization destroyed, and only such whole people can make a free state. The book became a founding text of German Idealist and Romantic aesthetics. This is the Dover paperback edition.",
     "author": {

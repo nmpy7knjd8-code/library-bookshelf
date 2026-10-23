@@ -1,6 +1,6 @@
 # Topic Index of Garrett's Library
 
-54 topics, 146 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
+56 topics, 147 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
 
 ## Aesthetics and Art
 
@@ -10,6 +10,7 @@
 - *Philosophy of Poetry (The Genius of Lucretius)*, Henri Bergson: Bergson argues that Lucretius's genius lies in making philosophy felt poetically, poetry being a vehicle of intuition rather than decoration.
 - *Selected Essays of William Hazlitt*, William Hazlitt: Hazlitt defends 'gusto', the power of passion in art, and judges painting and literature by their vividness of feeling rather than rules.
 - *The Birth of Tragedy and The Case of Wagner*, Friedrich Nietzsche: Nietzsche argues that Greek tragedy fused the Apollonian (form, image) and Dionysian (intoxication, unity) and that 'only as an aesthetic phenomenon is existence justified'; the Case of Wagner turns this into a polemic against Wagner as decadent.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato holds that art is imitation of appearances and morally dangerous, the founding statement of the 'ancient quarrel between philosophy and poetry'.
 - *The Romantic Rebellion*, Kenneth Clark: Clark presents Romantic painting (roughly 1790–1860) as a rebellion of passion, imagination and the sublime against classical order, through figures such as Goya, Blake, Turner, Delacroix and Géricault.
 - *The World as Will and Representation, Vol. I*, Arthur Schopenhauer: Schopenhauer holds that aesthetic contemplation briefly frees us from the will by grasping the Platonic Ideas, and that music copies the will itself rather than any idea.
 
@@ -43,6 +44,7 @@
 - *The Complete Poems of Cavafy*, C. P. Cavafy (tr. Rae Dalven): Cavafy's poems revisit Hellenistic and Roman-era Alexandria and Antioch, treating history ironically and with sympathy for losers and the declining.
 - *The Iliad*, Homer: Homer's epic of Achilles' wrath at Troy shows honor, mortality and grief as the core of the heroic ethos.
 - *The Life of Greece*, Will Durant: Durant presents Greek civilization to the Roman conquest as the fountainhead of Western philosophy, art and democracy, in a narrative, humanistic style.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Set in the Piraeus, the dialogue reflects Athenian debates about democracy, Sparta and the sophists.
 - *The Twelve Caesars*, Michael Grant: Grant retells the first twelve emperors using Suetonius critically, weighing the gossip against other evidence.
 - *Thirty-Eight Latin Stories*, Anne H. Groton and James M. May: Graded Latin readings adapted from Roman myth and history for students.
 - *Wheelock’s Latin*, Frederic M. Wheelock: The standard introductory Latin grammar, with readings drawn from classical authors.
@@ -63,6 +65,7 @@
 - *Logic*, Martin Heidegger: In this lecture course Heidegger argues that logic must be grounded in a questioning of language and the human being rather than treated as formal calculation.
 - *Process and Reality, corrected edition*, Alfred North Whitehead: Whitehead replaces enduring substances with 'actual occasions' of experience that become and perish, making process the basic reality.
 - *The Metaphysics*, Aristotle (tr. Hugh Lawson-Tancred, Penguin Classics): Aristotle defines first philosophy as the study of being qua being and argues that substance (ousia), above all form, is the primary sense of being, culminating in the unmoved mover.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato holds that the Forms are fully real, while sensible things are only images of them, as the shadows in the cave are images of objects.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein holds that the world is the totality of facts, not things, and that logical form is shared by world and language.
 
 ## Biography and Character
@@ -145,6 +148,7 @@
 - *Being and Time*, Martin Heidegger: Heidegger argues that authentic existence is 'being-toward-death', anticipating one's own death as one's ownmost possibility.
 - *Limits to Medicine*, Ivan Illich: Illich argues that modern medicine has expropriated people's ability to face pain and death, turning death into a technical event.
 - *The Iliad*, Homer: The Iliad confronts heroic glory with death, culminating in Priam and Achilles grieving together.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato argues for the soul's immortality and ends with the Myth of Er, in which souls are judged after death and choose their next lives.
 - *The Tragedy of King Lear*, William Shakespeare (intro & notes by Mary Barron): Lear's suffering and Cordelia's death present a world in which justice and consolation may fail.
 
 ## Education
@@ -153,6 +157,7 @@
 - *On Experience, Nature, and Freedom*, John Dewey: Dewey holds that education is the reconstruction of experience, with learning arising from active inquiry rather than passive reception.
 - *On the Aesthetic Education of Man*, Friedrich Schiller: Schiller holds that aesthetic education is the necessary preparation for moral and political freedom.
 - *The American Lyceum*, Author uncertain: The lyceum movement is presented as a form of public adult education in nineteenth-century America (details unconfirmed).
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato outlines the guardians' education, from censored music and gymnastics to mathematics and dialectic, and defines education as turning the soul toward the light rather than filling it with knowledge.
 
 ## Enlightenment
 
@@ -170,6 +175,7 @@
 - *On the Genealogy of Morals*, Friedrich Nietzsche: Nietzsche argues that 'good/evil' morality grew from the ressentiment of the weak against 'good/bad' noble values, and that guilt grew from debt.
 - *Oxford Student’s Aristotle, Vol. V: Ethics*, Aristotle (Oxford Student’s edition): Aristotle holds that the human good is eudaimonia, activity of the soul in accordance with virtue, with each virtue a mean found by practical wisdom.
 - *The Rebel*, Albert Camus: Camus argues that rebellion affirms a human limit and solidarity ('I rebel, therefore we exist'), and condemns revolutions that justify murder.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato argues that virtue is the soul's inner harmony (wisdom, courage, moderation and justice) and that justice is worth choosing for its own sake, not just for its rewards.
 - *The World as Will and Representation, Vol. I*, Arthur Schopenhauer: Schopenhauer founds ethics on compassion, recognizing the same will in all beings, and praises ascetic denial of the will.
 
 ## Existence and Authenticity
@@ -227,6 +233,12 @@
 - *Living Biographies of Famous Rulers*, Henry Thomas and Dana Lee Thomas: Popular lives of rulers presented as exemplary or cautionary.
 - *The Hero with a Thousand Faces*, Joseph Campbell: Campbell argues that the world's hero myths share a single 'monomyth' of departure, initiation and return.
 
+## Justice
+
+- *Oxford Student’s Aristotle, Vol. V: Ethics*, Aristotle (Oxford Student’s edition): Aristotle treats justice as the complete virtue in relation to others, distinguishing distributive from corrective justice.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato's Socrates rejects Thrasymachus's view that justice is the advantage of the stronger, defining justice as each part of the city and of the soul doing its own work, and argues that the just life is happier than the unjust.
+- *The Social Contract*, Jean-Jacques Rousseau: Rousseau holds that justice in political society comes from law made by the general will, replacing natural instinct with duty.
+
 ## Knowledge and Reason
 
 - *Critique of Pure Reason*, Immanuel Kant: Kant argues that synthetic a priori knowledge is possible because space, time and the categories structure experience, but that reason overreaches into antinomies when it goes beyond experience.
@@ -235,6 +247,7 @@
 - *Hamann’s Poetical Works / Schriften*, J. G. Hamann: Hamann argues against Kant that reason is inseparable from language, tradition and faith.
 - *Meta-Meditations*, Sesonske and Fleming: Sesonske and Fleming's contributors reexamine Descartes' method of doubt, the cogito and his proofs as live problems of certainty and self-knowledge.
 - *On Experience, Nature, and Freedom*, John Dewey: Dewey treats knowing as active inquiry resolving problematic situations, rather than a spectator copying reality.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato distinguishes knowledge of the unchanging Forms from opinion about the changing sensible world, through the divided line and the allegory of the cave.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein holds that what can be said can be said clearly and that whereof one cannot speak one must be silent.
 
 ## Language and Meaning
@@ -295,6 +308,7 @@
 - *The Hero with a Thousand Faces*, Joseph Campbell: Campbell interprets myths psychologically as variations of a monomyth expressing universal truths about the psyche.
 - *The Key to Understand C. G. Jung*, Benoit Rousseau: A short guide to Jung's archetypes, the collective unconscious and individuation.
 - *The Oxford Dictionary of Classical Myth and Religion*, Edited by Simon Price and Emily Kearns: A reference dictionary of Greek and Roman myth, gods, cults and religious practice.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato uses myths of his own, the 'noble lie' of metals and the Myth of Er on judgment and reincarnation, to convey what argument cannot.
 - *The Sacred and the Profane*, Mircea Eliade: Eliade holds that religious man lives in sacred space and cyclical sacred time renewed by myth and ritual, which modern profane man has lost.
 - *The Secular Scripture*, Northrop Frye: Frye argues that romance is the 'secular scripture', a structure of stories parallel to the Bible.
 
@@ -333,6 +347,7 @@
 - *The Dyer’s Hand*, W. H. Auden: Auden holds that a poem is a verbal society ordered by the poet, and reflects on poetry as craft and vocation.
 - *The New Pocket Anthology of American Verse*, Edited by Oscar Williams: Oscar Williams's pocket anthology spans American verse from colonial times to the mid-twentieth century.
 - *The Poetical Works of John Milton, Vol. II (London, 1808)*, John Milton: An 1808 edition of Milton's poetry, including his shorter poems.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato argues that imitative poetry is at a third remove from truth and feeds the passions, so it is banished from the ideal city except for hymns to gods and praise of good men.
 - *Whatever Is Moving*, Howard Moss: Moss's essays practice close, appreciative reading of modern poets.
 
 ## Political Philosophy and the State
@@ -342,6 +357,7 @@
 - *Major Works, Vol. I*, Joseph de Maistre: Maistre holds that constitutions cannot be written by reason and that sovereignty rests on divine providence.
 - *Political Essays*, James Russell Lowell: Lowell argues that American democracy depends on an educated public conscience, and judges Lincoln and the Union cause by that standard.
 - *The Essential Works of Lenin*, V. I. Lenin: Lenin's State and Revolution holds that the bourgeois state must be smashed and will wither away under communism.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato builds an ideal city of rulers, auxiliaries and producers ruled by philosopher-kings, and traces its decline through timocracy, oligarchy and democracy to tyranny.
 - *The Social Contract*, Jean-Jacques Rousseau: Rousseau argues that the sovereign is the people and that law must express the general will.
 
 ## Prussia and Germany
@@ -357,6 +373,7 @@
 - *The Culture of Narcissism: American Life in an Age of Diminishing Expectations*, Christopher Lasch: Lasch adapts the psychoanalytic theory of narcissism (Kernberg, Kohut) to diagnose American culture.
 - *The Earth Has a Soul*, C. G. Jung, edited by Meredith Sabini: Sabini's selection gathers Jung's view that the psyche is rooted in nature and that modern rootlessness is a psychological wound.
 - *The Key to Understand C. G. Jung*, Benoit Rousseau: An introductory guide to Jung's archetypes, collective unconscious, psychological types and individuation.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato divides the soul into reason, spirit and appetite, and holds that psychological health is reason ruling the other two.
 
 ## Renaissance and Humanism
 
@@ -435,6 +452,7 @@
 - *Ethics*, Benedict de Spinoza: Spinoza identifies God with the one infinite substance (Deus sive Natura), of which minds and bodies are modes; nothing exists or is conceived outside it.
 - *Process and Reality, corrected edition*, Alfred North Whitehead: Whitehead rejects a static Absolute: God has a primordial nature (the envisagement of all possibilities) and a consequent nature that receives and preserves the world's becoming.
 - *The Philosophy of History*, G. W. F. Hegel (tr. J. Sibree): Hegel holds that world history is the rational self-unfolding of Spirit (Geist) toward consciousness of its own freedom, so that 'the real is rational' at the scale of history.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato's Form of the Good, compared to the sun, is the source of both the being and the intelligibility of all that is known.
 - *Time and Eternity*, Walter Terence Stace: Stace argues that the eternal, as known in mystical experience, is a different order from the temporal and cannot be reached or refuted by naturalistic reasoning about the time-order.
 
 ## The Novel and Modern Fiction
@@ -490,6 +508,11 @@
 - *Fireside Travels*, James Russell Lowell: Lowell's sketches of Cambridge, the Mediterranean and Italy mix travel impressions with reflection.
 - *Gulliver’s Travels*, Jonathan Swift: Swift's imaginary voyages use travel-writing form for satire.
 
+## Utopia and the Ideal Society
+
+- *Hamann’s Poetical Works / Schriften*, J. G. Hamann: Swift's Houyhnhnms parody the rationally ordered utopia, leaving Gulliver unable to live among humans.
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato's city in words, with common property and family among the guardians and rule by philosophers, is the founding Western blueprint of an ideal society.
+
 ## Per-book index
 
 - *A History of Christianity, Volume I: Beginnings to 1500*, Kenneth Scott Latourette: Christianity and the Church
@@ -529,7 +552,7 @@
 - *Greek Science in Antiquity*, Marshall Clagett: Ancient Greece and Rome, Science and the Scientific Revolution
 - *Gulliver’s Travels*, Jonathan Swift: Enlightenment, Satire, Travel
 - *Gödel, Escher, Bach*, Douglas Hofstadter: Consciousness and Mind, Knowledge and Reason
-- *Hamann’s Poetical Works / Schriften*, J. G. Hamann: Enlightenment, Knowledge and Reason, Language and Meaning
+- *Hamann’s Poetical Works / Schriften*, J. G. Hamann: Enlightenment, Knowledge and Reason, Language and Meaning, Utopia and the Ideal Society
 - *History of Political Philosophy*, Edited by Leo Strauss and Joseph Cropsey: Political Philosophy and the State
 - *Holy Bible (American Standard Version, with references)*, American Standard Version: Christianity and the Church, God and the Divine
 - *Ideas*, Edmund Husserl: Consciousness and Mind, Phenomenology
@@ -565,7 +588,7 @@
 - *On the Genealogy of Morals*, Friedrich Nietzsche: Ethics and Virtue, Psychology and the Unconscious, Sin, Evil and the Fall
 - *One Hundred and One Famous Poems*, Anthology: Poetry and Poetics
 - *Oscar Wilde*, Hesketh Pearson: Biography and Character
-- *Oxford Student’s Aristotle, Vol. V: Ethics*, Aristotle (Oxford Student’s edition): Ethics and Virtue
+- *Oxford Student’s Aristotle, Vol. V: Ethics*, Aristotle (Oxford Student’s edition): Ethics and Virtue, Justice
 - *Paradise Lost*, John Milton: God and the Divine, Milton, Sin, Evil and the Fall
 - *Philosophy of Poetry (The Genius of Lucretius)*, Henri Bergson: Aesthetics and Art, Poetry and Poetics
 - *Poems of Byron, Vol. II*, Lord Byron: Transcendentalism and Romanticism
@@ -619,11 +642,12 @@
 - *The Philosophy of History*, G. W. F. Hegel (tr. J. Sibree): Civilization, Rise and Decline, Freedom and Liberty, Philosophy of History, The Absolute and Spirit
 - *The Poetical Works of John Milton, Vol. II (London, 1808)*, John Milton: Milton, Poetry and Poetics
 - *The Rebel*, Albert Camus: Ethics and Virtue, Existence and Authenticity, Revolution
+- *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Aesthetics and Art, Ancient Greece and Rome, Being and Ontology, Death and Mortality, Education, Ethics and Virtue, Justice, Knowledge and Reason, Myth and Symbol, Poetry and Poetics, Political Philosophy and the State, Psychology and the Unconscious, The Absolute and Spirit, Utopia and the Ideal Society
 - *The Romantic Rebellion*, Kenneth Clark: Aesthetics and Art, Transcendentalism and Romanticism
 - *The Sacred and the Profane*, Mircea Eliade: Critique of Modernity, Myth and Symbol, The Sacred and the Holy, Time and Eternity
 - *The Scientific Renaissance 1450–1630*, Marie Boas Hall: Renaissance and Humanism, Science and the Scientific Revolution
 - *The Secular Scripture*, Northrop Frye: Literary Criticism, Myth and Symbol
-- *The Social Contract*, Jean-Jacques Rousseau: Enlightenment, Freedom and Liberty, Political Philosophy and the State
+- *The Social Contract*, Jean-Jacques Rousseau: Enlightenment, Freedom and Liberty, Justice, Political Philosophy and the State
 - *The Technological Society*, Jacques Ellul: Critique of Modernity, Technology and Media
 - *The Tragedy of King Lear*, William Shakespeare (intro & notes by Mary Barron): Death and Mortality, Shakespeare, Tragedy
 - *The Twelve Caesars*, Michael Grant: Ancient Greece and Rome

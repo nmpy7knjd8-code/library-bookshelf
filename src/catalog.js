@@ -351,6 +351,13 @@ export const shelves = [
         description:
           'Schiller’s 1795 letters argue that only beauty and the play drive can reconcile reason and sense, and that a free political order must begin with the aesthetic education of the individual. Written in the shadow of the French Revolution and in dialogue with Kant, the treatise shaped Goethe, the Romantics, Hegel, and later aesthetic thought. Dover paperback edition.',
       },
+      {
+        title: 'The Republic',
+        spine: 'The Republic',
+        author: 'Plato (tr. Desmond Lee, Penguin Classics)',
+        description:
+          'Plato’s dialogue asks what justice is and whether the just life is better than the unjust. Socrates builds an ideal city ruled by philosopher-kings, maps its three classes onto the three parts of the soul, and grounds knowledge in the Form of the Good through the sun, the divided line, and the cave. It ends by banishing imitative poetry and with the Myth of Er.',
+      },
     ],
   },
   {

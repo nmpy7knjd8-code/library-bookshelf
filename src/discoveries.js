@@ -139,11 +139,6 @@ export const relatedClusters = [
 /** Recommendations not already present in the catalog */
 export const worthExploring = [
   {
-    title: 'The Republic',
-    author: 'Plato',
-    why: 'The missing classical foundation beside Aristotle’s Metaphysics and Ethics — justice, the cave, and the philosophical city.',
-  },
-  {
     title: 'Beyond Good and Evil',
     author: 'Friedrich Nietzsche',
     why: 'Pairs with On the Genealogy of Morals; a freer, more aphoristic assault on philosophical prejudice.',
@@ -206,7 +201,6 @@ export const worthExploring = [
  */
 export const offShelfByShelf = {
   philosophy: [
-    { title: 'The Republic', author: 'Plato' },
     { title: 'Beyond Good and Evil', author: 'Friedrich Nietzsche' },
     { title: 'Phenomenology of Spirit', author: 'G. W. F. Hegel' },
     { title: 'Being and Nothingness', author: 'Jean-Paul Sartre' },

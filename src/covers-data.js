@@ -1855,6 +1855,19 @@ export const covers = {
     "gap": false,
     "note": "Vintage Books paperback, Walter Kaufmann translation (ISBN 9780394703695)"
   },
+  "philosophy-49": {
+    "cover": "covers/philosophy-49.jpg",
+    "spine": "covers/philosophy-49.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/isbn/9780140455113",
+    "coverId": 2324117,
+    "match": {
+      "title": "The Republic",
+      "author": "Plato"
+    },
+    "gap": false,
+    "note": "Penguin Classics, tr. Desmond Lee (ISBN 9780140455113)"
+  },
   "philosophy-48": {
     "cover": "covers/philosophy-48.jpg",
     "spine": "covers/philosophy-48.jpg",
