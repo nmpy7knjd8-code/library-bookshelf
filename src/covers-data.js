@@ -81,15 +81,15 @@ export const covers = {
   "philosophy-6": {
     "cover": "covers/philosophy-6.jpg",
     "spine": "covers/philosophy-6.jpg",
-    "source": "Open Library",
-    "sourceUrl": "https://openlibrary.org/books/OL7289870M",
-    "coverId": 47954,
+    "source": "Amazon (publisher image)",
+    "sourceUrl": "https://www.amazon.com/dp/0062290703",
+    "coverId": null,
     "match": {
       "title": "The Question Concerning Technology, and Other Essays",
       "author": "Martin Heidegger"
     },
     "gap": false,
-    "note": "Harper paperback, tr. William Lovitt (ISBN 9780061319693)"
+    "note": "Harper Perennial Modern Thought edition, tr. William Lovitt (ISBN 9780062290700; red and black cover)"
   },
   "philosophy-7": {
     "cover": "covers/philosophy-7.jpg",
