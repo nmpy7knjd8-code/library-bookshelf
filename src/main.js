@@ -830,7 +830,7 @@ function renderCoverCard(shelf, book, index) {
 
 function renderAuthorsView() {
   return `
-    <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0.55rem;max-width:640px">
+    <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0;max-width:640px">
       ${buildAuthorIndex()
         .map(
           (a, i) => `
