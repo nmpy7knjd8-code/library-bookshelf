@@ -2183,3 +2183,38 @@ body.drawer-open { overflow: hidden; }
 #authors-view .author-works-toggle { color: var(--ink); border-color: var(--champagne-line); background: transparent; }
 #authors-view .author-works-toggle:hover, #authors-view .author-works-toggle[aria-expanded="true"] { color: var(--champagne); border-color: var(--champagne); }
 #authors-view .author-works { background: var(--panel); border-color: var(--champagne-line); }
+
+/* ═══════════ Drawer: clean Black & Champagne ═══════════ */
+.drawer-backdrop { background: rgba(0, 0, 0, 0.62); }
+.drawer-panel {
+  width: min(80vw, 320px);
+  background: #0b0a09;
+  border-right: 1px solid var(--champagne-line);
+  border-radius: 0;
+  box-shadow: 12px 0 32px rgba(0, 0, 0, 0.5);
+}
+.drawer-head { padding: 26px 18px 18px 28px; border-bottom: 1px solid rgba(227, 207, 158, 0.16); }
+.drawer-title {
+  font-family: var(--font-title); font-size: 0.82rem; font-weight: 600;
+  letter-spacing: 0.28em; text-transform: uppercase; color: var(--champagne);
+}
+.drawer-close {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; border-radius: 50%;
+  border: 1px solid rgba(227, 207, 158, 0.28); color: var(--muted); background: transparent;
+}
+.drawer-close:hover, .drawer-close:focus-visible { color: var(--ink); border-color: var(--champagne); background: transparent; }
+.drawer-nav { gap: 0; padding: 6px 0 24px; }
+.drawer-item {
+  position: relative; display: block; padding: 18px 28px 17px; border-radius: 0;
+  border-bottom: 1px solid rgba(227, 207, 158, 0.1); color: var(--ink); text-decoration: none;
+}
+.drawer-item span { gap: 4px; }
+.drawer-item b { font-family: var(--font-display); font-size: 1.14rem; font-weight: 500; letter-spacing: 0.01em; color: var(--ink); }
+.drawer-item small { font-family: var(--font-ui); font-size: 0.8rem; font-style: italic; color: rgba(205, 191, 159, 0.78); }
+.drawer-item:hover, .drawer-item:focus-visible { background: rgba(227, 207, 158, 0.04); }
+.drawer-item:active { background: rgba(227, 207, 158, 0.07); }
+.drawer-item.is-active { background: transparent; }
+.drawer-item.is-active::before { content: ''; position: absolute; left: 0; top: 18px; bottom: 18px; width: 2px; background: var(--champagne); }
+.drawer-item.is-active b { color: var(--champagne); }
+.drawer-sep { height: 0; margin: 22px 0 0; background: none; }

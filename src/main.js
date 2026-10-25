@@ -531,22 +531,12 @@ function runAsk(q) {
   if (input) { input.focus(); input.setSelectionRange(input.value.length, input.value.length) }
 }
 
-const DRAWER_ICONS = {
-  timeline: '<path d="M4 12h16M7 8v8M12 6v12M17 9v6"/>',
-  map: '<circle cx="6" cy="7" r="2.2"/><circle cx="18" cy="6" r="2.2"/><circle cx="12" cy="17" r="2.2"/><path d="M8 8l8-1.5M7 9l4 6.5M17 8l-4 7"/>',
-  paths: '<path d="M5 19c4 0 4-6 7-6s3-6 7-6"/><circle cx="5" cy="19" r="1.6"/><circle cx="19" cy="7" r="1.6"/>',
-  ask: '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
-  topics: '<path d="M6 4h9l3 3v13H6z"/><path d="M9 10h6M9 14h6"/>',
-}
 const DRAWER_DESC = {
   timeline: 'Authors by lifespan, works by date',
   map: 'Authors, topics and influences',
   paths: 'Guided routes through the shelves',
   ask: 'Search every book and topic',
   topics: 'The full subject index',
-}
-function drawerIcon(k) {
-  return `<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${DRAWER_ICONS[k]}</svg>`
 }
 function syncDrawer() {
   document.querySelectorAll('.drawer-item[data-view]').forEach((b) => {
@@ -588,11 +578,11 @@ function mountDrawer() {
   d.innerHTML = `<div class="drawer-backdrop" data-close></div>
   <aside class="drawer-panel" role="dialog" aria-modal="true" aria-label="More sections">
     <div class="drawer-head"><span class="drawer-title">Explore</span>
-      <button type="button" class="drawer-close" data-close aria-label="Close menu">×</button></div>
+      <button type="button" class="drawer-close" data-close aria-label="Close menu"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></button></div>
     <nav class="drawer-nav">
-      ${VIEWS.slice(3).map(([v, label]) => `<button type="button" class="drawer-item" data-view="${v}">${drawerIcon(v)}<span><b>${label}</b><small>${DRAWER_DESC[v]}</small></span></button>`).join('')}
+      ${VIEWS.slice(3).map(([v, label]) => `<button type="button" class="drawer-item" data-view="${v}"><span><b>${label}</b><small>${DRAWER_DESC[v]}</small></span></button>`).join('')}
       <div class="drawer-sep"></div>
-      <a class="drawer-item" href="${import.meta.env.BASE_URL}topics.html">${drawerIcon('topics')}<span><b>Topic index</b><small>${DRAWER_DESC.topics}</small></span></a>
+      <a class="drawer-item" href="${import.meta.env.BASE_URL}topics.html"><span><b>Topic index</b><small>${DRAWER_DESC.topics}</small></span></a>
     </nav>
   </aside>`
   document.body.append(btn, d)
