@@ -2055,3 +2055,29 @@ body.drawer-open { overflow: hidden; }
   .drawer-backdrop, .drawer-panel, .side-drawer.closing .drawer-backdrop, .side-drawer.closing .drawer-panel { animation: none; }
 }
 @media (max-width: 720px) { .menu-btn { top: 10px; left: 10px; width: 38px; height: 38px; } }
+
+/* ═══════════ Idea map v2: themed clusters ═══════════ */
+.map-themes { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; margin: 0 auto .9rem; }
+.map-theme { appearance: none; display: inline-flex; align-items: center; gap: .4rem; padding: .32rem .75rem; border-radius: 999px; border: 1px solid rgba(160,185,230,.14); background: rgba(10,13,20,.6); color: #aab7ca; font: 500 .78rem var(--font-ui); letter-spacing: .02em; cursor: pointer; transition: border-color .2s, background .2s, color .2s; }
+.map-theme i { width: 8px; height: 8px; border-radius: 50%; background: var(--c); }
+.map-theme:hover, .map-theme:focus-visible { outline: none; color: #e6edf7; border-color: rgba(180,200,235,.35); }
+.map-theme.is-on { color: #f2f5fa; border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); }
+.map-reset { color: #7a889c; }
+#idea-map .m-link { stroke: rgba(150,170,210,.07); stroke-width: calc(.8px / var(--k, 1)); transition: opacity .2s, stroke .2s; }
+#idea-map .m-link.infl { stroke: rgba(201,162,78,.28); stroke-width: calc(1.2px / var(--k, 1)); }
+#idea-map .m-link.hl { stroke: rgba(225,232,248,.7); stroke-width: calc(1.4px / var(--k, 1)); }
+#idea-map .m-link.infl.hl { stroke: #e3c27a; stroke-width: calc(1.8px / var(--k, 1)); }
+#idea-map.has-sel .m-link:not(.hl) { opacity: .25; }
+#idea-map .m-node circle { fill: var(--c); fill-opacity: .85; stroke: rgba(6,8,13,.9); stroke-width: 1.2; }
+#idea-map .m-node.topic circle { fill: rgba(10,14,22,.92); fill-opacity: 1; stroke: var(--c); stroke-width: 2; }
+#idea-map .m-node.on circle { stroke: #fff; stroke-width: 2.4; }
+#idea-map .m-node.dim, #idea-map .m-label.dim { opacity: .12; }
+#idea-map .m-node text { display: none; }
+.m-label { font-family: var(--font-ui); font-weight: 500; fill: #a8b5c8; text-anchor: middle; pointer-events: none; paint-order: stroke; stroke: rgba(4,5,9,.92); stroke-linejoin: round; }
+.m-label.topic { font-family: var(--font-display); font-weight: 600; fill: color-mix(in srgb, var(--c) 70%, #fff); }
+.m-halo { fill: color-mix(in srgb, var(--c) 4%, transparent); stroke: color-mix(in srgb, var(--c) 12%, transparent); stroke-width: calc(1px / var(--k, 1)); pointer-events: none; }
+.m-theme-label { font-family: var(--font-ui); font-weight: 600; letter-spacing: .18em; text-transform: uppercase; fill: var(--c); opacity: .75; text-anchor: middle; dominant-baseline: middle; pointer-events: none; transition: opacity .25s; }
+#idea-map.zoomed .m-theme-label { opacity: .35; }
+#idea-map.has-sel .m-theme-label { opacity: .2; }
+.map-legend .lg-author { background: #9fb4d6; }
+@media (max-width: 720px) { .map-theme { padding: .28rem .6rem; font-size: .74rem; } .map-frame { height: 74vh; } }

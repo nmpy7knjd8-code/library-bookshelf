@@ -179,9 +179,24 @@ export function renderAskView(q = '') {
 }
 
 /* ───────── Idea map ───────── */
+const THEMES = [
+  ['Philosophy', '#9fb4d6', ['Being and Ontology', 'Consciousness and Mind', 'Ethics and Virtue', 'Existence and Authenticity', 'Knowledge and Reason', 'Language and Meaning', 'Phenomenology', 'The Absolute and Spirit', 'Time and Eternity', 'Aesthetics and Art', 'Death and Mortality', 'Love']],
+  ['History', '#d39a6a', ['American History and Founding', 'Ancient Greece and Rome', 'Biography and Character', 'Carlyle', 'China', 'Civilization, Rise and Decline', 'French Revolution and Napoleon', 'Heroes and Great Men', 'Philosophy of History', 'Prussia and Germany', 'Renaissance and Humanism', 'Travel']],
+  ['Literature', '#b99ae0', ['Faust and the Demonic Pact', 'Literary Criticism', 'Milton', 'Myth and Symbol', 'Poetry and Poetics', 'Satire', 'Shakespeare', 'The Novel and Modern Fiction', 'Tragedy', 'Transcendentalism and Romanticism', 'Nature']],
+  ['Religion', '#7cc6b4', ['Christianity and the Church', 'God and the Divine', 'Mysticism', 'Sin, Evil and the Fall', 'The Sacred and the Holy']],
+  ['Science', '#93c983', ['Science and Religion', 'Science and the Scientific Revolution', 'Technology and Media', 'Psychology and the Unconscious', 'Education']],
+  ['Politics', '#dd8a8f', ['American Culture and Society', 'Authority, Tradition and Counter-Revolution', 'Communism and Marxism', 'Critique of Modernity', 'Enlightenment', 'Freedom and Liberty', 'Justice', 'Political Philosophy and the State', 'Revolution', 'Self-Reliance and Individualism', 'Utopia and the Ideal Society']],
+]
+const THEME_OF = new Map()
+THEMES.forEach(([, , ts], i) => ts.forEach((t) => THEME_OF.set(t, i)))
+
 export function renderMapView() {
   return `<div class="view-wrap wide" id="map-view">
-    <p class="view-lede">Authors (dots) linked to the topics (rings) their books address, plus documented influences (gold). Drag to pan, scroll or pinch to zoom, tap a node to explore.</p>
+    <p class="view-lede">Topics (rings) grouped into six broad themes, with the authors (dots) whose books address them and documented influences (gold). Drag to pan, pinch or scroll to zoom, tap anything to explore.</p>
+    <div class="map-themes" role="group" aria-label="Jump to a theme">
+      ${THEMES.map(([name, col], i) => `<button type="button" class="map-theme" data-theme="${i}" style="--c:${col}"><i></i>${name}</button>`).join('')}
+      <button type="button" class="map-theme map-reset" data-theme="all">Show all</button>
+    </div>
     <div class="map-frame"><svg id="idea-map" role="img" aria-label="Idea map of authors and topics"></svg>
       <div class="map-legend"><span><i class="lg-author"></i>Author</span><span><i class="lg-topic"></i>Topic</span><span><i class="lg-infl"></i>Influence</span></div>
       <div class="map-info" id="map-info" hidden></div></div>
@@ -193,74 +208,151 @@ export function mountIdeaMap(openPanel) {
   if (!svg) return
   const W = svg.clientWidth || 900
   const H = svg.clientHeight || 640
+  // the layout lives on a large fixed virtual canvas; the viewport just pans/zooms over it
+  // portrait screens get a 2×3 grid of theme clusters, landscape a 3×2 grid
+  const cols = W / H > 1.1 ? 3 : 2, rows = THEMES.length / cols
+  const CELL = 470
+  const VW = cols * CELL, VH = rows * CELL
   const nodes = new Map()
   const links = []
   const node = (id, o) => { if (!nodes.has(id)) nodes.set(id, { id, ...o, deg: 0 }); return nodes.get(id) }
   const authorBooks = new Map()
+  const authorThemes = new Map()
   for (const [topic, rows] of Object.entries(TOPICS)) {
-    node(`t:${topic}`, { kind: 'topic', label: topic })
+    const th = THEME_OF.get(topic) ?? 0
+    node(`t:${topic}`, { kind: 'topic', label: topic, theme: th })
     for (const [id] of rows) {
       const e = BY_ID.get(id); if (!e) continue
       const a = authorNames(e.book.author)[0]; if (a === VARIOUS) continue
       node(`a:${a}`, { kind: 'author', label: a })
       if (!authorBooks.has(a)) authorBooks.set(a, new Set())
       authorBooks.get(a).add(id)
+      const c = authorThemes.get(a) || new Array(THEMES.length).fill(0); c[th]++; authorThemes.set(a, c)
       if (!links.some((l) => l.source === `a:${a}` && l.target === `t:${topic}`)) links.push({ source: `a:${a}`, target: `t:${topic}`, kind: 'topic' })
     }
   }
+  for (const [a, c] of authorThemes) nodes.get(`a:${a}`).theme = c.indexOf(Math.max(...c))
   for (const [x, y] of INFLUENCES) if (nodes.has(`a:${x}`) && nodes.has(`a:${y}`)) links.push({ source: `a:${x}`, target: `a:${y}`, kind: 'infl' })
   for (const l of links) { nodes.get(l.source).deg++; nodes.get(l.target).deg++ }
   const N = [...nodes.values()]
+  // theme anchors on an ellipse
+  // order keeps related themes adjacent: Philosophy·History·Politics / Religion·Literature·Science
+  const ORDER = cols === 3 ? [0, 1, 5, 3, 2, 4] : [0, 1, 3, 5, 2, 4]
+  const anchors = []
+  ORDER.forEach((th, slot) => { anchors[th] = [((slot % cols) + 0.5) * CELL, (Math.floor(slot / cols) + 0.5) * CELL] })
+  let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
+  N.forEach((n) => { const [ax, ay] = anchors[n.theme]; n.x = ax + (rnd() - 0.5) * 80; n.y = ay + (rnd() - 0.5) * 80 })
+
   const NS = 'http://www.w3.org/2000/svg'
   const mk = (tag, attrs, parent) => { const el = document.createElementNS(NS, tag); for (const k in attrs) el.setAttribute(k, attrs[k]); parent?.appendChild(el); return el }
   svg.innerHTML = ''
   svg.setAttribute('viewBox', `0 0 ${W} ${H}`)
   const g = mk('g', {}, svg)
+  const gHalo = mk('g', { class: 'm-halos' }, g)
   const gl = mk('g', { class: 'm-links' }, g)
   const gn = mk('g', { class: 'm-nodes' }, g)
+  const gt = mk('g', { class: 'm-labels' }, g)
+  const gTheme = mk('g', { class: 'm-theme-labels' }, g)
   const lEls = links.map((l) => mk('line', { class: `m-link ${l.kind}` }, gl))
-  const nEls = N.map((n) => {
-    const grp = mk('g', { class: `m-node ${n.kind}`, tabindex: 0, role: 'button', 'aria-label': n.label }, gn)
-    n.r = n.kind === 'topic' ? 5 + Math.sqrt(n.deg) * 2.2 : 3.5 + Math.sqrt(n.deg) * 1.2
-    mk('circle', { r: n.r }, grp)
-    const t = mk('text', { dy: -n.r - 4 }, grp); t.textContent = n.label
-    grp.addEventListener('click', (ev) => { ev.stopPropagation(); select(n) })
-    grp.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') select(n) })
-    return grp
+  N.forEach((n) => {
+    n.r = n.kind === 'topic' ? 6 + Math.sqrt(n.deg) * 2.4 : 3.5 + Math.sqrt(n.deg) * 1.3
+    const col = THEMES[n.theme][1]
+    n.el = mk('g', { class: `m-node ${n.kind}`, tabindex: 0, role: 'button', 'aria-label': n.label, style: `--c:${col}` }, gn)
+    mk('circle', { r: n.r }, n.el)
+    n.tEl = mk('text', { class: `m-label ${n.kind}`, style: `--c:${col}` }, gt); n.tEl.textContent = n.label
+    n.el.addEventListener('click', (ev) => { ev.stopPropagation(); select(n) })
+    n.el.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') select(n) })
   })
+  // label sizes measured once at base font size (screen px)
+  N.forEach((n) => { n.lw = n.tEl.getComputedTextLength() || n.label.length * 6; n.tEl.style.display = 'none' })
+
   const sim = forceSimulation(N)
-    .force('link', forceLink(links).id((d) => d.id).distance((l) => (l.kind === 'infl' ? 40 : 55)).strength(0.4))
-    .force('charge', forceManyBody().strength(-70).distanceMax(260))
-    .force('x', forceX(W / 2).strength(0.07))
-    .force('y', forceY(H / 2).strength(0.07 * (W / H)))
-    .force('center', forceCenter(W / 2, H / 2))
-    .force('collide', forceCollide().radius((d) => d.r + 6))
+    .force('link', forceLink(links).id((d) => d.id).distance((l) => (l.kind === 'infl' ? 70 : 85)).strength((l) => (l.kind === 'infl' ? 0.05 : 0.12)))
+    .force('charge', forceManyBody().strength((d) => (d.kind === 'topic' ? -360 : -120)).distanceMax(300))
+    .force('x', forceX((d) => anchors[d.theme][0]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
+    .force('y', forceY((d) => anchors[d.theme][1]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
+    .force('collide', forceCollide().radius((d) => d.r + (d.kind === 'topic' ? 16 : 9)).iterations(2))
     .stop()
-  for (let i = 0; i < 320; i++) sim.tick()
-  const draw = () => {
-    links.forEach((l, i) => { const e = lEls[i]; e.setAttribute('x1', l.source.x); e.setAttribute('y1', l.source.y); e.setAttribute('x2', l.target.x); e.setAttribute('y2', l.target.y) })
-    N.forEach((n, i) => nEls[i].setAttribute('transform', `translate(${n.x},${n.y})`))
+  for (let i = 0; i < 420; i++) sim.tick()
+  links.forEach((l, i) => { const e = lEls[i]; e.setAttribute('x1', l.source.x); e.setAttribute('y1', l.source.y); e.setAttribute('x2', l.target.x); e.setAttribute('y2', l.target.y) })
+  N.forEach((n) => n.el.setAttribute('transform', `translate(${n.x},${n.y})`))
+  // theme halos + captions at cluster centroids
+  const themeBox = THEMES.map(([name, col], i) => {
+    const m = N.filter((n) => n.theme === i)
+    const cx = m.reduce((s, n) => s + n.x, 0) / m.length, cy = m.reduce((s, n) => s + n.y, 0) / m.length
+    const d = m.filter((n) => n.kind === 'topic').map((n) => Math.hypot(n.x - cx, n.y - cy)).sort((a, b) => a - b)
+    const rad = Math.max(80, d[Math.floor(d.length * 0.85)] + 28)
+    mk('circle', { cx, cy, r: rad, class: 'm-halo', style: `--c:${col}` }, gHalo)
+    const xs0 = m.map((n) => n.y); const top = Math.min(...xs0) - 26
+    const t = mk('text', { x: cx, y: top, class: 'm-theme-label', style: `--c:${col}` }, gTheme); t.textContent = name
+    const xs = m.map((n) => n.x), ys = m.map((n) => n.y)
+    return { t, cx, top, box: [Math.min(...xs), top - 14, Math.max(...xs), Math.max(...ys)] }
+  })
+
+  // view transform
+  const fitTo = ([x0, y0, x1, y1], pad = 30) => {
+    const kk = Math.min(W / (x1 - x0 + pad * 2), H / (y1 - y0 + pad * 2))
+    return [kk, W / 2 - ((x0 + x1) / 2) * kk, H / 2 - ((y0 + y1) / 2) * kk]
   }
-  draw()
-  // fit
-  const xs = N.map((n) => n.x), ys = N.map((n) => n.y)
-  const minX = Math.min(...xs) - 40, maxX = Math.max(...xs) + 40, minY = Math.min(...ys) - 40, maxY = Math.max(...ys) + 40
-  let k = Math.min(W / (maxX - minX), H / (maxY - minY)), tx = -minX * k + (W - (maxX - minX) * k) / 2, ty = -minY * k + (H - (maxY - minY) * k) / 2
+  const allBox = [Math.min(...N.map((n) => n.x)), Math.min(...N.map((n) => n.y), ...themeBox.map((b) => b.top - 14)), Math.max(...N.map((n) => n.x)), Math.max(...N.map((n) => n.y))]
+  let [k, tx, ty] = fitTo(allBox)
   const k0 = k
-  const apply = () => { g.setAttribute('transform', `translate(${tx},${ty}) scale(${k})`); svg.classList.toggle('zoomed', k > k0 * 1.7) }
+  let sel = null, nb = new Set(), raf = 0
+  function layoutLabels() {
+    raf = 0
+    const tfs0 = Math.max(13, Math.min(22, 20 * (k0 / k) ** 0.3))
+    const placed = themeBox.map(({ t, cx, top }) => { const sx = cx * k + tx, sy = top * k + ty, w = t.textContent.length * tfs0 * 0.78; return [sx - w / 2, sy - tfs0 / 2 - 2, sx + w / 2, sy + tfs0 / 2 + 2] })
+    const zoomed = k > k0 * 1.9
+    const fs = (n) => (n.kind === 'topic' ? 12 : 10.5)
+    const cands = N.filter((n) => n === sel || nb.has(n) || n.kind === 'topic' || zoomed)
+      .sort((a, b) => (b === sel) - (a === sel) || nb.has(b) - nb.has(a) || (b.kind === 'topic') - (a.kind === 'topic') || b.deg - a.deg)
+    const shown = new Set()
+    for (const n of cands) {
+      const sx = n.x * k + tx, sy = n.y * k + ty
+      const f = fs(n), w = (n.lw * f) / 12, h = f + 2
+      if (sx - w / 2 < 2 || sx + w / 2 > W - 2 || sy < 10 || sy > H) continue
+      const y = sy - n.r * k - 4
+      const bx = [sx - w / 2 - 3, y - h, sx + w / 2 + 3, y + 2]
+      if (n !== sel && placed.some((p) => bx[0] < p[2] && bx[2] > p[0] && bx[1] < p[3] && bx[3] > p[1])) continue
+      placed.push(bx); shown.add(n)
+    }
+    N.forEach((n) => {
+      if (!shown.has(n)) { n.tEl.style.display = 'none'; return }
+      const f = (n.kind === 'topic' ? 12 : 10.5) / k
+      n.tEl.style.display = ''
+      n.tEl.setAttribute('x', n.x); n.tEl.setAttribute('y', n.y - n.r - 4 / k); n.tEl.setAttribute('font-size', f); n.tEl.setAttribute('stroke-width', 3 / k)
+    })
+    const tfs = tfs0 / k
+    themeBox.forEach(({ t }) => { t.setAttribute('font-size', tfs) })
+    svg.classList.toggle('zoomed', zoomed)
+    svg.style.setProperty('--k', k)
+  }
+  const apply = () => { g.setAttribute('transform', `translate(${tx},${ty}) scale(${k})`); if (!raf) raf = requestAnimationFrame(layoutLabels) }
   apply()
+  let anim = 0
+  const animateTo = ([nk, ntx, nty]) => {
+    cancelAnimationFrame(anim)
+    const [k1, x1, y1] = [k, tx, ty]; const t0 = performance.now()
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const step = (now) => {
+      const p = reduce ? 1 : Math.min(1, (now - t0) / 520), e = 1 - Math.pow(1 - p, 3)
+      k = k1 + (nk - k1) * e; tx = x1 + (ntx - x1) * e; ty = y1 + (nty - y1) * e; apply()
+      if (p < 1) anim = requestAnimationFrame(step)
+    }
+    anim = requestAnimationFrame(step)
+  }
   // pan / zoom (pointer + wheel + pinch)
   const pts = new Map(); let last = null; let pinch = null; let moved = 0
   const toSvg = (cx, cy) => { const r = svg.getBoundingClientRect(); return [((cx - r.left) / r.width) * W, ((cy - r.top) / r.height) * H] }
-  const zoomAt = (px, py, f) => { const nk = Math.max(0.3, Math.min(6, k * f)); tx = px - ((px - tx) * nk) / k; ty = py - ((py - ty) * nk) / k; k = nk; apply() }
-  svg.addEventListener('wheel', (e) => { e.preventDefault(); const [px, py] = toSvg(e.clientX, e.clientY); zoomAt(px, py, Math.exp(-e.deltaY * 0.0015)) }, { passive: false })
-  svg.addEventListener('pointerdown', (e) => { pts.set(e.pointerId, [e.clientX, e.clientY]); last = [e.clientX, e.clientY]; moved = 0 })
+  const zoomAt = (px, py, f) => { const nk = Math.max(k0 * 0.6, Math.min(k0 * 12, k * f)); tx = px - ((px - tx) * nk) / k; ty = py - ((py - ty) * nk) / k; k = nk; apply() }
+  svg.addEventListener('wheel', (e) => { e.preventDefault(); cancelAnimationFrame(anim); const [px, py] = toSvg(e.clientX, e.clientY); zoomAt(px, py, Math.exp(-e.deltaY * 0.0015)) }, { passive: false })
+  svg.addEventListener('pointerdown', (e) => { cancelAnimationFrame(anim); pts.set(e.pointerId, [e.clientX, e.clientY]); last = [e.clientX, e.clientY]; moved = 0 })
   svg.addEventListener('pointermove', (e) => {
     if (!pts.has(e.pointerId)) return
     pts.set(e.pointerId, [e.clientX, e.clientY])
     if (pts.size === 2) {
       const [a, b] = [...pts.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]); const [px, py] = toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
-      if (pinch) zoomAt(px, py, d / pinch); pinch = d; return
+      if (pinch) zoomAt(px, py, d / pinch); pinch = d; moved = 99; return
     }
     const r = svg.getBoundingClientRect(); const dx = ((e.clientX - last[0]) / r.width) * W, dy = ((e.clientY - last[1]) / r.height) * H
     moved += Math.abs(dx) + Math.abs(dy); if (moved > 4) { tx += dx; ty += dy; apply() }
@@ -269,15 +361,22 @@ export function mountIdeaMap(openPanel) {
   const end = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinch = null }
   svg.addEventListener('pointerup', end); svg.addEventListener('pointercancel', end)
   svg.addEventListener('click', () => { if (moved < 5) select(null) })
+  // theme chips zoom to a cluster
+  document.querySelector('.map-themes')?.addEventListener('click', (e) => {
+    const b = e.target.closest('.map-theme'); if (!b) return
+    select(null)
+    document.querySelectorAll('.map-theme').forEach((x) => x.classList.toggle('is-on', x === b && b.dataset.theme !== 'all'))
+    animateTo(b.dataset.theme === 'all' ? [k0, ...fitTo(allBox).slice(1)] : fitTo(themeBox[+b.dataset.theme].box, 40))
+  })
   const info = document.getElementById('map-info')
   function select(n) {
     if (moved > 5) return
-    const nb = new Set()
+    sel = n; nb = new Set()
     if (n) links.forEach((l) => { if (l.source === n) nb.add(l.target); if (l.target === n) nb.add(l.source) })
-    N.forEach((m, i) => nEls[i].classList.toggle('dim', !!n && m !== n && !nb.has(m)))
-    N.forEach((m, i) => nEls[i].classList.toggle('on', m === n))
+    N.forEach((m) => { m.el.classList.toggle('dim', !!n && m !== n && !nb.has(m)); m.el.classList.toggle('on', m === n); m.tEl.classList.toggle('dim', !!n && m !== n && !nb.has(m)) })
     links.forEach((l, i) => lEls[i].classList.toggle('hl', !!n && (l.source === n || l.target === n)))
     svg.classList.toggle('has-sel', !!n)
+    if (!raf) raf = requestAnimationFrame(layoutLabels)
     if (!n) { info.hidden = true; return }
     let ids = []
     if (n.kind === 'author') ids = [...(authorBooks.get(n.label) || [])]
@@ -285,11 +384,17 @@ export function mountIdeaMap(openPanel) {
     const infl = n.kind === 'author'
       ? links.filter((l) => l.kind === 'infl' && (l.source === n || l.target === n)).map((l) => (l.source === n ? `→ ${l.target.label}` : `← ${l.source.label}`))
       : []
-    info.innerHTML = `<p class="mi-kind">${n.kind === 'author' ? 'Author' : 'Topic'}</p><h3>${esc(n.label)}</h3>${infl.length ? `<p class="mi-infl">${esc(infl.join(' · '))}</p>` : ''}<ul>${ids
+    info.innerHTML = `<p class="mi-kind" style="color:${THEMES[n.theme][1]}">${n.kind === 'author' ? 'Author' : 'Topic'} · ${THEMES[n.theme][0]}</p><h3>${esc(n.label)}</h3>${infl.length ? `<p class="mi-infl">${esc(infl.join(' · '))}</p>` : ''}<ul>${ids
       .filter((id) => BY_ID.has(id))
       .map((id) => `<li><button type="button" class="path-link" data-book-id="${esc(id)}"><span class="path-title">${esc(BY_ID.get(id).book.title)}</span></button></li>`)
       .join('')}</ul>`
     info.hidden = false
+    // keep the selected node clear of the info card (bottom sheet on phones, top-right card on desktop)
+    const sx = n.x * k + tx, sy = n.y * k + ty
+    const narrow = svg.clientWidth < 600
+    const ir = info.getBoundingClientRect(), fr = svg.getBoundingClientRect()
+    const covered = narrow ? sy > ((ir.top - fr.top) / fr.height) * H - 30 : sx > ((ir.left - fr.left) / fr.width) * W - 30 && sy < ((ir.bottom - fr.top) / fr.height) * H + 30
+    if (covered || sx < 20 || sx > W - 20 || sy < 20) animateTo([k, tx + (narrow ? W / 2 : W * 0.35) - sx, ty + (narrow ? H * 0.32 : H / 2) - sy])
   }
   info.addEventListener('click', (e) => { const b = e.target.closest('[data-book-id]'); if (b) openPanel(b.dataset.bookId) })
 }
