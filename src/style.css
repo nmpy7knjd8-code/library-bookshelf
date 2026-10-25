@@ -2160,3 +2160,26 @@ body.drawer-open { overflow: hidden; }
 
 /* Title: Cinzel capitals */
 .brand { font-family: var(--font-title); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; font-size: clamp(3rem, 11vw, 6rem); }
+
+/* ═══════════ Theme: Black & Champagne ═══════════ */
+:root { --void: #000; --ink: #f6efe2; --muted: #cdbf9f; --champagne: #e3cf9e; --champagne-line: rgba(227, 207, 158, 0.32); --panel: #15130f; }
+#app { background: linear-gradient(180deg, #0a0908, #000); }
+.spot { display: none; }
+.vignette { background: radial-gradient(ellipse 80% 70% at 50% 35%, transparent 40%, rgba(0, 0, 0, 0.5) 100%); }
+.brand { color: var(--ink); text-shadow: none; }
+.view-tabs { background: var(--panel); border-color: var(--champagne-line); }
+.view-tab { color: var(--muted); }
+.view-tab:hover, .view-tab:focus-visible { color: var(--ink); }
+.view-tab.is-active { color: var(--ink); background: transparent; box-shadow: inset 0 0 0 1px var(--champagne); }
+.menu-btn { background: var(--panel); border-color: var(--champagne-line); }
+.menu-btn span { background: var(--champagne); }
+.cover-card-title { color: var(--ink); }
+.cover-card-author { color: var(--muted); }
+.discovery-panel { background: var(--panel); border-color: var(--champagne-line); }
+.discovery-panel .discovery-title { color: var(--ink); }
+#authors-view .author-name { color: var(--ink); }
+#authors-view .author-avatar { border-color: var(--champagne); }
+#authors-view .author-monogram { background: var(--panel); color: var(--champagne); }
+#authors-view .author-works-toggle { color: var(--ink); border-color: var(--champagne-line); background: transparent; }
+#authors-view .author-works-toggle:hover, #authors-view .author-works-toggle[aria-expanded="true"] { color: var(--champagne); border-color: var(--champagne); }
+#authors-view .author-works { background: var(--panel); border-color: var(--champagne-line); }
