@@ -358,6 +358,13 @@ export const shelves = [
         description:
           'Plato’s dialogue asks what justice is and whether the just life is better than the unjust. Socrates builds an ideal city ruled by philosopher-kings, maps its three classes onto the three parts of the soul, and grounds knowledge in the Form of the Good through the sun, the divided line, and the cave. It ends by banishing imitative poetry and with the Myth of Er.',
       },
+      {
+        title: 'The New Science',
+        spine: 'The New Science',
+        author: 'Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch)',
+        description:
+          'Vico’s Scienza Nuova (1725; final edition 1744) argues that humans can truly know the civil world because they made it. Tracing nations through an age of gods, an age of heroes and an age of men, he reads myth, poetry and language as records of how early peoples thought, and sees history moving in recurring cycles (corsi e ricorsi). Neglected in his lifetime, it later shaped the philosophy of history, from Herder and Michelet to Joyce.',
+      },
     ],
   },
   {

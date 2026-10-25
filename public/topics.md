@@ -1,6 +1,6 @@
 # Topic Index of Garrett's Library
 
-56 topics, 147 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
+56 topics, 148 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
 
 ## Aesthetics and Art
 
@@ -44,6 +44,7 @@
 - *The Complete Poems of Cavafy*, C. P. Cavafy (tr. Rae Dalven): Cavafy's poems revisit Hellenistic and Roman-era Alexandria and Antioch, treating history ironically and with sympathy for losers and the declining.
 - *The Iliad*, Homer: Homer's epic of Achilles' wrath at Troy shows honor, mortality and grief as the core of the heroic ethos.
 - *The Life of Greece*, Will Durant: Durant presents Greek civilization to the Roman conquest as the fountainhead of Western philosophy, art and democracy, in a narrative, humanistic style.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico draws heavily on Roman law and early Roman history, and on Homer, to reconstruct the heroic age of the Greeks and Romans.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Set in the Piraeus, the dialogue reflects Athenian debates about democracy, Sparta and the sophists.
 - *The Twelve Caesars*, Michael Grant: Grant retells the first twelve emperors using Suetonius critically, weighing the gossip against other evidence.
 - *Thirty-Eight Latin Stories*, Anne H. Groton and James M. May: Graded Latin readings adapted from Roman myth and history for students.
@@ -110,6 +111,7 @@
 - *Revolt Against the Modern World*, Julius Evola: Evola reads history as a long fall from a primordial, sacred civilization to the materialist modern world.
 - *The Decline of the West, Vol. II*, Oswald Spengler: Spengler treats cultures as organisms with lifespans; Volume II covers cities, peoples, the state, money and religion in the decline of the West.
 - *The Legacy of Israel*, Various contributors: Essays by various scholars on the contribution of ancient Israel's religion, law and literature to Western civilization.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico traces how nations arise from religion, marriage and burial, mature into reasoned law, and decay through luxury and the 'barbarism of reflection' before beginning the cycle again.
 - *The Outline of History*, H. G. Wells: Wells writes a world history from the earth's origins onward, aiming at a common human story and a future world-state.
 - *The Philosophy of History*, G. W. F. Hegel (tr. J. Sibree): Hegel reads history moving from the Oriental world through Greece and Rome to the Germanic world, in increasing consciousness of freedom.
 
@@ -247,6 +249,7 @@
 - *Hamann’s Poetical Works / Schriften*, J. G. Hamann: Hamann argues against Kant that reason is inseparable from language, tradition and faith.
 - *Meta-Meditations*, Sesonske and Fleming: Sesonske and Fleming's contributors reexamine Descartes' method of doubt, the cogito and his proofs as live problems of certainty and self-knowledge.
 - *On Experience, Nature, and Freedom*, John Dewey: Dewey treats knowing as active inquiry resolving problematic situations, rather than a spectator copying reality.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Against Descartes, Vico holds that we can truly know only what we have made (verum ipsum factum), so the civil world, made by humans, is more knowable than nature.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato distinguishes knowledge of the unchanging Forms from opinion about the changing sensible world, through the divided line and the allegory of the cave.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein holds that what can be said can be said clearly and that whereof one cannot speak one must be silent.
 
@@ -256,6 +259,7 @@
 - *Logic*, Martin Heidegger: Heidegger argues that logic must be reconceived as the question of the essence of language, which he ties to the historical existence of a people.
 - *Shakespeare’s Language*, Frank Kermode: Kermode argues that around 1600 Shakespeare's verse grew denser and more difficult, and follows that change play by play.
 - *The Gutenberg Galaxy*, Marshall McLuhan: McLuhan argues that the shift from oral to print culture reshaped language and thought.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico argues that language developed from gestures and mute signs through heroic metaphor to the vernacular speech of the age of men, and uses etymology as evidence for early thought.
 - *Thirty-Eight Latin Stories*, Anne H. Groton and James M. May: Groton and May provide graded Latin readings for students, adapted from Roman myth and history.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein's picture theory holds that propositions picture possible facts, and that logic, ethics and the mystical lie beyond what can be said.
 - *Ulysses*, James Joyce: Joyce makes language itself the protagonist, shifting style in every chapter of Ulysses.
@@ -307,6 +311,7 @@
 - *Myths of Crete & Pre-Hellenic Europe*, Donald A. Mackenzie: Mackenzie retells Cretan and pre-Hellenic myths, linking them to Minoan archaeology and comparative folklore.
 - *The Hero with a Thousand Faces*, Joseph Campbell: Campbell interprets myths psychologically as variations of a monomyth expressing universal truths about the psyche.
 - *The Key to Understand C. G. Jung*, Benoit Rousseau: A short guide to Jung's archetypes, the collective unconscious and individuation.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico reads myths as 'true narrations' of early peoples, who thought in vivid poetic universals: Jove, for instance, is the first gentiles' image of the thundering sky.
 - *The Oxford Dictionary of Classical Myth and Religion*, Edited by Simon Price and Emily Kearns: A reference dictionary of Greek and Roman myth, gods, cults and religious practice.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato uses myths of his own, the 'noble lie' of metals and the Myth of Er on judgment and reincarnation, to convey what argument cannot.
 - *The Sacred and the Profane*, Mircea Eliade: Eliade holds that religious man lives in sacred space and cyclical sacred time renewed by myth and ritual, which modern profane man has lost.
@@ -332,6 +337,7 @@
 - *Frederick the Great (Vols. I–IV)*, Thomas Carlyle: Carlyle sees history as shaped by heroes who perceive and act on the truth of things.
 - *Rethinking the Scientific Revolution*, Edited by Margaret J. Osler: Osler's contributors show how the 'Scientific Revolution' was itself a historians' construct to be revised.
 - *The Decline of the West, Vol. II*, Oswald Spengler: Spengler holds that history consists of separate cultures, each with an organic life cycle, rather than linear progress.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico argues that every gentile nation passes through an age of gods, an age of heroes and an age of men, and that decline brings a return (ricorso) to barbarism; history follows an 'ideal eternal history.'
 - *The Outline of History*, H. G. Wells: Wells treats history as a single human story tending toward world unity.
 - *The Philosophy of History*, G. W. F. Hegel (tr. J. Sibree): Hegel views history as the rational progress of Spirit's freedom, guided by the 'cunning of reason' through passionate individuals.
 
@@ -346,6 +352,7 @@
 - *Shakespeare’s Sonnets*, William Shakespeare: Shakespeare's sonnets claim that verse can outlast time and give immortality to the beloved.
 - *The Dyer’s Hand*, W. H. Auden: Auden holds that a poem is a verbal society ordered by the poet, and reflects on poetry as craft and vocation.
 - *The New Pocket Anthology of American Verse*, Edited by Oscar Williams: Oscar Williams's pocket anthology spans American verse from colonial times to the mid-twentieth century.
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico's 'poetic wisdom' holds that the first humans were poets who spoke in images; his 'Discovery of the True Homer' treats Homer as the collective voice of the Greek people.
 - *The Poetical Works of John Milton, Vol. II (London, 1808)*, John Milton: An 1808 edition of Milton's poetry, including his shorter poems.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato argues that imitative poetry is at a third remove from truth and feeds the passions, so it is banished from the ideal city except for hymns to gods and praise of good men.
 - *Whatever Is Moving*, Howard Moss: Moss's essays practice close, appreciative reading of modern poets.
@@ -636,6 +643,7 @@
 - *The Metaphysics*, Aristotle (tr. Hugh Lawson-Tancred, Penguin Classics): Being and Ontology, God and the Divine
 - *The Name of the Rose*, Umberto Eco: Christianity and the Church, The Novel and Modern Fiction
 - *The New Pocket Anthology of American Verse*, Edited by Oscar Williams: Poetry and Poetics
+- *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Ancient Greece and Rome, Civilization, Rise and Decline, Knowledge and Reason, Language and Meaning, Myth and Symbol, Philosophy of History, Poetry and Poetics
 - *The Origins of Modern Science*, Herbert Butterfield: Science and the Scientific Revolution
 - *The Outline of History*, H. G. Wells: Civilization, Rise and Decline, Philosophy of History
 - *The Oxford Dictionary of Classical Myth and Religion*, Edited by Simon Price and Emily Kearns: Myth and Symbol, The Sacred and the Holy

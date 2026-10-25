@@ -146,6 +146,10 @@ export const TOPICS = {
 [
 "philosophy-49",
 "Set in the Piraeus, the dialogue reflects Athenian debates about democracy, Sparta and the sophists."
+],
+[
+"philosophy-50",
+"Vico draws heavily on Roman law and early Roman history, and on Homer, to reconstruct the heroic age of the Greeks and Romans."
 ]
 ],
 "Authority, Tradition and Counter-Revolution": [
@@ -332,6 +336,10 @@ export const TOPICS = {
 [
 "history-3",
 "Essays by various scholars on the contribution of ancient Israel's religion, law and literature to Western civilization."
+],
+[
+"philosophy-50",
+"Vico traces how nations arise from religion, marriage and burial, mature into reasoned law, and decay through luxury and the 'barbarism of reflection' before beginning the cycle again."
 ]
 ],
 "Communism and Marxism": [
@@ -730,6 +738,10 @@ export const TOPICS = {
 [
 "philosophy-49",
 "Plato distinguishes knowledge of the unchanging Forms from opinion about the changing sensible world, through the divided line and the allegory of the cave."
+],
+[
+"philosophy-50",
+"Against Descartes, Vico holds that we can truly know only what we have made (verum ipsum factum), so the civil world, made by humans, is more knowable than nature."
 ]
 ],
 "Language and Meaning": [
@@ -764,6 +776,10 @@ export const TOPICS = {
 [
 "literature-35",
 "Groton and May provide graded Latin readings for students, adapted from Roman myth and history."
+],
+[
+"philosophy-50",
+"Vico argues that language developed from gestures and mute signs through heroic metaphor to the vernacular speech of the age of men, and uses etymology as evidence for early thought."
 ]
 ],
 "Literary Criticism": [
@@ -918,6 +934,10 @@ export const TOPICS = {
 [
 "philosophy-49",
 "Plato uses myths of his own, the 'noble lie' of metals and the Myth of Er on judgment and reincarnation, to convey what argument cannot."
+],
+[
+"philosophy-50",
+"Vico reads myths as 'true narrations' of early peoples, who thought in vivid poetic universals: Jove, for instance, is the first gentiles' image of the thundering sky."
 ]
 ],
 "Nature": [
@@ -980,6 +1000,10 @@ export const TOPICS = {
 [
 "history-11",
 "Osler's contributors show how the 'Scientific Revolution' was itself a historians' construct to be revised."
+],
+[
+"philosophy-50",
+"Vico argues that every gentile nation passes through an age of gods, an age of heroes and an age of men, and that decline brings a return (ricorso) to barbarism; history follows an 'ideal eternal history.'"
 ]
 ],
 "Poetry and Poetics": [
@@ -1030,6 +1054,10 @@ export const TOPICS = {
 [
 "philosophy-49",
 "Plato argues that imitative poetry is at a third remove from truth and feeds the passions, so it is banished from the ideal city except for hymns to gods and praise of good men."
+],
+[
+"philosophy-50",
+"Vico's 'poetic wisdom' holds that the first humans were poets who spoke in images; his 'Discovery of the True Homer' treats Homer as the collective voice of the Greek people."
 ]
 ],
 "Political Philosophy and the State": [

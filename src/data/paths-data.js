@@ -9,6 +9,7 @@ export const READING_PATHS = [
       ['philosophy-8', 'Aristotle answers Plato by asking what being itself is.'],
       ['philosophy-9', 'His ethics turns metaphysics into a theory of the good life.'],
       ['philosophy-6', 'Spinoza rebuilds God, mind and freedom in geometric order.'],
+      ['philosophy-50', 'Vico answers Descartes: we truly know the human world because we made it.'],
       ['philosophy-2', 'Kant asks what reason can know at all — the hinge of modern thought.'],
       ['philosophy-10', 'Hegel sets Kant’s categories in motion as the history of Spirit.'],
       ['philosophy-0', 'Schopenhauer reads Kant against Hegel: the world as blind will.'],
@@ -73,6 +74,18 @@ export const READING_PATHS = [
     ],
   },
   {
+    id: 'history-of-history',
+    title: 'Philosophies of history',
+    blurb: 'Grand theories of where civilizations come from and where they go.',
+    steps: [
+      ['philosophy-50', 'Vico’s three ages and the cycle of corsi e ricorsi.'],
+      ['philosophy-10', 'Hegel: history as the progress of the consciousness of freedom.'],
+      ['philosophy-21', 'Spengler: cultures as organisms that bloom and decay.'],
+      ['philosophy-14', 'Evola: a traditionalist reading of decline from a sacred origin.'],
+      ['history-2', 'Wells attempts the whole human story in one outline.'],
+    ],
+  },
+  {
     id: 'modern-critique',
     title: 'Critics of modernity',
     blurb: 'Technology, media and the modern self under examination.',
@@ -120,5 +133,5 @@ export const INFLUENCES = [
   ['James Joyce', 'William Faulkner'], ['Thomas Pynchon', 'David Foster Wallace'],
   ['Jacques Ellul', 'Ivan Illich'], ['Marshall McLuhan', 'Jean Baudrillard'],
   ['Gilles Deleuze', 'Mark Fisher'], ['Jean Baudrillard', 'Mark Fisher'],
-  ['V. I. Lenin', 'Leon Trotsky'], ['Oswald Spengler', 'Julius Evola'],
+  ['V. I. Lenin', 'Leon Trotsky'], ['Giambattista Vico', 'James Joyce'], ['Oswald Spengler', 'Julius Evola'],
 ].map(([a, b]) => [a === 'Kant' ? 'Immanuel Kant' : a, b])

@@ -15729,6 +15729,41 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
+  "philosophy-50": {
+    "longDescription": "Giambattista Vico's New Science (first edition 1725; the definitive third edition 1744) sets out a 'new science' of the common nature of nations. Against Descartes, Vico argues that we can have true knowledge only of what we have made (verum ipsum factum), and so the civil world of laws, languages and institutions is more knowable than nature.\n\nHe traces every gentile nation through three ages: of gods, when people thought in vivid poetic images and feared thunder as Jove; of heroes, ruled by aristocratic fathers; and of men, ruled by reason and equal laws, until decline brings a return (ricorso) to barbarism. Book Three's 'Discovery of the True Homer' reads the Homeric poems as the collective voice of the Greek people. This is the Cornell University Press translation by Thomas Goddard Bergin and Max Harold Fisch, from the 1744 edition, with the 'Practic of the New Science'.",
+    "author": {
+      "name": "Giambattista Vico",
+      "bio": "Giambattista Vico (1668–1744) was a Neapolitan philosopher, historian and professor of rhetoric at the University of Naples. Little read in his lifetime, his New Science was rediscovered by Michelet, Croce and others, and he is now seen as a founder of the philosophy of history and of the human sciences; Joyce built Finnegans Wake on his cycles."
+    },
+    "similar": [
+      {
+        "title": "The Philosophy of History",
+        "author": "G. W. F. Hegel",
+        "cover": "covers/philosophy-10.jpg",
+        "bookId": "philosophy-10",
+        "source": "shelf",
+        "why": "Another grand theory of history's stages, on your shelf."
+      },
+      {
+        "title": "The Decline of the West, Vol. II",
+        "author": "Oswald Spengler",
+        "cover": "covers/philosophy-21.jpg",
+        "bookId": "philosophy-21",
+        "source": "shelf",
+        "why": "Cyclical rise and fall of cultures, on your shelf."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Autobiography",
+        "author": "Giambattista Vico",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Vico's own account of his intellectual formation (Bergin & Fisch)."
+      }
+    ]
+  },
   "philosophy-49": {
     "longDescription": "The Republic (c. 375 BC) opens with the question of what justice is. After Thrasymachus argues that justice is merely the advantage of the stronger, Glaucon and Adeimantus challenge Socrates to show that justice is worth having for its own sake. Socrates answers by building a city in words, with rulers, auxiliaries and producers, and finds justice in each part doing its own work; the just soul likewise has reason ruling spirit and appetite.\n\nThe central books argue that philosophers must rule, and explain knowledge of the Form of the Good through the images of the sun, the divided line and the cave. Later books trace the decline of constitutions from aristocracy to tyranny, banish imitative poetry, and close with the Myth of Er on the soul's judgment and rebirth. This is the Penguin Classics translation by Desmond Lee.",
     "author": {

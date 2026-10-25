@@ -1855,6 +1855,19 @@ export const covers = {
     "gap": false,
     "note": "Vintage Books paperback, Walter Kaufmann translation (ISBN 9780394703695)"
   },
+  "philosophy-50": {
+    "cover": "covers/philosophy-50.jpg",
+    "spine": "covers/philosophy-50.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/isbn/9780801492655",
+    "coverId": 565453,
+    "match": {
+      "title": "The New Science of Giambattista Vico",
+      "author": "Giambattista Vico"
+    },
+    "gap": false,
+    "note": "Cornell University Press, tr. Bergin & Fisch, unabridged 3rd ed. (ISBN 9780801492655)"
+  },
   "philosophy-49": {
     "cover": "covers/philosophy-49.jpg",
     "spine": "covers/philosophy-49.jpg",
