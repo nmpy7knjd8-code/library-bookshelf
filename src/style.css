@@ -1885,22 +1885,6 @@ body {
 }
 
 /* ═══════════ v2 views: Timeline · Idea map · Paths · Ask ═══════════ */
-.view-tabs {
-  width: auto;
-  max-width: min(860px, 94vw);
-  justify-content: flex-start;
-  overflow-x: auto;
-  scrollbar-width: none;
-  flex-wrap: nowrap;
-}
-.view-tabs::-webkit-scrollbar { display: none; }
-.view-tab { white-space: nowrap; padding-left: 1.1rem; padding-right: 1.1rem; flex: 0 0 auto; }
-@media (min-width: 721px) { .view-tabs { width: fit-content; } }
-@media (max-width: 720px) {
-  .view-tabs { border-radius: 999px; justify-content: flex-start; }
-  .view-tab { flex: 0 0 auto; padding-left: 0.85rem; padding-right: 0.85rem; font-size: 0.98rem; }
-}
-
 .view-wrap {
   position: relative;
   z-index: 1;
@@ -2011,3 +1995,63 @@ body {
   .path-step { grid-template-columns: 1.6rem 1fr; }
 }
 #idea-map.has-sel .m-link:not(.hl) { opacity: 0.12; }
+
+/* ═══════════ slide-over drawer (motion after Muse 73beb71) ═══════════ */
+.menu-btn {
+  position: fixed; top: 14px; left: 14px; z-index: 60;
+  width: 40px; height: 40px; border-radius: 12px; padding: 0;
+  display: grid; place-content: center; gap: 4px;
+  background: rgba(10, 12, 18, 0.55); border: 1px solid rgba(160, 185, 230, 0.14);
+  -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+  cursor: pointer; opacity: 0.8; transition: opacity .2s, border-color .2s, background .2s;
+}
+.menu-btn span { display: block; width: 16px; height: 1.5px; border-radius: 2px; background: #c9d4e6; }
+.menu-btn span:nth-child(2) { width: 11px; }
+.menu-btn:hover, .menu-btn:focus-visible { opacity: 1; outline: none; border-color: rgba(180, 200, 235, 0.35); background: rgba(16, 20, 30, 0.75); }
+.side-drawer[hidden] { display: none; }
+.side-drawer { position: fixed; inset: 0; z-index: 100; }
+.drawer-backdrop {
+  position: absolute; inset: 0; background: rgba(5, 6, 10, 0.6);
+  -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+  touch-action: none; animation: lib-drawer-fade 0.28s ease-out both;
+}
+.drawer-panel {
+  position: absolute; top: 0; bottom: 0; left: 0; width: min(78vw, 320px);
+  display: flex; flex-direction: column; overflow: hidden;
+  background: linear-gradient(180deg, #121620 0%, #0b0e15 100%);
+  border-right: 1px solid rgba(160, 185, 230, 0.1);
+  border-radius: 0 18px 18px 0; box-shadow: 16px 0 48px rgba(0, 0, 0, 0.45);
+  will-change: transform; touch-action: pan-y;
+  animation: lib-drawer-slide 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.side-drawer.closing { pointer-events: none; }
+.side-drawer.closing .drawer-backdrop { animation: lib-drawer-fade-out 0.26s ease-in both; }
+.side-drawer.closing .drawer-panel { animation: lib-drawer-slide-out 0.26s cubic-bezier(0.4, 0, 1, 1) both; }
+.drawer-head { display: flex; align-items: center; justify-content: space-between; padding: 18px 14px 8px 20px; }
+.drawer-title { font-family: var(--font-display); font-size: 1.35rem; letter-spacing: 0.02em; color: #e6edf7; }
+.drawer-close { appearance: none; background: none; border: 0; color: #7a889c; font-size: 1.6rem; line-height: 1; width: 36px; height: 36px; border-radius: 10px; cursor: pointer; }
+.drawer-close:hover, .drawer-close:focus-visible { outline: none; color: #dbe4f2; background: rgba(255,255,255,.05); }
+.drawer-nav { display: flex; flex-direction: column; gap: 2px; padding: 4px 8px 16px; overflow-y: auto; }
+.drawer-item {
+  appearance: none; display: flex; align-items: center; gap: 13px; width: 100%; text-align: left;
+  padding: 10px 12px; border-radius: 10px; background: none; border: 0; color: #dbe4f2;
+  font: inherit; text-decoration: none; cursor: pointer; transition: background 0.15s;
+}
+.drawer-item svg { flex: 0 0 auto; color: #7a889c; }
+.drawer-item span { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.drawer-item b { font-family: var(--font-display); font-size: 1.08rem; font-weight: 600; }
+.drawer-item small { font-family: var(--font-ui); font-size: 0.74rem; color: #7a889c; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.drawer-item:hover, .drawer-item:focus-visible { outline: none; background: rgba(255,255,255,.05); }
+.drawer-item:active { background: rgba(255,255,255,.08); }
+.drawer-item.is-active { background: rgba(160, 185, 230, 0.12); }
+.drawer-item.is-active svg, .drawer-item.is-active b { color: #f0e3c4; }
+.drawer-sep { height: 1px; margin: 8px 12px; background: rgba(160, 185, 230, 0.1); }
+body.drawer-open { overflow: hidden; }
+@keyframes lib-drawer-fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes lib-drawer-fade-out { from { opacity: 1; } to { opacity: 0; } }
+@keyframes lib-drawer-slide { from { transform: translate3d(-100%,0,0); } to { transform: translate3d(0,0,0); } }
+@keyframes lib-drawer-slide-out { from { transform: translate3d(0,0,0); } to { transform: translate3d(-100%,0,0); } }
+@media (prefers-reduced-motion: reduce) {
+  .drawer-backdrop, .drawer-panel, .side-drawer.closing .drawer-backdrop, .side-drawer.closing .drawer-panel { animation: none; }
+}
+@media (max-width: 720px) { .menu-btn { top: 10px; left: 10px; width: 38px; height: 38px; } }
