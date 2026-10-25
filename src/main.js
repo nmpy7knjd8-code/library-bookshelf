@@ -9,7 +9,7 @@ import { renderTimelineView, renderPathsView, renderAskView, mountIdeaMap, rende
 
 let selectedId = null
 let lastRowWidth = 0
-let activeView = 'covers' // see VIEWS
+let activeView = 'covers' // see VIEWS; restored from location.hash below
 let askQuery = ''
 const VIEWS = [
   ['shelf', 'Bookshelf', 'room'],
@@ -622,11 +622,20 @@ function mountDrawer() {
   }, { passive: true })
 }
 
-function setView(view) {
+function viewFromHash() {
+  const h = decodeURIComponent(location.hash.slice(1))
+  return VIEWS.some(([v]) => v === h) ? h : 'covers'
+}
+
+function setView(view, { fromHistory = false } = {}) {
   if (!VIEWS.some(([v]) => v === view)) return
   if (activeView === view) return
   if (selectedId) closePanel()
   activeView = view
+  if (!fromHistory) {
+    const url = view === 'covers' ? location.pathname + location.search : `#${view}`
+    history.pushState(null, '', url)
+  }
   renderApp()
   window.scrollTo({ top: 0, behavior: 'smooth' })
 }
@@ -731,13 +740,12 @@ function bindGlobalsOnce() {
     }
   })
 
-  let t = 0
-  const drift = () => {
-    t += 0.0035
-    document.documentElement.style.setProperty('--light-drift', `${48 + Math.sin(t) * 10}%`)
-    requestAnimationFrame(drift)
-  }
-  requestAnimationFrame(drift)
+  // (a per-frame --light-drift loop used to live here; nothing reads that property, and
+  // rewriting a :root custom property every frame forced a whole-document style recalc,
+  // which on iPhone with the Idea map's ~600 SVG nodes could get the tab killed and reloaded)
+
+  // keep the view in the URL hash so reloads and Back return to it
+  window.addEventListener('popstate', () => setView(viewFromHash(), { fromHistory: true }))
 
   let resizeTimer = 0
   window.addEventListener('resize', () => {
@@ -989,4 +997,5 @@ function buildAppHtml() {
   `
 }
 
+activeView = viewFromHash()
 renderApp()
