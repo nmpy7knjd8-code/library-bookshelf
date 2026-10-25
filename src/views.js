@@ -231,7 +231,7 @@ export function mountIdeaMap(openPanel) {
       if (!links.some((l) => l.source === `a:${a}` && l.target === `t:${topic}`)) links.push({ source: `a:${a}`, target: `t:${topic}`, kind: 'topic' })
     }
   }
-  for (const [a, c] of authorThemes) nodes.get(`a:${a}`).theme = c.indexOf(Math.max(...c))
+  for (const [a, c] of authorThemes) { const n = nodes.get(`a:${a}`); n.theme = c.indexOf(Math.max(...c)); const tot = c.reduce((x, y) => x + y, 0); n.mix = c.map((v) => v / tot) }
   for (const [x, y] of INFLUENCES) if (nodes.has(`a:${x}`) && nodes.has(`a:${y}`)) links.push({ source: `a:${x}`, target: `a:${y}`, kind: 'infl' })
   for (const l of links) { nodes.get(l.source).deg++; nodes.get(l.target).deg++ }
   const N = [...nodes.values()]
@@ -240,8 +240,18 @@ export function mountIdeaMap(openPanel) {
   const ORDER = cols === 3 ? [0, 1, 5, 3, 2, 4] : [0, 1, 3, 5, 2, 4]
   const anchors = []
   ORDER.forEach((th, slot) => { anchors[th] = [((slot % cols) + 0.5) * CELL, (Math.floor(slot / cols) + 0.5) * CELL] })
+  // light blend: authors stay anchored to their primary theme but lean BLEND of the way
+  // toward the other themes they write about, weighted by topic share
+  const BLEND = 0.3
+  const target = (d) => {
+    const [px, py] = anchors[d.theme]
+    if (!d.mix) return [px, py]
+    let dx = 0, dy = 0
+    d.mix.forEach((w, i) => { if (i !== d.theme) { dx += w * (anchors[i][0] - px); dy += w * (anchors[i][1] - py) } })
+    return [px + BLEND * dx, py + BLEND * dy]
+  }
   let seed = 7; const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647)
-  N.forEach((n) => { const [ax, ay] = anchors[n.theme]; n.x = ax + (rnd() - 0.5) * 80; n.y = ay + (rnd() - 0.5) * 80 })
+  N.forEach((n) => { const [ax, ay] = target(n); n.x = ax + (rnd() - 0.5) * 80; n.y = ay + (rnd() - 0.5) * 80 })
 
   const NS = 'http://www.w3.org/2000/svg'
   const mk = (tag, attrs, parent) => { const el = document.createElementNS(NS, tag); for (const k in attrs) el.setAttribute(k, attrs[k]); parent?.appendChild(el); return el }
@@ -269,8 +279,8 @@ export function mountIdeaMap(openPanel) {
   const sim = forceSimulation(N)
     .force('link', forceLink(links).id((d) => d.id).distance((l) => (l.kind === 'infl' ? 70 : 85)).strength((l) => (l.kind === 'infl' ? 0.05 : 0.12)))
     .force('charge', forceManyBody().strength((d) => (d.kind === 'topic' ? -360 : -120)).distanceMax(300))
-    .force('x', forceX((d) => anchors[d.theme][0]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
-    .force('y', forceY((d) => anchors[d.theme][1]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
+    .force('x', forceX((d) => target(d)[0]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
+    .force('y', forceY((d) => target(d)[1]).strength((d) => (d.kind === 'topic' ? 0.24 : 0.13)))
     .force('collide', forceCollide().radius((d) => d.r + (d.kind === 'topic' ? 16 : 9)).iterations(2))
     .stop()
   for (let i = 0; i < 420; i++) sim.tick()
