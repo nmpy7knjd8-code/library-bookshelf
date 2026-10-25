@@ -531,9 +531,13 @@ function bindEvents() {
   })
 
   document.getElementById('authors-view')?.addEventListener('click', (event) => {
-    const card = event.target.closest('.cover-card')
-    if (!card) return
-    openPanel(card.dataset.bookId)
+    const toggle = event.target.closest('.discovery-toggle')
+    if (toggle) {
+      setDiscoveryOpen(toggle.closest('.discovery-panel'), toggle.getAttribute('aria-expanded') !== 'true')
+      return
+    }
+    const link = event.target.closest('.cluster-link')
+    if (link) openPanel(link.dataset.bookId)
   })
 
   document.getElementById('covers-view')?.addEventListener('click', (event) => {
@@ -734,18 +738,36 @@ function buildAuthorIndex() {
 
 function renderAuthorsView() {
   return `
-    <div class="covers-view" id="authors-view">
+    <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0.55rem;max-width:640px">
       ${buildAuthorIndex()
         .map(
           (a, i) => `
-        <section class="covers-section" aria-labelledby="author-${i}">
-          <div class="covers-heading">
-            <h2 id="author-${i}">${escapeHtml(a.name)} <span style="opacity:0.55;font-weight:500">(${a.books.length})</span></h2>
+        <div class="discovery-panel" data-author="${i}">
+          <button type="button" class="discovery-toggle" id="author-toggle-${i}"
+            aria-expanded="false" aria-controls="author-panel-${i}">
+            <span class="discovery-label">
+              <span class="discovery-title">${escapeHtml(a.name)} <span style="opacity:0.55">(${a.books.length})</span></span>
+            </span>
+            <span class="discovery-mark" aria-hidden="true">
+              <svg class="discovery-chevron" viewBox="0 0 16 16" width="14" height="14" focusable="false">
+                <path d="M3.2 5.6 8 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+          </button>
+          <div class="discovery-body" id="author-panel-${i}" role="region" aria-labelledby="author-toggle-${i}" hidden>
+            <ul class="cluster-titles">
+              ${a.books
+                .map(
+                  ({ shelf, book, index }) => `<li>
+                <button type="button" class="cluster-link" data-book-id="${escapeAttr(bookId(shelf.id, index))}">
+                  <span class="cluster-link-title">${escapeHtml(book.title)}</span>
+                </button>
+              </li>`,
+                )
+                .join('')}
+            </ul>
           </div>
-          <div class="covers-grid" role="list" aria-label="Books by ${escapeAttr(a.name)}">
-            ${a.books.map(({ shelf, book, index }) => renderCoverCard(shelf, book, index)).join('')}
-          </div>
-        </section>`,
+        </div>`,
         )
         .join('')}
     </div>
