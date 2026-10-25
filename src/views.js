@@ -197,8 +197,8 @@ export function renderMapView() {
       ${THEMES.map(([name, col], i) => `<button type="button" class="map-theme" data-theme="${i}" style="--c:${col}"><i></i>${name}</button>`).join('')}
       <button type="button" class="map-theme map-reset" data-theme="all">Show all</button>
     </div>
+    <div class="map-legend"><span><i class="lg-author"></i>Author</span><span><i class="lg-topic"></i>Topic</span><span><i class="lg-infl"></i>Influence</span></div>
     <div class="map-frame"><svg id="idea-map" role="img" aria-label="Idea map of authors and topics"></svg>
-      <div class="map-legend"><span><i class="lg-author"></i>Author</span><span><i class="lg-topic"></i>Topic</span><span><i class="lg-infl"></i>Influence</span></div>
       <div class="map-info" id="map-info" hidden></div></div>
   </div>`
 }
@@ -308,7 +308,7 @@ export function mountIdeaMap(openPanel) {
     const kk = Math.min(W / (x1 - x0 + pad * 2), H / (y1 - y0 + pad * 2))
     return [kk, W / 2 - ((x0 + x1) / 2) * kk, H / 2 - ((y0 + y1) / 2) * kk]
   }
-  const allBox = [Math.min(...N.map((n) => n.x)), Math.min(...N.map((n) => n.y), ...themeBox.map((b) => b.top - 14)), Math.max(...N.map((n) => n.x)), Math.max(...N.map((n) => n.y))]
+  const allBox = [Math.min(...N.map((n) => n.x)), Math.min(...N.map((n) => n.y), ...themeBox.map((b) => b.top - 34)), Math.max(...N.map((n) => n.x)), Math.max(...N.map((n) => n.y))]
   let [k, tx, ty] = fitTo(allBox)
   const k0 = k
   let sel = null, nb = new Set(), raf = 0
