@@ -1,5 +1,5 @@
-// Bodoni Moda is wider than the Cormorant Garamond the spine sizes were tuned for.
-const SPINE_FONT_SCALE = 0.86
+// Spine sizes were tuned for Cormorant Garamond; scale for the current display face.
+const SPINE_FONT_SCALE = 0.95
 import { PORTRAITS } from './portraits.js'
 import './style.css'
 import { shelves, countBooks } from './catalog.js'

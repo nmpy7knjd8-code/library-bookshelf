@@ -11,9 +11,9 @@
   --light-x: 50%;
   --light-drift: 50%;
   --case-width: min(960px, 96vw);
-  --font-display: 'Bodoni Moda', 'Didot', Georgia, serif;
+  --font-display: 'Sorts Mill Goudy', Georgia, serif;
   --font-title: 'Cinzel', 'Trajan Pro', Georgia, serif;
-  --font-ui: 'Spectral', Georgia, serif;
+  --font-ui: 'Goudy Bookletter 1911', Georgia, serif;
   color-scheme: dark;
 }
 
