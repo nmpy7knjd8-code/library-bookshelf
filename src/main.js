@@ -4,10 +4,22 @@ import { relatedClusters, worthExploring } from './discoveries.js'
 import { spineTextureUrl, hashString } from './textures.js'
 import { coverFor } from './covers-data.js'
 import { enrichmentFor } from './enrichments.js'
+import { buildAuthorIndex } from './authors.js'
+import { renderTimelineView, renderPathsView, renderAskView, mountIdeaMap, renderMapView } from './views.js'
 
 let selectedId = null
 let lastRowWidth = 0
-let activeView = 'covers' // 'shelf' | 'covers' | 'authors'
+let activeView = 'covers' // see VIEWS
+let askQuery = ''
+const VIEWS = [
+  ['shelf', 'Bookshelf', 'room'],
+  ['covers', 'Covers', 'covers-view'],
+  ['authors', 'Authors', 'authors-view'],
+  ['timeline', 'Timeline', 'timeline-view'],
+  ['map', 'Idea map', 'map-view'],
+  ['paths', 'Paths', 'paths-view'],
+  ['ask', 'Ask', 'ask-view'],
+]
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
@@ -508,8 +520,16 @@ function setDiscoveryOpen(panel, open) {
   }
 }
 
+function runAsk(q) {
+  askQuery = (q || '').trim()
+  if (activeView !== 'ask') { activeView = 'ask' }
+  renderApp()
+  const input = document.getElementById('ask-input')
+  if (input) { input.focus(); input.setSelectionRange(input.value.length, input.value.length) }
+}
+
 function setView(view) {
-  if (!['shelf', 'covers', 'authors'].includes(view)) return
+  if (!VIEWS.some(([v]) => v === view)) return
   if (activeView === view) return
   if (selectedId) closePanel()
   activeView = view
@@ -529,6 +549,19 @@ function bindEvents() {
     if (!btn) return
     openPanel(btn.dataset.bookId)
   })
+
+  document.querySelector('.view-wrap')?.addEventListener('click', (event) => {
+    const ex = event.target.closest('.ask-example')
+    if (ex) { runAsk(ex.dataset.q); return }
+    if (event.target.closest('#map-info')) return
+    const b = event.target.closest('[data-book-id]')
+    if (b) openPanel(b.dataset.bookId)
+  })
+  document.getElementById('ask-form')?.addEventListener('submit', (event) => {
+    event.preventDefault()
+    runAsk(document.getElementById('ask-input').value)
+  })
+  if (activeView === 'map') mountIdeaMap(openPanel)
 
   document.getElementById('authors-view')?.addEventListener('click', (event) => {
     const toggle = event.target.closest('.discovery-toggle')
@@ -692,55 +725,6 @@ function renderCoverCard(shelf, book, index) {
   `
 }
 
-const NON_PERSON = /^(author uncertain|various contributors|anthology|american standard version|american literature survey|farm and fireside)/i
-const AUTHOR_ALIASES = { 'Carl G. Jung': 'C. G. Jung' }
-const SURNAME_OVERRIDES = { 'Dante Alighieri': 'Dante' }
-const VARIOUS = 'Anthologies & Various'
-
-/** Split a catalog author string into normalised person names. */
-function authorNames(raw) {
-  const a = String(raw || '').trim()
-  if (!a || NON_PERSON.test(a)) return [VARIOUS]
-  let t = a
-    .replace(/\s*\(.*?\)\s*/g, ' ')
-    .replace(/,\s*edited by .*$/i, '')
-    .replace(/^(edited by|associated with)\s+/i, '')
-    .replace(/,?\s*et al\.?/i, '')
-    .trim()
-  return t
-    .split(/\s*,\s*|\s+and\s+/)
-    .map((n) => n.trim())
-    .filter(Boolean)
-    .map((n) => AUTHOR_ALIASES[n] || n)
-}
-
-function surnameKey(name) {
-  if (name === VARIOUS) return '\uffff'
-  if (SURNAME_OVERRIDES[name]) return SURNAME_OVERRIDES[name]
-  const parts = name.replace(/\s+Jr\.?$/i, '').split(/\s+/)
-  return `${parts[parts.length - 1]} ${parts.slice(0, -1).join(' ')}`
-}
-
-function buildAuthorIndex() {
-  const map = new Map()
-  for (const shelf of shelves) {
-    shelf.books.forEach((book, index) => {
-      for (const name of authorNames(book.author)) {
-        if (!map.has(name)) map.set(name, [])
-        map.get(name).push({ shelf, book, index })
-      }
-    })
-  }
-  return [...map.entries()]
-    .map(([name, books]) => ({ name, books, key: surnameKey(name) }))
-    .sort(
-      (x, y) =>
-        (x.name === VARIOUS) - (y.name === VARIOUS) ||
-        y.books.length - x.books.length ||
-        x.key.localeCompare(y.key, 'en', { sensitivity: 'base' }),
-    )
-}
-
 function renderAuthorsView() {
   return `
     <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0.55rem;max-width:640px">
@@ -795,11 +779,7 @@ function buildAppHtml() {
     </header>
 
     <nav class="view-tabs" aria-label="Library views">
-      ${[
-        ['shelf', 'Bookshelf', 'room'],
-        ['covers', 'Covers', 'covers-view'],
-        ['authors', 'Authors', 'authors-view'],
-      ]
+      ${VIEWS
         .map(
           ([view, label, controls]) => `<button
         type="button"
@@ -828,12 +808,16 @@ function buildAppHtml() {
         <div class="case-plinth" aria-hidden="true"></div>
       </div>
     </main>`
-        : activeView === 'authors'
-          ? renderAuthorsView()
-          : renderCoversView()
+        : ({
+            authors: renderAuthorsView,
+            timeline: renderTimelineView,
+            map: renderMapView,
+            paths: renderPathsView,
+            ask: () => renderAskView(askQuery),
+          }[activeView] || renderCoversView)()
     }
 
-    <section class="discovery" aria-label="Further discovery">
+    ${['shelf', 'covers'].includes(activeView) ? `    <section class="discovery" aria-label="Further discovery">
       ${renderDiscoveryPanel(
         'related',
         'Related books',
@@ -846,12 +830,12 @@ function buildAppHtml() {
         'Further reading beyond the case',
         renderExploreBody(),
       )}
-    </section>
+    </section>` : ''}
 
     <footer class="colophon">
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
-      <span>${shelfActive ? 'Bookshelf' : activeView === 'authors' ? 'Authors' : 'Cover gallery'}</span>
+      <span>${activeView === 'covers' ? 'Cover gallery' : VIEWS.find(([v]) => v === activeView)[1]}</span>
       <span aria-hidden="true">·</span>
       <a href="${import.meta.env.BASE_URL}topics.html" style="color:inherit">Topic index</a>
     </footer>
