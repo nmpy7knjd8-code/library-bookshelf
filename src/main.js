@@ -7,7 +7,7 @@ import { enrichmentFor } from './enrichments.js'
 
 let selectedId = null
 let lastRowWidth = 0
-let activeView = 'covers' // 'shelf' | 'covers'
+let activeView = 'covers' // 'shelf' | 'covers' | 'authors'
 
 function bookId(shelfId, index) {
   return `${shelfId}-${index}`
@@ -509,7 +509,7 @@ function setDiscoveryOpen(panel, open) {
 }
 
 function setView(view) {
-  if (view !== 'shelf' && view !== 'covers') return
+  if (!['shelf', 'covers', 'authors'].includes(view)) return
   if (activeView === view) return
   if (selectedId) closePanel()
   activeView = view
@@ -528,6 +528,12 @@ function bindEvents() {
     const btn = event.target.closest('.book')
     if (!btn) return
     openPanel(btn.dataset.bookId)
+  })
+
+  document.getElementById('authors-view')?.addEventListener('click', (event) => {
+    const card = event.target.closest('.cover-card')
+    if (!card) return
+    openPanel(card.dataset.bookId)
   })
 
   document.getElementById('covers-view')?.addEventListener('click', (event) => {
@@ -682,6 +688,71 @@ function renderCoverCard(shelf, book, index) {
   `
 }
 
+const NON_PERSON = /^(author uncertain|various contributors|anthology|american standard version|american literature survey|farm and fireside)/i
+const AUTHOR_ALIASES = { 'Carl G. Jung': 'C. G. Jung' }
+const SURNAME_OVERRIDES = { 'Dante Alighieri': 'Dante' }
+const VARIOUS = 'Anthologies & Various'
+
+/** Split a catalog author string into normalised person names. */
+function authorNames(raw) {
+  const a = String(raw || '').trim()
+  if (!a || NON_PERSON.test(a)) return [VARIOUS]
+  let t = a
+    .replace(/\s*\(.*?\)\s*/g, ' ')
+    .replace(/,\s*edited by .*$/i, '')
+    .replace(/^(edited by|associated with)\s+/i, '')
+    .replace(/,?\s*et al\.?/i, '')
+    .trim()
+  return t
+    .split(/\s*,\s*|\s+and\s+/)
+    .map((n) => n.trim())
+    .filter(Boolean)
+    .map((n) => AUTHOR_ALIASES[n] || n)
+}
+
+function surnameKey(name) {
+  if (name === VARIOUS) return '\uffff'
+  if (SURNAME_OVERRIDES[name]) return SURNAME_OVERRIDES[name]
+  const parts = name.replace(/\s+Jr\.?$/i, '').split(/\s+/)
+  return `${parts[parts.length - 1]} ${parts.slice(0, -1).join(' ')}`
+}
+
+function buildAuthorIndex() {
+  const map = new Map()
+  for (const shelf of shelves) {
+    shelf.books.forEach((book, index) => {
+      for (const name of authorNames(book.author)) {
+        if (!map.has(name)) map.set(name, [])
+        map.get(name).push({ shelf, book, index })
+      }
+    })
+  }
+  return [...map.entries()]
+    .map(([name, books]) => ({ name, books, key: surnameKey(name) }))
+    .sort((x, y) => x.key.localeCompare(y.key, 'en', { sensitivity: 'base' }))
+}
+
+function renderAuthorsView() {
+  return `
+    <div class="covers-view" id="authors-view">
+      ${buildAuthorIndex()
+        .map(
+          (a, i) => `
+        <section class="covers-section" aria-labelledby="author-${i}">
+          <div class="covers-heading">
+            <h2 id="author-${i}">${escapeHtml(a.name)}</h2>
+            <p>${a.books.length}</p>
+          </div>
+          <div class="covers-grid" role="list" aria-label="Books by ${escapeAttr(a.name)}">
+            ${a.books.map(({ shelf, book, index }) => renderCoverCard(shelf, book, index)).join('')}
+          </div>
+        </section>`,
+        )
+        .join('')}
+    </div>
+  `
+}
+
 function buildAppHtml() {
   const shelfActive = activeView === 'shelf'
   return `
@@ -698,22 +769,22 @@ function buildAppHtml() {
     </header>
 
     <nav class="view-tabs" aria-label="Library views">
-      <button
+      ${[
+        ['shelf', 'Bookshelf', 'room'],
+        ['covers', 'Covers', 'covers-view'],
+        ['authors', 'Authors', 'authors-view'],
+      ]
+        .map(
+          ([view, label, controls]) => `<button
         type="button"
-        class="view-tab${!shelfActive ? ' is-active' : ''}"
-        id="tab-covers"
-        data-view="covers"
-        aria-selected="${!shelfActive}"
-        aria-controls="covers-view"
-      >Covers</button>
-      <button
-        type="button"
-        class="view-tab${shelfActive ? ' is-active' : ''}"
-        id="tab-shelf"
-        data-view="shelf"
-        aria-selected="${shelfActive}"
-        aria-controls="room"
-      >Bookshelf</button>
+        class="view-tab${activeView === view ? ' is-active' : ''}"
+        id="tab-${view}"
+        data-view="${view}"
+        aria-selected="${activeView === view}"
+        aria-controls="${controls}"
+      >${label}</button>`,
+        )
+        .join('')}
     </nav>
 
     ${
@@ -731,7 +802,9 @@ function buildAppHtml() {
         <div class="case-plinth" aria-hidden="true"></div>
       </div>
     </main>`
-        : renderCoversView()
+        : activeView === 'authors'
+          ? renderAuthorsView()
+          : renderCoversView()
     }
 
     <section class="discovery" aria-label="Further discovery">
@@ -752,7 +825,7 @@ function buildAppHtml() {
     <footer class="colophon">
       <span>${countBooks()} volumes</span>
       <span aria-hidden="true">·</span>
-      <span>${shelfActive ? 'Bookshelf' : 'Cover gallery'}</span>
+      <span>${shelfActive ? 'Bookshelf' : activeView === 'authors' ? 'Authors' : 'Cover gallery'}</span>
       <span aria-hidden="true">·</span>
       <a href="${import.meta.env.BASE_URL}topics.html" style="color:inherit">Topic index</a>
     </footer>
