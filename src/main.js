@@ -670,8 +670,15 @@ function bindEvents() {
       })
       if (open) {
         toggle.setAttribute('aria-expanded', 'true')
-        toggle.closest('.author-tile').classList.add('is-open')
-        document.getElementById(toggle.getAttribute('aria-controls')).hidden = false
+        const tile = toggle.closest('.author-tile')
+        tile.classList.add('is-open')
+        // Place the panel after the last tile of this tile's row so no tiles reorder.
+        const panel = document.getElementById(toggle.getAttribute('aria-controls'))
+        const tiles = [...document.querySelectorAll('#authors-view .author-tile')]
+        let last = tile
+        for (let i = tiles.indexOf(tile) + 1; i < tiles.length && tiles[i].offsetTop === tile.offsetTop; i++) last = tiles[i]
+        last.after(panel)
+        panel.hidden = false
       }
       return
     }
@@ -850,7 +857,7 @@ function renderAuthorsView() {
           (a, i) => `
         <div class="author-tile" data-author="${i}">
           ${authorAvatar(a.name)}
-          <span class="author-name">${escapeHtml(a.name)}</span>
+          <span class="author-name${a.name.length > 24 ? ' is-long is-xlong' : a.name.length > 20 ? ' is-long' : ''}">${escapeHtml(a.name)}</span>
           <button type="button" class="author-works-toggle" id="author-toggle-${i}"
             aria-expanded="false" aria-controls="author-panel-${i}">
             <span>${a.books.length} ${a.books.length === 1 ? 'work' : 'works'}</span>${chevron}
