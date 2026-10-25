@@ -1,6 +1,6 @@
 # Author portrait credits
 
-Small 64px WebP crops of images from Wikimedia Commons, each the Wikidata P18 image of the listed QID. Licenses as stated on each file page.
+192px WebP crops of images from Wikimedia Commons, each the Wikidata P18 image of the listed QID. Licenses as stated on each file page.
 
 | Author | Wikidata | Commons file | License | Artist / author |
 |---|---|---|---|---|

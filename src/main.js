@@ -668,9 +668,19 @@ function bindEvents() {
   if (activeView === 'map') mountIdeaMap(openPanel)
 
   document.getElementById('authors-view')?.addEventListener('click', (event) => {
-    const toggle = event.target.closest('.discovery-toggle')
+    const toggle = event.target.closest('.author-works-toggle')
     if (toggle) {
-      setDiscoveryOpen(toggle.closest('.discovery-panel'), toggle.getAttribute('aria-expanded') !== 'true')
+      const open = toggle.getAttribute('aria-expanded') !== 'true'
+      document.querySelectorAll('#authors-view .author-works-toggle[aria-expanded="true"]').forEach((t) => {
+        t.setAttribute('aria-expanded', 'false')
+        t.closest('.author-tile').classList.remove('is-open')
+        document.getElementById(t.getAttribute('aria-controls')).hidden = true
+      })
+      if (open) {
+        toggle.setAttribute('aria-expanded', 'true')
+        toggle.closest('.author-tile').classList.add('is-open')
+        document.getElementById(toggle.getAttribute('aria-controls')).hidden = false
+      }
       return
     }
     const link = event.target.closest('.cluster-link')
@@ -832,7 +842,7 @@ function renderCoverCard(shelf, book, index) {
 function authorAvatar(name) {
   const p = PORTRAITS[name]
   if (p) {
-    return `<img class="author-avatar" src="${import.meta.env.BASE_URL}authors/portraits/${p.f}" alt="" width="28" height="28" loading="lazy" decoding="async">`
+    return `<img class="author-avatar" src="${import.meta.env.BASE_URL}authors/portraits/${p.f}" alt="" width="88" height="88" loading="lazy" decoding="async">`
   }
   const words = name.replace(/&.*/, '').trim().split(/\s+/)
   const initial = (words[words.length - 1] || name).replace(/[^\p{L}]/gu, '').charAt(0) || '·'
@@ -840,37 +850,32 @@ function authorAvatar(name) {
 }
 
 function renderAuthorsView() {
+  const chevron = `<svg class="discovery-chevron" viewBox="0 0 16 16" width="12" height="12" focusable="false" aria-hidden="true"><path d="M3.2 5.6 8 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>`
   return `
-    <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0;max-width:640px">
+    <div class="authors-grid" id="authors-view">
       ${buildAuthorIndex()
         .map(
           (a, i) => `
-        <div class="discovery-panel" data-author="${i}">
-          <button type="button" class="discovery-toggle" id="author-toggle-${i}"
+        <div class="author-tile" data-author="${i}">
+          ${authorAvatar(a.name)}
+          <span class="author-name">${escapeHtml(a.name)}</span>
+          <button type="button" class="author-works-toggle" id="author-toggle-${i}"
             aria-expanded="false" aria-controls="author-panel-${i}">
-            <span class="discovery-label">
-              ${authorAvatar(a.name)}
-              <span class="discovery-title">${escapeHtml(a.name)} <span style="opacity:0.55">(${a.books.length})</span></span>
-            </span>
-            <span class="discovery-mark" aria-hidden="true">
-              <svg class="discovery-chevron" viewBox="0 0 16 16" width="14" height="14" focusable="false">
-                <path d="M3.2 5.6 8 10.4l4.8-4.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </span>
+            <span>${a.books.length} ${a.books.length === 1 ? 'work' : 'works'}</span>${chevron}
           </button>
-          <div class="discovery-body" id="author-panel-${i}" role="region" aria-labelledby="author-toggle-${i}" hidden>
-            <ul class="cluster-titles">
-              ${a.books
-                .map(
-                  ({ shelf, book, index }) => `<li>
-                <button type="button" class="cluster-link" data-book-id="${escapeAttr(bookId(shelf.id, index))}">
-                  <span class="cluster-link-title">${escapeHtml(book.title)}</span>
-                </button>
-              </li>`,
-                )
-                .join('')}
-            </ul>
-          </div>
+        </div>
+        <div class="author-works" id="author-panel-${i}" role="region" aria-labelledby="author-toggle-${i}" hidden>
+          <ul class="cluster-titles">
+            ${a.books
+              .map(
+                ({ shelf, book, index }) => `<li>
+              <button type="button" class="cluster-link" data-book-id="${escapeAttr(bookId(shelf.id, index))}">
+                <span class="cluster-link-title">${escapeHtml(book.title)}</span>
+              </button>
+            </li>`,
+              )
+              .join('')}
+          </ul>
         </div>`,
         )
         .join('')}
