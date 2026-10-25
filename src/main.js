@@ -1,3 +1,4 @@
+import { PORTRAITS } from './portraits.js'
 import './style.css'
 import { shelves, countBooks } from './catalog.js'
 import { relatedClusters, worthExploring } from './discoveries.js'
@@ -828,6 +829,16 @@ function renderCoverCard(shelf, book, index) {
   `
 }
 
+function authorAvatar(name) {
+  const p = PORTRAITS[name]
+  if (p) {
+    return `<img class="author-avatar" src="${import.meta.env.BASE_URL}authors/portraits/${p.f}" alt="" width="28" height="28" loading="lazy" decoding="async">`
+  }
+  const words = name.replace(/&.*/, '').trim().split(/\s+/)
+  const initial = (words[words.length - 1] || name).replace(/[^\p{L}]/gu, '').charAt(0) || '·'
+  return `<span class="author-avatar author-monogram" aria-hidden="true">${escapeHtml(initial)}</span>`
+}
+
 function renderAuthorsView() {
   return `
     <div class="covers-view authors-list" id="authors-view" style="display:flex;flex-direction:column;gap:0;max-width:640px">
@@ -838,6 +849,7 @@ function renderAuthorsView() {
           <button type="button" class="discovery-toggle" id="author-toggle-${i}"
             aria-expanded="false" aria-controls="author-panel-${i}">
             <span class="discovery-label">
+              ${authorAvatar(a.name)}
               <span class="discovery-title">${escapeHtml(a.name)} <span style="opacity:0.55">(${a.books.length})</span></span>
             </span>
             <span class="discovery-mark" aria-hidden="true">

@@ -2105,3 +2105,9 @@ body.drawer-open { overflow: hidden; }
 #authors-view .discovery-mark { width: 1.35rem; height: 1.35rem; border-color: rgba(140, 160, 200, 0.16); }
 #authors-view .discovery-chevron { width: 11px; height: 11px; }
 #authors-view .discovery-body.is-open { padding-bottom: 0.55rem; }
+
+/* Author portraits */
+#authors-view .discovery-label{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:.7rem;min-width:0}
+#authors-view .discovery-title{text-align:left}
+#authors-view .author-avatar{flex:0 0 28px;width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid rgba(200,180,140,.28);background:rgba(140,160,200,.08);filter:saturate(.85)}
+#authors-view .author-monogram{display:inline-flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:.95rem;font-weight:600;color:rgba(232,214,176,.85);background:radial-gradient(circle at 35% 30%,rgba(60,66,84,.9),rgba(18,21,30,.95))}
