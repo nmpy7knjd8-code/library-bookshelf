@@ -733,7 +733,12 @@ function buildAuthorIndex() {
   }
   return [...map.entries()]
     .map(([name, books]) => ({ name, books, key: surnameKey(name) }))
-    .sort((x, y) => x.key.localeCompare(y.key, 'en', { sensitivity: 'base' }))
+    .sort(
+      (x, y) =>
+        (x.name === VARIOUS) - (y.name === VARIOUS) ||
+        y.books.length - x.books.length ||
+        x.key.localeCompare(y.key, 'en', { sensitivity: 'base' }),
+    )
 }
 
 function renderAuthorsView() {
