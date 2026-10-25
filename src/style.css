@@ -124,8 +124,7 @@ body {
   letter-spacing: -0.02em;
   color: #f2f6fc;
   text-shadow:
-    0 0 40px rgba(160, 190, 255, 0.22),
-    0 2px 24px rgba(0, 0, 0, 0.85);
+    0 2px 18px rgba(0, 0, 0, 0.8);
 }
 
 /* ——— View tabs ——— */
@@ -2138,3 +2137,22 @@ body.drawer-open { overflow: hidden; }
 }
 #authors-view .author-works[hidden] { display: none; }
 @keyframes author-works-in { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* ═══════════ Authors: reduced glare, higher contrast ═══════════ */
+/* The fixed .atmosphere layer (vignette + grain, z-index 0) was painting OVER
+   the static Authors grid, darkening lower tiles. Lift the grid above it. */
+#authors-view.authors-grid { position: relative; z-index: 1; }
+#authors-view .author-avatar {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  filter: saturate(0.8) contrast(0.97);
+}
+#authors-view .author-tile.is-open .author-avatar { border-color: rgba(232, 214, 176, 0.55); transform: none; }
+#authors-view .author-name { color: #f4f1ea; font-weight: 500; }
+#authors-view .author-monogram { background: #1a1e28; color: #e6dcc6; }
+#authors-view .author-works-toggle {
+  color: #c9d2e0; background: rgba(255, 255, 255, 0.04); border-color: rgba(255, 255, 255, 0.18);
+}
+#authors-view .author-works-toggle:hover, #authors-view .author-works-toggle[aria-expanded="true"] { color: #f1e6cc; border-color: rgba(241, 230, 204, 0.45); }
+#authors-view .author-works { background: #0c0f15; border-color: rgba(255, 255, 255, 0.12); }
+#authors-view .author-works .cluster-link-title { color: #ece8df; }
