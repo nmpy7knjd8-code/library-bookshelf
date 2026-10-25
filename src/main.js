@@ -1,3 +1,5 @@
+// Bodoni Moda is wider than the Cormorant Garamond the spine sizes were tuned for.
+const SPINE_FONT_SCALE = 0.86
 import { PORTRAITS } from './portraits.js'
 import './style.css'
 import { shelves, countBooks } from './catalog.js'
@@ -313,8 +315,8 @@ function renderBook(shelf, book, index, style) {
         --book-ink: ${style.palette.ink};
         --book-band: ${style.palette.band};
         --book-pages: ${style.palette.pages};
-        --spine-size: ${style.fontSize}px;
-        --spine-author-size: ${style.authorSize}px;
+        --spine-size: ${(style.fontSize * SPINE_FONT_SCALE).toFixed(2)}px;
+        --spine-author-size: ${(style.authorSize * SPINE_FONT_SCALE).toFixed(2)}px;
         --spine-pad: ${style.pad}px;
         --spine-texture: url('${style.texture}');
       "

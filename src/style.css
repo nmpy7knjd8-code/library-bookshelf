@@ -11,8 +11,9 @@
   --light-x: 50%;
   --light-drift: 50%;
   --case-width: min(960px, 96vw);
-  --font-display: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --font-ui: 'DM Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Bodoni Moda', 'Didot', Georgia, serif;
+  --font-title: 'Cinzel', 'Trajan Pro', Georgia, serif;
+  --font-ui: 'Spectral', Georgia, serif;
   color-scheme: dark;
 }
 
@@ -2156,3 +2157,6 @@ body.drawer-open { overflow: hidden; }
 #authors-view .author-works-toggle:hover, #authors-view .author-works-toggle[aria-expanded="true"] { color: #f1e6cc; border-color: rgba(241, 230, 204, 0.45); }
 #authors-view .author-works { background: #0c0f15; border-color: rgba(255, 255, 255, 0.12); }
 #authors-view .author-works .cluster-link-title { color: #ece8df; }
+
+/* Title: Cinzel capitals */
+.brand { font-family: var(--font-title); text-transform: uppercase; letter-spacing: 0.04em; font-weight: 600; font-size: clamp(3rem, 11vw, 6rem); }
