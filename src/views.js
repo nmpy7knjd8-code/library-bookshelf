@@ -203,6 +203,10 @@ export function renderMapView() {
   </div>`
 }
 
+// Map label sizes (screen px); kept small so the whole map reads on a phone.
+const LABEL_TOPIC = 11
+const LABEL_AUTHOR = 9.5
+
 export function mountIdeaMap(openPanel) {
   const svg = document.getElementById('idea-map')
   if (!svg) return
@@ -310,10 +314,10 @@ export function mountIdeaMap(openPanel) {
   let sel = null, nb = new Set(), raf = 0
   function layoutLabels() {
     raf = 0
-    const tfs0 = Math.max(13, Math.min(22, 20 * (k0 / k) ** 0.3))
+    const tfs0 = Math.max(12, Math.min(20, 18 * (k0 / k) ** 0.3))
     const placed = themeBox.map(({ t, cx, top }) => { const sx = cx * k + tx, sy = top * k + ty, w = t.textContent.length * tfs0 * 0.78; return [sx - w / 2, sy - tfs0 / 2 - 2, sx + w / 2, sy + tfs0 / 2 + 2] })
     const zoomed = k > k0 * 1.9
-    const fs = (n) => (n.kind === 'topic' ? 12 : 10.5)
+    const fs = (n) => (n.kind === 'topic' ? LABEL_TOPIC : LABEL_AUTHOR)
     const cands = N.filter((n) => n === sel || nb.has(n) || n.kind === 'topic' || zoomed)
       .sort((a, b) => (b === sel) - (a === sel) || nb.has(b) - nb.has(a) || (b.kind === 'topic') - (a.kind === 'topic') || b.deg - a.deg)
     const shown = new Set()
@@ -328,7 +332,7 @@ export function mountIdeaMap(openPanel) {
     }
     N.forEach((n) => {
       if (!shown.has(n)) { n.tEl.style.display = 'none'; return }
-      const f = (n.kind === 'topic' ? 12 : 10.5) / k
+      const f = fs(n) / k
       n.tEl.style.display = ''
       n.tEl.setAttribute('x', n.x); n.tEl.setAttribute('y', n.y - n.r - 4 / k); n.tEl.setAttribute('font-size', f); n.tEl.setAttribute('stroke-width', 3 / k)
     })
