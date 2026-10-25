@@ -2232,3 +2232,7 @@ body.drawer-open { overflow: hidden; }
 #authors-view .author-name.is-long { font-size: 0.86rem; }
 #authors-view .author-name.is-xlong { font-size: 0.78rem; }
 #authors-view .author-works-toggle { margin-top: 0.5rem; }
+/* Drawer icons: thin champagne line glyphs, left of each name */
+.drawer-item { display: flex; align-items: flex-start; gap: 16px; }
+.drawer-item .drawer-icon { flex: 0 0 20px; margin-top: 4px; color: rgba(227, 207, 158, 0.72); }
+.drawer-item.is-active .drawer-icon, .drawer-item:hover .drawer-icon { color: var(--champagne); }
