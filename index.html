@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/library-bookshelf/icons/apple-touch-icon.png" />
     <link rel="manifest" href="/library-bookshelf/site.webmanifest" />
     <link rel="index" href="topics.html" title="Topic index" />
-    <meta name="theme-color" content="#142442" />
+    <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Library" />
@@ -20,11 +20,16 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,500&family=Cinzel:wght@500;600&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/library-bookshelf/assets/index-C8rW5erR.js"></script>
-    <link rel="stylesheet" crossorigin href="/library-bookshelf/assets/index-N7LcvBhU.css">
+    <script type="module" crossorigin src="/library-bookshelf/assets/index-AOUfb01D.js"></script>
+    <link rel="stylesheet" crossorigin href="/library-bookshelf/assets/index-Br1BFyjr.css">
   </head>
   <body>
     <noscript><a href="topics.html">Topic index of the library</a></noscript>
     <div id="app"></div>
+      <script>
+      if ('serviceWorker' in navigator && location.protocol === 'https:') {
+        addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}))
+      }
+    </script>
   </body>
 </html>

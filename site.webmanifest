@@ -1,13 +1,19 @@
 {
   "name": "Library",
   "short_name": "Library",
-  "description": "An interactive dark-study bookshelf",
+  "description": "Garrett's library: bookshelf, covers, authors",
   "start_url": "/library-bookshelf/",
   "scope": "/library-bookshelf/",
   "display": "standalone",
-  "background_color": "#142442",
-  "theme_color": "#142442",
+  "background_color": "#000000",
+  "theme_color": "#000000",
   "icons": [
+    {
+      "src": "/library-bookshelf/icons/icon-180.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "/library-bookshelf/icons/icon-192.png",
       "sizes": "192x192",
@@ -32,5 +38,6 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "id": "/library-bookshelf/"
 }
