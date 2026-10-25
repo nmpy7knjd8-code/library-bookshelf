@@ -793,6 +793,33 @@ export const enrichments = {
     ]
   },
   "philosophy-6": {
+    "longDescription": "Collected in English in 1977, these essays come from Heidegger’s postwar thinking. In “The Question Concerning Technology” (1954, from a 1949 lecture series) he argues that technology is not a neutral instrument but a mode of revealing. Modern technology “challenges forth” nature, demanding that it deliver energy to be stored and ordered, and its essence, Gestell or enframing, threatens to reduce everything, including human beings, to standing-reserve. Quoting Hölderlin (“where danger is, grows the saving power also”), he finds a counter-possibility in poiesis, the bringing-forth of art. The companion essays trace the same history: the turning within the danger, Nietzsche’s death of God as the culmination of metaphysics, the modern age as the age of the world picture, and science as the theory of the real.",
+    "author": {
+      "name": "Martin Heidegger",
+      "bio": "Martin Heidegger was a German philosopher whose work was central to the development of phenomenology, hermeneutics, and existentialism. He has had significant impact within subsequent philosophy, social sciences and humanities, and theology.",
+      "photo": "authors/OL39465A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Technological Society",
+        "author": "Jacques Ellul",
+        "cover": null,
+        "bookId": "philosophy-12",
+        "source": "shelf",
+        "why": "Ellul’s parallel account of technique as an autonomous force."
+      },
+      {
+        "title": "Poetry, Language, Thought",
+        "author": "Martin Heidegger",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The Origin of the Work of Art and the late essays on dwelling and poetry."
+      }
+    ],
+    "otherByAuthor": []
+  },
+  "philosophy-7": {
     "longDescription": "Written in geometric form, Spinoza’s Ethics presents God or Nature as a single infinite substance of which mind and body are attributes. It unfolds a deterministic metaphysics, a psychology of the affects, and an ethics of understanding that culminates in blessedness. The work is a classic of rationalist philosophy and political freedom. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Benedict de Spinoza",
@@ -869,62 +896,62 @@ export const enrichments = {
       {
         "title": "The Chief Works of Benedict de Spinoza",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-0.jpg",
+        "cover": "covers/extra/auth-philosophy-7-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Ethica",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-1.jpg",
+        "cover": "covers/extra/auth-philosophy-7-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Tractatus theologico-politicus",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-2.jpg",
+        "cover": "covers/extra/auth-philosophy-7-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La libertà religiosa nel pensiero di Spinoza",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-3.jpg",
+        "cover": "covers/extra/auth-philosophy-7-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Renati des Cartes Principiorum philosophiae",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-4.jpg",
+        "cover": "covers/extra/auth-philosophy-7-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Theological-Political Treatise",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-5.jpg",
+        "cover": "covers/extra/auth-philosophy-7-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Tractatus de intellectus emendatione",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-6.jpg",
+        "cover": "covers/extra/auth-philosophy-7-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Selected works",
         "author": "Benedict de Spinoza",
-        "cover": "covers/extra/auth-philosophy-6-7.jpg",
+        "cover": "covers/extra/auth-philosophy-7-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-7": {
+  "philosophy-8": {
     "longDescription": "This collection surveys major political thinkers from Plato and Aristotle through modern liberalism and beyond. Strauss and Cropsey’s editorial framing emphasizes close reading of foundational texts and the tension between ancient and modern political thought. It has long served as a standard companion for students of the tradition. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Leo Strauss and Joseph Cropsey",
@@ -991,7 +1018,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -999,7 +1026,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-8": {
+  "philosophy-9": {
     "longDescription": "Aristotle’s Metaphysics investigates being as being, substance, cause, and the unmoved mover. It gathers earlier inquiries into first principles and offers the classic account of form, matter, potentiality, and actuality. The text shaped scholastic theology and remains central to ontology. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Aristotle",
@@ -1058,7 +1085,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1066,7 +1093,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1076,62 +1103,62 @@ export const enrichments = {
       {
         "title": "Nicomachean Ethics",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-0.jpg",
+        "cover": "covers/extra/auth-philosophy-9-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Πολιτικά (Politiká)",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-1.jpg",
+        "cover": "covers/extra/auth-philosophy-9-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La Poetica",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-2.jpg",
+        "cover": "covers/extra/auth-philosophy-9-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Poetics",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-3.jpg",
+        "cover": "covers/extra/auth-philosophy-9-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Selections",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-4.jpg",
+        "cover": "covers/extra/auth-philosophy-9-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "History of Animals",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-5.jpg",
+        "cover": "covers/extra/auth-philosophy-9-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Rhetoric",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-6.jpg",
+        "cover": "covers/extra/auth-philosophy-9-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Constitution d'Athènes",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-8-7.jpg",
+        "cover": "covers/extra/auth-philosophy-9-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-9": {
+  "philosophy-10": {
     "longDescription": "This student volume presents Aristotle’s ethical teaching—virtue as habit, the mean, friendship, and contemplative happiness—in a form suited to close study. It belongs to the Nicomachean tradition that defined Western moral philosophy. The edition highlights the practical wisdom (phronesis) at the heart of the good life. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Aristotle",
@@ -1182,7 +1209,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1190,7 +1217,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1198,7 +1225,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1208,62 +1235,62 @@ export const enrichments = {
       {
         "title": "Nicomachean Ethics",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-0.jpg",
+        "cover": "covers/extra/auth-philosophy-10-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Πολιτικά (Politiká)",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-1.jpg",
+        "cover": "covers/extra/auth-philosophy-10-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La Poetica",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-2.jpg",
+        "cover": "covers/extra/auth-philosophy-10-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Poetics",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-3.jpg",
+        "cover": "covers/extra/auth-philosophy-10-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Physics",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-4.jpg",
+        "cover": "covers/extra/auth-philosophy-10-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Selections",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-5.jpg",
+        "cover": "covers/extra/auth-philosophy-10-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "History of Animals",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-6.jpg",
+        "cover": "covers/extra/auth-philosophy-10-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Rhetoric",
         "author": "Aristotle",
-        "cover": "covers/extra/auth-philosophy-9-7.jpg",
+        "cover": "covers/extra/auth-philosophy-10-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-10": {
+  "philosophy-11": {
     "longDescription": "Hegel’s lectures portray world history as the progressive realization of freedom in spirit. From Oriental despotism through classical Greece and Rome to the modern Germanic world, reason works itself out in institutions and peoples. Sibree’s English translation helped fix Hegel’s historical vision for Anglophone readers. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "G. W. F. Hegel",
@@ -1290,7 +1317,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1298,7 +1325,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1306,7 +1333,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1314,7 +1341,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1322,7 +1349,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1330,7 +1357,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -1347,7 +1374,7 @@ export const enrichments = {
       {
         "title": "Lectures on Natural Right and Political Science",
         "author": "G. W. F. Hegel",
-        "cover": "covers/extra/auth-philosophy-10-1.jpg",
+        "cover": "covers/extra/auth-philosophy-11-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -1367,7 +1394,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-11": {
+  "philosophy-12": {
     "longDescription": "Ellul argues that technique—efficient, self-augmenting method—has become the defining environment of modern civilization. Technology is not a neutral tool but a system that reorganizes politics, work, and culture around efficiency. The book is a foundational critique of technological determinism and mass society. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Jacques Ellul",
@@ -1386,7 +1413,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1394,7 +1421,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1402,7 +1429,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1410,7 +1437,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1418,7 +1445,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1426,7 +1453,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -1434,7 +1461,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -1444,62 +1471,62 @@ export const enrichments = {
       {
         "title": "Propaganda: the formation of men's attitudes",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-0.jpg",
+        "cover": "covers/extra/auth-philosophy-12-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Anarchie et Christianisme",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-1.jpg",
+        "cover": "covers/extra/auth-philosophy-12-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La technique, ou, L'enjeu du siècle",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-2.jpg",
+        "cover": "covers/extra/auth-philosophy-12-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The meaning of the city",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-3.jpg",
+        "cover": "covers/extra/auth-philosophy-12-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Money & power",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-4.jpg",
+        "cover": "covers/extra/auth-philosophy-12-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Perspectives on Our Age",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-5.jpg",
+        "cover": "covers/extra/auth-philosophy-12-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La Subversion du christianisme",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-6.jpg",
+        "cover": "covers/extra/auth-philosophy-12-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Presence au monde moderne",
         "author": "Jacques Ellul",
-        "cover": "covers/extra/auth-philosophy-11-7.jpg",
+        "cover": "covers/extra/auth-philosophy-12-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-12": {
+  "philosophy-13": {
     "longDescription": "Illich’s Medical Nemesis (published as Limits to Medicine) contends that clinical institutions can generate iatrogenic harm and strip people of autonomous care. He distinguishes clinical, social, and cultural iatrogenesis and calls for limits on medicalization. The book remains a sharp challenge to professional monopoly over health. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Ivan Illich",
@@ -1510,7 +1537,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1518,7 +1545,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1526,7 +1553,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1534,7 +1561,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1542,7 +1569,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1550,7 +1577,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -1558,7 +1585,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -1566,7 +1593,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -1576,62 +1603,62 @@ export const enrichments = {
       {
         "title": "Deschooling Society",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-0.jpg",
+        "cover": "covers/extra/auth-philosophy-13-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Tools for Conviviality",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-1.jpg",
+        "cover": "covers/extra/auth-philosophy-13-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Medical Nemesis",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-2.jpg",
+        "cover": "covers/extra/auth-philosophy-13-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Celebration of Awareness",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-3.jpg",
+        "cover": "covers/extra/auth-philosophy-13-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "ABC",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-4.jpg",
+        "cover": "covers/extra/auth-philosophy-13-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Toward a History of Needs",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-5.jpg",
+        "cover": "covers/extra/auth-philosophy-13-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Shadow Work",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-6.jpg",
+        "cover": "covers/extra/auth-philosophy-13-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Gender",
         "author": "Ivan Illich",
-        "cover": "covers/extra/auth-philosophy-12-7.jpg",
+        "cover": "covers/extra/auth-philosophy-13-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-13": {
+  "philosophy-14": {
     "longDescription": "Evola offers counsel for living amid what he sees as a dissolving modern age without surrendering to it. Drawing on traditionalist metaphysics, he urges an interior “riding of the tiger” rather than futile restoration of lost forms. The book is among his most read late works on spiritual aristocracy and modernity. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Julius Evola",
@@ -1642,7 +1669,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1650,7 +1677,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1658,7 +1685,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1666,7 +1693,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1674,7 +1701,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -1682,7 +1709,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -1690,7 +1717,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -1698,142 +1725,10 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
-      }
-    ],
-    "otherByAuthor": [
-      {
-        "title": "Métaphysique du sexe",
-        "author": "Julius Evola",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Metafisica del sesso",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-1.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Rivolta contro il mondo moderno",
-        "author": "Julius Evola",
-        "cover": null,
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Meditations on the Peaks",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-3.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The doctrine of awakening",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-4.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The hermetic tradition",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-5.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "The Mystery of the Grail",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-6.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      },
-      {
-        "title": "Il mistero del Graal",
-        "author": "Julius Evola",
-        "cover": "covers/extra/auth-philosophy-13-7.jpg",
-        "bookId": null,
-        "source": "openlibrary"
-      }
-    ]
-  },
-  "philosophy-14": {
-    "longDescription": "A sweeping traditionalist critique contrasting a hierarchical sacred order with modern egalitarianism and materialism. Evola surveys myth, royalty, caste, and initiation as signs of a lost world, then diagnoses decline. Controversial and influential in far-right esoteric circles, it maps his full historical-metaphysical vision. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
-    "author": {
-      "name": "Julius Evola",
-      "bio": "Giulio Cesare Andrea Evola, better known as Julius Evola, was an Italian far-right philosopher and writer. Evola regarded his values as traditionalist, aristocratic, martial and imperialist. An esoteric thinker in Fascist Italy, he also had ties to Nazi Germany. In the post-war era, he was an ideological mentor of the Italian neo-fascist and militant right.",
-      "photo": "authors/OL57459A.jpg"
-    },
-    "similar": [
-      {
-        "title": "Orthodoxy",
-        "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "The Structure of Scientific Revolutions",
-        "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "Confessions",
-        "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": null
-      },
-      {
-        "title": "Democracy in America",
-        "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
-      },
-      {
-        "title": "Moby-Dick",
-        "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
-      },
-      {
-        "title": "The Waste Land",
-        "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
-      },
-      {
-        "title": "The Peloponnesian War",
-        "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
-        "bookId": null,
-        "source": "explore",
-        "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
-      },
-      {
-        "title": "Invisible Cities",
-        "author": "Italo Calvino",
-        "cover": null,
-        "bookId": null,
-        "source": "explore",
-        "why": "A literary meditation on memory and place that resonates with Eco’s semiotic abbey and Proust-to-Camus modernism."
       }
     ],
     "otherByAuthor": [
@@ -1896,6 +1791,138 @@ export const enrichments = {
     ]
   },
   "philosophy-15": {
+    "longDescription": "A sweeping traditionalist critique contrasting a hierarchical sacred order with modern egalitarianism and materialism. Evola surveys myth, royalty, caste, and initiation as signs of a lost world, then diagnoses decline. Controversial and influential in far-right esoteric circles, it maps his full historical-metaphysical vision. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
+    "author": {
+      "name": "Julius Evola",
+      "bio": "Giulio Cesare Andrea Evola, better known as Julius Evola, was an Italian far-right philosopher and writer. Evola regarded his values as traditionalist, aristocratic, martial and imperialist. An esoteric thinker in Fascist Italy, he also had ties to Nazi Germany. In the post-war era, he was an ideological mentor of the Italian neo-fascist and militant right.",
+      "photo": "authors/OL57459A.jpg"
+    },
+    "similar": [
+      {
+        "title": "Orthodoxy",
+        "author": "G. K. Chesterton",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "The Structure of Scientific Revolutions",
+        "author": "Thomas S. Kuhn",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Confessions",
+        "author": "Augustine of Hippo",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": null
+      },
+      {
+        "title": "Democracy in America",
+        "author": "Alexis de Tocqueville",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
+      },
+      {
+        "title": "Moby-Dick",
+        "author": "Herman Melville",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
+      },
+      {
+        "title": "The Waste Land",
+        "author": "T. S. Eliot",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
+      },
+      {
+        "title": "The Peloponnesian War",
+        "author": "Thucydides",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
+        "bookId": null,
+        "source": "explore",
+        "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
+      },
+      {
+        "title": "Invisible Cities",
+        "author": "Italo Calvino",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "A literary meditation on memory and place that resonates with Eco’s semiotic abbey and Proust-to-Camus modernism."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "Métaphysique du sexe",
+        "author": "Julius Evola",
+        "cover": null,
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Metafisica del sesso",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-1.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Rivolta contro il mondo moderno",
+        "author": "Julius Evola",
+        "cover": null,
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Meditations on the Peaks",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The doctrine of awakening",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The hermetic tradition",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-5.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The Mystery of the Grail",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Il mistero del Graal",
+        "author": "Julius Evola",
+        "cover": "covers/extra/auth-philosophy-15-7.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
+  },
+  "philosophy-16": {
     "longDescription": "Eliade contrasts sacred space and time with the homogeneous world of the profane. Through myth, ritual, and symbolism, he shows how religious experience orients human dwelling and renewal. The short book is a classic introduction to the phenomenology of religion. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Mircea Eliade",
@@ -1906,7 +1933,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1914,7 +1941,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -1922,7 +1949,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -1930,7 +1957,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -1938,7 +1965,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -1946,7 +1973,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -1972,62 +1999,62 @@ export const enrichments = {
       {
         "title": "Myth and reality",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-0.jpg",
+        "cover": "covers/extra/auth-philosophy-16-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Traité d'histoire des religions",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-1.jpg",
+        "cover": "covers/extra/auth-philosophy-16-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Le sacré et le profane",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-2.jpg",
+        "cover": "covers/extra/auth-philosophy-16-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Mythes, rêves et mystères",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-3.jpg",
+        "cover": "covers/extra/auth-philosophy-16-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Encyclopedia of Religion.  16 Volume Set",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-4.jpg",
+        "cover": "covers/extra/auth-philosophy-16-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Le Mythe de l'éternel retour",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-5.jpg",
+        "cover": "covers/extra/auth-philosophy-16-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Histoire des croyances et des idées religieuses",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-6.jpg",
+        "cover": "covers/extra/auth-philosophy-16-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Maitreyi nunta în cer",
         "author": "Mircea Eliade",
-        "cover": "covers/extra/auth-philosophy-15-7.jpg",
+        "cover": "covers/extra/auth-philosophy-16-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-16": {
+  "philosophy-17": {
     "longDescription": "Baudrillard argues that late modernity replaces reality with models and signs that precede and produce the real—the precession of simulacra. Hyperreality, Disneyland, and media copies become more persuasive than originals. The essay shaped postmodern theory and cultural criticism of media societies. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Jean Baudrillard",
@@ -2038,7 +2065,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -2046,7 +2073,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -2054,7 +2081,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -2062,7 +2089,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2070,7 +2097,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2104,62 +2131,62 @@ export const enrichments = {
       {
         "title": "La societé de consommation",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-0.jpg",
+        "cover": "covers/extra/auth-philosophy-17-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Amérique",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-1.jpg",
+        "cover": "covers/extra/auth-philosophy-17-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Le systeme des objects",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-2.jpg",
+        "cover": "covers/extra/auth-philosophy-17-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "De La Seduccion /  Seduction (Teorema / Theorem)",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-3.jpg",
+        "cover": "covers/extra/auth-philosophy-17-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Echange symbolique et la mort",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-4.jpg",
+        "cover": "covers/extra/auth-philosophy-17-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Gulf War did not take place",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-5.jpg",
+        "cover": "covers/extra/auth-philosophy-17-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Fatal strategies",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-6.jpg",
+        "cover": "covers/extra/auth-philosophy-17-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Pour une critique de l'économie politique du signe",
         "author": "Jean Baudrillard",
-        "cover": "covers/extra/auth-philosophy-16-7.jpg",
+        "cover": "covers/extra/auth-philosophy-17-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-17": {
+  "philosophy-18": {
     "longDescription": "Wittgenstein’s early masterpiece proposes that the world is the totality of facts and that language pictures reality through logical form. What can be said clearly must be said; what cannot must be passed over in silence. It launched logical positivism while pointing beyond itself to ethics and the mystical. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Ludwig Wittgenstein",
@@ -2170,7 +2197,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -2178,7 +2205,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -2186,7 +2213,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2194,7 +2221,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2236,62 +2263,62 @@ export const enrichments = {
       {
         "title": "Philosophische Untersuchungen",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-0.jpg",
+        "cover": "covers/extra/auth-philosophy-18-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Vermischte Bemerkungen",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-1.jpg",
+        "cover": "covers/extra/auth-philosophy-18-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Über Gewissheit",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-2.jpg",
+        "cover": "covers/extra/auth-philosophy-18-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Bemerkungen über die Grundlagen der Mathematik",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-3.jpg",
+        "cover": "covers/extra/auth-philosophy-18-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Lectures & conversations on aesthetics, psychology, and religious belief",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-4.jpg",
+        "cover": "covers/extra/auth-philosophy-18-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Philosophische Grammatik",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-5.jpg",
+        "cover": "covers/extra/auth-philosophy-18-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Preliminary studies for the \"Philosophical investigations\"",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-6.jpg",
+        "cover": "covers/extra/auth-philosophy-18-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "On certainty =",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/auth-philosophy-17-7.jpg",
+        "cover": "covers/extra/auth-philosophy-18-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-18": {
+  "philosophy-19": {
     "longDescription": "Rousseau asks how people can remain free while living under law, answering with the general will and popular sovereignty. He reconceives political legitimacy as a pact that transforms natural liberty into civil freedom. The work inspired democratic revolutions and modern republican thought. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Jean-Jacques Rousseau",
@@ -2302,7 +2329,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -2310,7 +2337,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2318,7 +2345,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2368,62 +2395,62 @@ export const enrichments = {
       {
         "title": "Du contrat social",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-0.jpg",
+        "cover": "covers/extra/auth-philosophy-19-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Les confessions",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-1.jpg",
+        "cover": "covers/extra/auth-philosophy-19-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Emile or Education",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-2.jpg",
+        "cover": "covers/extra/auth-philosophy-19-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Discours sur l'origine et les fondements de l'inégalité parmi les hommes",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-3.jpg",
+        "cover": "covers/extra/auth-philosophy-19-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "La nouvelle Héloïse",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-4.jpg",
+        "cover": "covers/extra/auth-philosophy-19-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Discours sur les sciences et les arts",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-5.jpg",
+        "cover": "covers/extra/auth-philosophy-19-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Oeuvres de J.J. Rousseau",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-6.jpg",
+        "cover": "covers/extra/auth-philosophy-19-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Les rêveries du promeneur solitaire",
         "author": "Jean-Jacques Rousseau",
-        "cover": "covers/extra/auth-philosophy-18-7.jpg",
+        "cover": "covers/extra/auth-philosophy-19-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-19": {
+  "philosophy-20": {
     "longDescription": "McLuhan traces how print culture reorganized perception, nationalism, and individuality after the manuscript age. Typography, he argues, produced the “Gutenberg man” whose sensory balance electronic media would again transform. The book coined “the global village” and founded media ecology.\n\nThe Gutenberg Galaxy catapulted Marshall McLuhan to fame as a media theorist and, in time, a new media prognosticator. Fifty years after its initial publication, this landmark text is more significant than ever before. Readers will be amazed by McLuhan’s prescience, unmatched by anyone since, predicting as he did the dramatic technological innovations that have fundamentally changed how we communicate. The Gutenberg Galaxy foresaw the networked, compressed ‘global village’ that would emerge in the late-twentieth and twenty-first centuries — despite having been written when black-and-white television was ubiquitous. This new edition of The Gutenberg Galaxy celebrates both the centennial of McLuhan’s birth and the fifty-year anniversary of the book’s publication. A new interior design updates The Gutenberg Galaxy for twenty-first-century readers, while honouring the innovative, avant-garde spirit of the original. This edition also includes new introductory essays that illuminate McLuhan’s lasting effect on a variety of scholarly fields and popular culture. A must-read for those who inhabit today’s global village, The Gutenberg Galaxy is an indispensable road map for our evolving communication landscape.",
     "author": {
       "name": "Marshall McLuhan",
@@ -2434,7 +2461,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2442,7 +2469,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2500,62 +2527,62 @@ export const enrichments = {
       {
         "title": "Understanding Media",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-0.jpg",
+        "cover": "covers/extra/auth-philosophy-20-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The medium is the massage",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-1.jpg",
+        "cover": "covers/extra/auth-philosophy-20-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The mechanical bride",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-2.jpg",
+        "cover": "covers/extra/auth-philosophy-20-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "War and peace in the global village",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-3.jpg",
+        "cover": "covers/extra/auth-philosophy-20-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Understanding Me",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-4.jpg",
+        "cover": "covers/extra/auth-philosophy-20-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Culture is our business",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-5.jpg",
+        "cover": "covers/extra/auth-philosophy-20-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Verbi-voco-visual explorations",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-6.jpg",
+        "cover": "covers/extra/auth-philosophy-20-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Classical Trivium",
         "author": "Marshall McLuhan",
-        "cover": "covers/extra/auth-philosophy-19-7.jpg",
+        "cover": "covers/extra/auth-philosophy-20-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-20": {
+  "philosophy-21": {
     "longDescription": "Otto analyzes the holy as a non-rational mysterium tremendum et fascinans—awe mixed with dread and attraction. He distinguishes the numinous from moral and rational religion while showing their relation. The book became a classic of the phenomenology of religious experience. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Rudolf Otto",
@@ -2566,7 +2593,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -2574,7 +2601,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2582,7 +2609,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2632,28 +2659,28 @@ export const enrichments = {
       {
         "title": "Heilige",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-0.jpg",
+        "cover": "covers/extra/auth-philosophy-21-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Das Heilige",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-1.jpg",
+        "cover": "covers/extra/auth-philosophy-21-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Religious essays",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-2.jpg",
+        "cover": "covers/extra/auth-philosophy-21-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The kingdom of God and the Son of man",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-3.jpg",
+        "cover": "covers/extra/auth-philosophy-21-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -2667,27 +2694,27 @@ export const enrichments = {
       {
         "title": "The philosophy of religion",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-5.jpg",
+        "cover": "covers/extra/auth-philosophy-21-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Mysticism east and west",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-6.jpg",
+        "cover": "covers/extra/auth-philosophy-21-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Mysticism",
         "author": "Rudolf Otto",
-        "cover": "covers/extra/auth-philosophy-20-7.jpg",
+        "cover": "covers/extra/auth-philosophy-21-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-21": {
+  "philosophy-22": {
     "longDescription": "Volume II of Spengler’s morphology of cultures develops the late, “civilizational” phase of Faustian modernity—cities, money, Caesarism, and destiny. He treats cultures as organisms with spring, summer, and winter. Controversial yet influential, it shaped interwar philosophies of history. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Oswald Spengler",
@@ -2698,7 +2725,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -2706,7 +2733,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2764,35 +2791,35 @@ export const enrichments = {
       {
         "title": "Der Untergang des Abendlandes",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-0.jpg",
+        "cover": "covers/extra/auth-philosophy-22-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Der Mensch und die Technik",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-1.jpg",
+        "cover": "covers/extra/auth-philosophy-22-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Jahre der Entscheidung",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-2.jpg",
+        "cover": "covers/extra/auth-philosophy-22-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Preussentum und Sozialismus",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-3.jpg",
+        "cover": "covers/extra/auth-philosophy-22-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Letters, 1913-1936",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-4.jpg",
+        "cover": "covers/extra/auth-philosophy-22-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -2806,20 +2833,20 @@ export const enrichments = {
       {
         "title": "Zakat Evropy",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-6.jpg",
+        "cover": "covers/extra/auth-philosophy-22-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Der metaphysische Grundgedanke der Heraklitischen Philosophie",
         "author": "Oswald Spengler",
-        "cover": "covers/extra/auth-philosophy-21-7.jpg",
+        "cover": "covers/extra/auth-philosophy-22-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-22": {
+  "philosophy-23": {
     "longDescription": "Gilmore surveys the humanist revival between the fall of Constantinople and the Reformation. Learning, patronage, printing, and classical recovery reshape European culture on the eve of modernity. The volume situates Renaissance humanism within political and religious change. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Myron P. Gilmore",
@@ -2830,7 +2857,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -2930,7 +2957,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-23": {
+  "philosophy-24": {
     "longDescription": "A study of the nineteenth-century American lyceum movement—public lectures that brought science, literature, and reform to towns across the republic. The lyceum helped invent a democratic culture of adult education and celebrity oratory. Exact edition details for this shelf copy remain uncertain. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Author uncertain",
@@ -3005,7 +3032,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-24": {
+  "philosophy-25": {
     "longDescription": "Jones argues that sexual liberation has been enlisted as a tool of social and political control rather than genuine emancipation. Drawing on history, psychology, and Catholic critique, he links erotic culture to power. The book is polemical and belongs to a contested tradition of cultural criticism. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "E. Michael Jones",
@@ -3082,42 +3109,42 @@ export const enrichments = {
       {
         "title": "The slaughter of cities",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-0.jpg",
+        "cover": "covers/extra/auth-philosophy-25-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Degenerate moderns",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-1.jpg",
+        "cover": "covers/extra/auth-philosophy-25-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Jewish revolutionary spirit",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-2.jpg",
+        "cover": "covers/extra/auth-philosophy-25-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Dionysos rising",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-3.jpg",
+        "cover": "covers/extra/auth-philosophy-25-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Horror",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-4.jpg",
+        "cover": "covers/extra/auth-philosophy-25-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Living machines",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-5.jpg",
+        "cover": "covers/extra/auth-philosophy-25-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -3131,13 +3158,13 @@ export const enrichments = {
       {
         "title": "The Angel and the Machine",
         "author": "E. Michael Jones",
-        "cover": "covers/extra/auth-philosophy-24-7.jpg",
+        "cover": "covers/extra/auth-philosophy-25-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-25": {
+  "philosophy-26": {
     "longDescription": "This volume gathers major writings of the Savoyard counter-revolutionary thinker. Maistre defends throne and altar, providence in history, and the limits of rationalist politics after the French Revolution. His style—ironic, severe, vivid—made him a lasting voice of reactionary thought. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Joseph de Maistre",
@@ -3214,62 +3241,62 @@ export const enrichments = {
       {
         "title": "Joseph de Maistre",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-0.jpg",
+        "cover": "covers/extra/auth-philosophy-26-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Considérations sur la France",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-1.jpg",
+        "cover": "covers/extra/auth-philosophy-26-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "On God and society",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-2.jpg",
+        "cover": "covers/extra/auth-philosophy-26-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Du pape",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-3.jpg",
+        "cover": "covers/extra/auth-philosophy-26-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Les soirées de Saint-Pétersbourg",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-4.jpg",
+        "cover": "covers/extra/auth-philosophy-26-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The works of Joseph de Maistre",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-5.jpg",
+        "cover": "covers/extra/auth-philosophy-26-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Lettres à un gentilhomme russe.",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-6.jpg",
+        "cover": "covers/extra/auth-philosophy-26-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Correspondence",
         "author": "Joseph de Maistre",
-        "cover": "covers/extra/auth-philosophy-25-7.jpg",
+        "cover": "covers/extra/auth-philosophy-26-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-26": {
+  "philosophy-27": {
     "longDescription": "An anthology of Christian mystical texts spanning desert fathers, medieval visionaries, and later contemplatives. Selections illuminate union with God, negative theology, and the stages of the spiritual life. McGinn’s association marks the scholarly framing of the Western mystical tradition.\n\n\"This clear and comprehensive anthology, culled from the vast corpus of Christian mystical literature by the renowned theologian and historian Bernard McGinn, presents nearly one hundred selections, from the writings of Origen of Alexandria in the third century to the work of twentieth-century mystics such as Thomas Merton\" -- publisher website (April 2007).",
     "author": {
       "name": "Bernard McGinn",
@@ -3346,62 +3373,62 @@ export const enrichments = {
       {
         "title": "Antichrist",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-0.jpg",
+        "cover": "covers/extra/auth-philosophy-27-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Apocalyptic Spirituality",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-1.jpg",
+        "cover": "covers/extra/auth-philosophy-27-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The flowering of mysticism",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-2.jpg",
+        "cover": "covers/extra/auth-philosophy-27-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The foundations of mysticism",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-3.jpg",
+        "cover": "covers/extra/auth-philosophy-27-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Doctors Of The Church",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-4.jpg",
+        "cover": "covers/extra/auth-philosophy-27-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Meister Eckhart and the Beguine mystics",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-5.jpg",
+        "cover": "covers/extra/auth-philosophy-27-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The growth of mysticism",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-6.jpg",
+        "cover": "covers/extra/auth-philosophy-27-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Mystical Thought of Meister Eckhart",
         "author": "Bernard McGinn",
-        "cover": "covers/extra/auth-philosophy-26-7.jpg",
+        "cover": "covers/extra/auth-philosophy-27-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-27": {
+  "philosophy-28": {
     "longDescription": "Sabini gathers Jung’s writings on nature, psyche, and the living world. Jung links ecological crisis to a severed relation between consciousness and the unconscious depths symbolized by earth. The collection speaks to environmental psychology and depth ecology. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "C. G. Jung",
@@ -3478,62 +3505,62 @@ export const enrichments = {
       {
         "title": "Critique of psychoanalysis",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-0.jpg",
+        "cover": "covers/extra/auth-philosophy-28-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Psychologische Typen",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-1.jpg",
+        "cover": "covers/extra/auth-philosophy-28-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "I Ching",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-2.jpg",
+        "cover": "covers/extra/auth-philosophy-28-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Modern man in search of a soul",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-3.jpg",
+        "cover": "covers/extra/auth-philosophy-28-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Erinnerungen, Träume, Gedanken",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-4.jpg",
+        "cover": "covers/extra/auth-philosophy-28-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The collected works of C.G. Jung",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-5.jpg",
+        "cover": "covers/extra/auth-philosophy-28-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Archetypes and the Collective Unconscious",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-6.jpg",
+        "cover": "covers/extra/auth-philosophy-28-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Wandlungen und Symbole der Libido",
         "author": "C. G. Jung",
-        "cover": "covers/extra/auth-philosophy-27-7.jpg",
+        "cover": "covers/extra/auth-philosophy-28-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-28": {
+  "philosophy-29": {
     "longDescription": "A compact guide to Jung’s core ideas—archetypes, individuation, the shadow, anima and animus, and the collective unconscious. Rousseau aims to open Jung’s dense corpus for newcomers without flattening its symbolic richness. Useful as a map beside Jung’s own major works. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Benoit Rousseau",
@@ -3617,7 +3644,7 @@ export const enrichments = {
       {
         "title": "Suis du doigt la tortue de mer",
         "author": "Benoit Rousseau",
-        "cover": "covers/extra/auth-philosophy-28-1.jpg",
+        "cover": "covers/extra/auth-philosophy-29-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -3631,7 +3658,7 @@ export const enrichments = {
       {
         "title": "LA TORTUGA DE MAR",
         "author": "Benoit Rousseau",
-        "cover": "covers/extra/auth-philosophy-28-3.jpg",
+        "cover": "covers/extra/auth-philosophy-29-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -3644,7 +3671,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-29": {
+  "philosophy-30": {
     "longDescription": "Jung’s last major project, written for a general audience, explains how symbols mediate between conscious life and the unconscious. Essays by Jung and collaborators treat dreams, myth, and modern art as living symbolic language. It remains the most approachable introduction to analytical psychology.\n\nExcerpt from back cover: \"This book, which was the last piece of work undertaken by Jung before his death in 1961, provides a unique opportunity to assess his contribution to the life and thought of our time, for it was also his first attempt to present his life-work in psychology to a non-technical public...What emerges with great clarity from the book is that Jung has done immense service both to psychology as a science and to our general understanding of man in society, by insisting that imaginative life must be taken seriously in its own right, as the most distinctive characteristic of human beings.\" -Guardian-",
     "author": {
       "name": "Carl G. Jung",
@@ -3721,62 +3748,62 @@ export const enrichments = {
       {
         "title": "Critique of psychoanalysis",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-0.jpg",
+        "cover": "covers/extra/auth-philosophy-30-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Psychologische Typen",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-1.jpg",
+        "cover": "covers/extra/auth-philosophy-30-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "I Ching",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-2.jpg",
+        "cover": "covers/extra/auth-philosophy-30-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Modern man in search of a soul",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-3.jpg",
+        "cover": "covers/extra/auth-philosophy-30-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Erinnerungen, Träume, Gedanken",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-4.jpg",
+        "cover": "covers/extra/auth-philosophy-30-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The collected works of C.G. Jung",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-5.jpg",
+        "cover": "covers/extra/auth-philosophy-30-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Archetypes and the Collective Unconscious",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-6.jpg",
+        "cover": "covers/extra/auth-philosophy-30-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Wandlungen und Symbole der Libido",
         "author": "Carl G. Jung",
-        "cover": "covers/extra/auth-philosophy-29-7.jpg",
+        "cover": "covers/extra/auth-philosophy-30-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-30": {
+  "philosophy-31": {
     "longDescription": "A selection of Lenin’s writings on imperialism, the party, state and revolution, and strategy. The texts shaped Bolshevik practice and twentieth-century Marxism-Leninism. Read as history of ideas, they show how theory and organizational power fused in revolutionary politics. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "V. I. Lenin",
@@ -3908,7 +3935,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-31": {
+  "philosophy-32": {
     "longDescription": "Whitehead’s Gifford Lectures construct a speculative cosmology of actual occasions, prehension, and creative advance. The corrected edition clarifies one of the densest systems in process philosophy. Being is becoming; God and the world are mutually implicated in creativity. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Alfred North Whitehead",
@@ -3985,62 +4012,62 @@ export const enrichments = {
       {
         "title": "An introduction to mathematics",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-0.jpg",
+        "cover": "covers/extra/auth-philosophy-32-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Principia mathematica",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-1.jpg",
+        "cover": "covers/extra/auth-philosophy-32-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Adventures of ideas",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-2.jpg",
+        "cover": "covers/extra/auth-philosophy-32-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The concept of nature",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-3.jpg",
+        "cover": "covers/extra/auth-philosophy-32-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Modes of thought",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-4.jpg",
+        "cover": "covers/extra/auth-philosophy-32-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The aims of education, and other essays",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-5.jpg",
+        "cover": "covers/extra/auth-philosophy-32-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Symbolism",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-6.jpg",
+        "cover": "covers/extra/auth-philosophy-32-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The aims of education",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-31-7.jpg",
+        "cover": "covers/extra/auth-philosophy-32-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-32": {
+  "philosophy-33": {
     "longDescription": "Whitehead traces how the scientific worldview emerged from medieval and early modern thought and what it costs the modern mind. He criticizes the “bifurcation of nature” and sketches an organic alternative. Accessible yet deep, it prepares readers for his later metaphysics. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Alfred North Whitehead",
@@ -4107,7 +4134,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4117,62 +4144,62 @@ export const enrichments = {
       {
         "title": "An introduction to mathematics",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-0.jpg",
+        "cover": "covers/extra/auth-philosophy-33-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Principia mathematica",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-1.jpg",
+        "cover": "covers/extra/auth-philosophy-33-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Adventures of ideas",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-2.jpg",
+        "cover": "covers/extra/auth-philosophy-33-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Process and reality",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-3.jpg",
+        "cover": "covers/extra/auth-philosophy-33-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The concept of nature",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-4.jpg",
+        "cover": "covers/extra/auth-philosophy-33-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Modes of thought",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-5.jpg",
+        "cover": "covers/extra/auth-philosophy-33-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The aims of education, and other essays",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-6.jpg",
+        "cover": "covers/extra/auth-philosophy-33-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Symbolism",
         "author": "Alfred North Whitehead",
-        "cover": "covers/extra/auth-philosophy-32-7.jpg",
+        "cover": "covers/extra/auth-philosophy-33-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-33": {
+  "philosophy-34": {
     "longDescription": "Tymieniecka’s phenomenological project centers the creative logos of life as the origin of sense and self. Bridging phenomenology and a philosophy of nature, she rethinks individuality, imagination, and the ontopoiesis of life. The work is a signature contribution of the World Phenomenology Institute tradition. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Anna-Teresa Tymieniecka",
@@ -4231,7 +4258,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4239,7 +4266,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4249,62 +4276,62 @@ export const enrichments = {
       {
         "title": "Phenomenology of Space and Time : The Forces of the Cosmos and the Ontopoietic Genesis of Life",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-0.jpg",
+        "cover": "covers/extra/auth-philosophy-34-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Phenomenology and science in contemporary European thought",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-1.jpg",
+        "cover": "covers/extra/auth-philosophy-34-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Leibniz' cosmological synthesis",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-2.jpg",
+        "cover": "covers/extra/auth-philosophy-34-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Why is there something rather than nothing?",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-3.jpg",
+        "cover": "covers/extra/auth-philosophy-34-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Poetics of the elements in the human condition",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-4.jpg",
+        "cover": "covers/extra/auth-philosophy-34-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Heaven, earth, and in-between in the harmony of life",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-5.jpg",
+        "cover": "covers/extra/auth-philosophy-34-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Visible and the Invisible in the Interplay between Philosophy, Literature and Reality",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-6.jpg",
+        "cover": "covers/extra/auth-philosophy-34-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Logos of Phenomenology and Phenomenology of The Logos. Book Three",
         "author": "Anna-Teresa Tymieniecka",
-        "cover": "covers/extra/auth-philosophy-33-7.jpg",
+        "cover": "covers/extra/auth-philosophy-34-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-34": {
+  "philosophy-35": {
     "longDescription": "Selections from Dewey’s pragmatism linking experience, naturalism, and democratic freedom. Knowledge is experimental inquiry within nature, not a spectator’s mirror; freedom grows through intelligent habit and social reconstruction. The volume showcases American philosophy’s public, reformist temper. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "John Dewey",
@@ -4355,7 +4382,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4363,7 +4390,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4371,7 +4398,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4381,62 +4408,62 @@ export const enrichments = {
       {
         "title": "How we think",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-0.jpg",
+        "cover": "covers/extra/auth-philosophy-35-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Democracy and Education",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-1.jpg",
+        "cover": "covers/extra/auth-philosophy-35-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Experience and education",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-2.jpg",
+        "cover": "covers/extra/auth-philosophy-35-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Human Nature and Conduct An Introduction to Social Psychology",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-3.jpg",
+        "cover": "covers/extra/auth-philosophy-35-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Art as Experience",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-4.jpg",
+        "cover": "covers/extra/auth-philosophy-35-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The public and its problems",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-5.jpg",
+        "cover": "covers/extra/auth-philosophy-35-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Logic, the theory of inquiry",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-6.jpg",
+        "cover": "covers/extra/auth-philosophy-35-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The school and society",
         "author": "John Dewey",
-        "cover": "covers/extra/auth-philosophy-34-7.jpg",
+        "cover": "covers/extra/auth-philosophy-35-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-35": {
+  "philosophy-36": {
     "longDescription": "A philosophical study of how knowledge arises from and returns to lived experience. The work sits in mid-century debates about empiricism, meaning, and the limits of abstract theory. It rewards readers interested in the texture of knowing rather than formal epistemology alone. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Rollins",
@@ -4479,7 +4506,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4487,7 +4514,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4495,7 +4522,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4503,7 +4530,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4513,62 +4540,62 @@ export const enrichments = {
       {
         "title": "Map of bones",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-0.jpg",
+        "cover": "covers/extra/auth-philosophy-36-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Amazonia",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-1.jpg",
+        "cover": "covers/extra/auth-philosophy-36-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Altar of Eden",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-2.jpg",
+        "cover": "covers/extra/auth-philosophy-36-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Get in the Van",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-3.jpg",
+        "cover": "covers/extra/auth-philosophy-36-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Black Order",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-4.jpg",
+        "cover": "covers/extra/auth-philosophy-36-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Ice Hunt",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-5.jpg",
+        "cover": "covers/extra/auth-philosophy-36-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The Judas Strain",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-6.jpg",
+        "cover": "covers/extra/auth-philosophy-36-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Starless Crown",
         "author": "Rollins",
-        "cover": "covers/extra/auth-philosophy-35-7.jpg",
+        "cover": "covers/extra/auth-philosophy-36-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-36": {
+  "philosophy-37": {
     "longDescription": "Essays that take Descartes’ Meditations as a starting point for renewed inquiry into certainty, self, and method. Sesonske and Fleming invite reflection on what it means to meditate philosophically after modern doubt. The collection bridges historical commentary and contemporary problems. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Sesonske and Fleming",
@@ -4603,7 +4630,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4611,7 +4638,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4619,7 +4646,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4627,7 +4654,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4635,7 +4662,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4643,7 +4670,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-37": {
+  "philosophy-38": {
     "longDescription": "Stace examines mystical claims about eternity against philosophical accounts of time. He distinguishes temporal succession from the timeless now reported in religious experience and tests their coherence. The book is a careful analytic treatment of mysticism and metaphysics. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Walter Terence Stace",
@@ -4670,7 +4697,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4678,7 +4705,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4686,7 +4713,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4694,7 +4721,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4702,7 +4729,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4710,7 +4737,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -4734,7 +4761,7 @@ export const enrichments = {
       {
         "title": "Hegel Üzerine",
         "author": "Walter Terence Stace",
-        "cover": "covers/extra/auth-philosophy-37-2.jpg",
+        "cover": "covers/extra/auth-philosophy-38-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -4775,7 +4802,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-38": {
+  "philosophy-39": {
     "longDescription": "Searle offers a clear map of the philosophy of mind—consciousness, intentionality, free will, and the critique of strong AI. He defends biological naturalism: mental states are real features of brains, not software or illusions. A compact entry into debates he helped define. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "John R. Searle",
@@ -4794,7 +4821,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4802,7 +4829,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4810,7 +4837,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4818,7 +4845,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4826,7 +4853,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4834,7 +4861,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -4842,7 +4869,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -4852,62 +4879,62 @@ export const enrichments = {
       {
         "title": "Speech acts",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-0.jpg",
+        "cover": "covers/extra/auth-philosophy-39-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Minds, brains, and science",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-1.jpg",
+        "cover": "covers/extra/auth-philosophy-39-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Mind, language, and society",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-2.jpg",
+        "cover": "covers/extra/auth-philosophy-39-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The construction of social reality",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-3.jpg",
+        "cover": "covers/extra/auth-philosophy-39-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Consciousness and Language",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-4.jpg",
+        "cover": "covers/extra/auth-philosophy-39-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Freedom and Neurobiology",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-5.jpg",
+        "cover": "covers/extra/auth-philosophy-39-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The mystery of consciousness",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-6.jpg",
+        "cover": "covers/extra/auth-philosophy-39-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Expressions and meaning",
         "author": "John R. Searle",
-        "cover": "covers/extra/auth-philosophy-38-7.jpg",
+        "cover": "covers/extra/auth-philosophy-39-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-39": {
+  "philosophy-40": {
     "longDescription": "Three essays unmask the origins of moral values in ressentiment, guilt, and the ascetic ideal. Nietzsche asks what the value of values themselves has been for life. The Genealogy remains essential for ethics, psychology, and critique of modernity. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Friedrich Nietzsche",
@@ -4918,7 +4945,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4926,7 +4953,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4934,7 +4961,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4942,7 +4969,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4950,7 +4977,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -4958,7 +4985,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -4966,7 +4993,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -4974,7 +5001,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -4984,7 +5011,7 @@ export const enrichments = {
       {
         "title": "The Nietzsche-Wagner correspondence",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-0.jpg",
+        "cover": "covers/extra/auth-philosophy-40-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
@@ -4998,48 +5025,48 @@ export const enrichments = {
       {
         "title": "Jenseits von Gut und Böse",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-2.jpg",
+        "cover": "covers/extra/auth-philosophy-40-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Also sprach Zarathustra",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-3.jpg",
+        "cover": "covers/extra/auth-philosophy-40-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Der Antichrist",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-4.jpg",
+        "cover": "covers/extra/auth-philosophy-40-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Zur Genealogie der Moral",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-5.jpg",
+        "cover": "covers/extra/auth-philosophy-40-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Die Geburt der Tragödie",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-6.jpg",
+        "cover": "covers/extra/auth-philosophy-40-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Menschliches, Allzumenschliches",
         "author": "Friedrich Nietzsche",
-        "cover": "covers/extra/auth-philosophy-39-7.jpg",
+        "cover": "covers/extra/auth-philosophy-40-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-40": {
+  "philosophy-41": {
     "longDescription": "Bergson reflects on Lucretius and the philosophical work poetry can do—making duration, nature, and thought palpable. Poetry is not ornament on ideas but a mode of intuition. The essay links his vitalism to classical didactic verse. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Henri Bergson",
@@ -5058,7 +5085,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5066,7 +5093,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5074,7 +5101,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5082,7 +5109,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5090,7 +5117,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5098,7 +5125,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -5106,7 +5133,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -5116,62 +5143,62 @@ export const enrichments = {
       {
         "title": "L'Évolution créatrice",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-0.jpg",
+        "cover": "covers/extra/auth-philosophy-41-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Time and free will",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-1.jpg",
+        "cover": "covers/extra/auth-philosophy-41-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Mati ere et me moire",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-2.jpg",
+        "cover": "covers/extra/auth-philosophy-41-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Le rire; essai sur la signification du comique",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-3.jpg",
+        "cover": "covers/extra/auth-philosophy-41-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "An introduction to metaphysics",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-4.jpg",
+        "cover": "covers/extra/auth-philosophy-41-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "The creative mind",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-5.jpg",
+        "cover": "covers/extra/auth-philosophy-41-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Deux sources de la morale et de la religion",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-6.jpg",
+        "cover": "covers/extra/auth-philosophy-41-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Dreams",
         "author": "Henri Bergson",
-        "cover": "covers/extra/auth-philosophy-40-7.jpg",
+        "cover": "covers/extra/auth-philosophy-41-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-41": {
+  "philosophy-42": {
     "longDescription": "The American Standard Version (1901) is a revision in the King James lineage prized for literal accuracy and cross-references. It shaped American Protestant study Bibles in the early twentieth century. On this shelf it stands as scripture and as a monument of English religious prose. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "American Standard Version",
@@ -5182,7 +5209,7 @@ export const enrichments = {
       {
         "title": "Cartesian Meditations",
         "author": "Edmund Husserl",
-        "cover": "covers/extra/sim-philosophy-7-7-cartesianmeditatio.jpg",
+        "cover": "covers/extra/sim-philosophy-8-7-cartesianmeditatio.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5190,7 +5217,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5198,7 +5225,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5206,7 +5233,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5214,7 +5241,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5222,7 +5249,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -5230,7 +5257,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -5238,7 +5265,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -5248,13 +5275,13 @@ export const enrichments = {
       {
         "title": "PG-13 Bible",
         "author": "American Standard Version",
-        "cover": "covers/extra/auth-philosophy-41-0.jpg",
+        "cover": "covers/extra/auth-philosophy-42-0.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
     ]
   },
-  "philosophy-42": {
+  "philosophy-43": {
     "longDescription": "Trotsky’s unfinished biography of Stalin is both indictment and political history of the Soviet bureaucracy. Written in exile, it portrays Stalin’s rise as the triumph of mediocrity and apparatus over revolutionary internationalism. It remains a primary document of the anti-Stalinist left. This shelf copy sits among related works in philosophy, metaphysics, religion, and related thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {
       "name": "Leon Trotsky",
@@ -5265,7 +5292,7 @@ export const enrichments = {
       {
         "title": "What Is Called Thinking?",
         "author": "Martin Heidegger",
-        "cover": "covers/extra/sim-philosophy-8-7-whatiscalledthinki.jpg",
+        "cover": "covers/extra/sim-philosophy-9-7-whatiscalledthinki.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5273,7 +5300,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5281,7 +5308,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5289,7 +5316,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5297,7 +5324,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -5305,7 +5332,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -5313,7 +5340,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -5321,7 +5348,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -5338,49 +5365,49 @@ export const enrichments = {
       {
         "title": "Selected works",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-1.jpg",
+        "cover": "covers/extra/auth-philosophy-43-1.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Literature and revolution",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-2.jpg",
+        "cover": "covers/extra/auth-philosophy-43-2.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Moi︠a︡ zhiznʹ",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-3.jpg",
+        "cover": "covers/extra/auth-philosophy-43-3.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Problems of the Chinese revolution",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-4.jpg",
+        "cover": "covers/extra/auth-philosophy-43-4.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "In defense of Marxism",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-5.jpg",
+        "cover": "covers/extra/auth-philosophy-43-5.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Terrorism and communism",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-6.jpg",
+        "cover": "covers/extra/auth-philosophy-43-6.jpg",
         "bookId": null,
         "source": "openlibrary"
       },
       {
         "title": "Fascism",
         "author": "Leon Trotsky",
-        "cover": "covers/extra/auth-philosophy-42-7.jpg",
+        "cover": "covers/extra/auth-philosophy-43-7.jpg",
         "bookId": null,
         "source": "openlibrary"
       }
@@ -5397,7 +5424,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5421,7 +5448,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5545,7 +5572,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5669,7 +5696,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -5793,7 +5820,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -6611,7 +6638,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -6678,7 +6705,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -7531,7 +7558,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -7539,7 +7566,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -7547,7 +7574,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -7663,7 +7690,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -7671,7 +7698,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -7795,7 +7822,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -8851,7 +8878,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -8859,7 +8886,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -8867,7 +8894,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -8875,7 +8902,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -8883,7 +8910,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -8891,7 +8918,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -8899,7 +8926,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -8983,7 +9010,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -8991,7 +9018,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -8999,7 +9026,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -9007,7 +9034,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -9015,7 +9042,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9023,7 +9050,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9115,7 +9142,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -9123,7 +9150,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -9131,7 +9158,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -9139,7 +9166,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9147,7 +9174,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9247,7 +9274,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -9255,7 +9282,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -9263,7 +9290,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9271,7 +9298,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9379,7 +9406,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -9387,7 +9414,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9395,7 +9422,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9511,7 +9538,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9519,7 +9546,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -9643,7 +9670,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -10057,7 +10084,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -12105,7 +12132,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12229,7 +12256,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12237,7 +12264,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -12353,7 +12380,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12361,7 +12388,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -12369,7 +12396,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -12477,7 +12504,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12485,7 +12512,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -12493,7 +12520,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -12501,7 +12528,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -12619,7 +12646,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12694,7 +12721,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12702,7 +12729,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -12910,7 +12937,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -12918,7 +12945,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -12926,7 +12953,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -12934,7 +12961,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13034,7 +13061,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13042,7 +13069,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13050,7 +13077,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13058,7 +13085,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13066,7 +13093,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13158,7 +13185,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13166,7 +13193,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13174,7 +13201,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13182,7 +13209,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13190,7 +13217,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13198,7 +13225,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -13217,7 +13244,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13225,7 +13252,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13233,7 +13260,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13241,7 +13268,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13249,7 +13276,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13349,7 +13376,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13357,7 +13384,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13365,7 +13392,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13373,7 +13400,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13381,7 +13408,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13389,7 +13416,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13481,7 +13508,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13489,7 +13516,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13497,7 +13524,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13505,7 +13532,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13513,7 +13540,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13521,7 +13548,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13529,7 +13556,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13564,7 +13591,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13572,7 +13599,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13580,7 +13607,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13588,7 +13615,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13596,7 +13623,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13604,7 +13631,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13612,7 +13639,7 @@ export const enrichments = {
       {
         "title": "The Peloponnesian War",
         "author": "Thucydides",
-        "cover": "covers/extra/sim-philosophy-13-7-thepeloponnesianwa.jpg",
+        "cover": "covers/extra/sim-philosophy-14-7-thepeloponnesianwa.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Primary ancient political history to ground Starr, Durant, and The Twelve Caesars."
@@ -13676,7 +13703,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13684,7 +13711,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13692,7 +13719,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13700,7 +13727,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13708,7 +13735,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13716,7 +13743,7 @@ export const enrichments = {
       {
         "title": "Orthodoxy",
         "author": "G. K. Chesterton",
-        "cover": "covers/extra/sim-philosophy-9-7-orthodoxy.jpg",
+        "cover": "covers/extra/sim-philosophy-10-7-orthodoxy.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A witty defense of wonder and dogma that argues with Baudrillard’s simulacra and Illich’s limits."
@@ -13816,7 +13843,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13824,7 +13851,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13832,7 +13859,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13840,7 +13867,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -13848,7 +13875,7 @@ export const enrichments = {
       {
         "title": "The Waste Land",
         "author": "T. S. Eliot",
-        "cover": "covers/extra/sim-philosophy-12-7-thewasteland.jpg",
+        "cover": "covers/extra/sim-philosophy-13-7-thewasteland.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Modernist poetry of fragmentation and myth to set against Blake, Cavafy, and Auden’s essays."
@@ -13956,7 +13983,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -13964,7 +13991,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -13972,7 +13999,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -13980,7 +14007,7 @@ export const enrichments = {
       {
         "title": "Moby-Dick",
         "author": "Herman Melville",
-        "cover": "covers/extra/sim-philosophy-11-7-mobydick.jpg",
+        "cover": "covers/extra/sim-philosophy-12-7-mobydick.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The American epic that belongs beside Hawthorne, Faulkner, and the American Romantics survey."
@@ -14096,7 +14123,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -14104,7 +14131,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -14112,7 +14139,7 @@ export const enrichments = {
       {
         "title": "The Structure of Scientific Revolutions",
         "author": "Thomas S. Kuhn",
-        "cover": "covers/extra/sim-philosophy-10-5-thestructureofscie.jpg",
+        "cover": "covers/extra/sim-philosophy-11-5-thestructureofscie.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Essential converse to Rethinking the Scientific Revolution and Whitehead’s Science and the Modern World."
@@ -14236,7 +14263,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -14244,7 +14271,7 @@ export const enrichments = {
       {
         "title": "Democracy in America",
         "author": "Alexis de Tocqueville",
-        "cover": "covers/extra/sim-philosophy-10-7-democracyinamerica.jpg",
+        "cover": "covers/extra/sim-philosophy-11-7-democracyinamerica.jpg",
         "bookId": null,
         "source": "explore",
         "why": "The classic study of democratic soul and soft despotism — a bridge from political philosophy to American cultural critique."
@@ -14376,7 +14403,7 @@ export const enrichments = {
       {
         "title": "Confessions",
         "author": "Augustine of Hippo",
-        "cover": "covers/extra/sim-philosophy-10-6-confessions.jpg",
+        "cover": "covers/extra/sim-philosophy-11-6-confessions.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A root text for Christian inwardness next to Otto, Eliade, and the mysticism anthology."
@@ -14541,7 +14568,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-43": {
+  "philosophy-44": {
     "longDescription": "Gödel, Escher, Bach: an Eternal Golden Braid (1979) is Douglas Hofstadter’s Pulitzer Prize–winning exploration of formal systems, self-reference, and consciousness. Through Bach’s canons, Escher’s visual paradoxes, and Gödel’s incompleteness theorems—interleaved with Lewis Carroll–style dialogues—Hofstadter argues that minds arise from “strange loops” in which symbols twist back upon themselves.\n\nIt sits on this philosophy shelf as related thought: less a treatise in the Continental style than a deep, playful inquiry into logic, meaning, and what it would take for a machine (or a brain) to say “I.”",
     "author": {
       "name": "Douglas Hofstadter",
@@ -14552,7 +14579,7 @@ export const enrichments = {
       {
         "title": "I Am a Strange Loop",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/sim-philosophy-43-iamastrangeloop.jpg",
+        "cover": "covers/extra/sim-philosophy-44-iamastrangeloop.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Hofstadter’s later, tighter restatement of the strange-loop theory of the self."
@@ -14568,7 +14595,7 @@ export const enrichments = {
       {
         "title": "Consciousness Explained",
         "author": "Daniel C. Dennett",
-        "cover": "covers/extra/sim-philosophy-43-consciousnessexplained.jpg",
+        "cover": "covers/extra/sim-philosophy-44-consciousnessexplained.jpg",
         "bookId": null,
         "source": "explore",
         "why": "A rival philosophical account of mind that dialogues with Hofstadter’s playful cognitivism."
@@ -14576,7 +14603,7 @@ export const enrichments = {
       {
         "title": "Metamagical Themas",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/sim-philosophy-43-metamagicalthemas.jpg",
+        "cover": "covers/extra/sim-philosophy-44-metamagicalthemas.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Hofstadter’s Scientific American columns—puzzles, analogies, and self-reference after GEB."
@@ -14584,7 +14611,7 @@ export const enrichments = {
       {
         "title": "Tractatus Logico-Philosophicus",
         "author": "Ludwig Wittgenstein",
-        "cover": "covers/extra/sim-philosophy-43-tractatuslogicophiloso.jpg",
+        "cover": "covers/extra/sim-philosophy-44-tractatuslogicophiloso.jpg",
         "bookId": null,
         "source": "explore",
         "why": "Already kin to this shelf’s logic books; a austere counterpart to GEB’s playful formal systems."
@@ -14592,7 +14619,7 @@ export const enrichments = {
       {
         "title": "The Society of Mind",
         "author": "Marvin Minsky",
-        "cover": "covers/extra/sim-philosophy-43-thesocietyofmind.jpg",
+        "cover": "covers/extra/sim-philosophy-44-thesocietyofmind.jpg",
         "bookId": null,
         "source": "explore",
         "why": "An AI pioneer’s modular theory of intelligence, adjacent to GEB’s machine-mind inquiries."
@@ -14602,7 +14629,7 @@ export const enrichments = {
       {
         "title": "I Am a Strange Loop",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/auth-philosophy-43-iamastrangeloop.jpg",
+        "cover": "covers/extra/auth-philosophy-44-iamastrangeloop.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -14610,7 +14637,7 @@ export const enrichments = {
       {
         "title": "Metamagical Themas",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/auth-philosophy-43-metamagicalthemas.jpg",
+        "cover": "covers/extra/auth-philosophy-44-metamagicalthemas.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -14618,7 +14645,7 @@ export const enrichments = {
       {
         "title": "Le Ton beau de Marot",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/auth-philosophy-43-letonbeaudemarot.jpg",
+        "cover": "covers/extra/auth-philosophy-44-letonbeaudemarot.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
@@ -14634,14 +14661,14 @@ export const enrichments = {
       {
         "title": "Fluid Concepts and Creative Analogies",
         "author": "Douglas Hofstadter",
-        "cover": "covers/extra/auth-philosophy-43-fluidconceptsandcreati.jpg",
+        "cover": "covers/extra/auth-philosophy-44-fluidconceptsandcreati.jpg",
         "bookId": null,
         "source": "explore",
         "why": null
       }
     ]
   },
-  "philosophy-44": {
+  "philosophy-45": {
     "longDescription": "Capitalist Realism: Is There No Alternative? (Zero Books, 2009) is Mark Fisher’s short, incendiary essay on the sense that capitalism is the only viable system—that it is easier to imagine the end of the world than the end of capitalism. Drawing on film, music, education, bureaucracy, and the politics of mental health, Fisher argues that this ‘realism’ is an ideological atmosphere that forecloses the future, and that cracks in it—depression, precarity, and failing institutions—point toward alternatives. Brief and widely read, it became a touchstone of twenty-first-century cultural criticism.",
     "author": {
       "name": "Mark Fisher",
@@ -15648,7 +15675,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-45": {
+  "philosophy-46": {
     "longDescription": "A Philosophy of Music Education was first published in 1970; this is the second edition (Prentice Hall, 1989). Bennett Reimer argues that music education should be grounded in aesthetic education: the main reason to teach music is to develop students’ capacity for the felt, meaningful experience that musical works offer.\n\nThe book works through aesthetic theory, the nature of musical meaning, and what such a philosophy implies for general music, performance programs, and the curriculum. It became a standard text in music-education courses.",
     "author": {
       "name": "Bennett Reimer",
@@ -15675,7 +15702,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-46": {
+  "philosophy-47": {
     "longDescription": "A Return to Love: Reflections on the Principles of “A Course in Miracles” (HarperCollins, 1992) was Marianne Williamson’s first book and became a New York Times bestseller after Oprah Winfrey promoted it.\n\nWilliamson retells her own path to A Course in Miracles and applies its central idea—that love is real and fear an illusion—to relationships, work, the body, and spiritual life. The book is the source of the widely quoted passage “Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure.”",
     "author": {
       "name": "Marianne Williamson",
@@ -15702,7 +15729,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-47": {
+  "philosophy-48": {
     "longDescription": "The Birth of Tragedy (1872) was Nietzsche’s first book. It reads Attic tragedy as the union of two drives, the Apollonian art of form, image, and individuation and the Dionysian rapture that dissolves the self, and argues that Euripides and Socrates killed tragedy by putting reason and optimism in its place. Nietzsche ends by hoping that Wagner’s music drama would bring tragedy back. The 1886 edition added the “Attempt at a Self-Criticism,” in which he exposes the book’s youthful excesses.\n\nThe Case of Wagner (1888), written in his last productive year, reverses the early hope: Wagner is now the decadent, theatrical sickness of modern culture, set against the healthy clarity of Bizet. Walter Kaufmann’s Vintage edition translates both works with his introductions and notes, so the volume shows the beginning and the end of Nietzsche’s long argument with Wagner and with modern art.",
     "author": {
       "name": "Friedrich Nietzsche",
@@ -15729,7 +15756,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-50": {
+  "philosophy-51": {
     "longDescription": "Giambattista Vico's New Science (first edition 1725; the definitive third edition 1744) sets out a 'new science' of the common nature of nations. Against Descartes, Vico argues that we can have true knowledge only of what we have made (verum ipsum factum), and so the civil world of laws, languages and institutions is more knowable than nature.\n\nHe traces every gentile nation through three ages: of gods, when people thought in vivid poetic images and feared thunder as Jove; of heroes, ruled by aristocratic fathers; and of men, ruled by reason and equal laws, until decline brings a return (ricorso) to barbarism. Book Three's 'Discovery of the True Homer' reads the Homeric poems as the collective voice of the Greek people. This is the Cornell University Press translation by Thomas Goddard Bergin and Max Harold Fisch, from the 1744 edition, with the 'Practic of the New Science'.",
     "author": {
       "name": "Giambattista Vico",
@@ -15739,16 +15766,16 @@ export const enrichments = {
       {
         "title": "The Philosophy of History",
         "author": "G. W. F. Hegel",
-        "cover": "covers/philosophy-10.jpg",
-        "bookId": "philosophy-10",
+        "cover": "covers/philosophy-11.jpg",
+        "bookId": "philosophy-11",
         "source": "shelf",
         "why": "Another grand theory of history's stages, on your shelf."
       },
       {
         "title": "The Decline of the West, Vol. II",
         "author": "Oswald Spengler",
-        "cover": "covers/philosophy-21.jpg",
-        "bookId": "philosophy-21",
+        "cover": "covers/philosophy-22.jpg",
+        "bookId": "philosophy-22",
         "source": "shelf",
         "why": "Cyclical rise and fall of cultures, on your shelf."
       }
@@ -15764,7 +15791,7 @@ export const enrichments = {
       }
     ]
   },
-  "philosophy-49": {
+  "philosophy-50": {
     "longDescription": "The Republic (c. 375 BC) opens with the question of what justice is. After Thrasymachus argues that justice is merely the advantage of the stronger, Glaucon and Adeimantus challenge Socrates to show that justice is worth having for its own sake. Socrates answers by building a city in words, with rulers, auxiliaries and producers, and finds justice in each part doing its own work; the just soul likewise has reason ruling spirit and appetite.\n\nThe central books argue that philosophers must rule, and explain knowledge of the Form of the Good through the images of the sun, the divided line and the cave. Later books trace the decline of constitutions from aristocracy to tyranny, banish imitative poetry, and close with the Myth of Er on the soul's judgment and rebirth. This is the Penguin Classics translation by Desmond Lee.",
     "author": {
       "name": "Plato",
@@ -15791,7 +15818,7 @@ export const enrichments = {
     ],
     "otherByAuthor": []
   },
-  "philosophy-48": {
+  "philosophy-49": {
     "longDescription": "On the Aesthetic Education of Man (1795) began as letters to Schiller’s patron, the Danish Prince Friedrich Christian of Augustenburg. Schiller starts from the failure of the French Revolution: a people torn between brute sense and cold abstraction is not ready for freedom. Drawing on Kant’s Critique of Judgment, he proposes a third, mediating “play drive” between the sensuous and the formal drives, whose object is living form, or beauty.\n\n“Man only plays when he is in the fullest sense of the word a human being, and he is only fully a human being when he plays.” Through art and beauty, Schiller argues, people can recover the wholeness that modern specialization destroyed, and only such whole people can make a free state. The book became a founding text of German Idealist and Romantic aesthetics. This is the Dover paperback edition.",
     "author": {
       "name": "Friedrich Schiller",

@@ -6,15 +6,15 @@ export const TOPICS = {
 "Schopenhauer holds that aesthetic contemplation briefly frees us from the will by grasping the Platonic Ideas, and that music copies the will itself rather than any idea."
 ],
 [
-"philosophy-47",
+"philosophy-48",
 "Nietzsche argues that Greek tragedy fused the Apollonian (form, image) and Dionysian (intoxication, unity) and that 'only as an aesthetic phenomenon is existence justified'; the Case of Wagner turns this into a polemic against Wagner as decadent."
 ],
 [
-"philosophy-48",
+"philosophy-49",
 "Schiller argues that beauty, through the 'play drive' that reconciles sense and form, is the path by which humanity becomes morally and politically free."
 ],
 [
-"philosophy-45",
+"philosophy-46",
 "Reimer argues music education should be 'aesthetic education', developing students' feelingful responsiveness to the expressive qualities of music; the second edition broadens this toward synergy with praxial views."
 ],
 [
@@ -22,7 +22,7 @@ export const TOPICS = {
 "Clark presents Romantic painting (roughly 1790–1860) as a rebellion of passion, imagination and the sublime against classical order, through figures such as Goya, Blake, Turner, Delacroix and Géricault."
 ],
 [
-"philosophy-40",
+"philosophy-41",
 "Bergson argues that Lucretius's genius lies in making philosophy felt poetically, poetry being a vehicle of intuition rather than decoration."
 ],
 [
@@ -34,7 +34,7 @@ export const TOPICS = {
 "Mann's novel makes the composer Leverkühn's demonic pact a figure for art that breaks through sterility at the cost of humanity, entangling modern music with German catastrophe."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato holds that art is imitation of appearances and morally dangerous, the founding statement of the 'ancient quarrel between philosophy and poetry'."
 ]
 ],
@@ -48,7 +48,7 @@ export const TOPICS = {
 "Lewis satirizes the conformity, boosterism and spiritual emptiness of the Midwestern businessman, whose brief rebellion ends in surrender."
 ],
 [
-"philosophy-23",
+"philosophy-24",
 "A study of the nineteenth-century lyceum lecture movement as democratic adult education (edition and author not confirmed)."
 ],
 [
@@ -144,47 +144,51 @@ export const TOPICS = {
 "Cavafy's poems revisit Hellenistic and Roman-era Alexandria and Antioch, treating history ironically and with sympathy for losers and the declining."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Set in the Piraeus, the dialogue reflects Athenian debates about democracy, Sparta and the sophists."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico draws heavily on Roman law and early Roman history, and on Homer, to reconstruct the heroic age of the Greeks and Romans."
 ]
 ],
 "Authority, Tradition and Counter-Revolution": [
 [
-"philosophy-25",
+"philosophy-26",
 "Maistre argues that political order rests on providence, sacrifice and authority rather than contracts, and that the French Revolution was a divine punishment."
 ],
 [
-"philosophy-14",
+"philosophy-15",
 "Evola contrasts a sacred, hierarchical 'world of Tradition' with modernity, which he sees as an inversion and decline from that order."
 ],
 [
-"philosophy-13",
+"philosophy-14",
 "Evola advises the 'differentiated man' to 'ride the tiger' of modern nihilism, staying inwardly detached instead of fighting or joining a dissolving world."
 ],
 [
-"philosophy-24",
+"philosophy-25",
 "Jones, a Catholic traditionalist, argues that sexual liberation has served since the Enlightenment as a means of political and social control."
 ],
 [
-"philosophy-21",
+"philosophy-22",
 "Spengler holds that each culture hardens into a 'civilization' of cities, money and Caesarism; the West has entered this late phase."
 ]
 ],
 "Being and Ontology": [
 [
 "philosophy-5",
-"Heidegger reopens the 'question of the meaning of Being' by analyzing Dasein, the being for whom its own being is an issue, and argues that Being must be understood through temporality."
+"Heidegger reopens the 'question of the meaning of Being' by analyzing Dasein, the being for whom its own being is an issue, and argues that Being must be understood through temporality.",
+[
+"philosophy-6",
+"Heidegger treats technology as a mode of revealing, a destining of Being, and reads Nietzsche's 'God is dead' as the completion of Western metaphysics."
+]
 ],
 [
 "philosophy-4",
 "In this lecture course Heidegger argues that logic must be grounded in a questioning of language and the human being rather than treated as formal calculation."
 ],
 [
-"philosophy-8",
+"philosophy-9",
 "Aristotle defines first philosophy as the study of being qua being and argues that substance (ousia), above all form, is the primary sense of being, culminating in the unmoved mover."
 ],
 [
@@ -192,19 +196,19 @@ export const TOPICS = {
 "Deleuze argues that being is univocal and that difference in itself, not identity, is primary; identity is a secondary effect of repetition and difference."
 ],
 [
-"philosophy-31",
+"philosophy-32",
 "Whitehead replaces enduring substances with 'actual occasions' of experience that become and perish, making process the basic reality."
 ],
 [
-"philosophy-6",
+"philosophy-7",
 "Spinoza deduces in geometric order that there is only one substance with infinite attributes, of which thought and extension are the two known to us."
 ],
 [
-"philosophy-17",
+"philosophy-18",
 "Wittgenstein holds that the world is the totality of facts, not things, and that logical form is shared by world and language."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato holds that the Forms are fully real, while sensible things are only images of them, as the shadows in the cave are images of objects."
 ]
 ],
@@ -254,7 +258,7 @@ export const TOPICS = {
 "Balabanoff, who worked closely with Lenin in the Zimmerwald movement and early Comintern, gives a personal portrait of his ascetic will and his ruthless, ends-justify-means politics."
 ],
 [
-"philosophy-42",
+"philosophy-43",
 "Trotsky's unfinished biography portrays Stalin as a mediocrity raised by the bureaucracy, and is also a self-justifying indictment."
 ]
 ],
@@ -288,11 +292,11 @@ export const TOPICS = {
 "Latourette, a Baptist historian, narrates Christianity from Jesus to 1500 as an expanding movement, with attention to missions and to its repeated renewals."
 ],
 [
-"philosophy-41",
+"philosophy-42",
 "The ASV (1901) is a literal American revision of the King James Bible; it is the primary text of Christian scripture."
 ],
 [
-"philosophy-26",
+"philosophy-27",
 "This McGinn anthology gathers Christian mystics from early centuries through the modern period on contemplation and union with God."
 ],
 [
@@ -314,7 +318,7 @@ export const TOPICS = {
 ],
 "Civilization, Rise and Decline": [
 [
-"philosophy-21",
+"philosophy-22",
 "Spengler treats cultures as organisms with lifespans; Volume II covers cities, peoples, the state, money and religion in the decline of the West."
 ],
 [
@@ -326,11 +330,11 @@ export const TOPICS = {
 "A multi-author college survey of Western civilization from antiquity to the twentieth century."
 ],
 [
-"philosophy-14",
+"philosophy-15",
 "Evola reads history as a long fall from a primordial, sacred civilization to the materialist modern world."
 ],
 [
-"philosophy-10",
+"philosophy-11",
 "Hegel reads history moving from the Oriental world through Greece and Rome to the Germanic world, in increasing consciousness of freedom."
 ],
 [
@@ -338,13 +342,13 @@ export const TOPICS = {
 "Essays by various scholars on the contribution of ancient Israel's religion, law and literature to Western civilization."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico traces how nations arise from religion, marriage and burial, mature into reasoned law, and decay through luxury and the 'barbarism of reflection' before beginning the cycle again."
 ]
 ],
 "Communism and Marxism": [
 [
-"philosophy-30",
+"philosophy-31",
 "Lenin argues that imperialism is capitalism's highest stage and that a vanguard party must lead the revolution to a dictatorship of the proletariat."
 ],
 [
@@ -352,7 +356,7 @@ export const TOPICS = {
 "Balabanoff, a disillusioned former colleague, describes how Lenin's devotion to revolution led him to accept any means."
 ],
 [
-"philosophy-42",
+"philosophy-43",
 "Trotsky indicts Stalin as the gravedigger of the revolution."
 ],
 [
@@ -360,13 +364,13 @@ export const TOPICS = {
 "Greene, a sympathetic Western visitor, reports favorably on Mao's China of the early 1960s."
 ],
 [
-"philosophy-44",
+"philosophy-45",
 "Fisher argues that 'capitalist realism' makes it seem impossible to imagine an alternative to capitalism."
 ]
 ],
 "Consciousness and Mind": [
 [
-"philosophy-38",
+"philosophy-39",
 "Searle argues for biological naturalism: consciousness is a real, subjective feature caused by brain processes, and computer programs alone cannot produce understanding (the Chinese Room)."
 ],
 [
@@ -374,7 +378,7 @@ export const TOPICS = {
 "Husserl brackets the natural attitude to describe pure consciousness, whose essence is intentionality, the noesis–noema structure through which objects are constituted."
 ],
 [
-"philosophy-43",
+"philosophy-44",
 "Hofstadter argues that the self and consciousness emerge from 'strange loops' of self-reference in a formal system, linking Gödel, Escher and Bach."
 ],
 [
@@ -382,11 +386,11 @@ export const TOPICS = {
 "Bergson holds that consciousness is coextensive with life's élan vital and that intellect and instinct are diverging tools of it."
 ],
 [
-"philosophy-36",
+"philosophy-37",
 "These essays use Descartes' Meditations as a starting point for the cogito, doubt and the mind–body problem."
 ],
 [
-"philosophy-29",
+"philosophy-30",
 "Jung holds that conscious life rests on a personal and collective unconscious expressed in symbols and dreams."
 ],
 [
@@ -396,11 +400,15 @@ export const TOPICS = {
 ],
 "Critique of Modernity": [
 [
-"philosophy-11",
-"Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands."
+"philosophy-12",
+"Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands.",
+[
+"philosophy-6",
+"Heidegger reads the modern age as the 'age of the world picture', in which the world becomes an object represented and mastered by a subject; enframing is its supreme danger."
+]
 ],
 [
-"philosophy-14",
+"philosophy-15",
 "Evola condemns modernity (individualism, democracy, materialism) as the last, dissolving phase of a cyclical decline."
 ],
 [
@@ -408,27 +416,27 @@ export const TOPICS = {
 "Lasch argues that modern capitalism and the therapeutic state erode the family and inner life, producing dependent, anxious narcissists."
 ],
 [
-"philosophy-16",
+"philosophy-17",
 "Baudrillard argues that media and consumer society have dissolved the distinction between reality and its representations."
 ],
 [
-"philosophy-44",
+"philosophy-45",
 "Fisher argues that neoliberal capitalism has produced widespread depression, bureaucratic absurdity and the 'slow cancellation of the future'."
 ],
 [
-"philosophy-15",
+"philosophy-16",
 "Eliade argues that modern secular man inhabits a desacralized world but still carries camouflaged religious behaviour."
 ],
 [
-"philosophy-12",
+"philosophy-13",
 "Illich argues that professionalized institutions such as medicine disable people's own capacity to cope."
 ],
 [
-"philosophy-24",
+"philosophy-25",
 "Jones argues that modern sexual liberation, from the Marquis de Sade to the sexual revolution, served as an instrument of social control."
 ],
 [
-"philosophy-21",
+"philosophy-22",
 "Spengler sees the modern West as a late 'civilization' ruled by money and mass cities, headed toward Caesarism."
 ]
 ],
@@ -446,33 +454,33 @@ export const TOPICS = {
 "Lear's suffering and Cordelia's death present a world in which justice and consolation may fail."
 ],
 [
-"philosophy-12",
+"philosophy-13",
 "Illich argues that modern medicine has expropriated people's ability to face pain and death, turning death into a technical event."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato argues for the soul's immortality and ends with the Myth of Er, in which souls are judged after death and choose their next lives."
 ]
 ],
 "Education": [
 [
-"philosophy-48",
+"philosophy-49",
 "Schiller holds that aesthetic education is the necessary preparation for moral and political freedom."
 ],
 [
-"philosophy-45",
+"philosophy-46",
 "Reimer argues that music education's core value lies in developing aesthetic, feelingful experience."
 ],
 [
-"philosophy-34",
+"philosophy-35",
 "Dewey holds that education is the reconstruction of experience, with learning arising from active inquiry rather than passive reception."
 ],
 [
-"philosophy-23",
+"philosophy-24",
 "The lyceum movement is presented as a form of public adult education in nineteenth-century America (details unconfirmed)."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato outlines the guardians' education, from censored music and gymnastics to mathematics and dialectic, and defines education as turning the soul toward the light rather than filling it with knowledge."
 ]
 ],
@@ -482,7 +490,7 @@ export const TOPICS = {
 "Havens surveys the French philosophes, especially Voltaire, Montesquieu, Diderot and Rousseau, as campaigners for reason, tolerance and reform before the Revolution."
 ],
 [
-"philosophy-18",
+"philosophy-19",
 "Rousseau argues that legitimate authority comes only from a social contract under the general will."
 ],
 [
@@ -504,15 +512,15 @@ export const TOPICS = {
 ],
 "Ethics and Virtue": [
 [
-"philosophy-9",
+"philosophy-10",
 "Aristotle holds that the human good is eudaimonia, activity of the soul in accordance with virtue, with each virtue a mean found by practical wisdom."
 ],
 [
-"philosophy-6",
+"philosophy-7",
 "Spinoza argues that freedom and blessedness come from understanding the causes of our emotions, culminating in the intellectual love of God."
 ],
 [
-"philosophy-39",
+"philosophy-40",
 "Nietzsche argues that 'good/evil' morality grew from the ressentiment of the weak against 'good/bad' noble values, and that guilt grew from debt."
 ],
 [
@@ -528,7 +536,7 @@ export const TOPICS = {
 "Camus argues that rebellion affirms a human limit and solidarity ('I rebel, therefore we exist'), and condemns revolutions that justify murder."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato argues that virtue is the soul's inner harmony (wisdom, courage, moderation and justice) and that justice is worth choosing for its own sake, not just for its rewards."
 ]
 ],
@@ -566,23 +574,23 @@ export const TOPICS = {
 ],
 "Freedom and Liberty": [
 [
-"philosophy-18",
+"philosophy-19",
 "Rousseau holds that people are free under the law when they obey the general will they help make, so that someone may be 'forced to be free'."
 ],
 [
-"philosophy-10",
+"philosophy-11",
 "Hegel holds that 'world history is the progress of the consciousness of freedom', from one free (despot) to some (Greeks) to all (Christian-Germanic world)."
 ],
 [
-"philosophy-34",
+"philosophy-35",
 "Dewey treats freedom as the growing power of intelligent choice, achieved through experience and social conditions."
 ],
 [
-"philosophy-48",
+"philosophy-49",
 "Schiller holds that freedom is reached through beauty, which reconciles reason and sense."
 ],
 [
-"philosophy-6",
+"philosophy-7",
 "Spinoza denies free will but holds that freedom is acting from the necessity of one's own nature through adequate understanding."
 ],
 [
@@ -604,7 +612,7 @@ export const TOPICS = {
 "Durant narrates Europe from 1789 to 1815, presenting Napoleon as a genius whose ambition both spread and betrayed the Revolution."
 ],
 [
-"philosophy-25",
+"philosophy-26",
 "Maistre interprets the Revolution as providential punishment and denies the Enlightenment's political premises."
 ],
 [
@@ -622,15 +630,15 @@ export const TOPICS = {
 ],
 "God and the Divine": [
 [
-"philosophy-6",
+"philosophy-7",
 "Spinoza identifies God with Nature, a necessary, impersonal substance without purposes."
 ],
 [
-"philosophy-20",
+"philosophy-21",
 "Otto holds that the holy is a non-rational 'numinous' experience of mysterium tremendum et fascinans, prior to ethics and concepts."
 ],
 [
-"philosophy-31",
+"philosophy-32",
 "Whitehead conceives God as dipolar: the ground of possibilities and 'the great companion' who preserves the world."
 ],
 [
@@ -646,19 +654,19 @@ export const TOPICS = {
 "Dante's ascent ends in the vision of God as the love 'that moves the sun and the other stars'."
 ],
 [
-"philosophy-41",
+"philosophy-42",
 "The Bible presents the God of Israel and of Christ as creator, lawgiver and redeemer."
 ],
 [
-"philosophy-46",
+"philosophy-47",
 "Williamson, teaching A Course in Miracles, holds that God is love and that fear is an illusion to be released."
 ],
 [
-"philosophy-8",
+"philosophy-9",
 "Aristotle argues for an unmoved mover, pure thought thinking itself, as the final cause of motion."
 ],
 [
-"philosophy-32",
+"philosophy-33",
 "Whitehead holds that religion is the vision of something beyond the passing flux and that God is required as a principle of limitation."
 ],
 [
@@ -694,33 +702,37 @@ export const TOPICS = {
 ],
 "Justice": [
 [
-"philosophy-49",
+"philosophy-50",
 "Plato's Socrates rejects Thrasymachus's view that justice is the advantage of the stronger, defining justice as each part of the city and of the soul doing its own work, and argues that the just life is happier than the unjust."
 ],
 [
-"philosophy-18",
+"philosophy-19",
 "Rousseau holds that justice in political society comes from law made by the general will, replacing natural instinct with duty."
 ],
 [
-"philosophy-9",
+"philosophy-10",
 "Aristotle treats justice as the complete virtue in relation to others, distinguishing distributive from corrective justice."
 ]
 ],
 "Knowledge and Reason": [
 [
 "philosophy-2",
-"Kant argues that synthetic a priori knowledge is possible because space, time and the categories structure experience, but that reason overreaches into antinomies when it goes beyond experience."
+"Kant argues that synthetic a priori knowledge is possible because space, time and the categories structure experience, but that reason overreaches into antinomies when it goes beyond experience.",
+[
+"philosophy-6",
+"In 'Science and Reflection' and 'The Age of the World Picture' Heidegger argues that modern science is 'the theory of the real', securing beings in advance as calculable objects."
+]
 ],
 [
-"philosophy-36",
+"philosophy-37",
 "Sesonske and Fleming's contributors reexamine Descartes' method of doubt, the cogito and his proofs as live problems of certainty and self-knowledge."
 ],
 [
-"philosophy-17",
+"philosophy-18",
 "Wittgenstein holds that what can be said can be said clearly and that whereof one cannot speak one must be silent."
 ],
 [
-"philosophy-34",
+"philosophy-35",
 "Dewey treats knowing as active inquiry resolving problematic situations, rather than a spectator copying reality."
 ],
 [
@@ -728,7 +740,7 @@ export const TOPICS = {
 "Bacon's essays reflect his worldly, empirical wisdom; 'Of Studies' says reading makes a full man."
 ],
 [
-"philosophy-43",
+"philosophy-44",
 "Hofstadter uses Gödel's incompleteness theorem to show that formal systems rich enough to describe themselves have truths they cannot prove."
 ],
 [
@@ -736,17 +748,17 @@ export const TOPICS = {
 "Hamann argues against Kant that reason is inseparable from language, tradition and faith."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato distinguishes knowledge of the unchanging Forms from opinion about the changing sensible world, through the divided line and the allegory of the cave."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Against Descartes, Vico holds that we can truly know only what we have made (verum ipsum factum), so the civil world, made by humans, is more knowable than nature."
 ]
 ],
 "Language and Meaning": [
 [
-"philosophy-17",
+"philosophy-18",
 "Wittgenstein's picture theory holds that propositions picture possible facts, and that logic, ethics and the mystical lie beyond what can be said."
 ],
 [
@@ -754,7 +766,7 @@ export const TOPICS = {
 "Heidegger argues that logic must be reconceived as the question of the essence of language, which he ties to the historical existence of a people."
 ],
 [
-"philosophy-19",
+"philosophy-20",
 "McLuhan argues that the shift from oral to print culture reshaped language and thought."
 ],
 [
@@ -778,7 +790,7 @@ export const TOPICS = {
 "Groton and May provide graded Latin readings for students, adapted from Roman myth and history."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico argues that language developed from gestures and mute signs through heroic metaphor to the vernacular speech of the age of men, and uses etymology as evidence for early thought."
 ]
 ],
@@ -850,7 +862,7 @@ export const TOPICS = {
 "Shakespeare's sonnets treat love as a struggle against time, set against desire and betrayal."
 ],
 [
-"philosophy-46",
+"philosophy-47",
 "Williamson holds that love is our true nature and that miracles are shifts from fear to love."
 ],
 [
@@ -882,11 +894,11 @@ export const TOPICS = {
 ],
 "Mysticism": [
 [
-"philosophy-26",
+"philosophy-27",
 "McGinn's anthology presents Christian mysticism as the pursuit of direct consciousness of God's presence, through writers from Origen and Pseudo-Dionysius to Eckhart and John of the Cross."
 ],
 [
-"philosophy-37",
+"philosophy-38",
 "Stace holds that the mystical 'eternal moment' is a genuine apprehension of God that intellect can only express in paradox."
 ],
 [
@@ -894,7 +906,7 @@ export const TOPICS = {
 "Blake's visionary writings hold that the 'doors of perception', once cleansed, would show everything as infinite."
 ],
 [
-"philosophy-46",
+"philosophy-47",
 "Williamson presents A Course in Miracles as a spiritual path from fear to love."
 ]
 ],
@@ -904,11 +916,11 @@ export const TOPICS = {
 "Campbell interprets myths psychologically as variations of a monomyth expressing universal truths about the psyche."
 ],
 [
-"philosophy-29",
+"philosophy-30",
 "Jung holds that symbols in dreams and myths arise from archetypes in the collective unconscious."
 ],
 [
-"philosophy-15",
+"philosophy-16",
 "Eliade holds that religious man lives in sacred space and cyclical sacred time renewed by myth and ritual, which modern profane man has lost."
 ],
 [
@@ -928,15 +940,15 @@ export const TOPICS = {
 "Frye reads Blake's prophetic books as a unified mythic system."
 ],
 [
-"philosophy-28",
+"philosophy-29",
 "A short guide to Jung's archetypes, the collective unconscious and individuation."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato uses myths of his own, the 'noble lie' of metals and the Myth of Er on judgment and reincarnation, to convey what argument cannot."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico reads myths as 'true narrations' of early peoples, who thought in vivid poetic universals: Jove, for instance, is the first gentiles' image of the thundering sky."
 ]
 ],
@@ -946,7 +958,7 @@ export const TOPICS = {
 "Thoreau finds spiritual and moral truth in close, daily observation of nature at Walden."
 ],
 [
-"philosophy-27",
+"philosophy-28",
 "Jung argues that modern people suffer from a severed relation to nature and should restore it through soul and instinct."
 ],
 [
@@ -962,7 +974,7 @@ export const TOPICS = {
 "Bergson argues that evolution is driven by a creative élan vital rather than mechanism or final design."
 ],
 [
-"philosophy-31",
+"philosophy-32",
 "Whitehead treats nature as a web of experiential processes rather than inert matter."
 ]
 ],
@@ -976,17 +988,17 @@ export const TOPICS = {
 "Heidegger turns Husserl's phenomenology into a hermeneutic analysis of everyday being-in-the-world, care and temporality."
 ],
 [
-"philosophy-33",
+"philosophy-34",
 "Tymieniecka develops a 'phenomenology of life' in which a creative logos of life unfolds through all levels of existence."
 ]
 ],
 "Philosophy of History": [
 [
-"philosophy-10",
+"philosophy-11",
 "Hegel views history as the rational progress of Spirit's freedom, guided by the 'cunning of reason' through passionate individuals."
 ],
 [
-"philosophy-21",
+"philosophy-22",
 "Spengler holds that history consists of separate cultures, each with an organic life cycle, rather than linear progress."
 ],
 [
@@ -1002,14 +1014,18 @@ export const TOPICS = {
 "Osler's contributors show how the 'Scientific Revolution' was itself a historians' construct to be revised."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico argues that every gentile nation passes through an age of gods, an age of heroes and an age of men, and that decline brings a return (ricorso) to barbarism; history follows an 'ideal eternal history.'"
 ]
 ],
 "Poetry and Poetics": [
 [
 "literature-15",
-"Practising poets reflect on how poems are made and why they matter (editor identification not confirmed)."
+"Practising poets reflect on how poems are made and why they matter (editor identification not confirmed).",
+[
+"philosophy-6",
+"Heidegger recalls poiesis, bringing-forth, and quotes Hölderlin ('where danger is, grows the saving power also') to find in art a possible counter to enframing."
+]
 ],
 [
 "literature-16",
@@ -1040,7 +1056,7 @@ export const TOPICS = {
 "Auden holds that a poem is a verbal society ordered by the poet, and reflects on poetry as craft and vocation."
 ],
 [
-"philosophy-40",
+"philosophy-41",
 "Bergson holds that poetry such as Lucretius's can do philosophical work by making ideas felt."
 ],
 [
@@ -1052,29 +1068,29 @@ export const TOPICS = {
 "Stewart reads Herbert's devotional lyrics as carefully ordered religious art."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato argues that imitative poetry is at a third remove from truth and feeds the passions, so it is banished from the ideal city except for hymns to gods and praise of good men."
 ],
 [
-"philosophy-50",
+"philosophy-51",
 "Vico's 'poetic wisdom' holds that the first humans were poets who spoke in images; his 'Discovery of the True Homer' treats Homer as the collective voice of the Greek people."
 ]
 ],
 "Political Philosophy and the State": [
 [
-"philosophy-7",
+"philosophy-8",
 "Strauss and Cropsey's contributors survey political philosophy from Thucydides and Plato to Dewey and Heidegger, emphasizing the classical question of the best regime."
 ],
 [
-"philosophy-18",
+"philosophy-19",
 "Rousseau argues that the sovereign is the people and that law must express the general will."
 ],
 [
-"philosophy-25",
+"philosophy-26",
 "Maistre holds that constitutions cannot be written by reason and that sovereignty rests on divine providence."
 ],
 [
-"philosophy-30",
+"philosophy-31",
 "Lenin's State and Revolution holds that the bourgeois state must be smashed and will wither away under communism."
 ],
 [
@@ -1086,7 +1102,7 @@ export const TOPICS = {
 "Lowell argues that American democracy depends on an educated public conscience, and judges Lincoln and the Union cause by that standard."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato builds an ideal city of rulers, auxiliaries and producers ruled by philosopher-kings, and traces its decline through timocracy, oligarchy and democracy to tyranny."
 ]
 ],
@@ -1102,15 +1118,15 @@ export const TOPICS = {
 ],
 "Psychology and the Unconscious": [
 [
-"philosophy-29",
+"philosophy-30",
 "Jung holds that the unconscious compensates for one-sided consciousness and guides individuation through dream symbols; the volume adds essays by his collaborators."
 ],
 [
-"philosophy-28",
+"philosophy-29",
 "An introductory guide to Jung's archetypes, collective unconscious, psychological types and individuation."
 ],
 [
-"philosophy-27",
+"philosophy-28",
 "Sabini's selection gathers Jung's view that the psyche is rooted in nature and that modern rootlessness is a psychological wound."
 ],
 [
@@ -1118,7 +1134,7 @@ export const TOPICS = {
 "Lasch adapts the psychoanalytic theory of narcissism (Kernberg, Kohut) to diagnose American culture."
 ],
 [
-"philosophy-39",
+"philosophy-40",
 "Nietzsche analyzes 'bad conscience' as instinct turned inward once humans were enclosed in society."
 ],
 [
@@ -1126,13 +1142,13 @@ export const TOPICS = {
 "Leary's casebook debates Van Wyck Brooks's claim that Twain's creative psyche was wounded by a repressive genteel culture."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato divides the soul into reason, spirit and appetite, and holds that psychological health is reason ruling the other two."
 ]
 ],
 "Renaissance and Humanism": [
 [
-"philosophy-22",
+"philosophy-23",
 "Gilmore presents 1453–1517 as the period in which humanism, printing and new states transformed Europe."
 ],
 [
@@ -1140,7 +1156,7 @@ export const TOPICS = {
 "Boas Hall argues that the Renaissance recovery of ancient science both helped and hindered the rise of modern science."
 ],
 [
-"philosophy-19",
+"philosophy-20",
 "McLuhan argues that print produced the individualist, nationalist and visual mind of the Renaissance."
 ],
 [
@@ -1150,7 +1166,7 @@ export const TOPICS = {
 ],
 "Revolution": [
 [
-"philosophy-30",
+"philosophy-31",
 "Lenin argues that a disciplined vanguard party is needed to carry out proletarian revolution."
 ],
 [
@@ -1162,7 +1178,7 @@ export const TOPICS = {
 "Durant traces how the Revolution's energies were channelled and ultimately subordinated by Napoleon's empire."
 ],
 [
-"philosophy-42",
+"philosophy-43",
 "Trotsky presents Stalin's rise as the bureaucracy's Thermidor, a betrayal of the October Revolution."
 ],
 [
@@ -1174,7 +1190,7 @@ export const TOPICS = {
 "Smith shows Adams as a leading advocate of independence in the Continental Congress, insisting that the Revolution must be grounded in law and balanced government."
 ],
 [
-"philosophy-25",
+"philosophy-26",
 "Maistre argues that the Revolution was a providential chastisement that its own actors did not control."
 ]
 ],
@@ -1194,7 +1210,7 @@ export const TOPICS = {
 ],
 "Science and Religion": [
 [
-"philosophy-32",
+"philosophy-33",
 "Whitehead holds that modern science grew from medieval faith in an ordered, rational nature, and that science and religion must keep revising each other."
 ],
 [
@@ -1202,7 +1218,7 @@ export const TOPICS = {
 "Essays reassess religion's positive role in seventeenth-century natural philosophy."
 ],
 [
-"philosophy-37",
+"philosophy-38",
 "Stace holds that religious truth (the eternal) and naturalistic science (the temporal order) occupy different orders and do not conflict."
 ]
 ],
@@ -1224,11 +1240,11 @@ export const TOPICS = {
 "Clagett traces Greek science and argues that Greek mathematics and natural philosophy were transmitted through late antiquity to the medieval West."
 ],
 [
-"philosophy-32",
+"philosophy-33",
 "Whitehead argues that modern science was built on 'scientific materialism' and the 'fallacy of misplaced concreteness', and calls for an organic philosophy instead."
 ],
 [
-"philosophy-22",
+"philosophy-23",
 "Gilmore relates humanism and the printing press to the changing intellectual world of the fifteenth century."
 ]
 ],
@@ -1246,7 +1262,7 @@ export const TOPICS = {
 "Porte follows how Emerson made himself the spokesman for American self-culture."
 ],
 [
-"philosophy-13",
+"philosophy-14",
 "Evola's ideal is the inwardly sovereign individual who stays detached from the collapsing modern world."
 ]
 ],
@@ -1286,7 +1302,7 @@ export const TOPICS = {
 "Mann links the composer's pact with the devil to Germany's fall into Nazism."
 ],
 [
-"philosophy-39",
+"philosophy-40",
 "Nietzsche traces 'evil' to the ressentiment of slave morality against the strong."
 ],
 [
@@ -1304,19 +1320,23 @@ export const TOPICS = {
 ],
 "Technology and Media": [
 [
-"philosophy-11",
-"Ellul argues that 'technique', the pursuit of absolute efficiency, has become autonomous and governs modern society."
+"philosophy-12",
+"Ellul argues that 'technique', the pursuit of absolute efficiency, has become autonomous and governs modern society.",
+[
+"philosophy-6",
+"Heidegger argues that the essence of modern technology is nothing technological but 'enframing' (Gestell), a way of revealing that orders nature and people alike as 'standing-reserve' on call for use."
+]
 ],
 [
-"philosophy-19",
+"philosophy-20",
 "McLuhan argues that print created 'typographic man', fragmenting perception and favoring the eye."
 ],
 [
-"philosophy-16",
+"philosophy-17",
 "Baudrillard argues that simulations have replaced the real, producing a 'hyperreal' without original."
 ],
 [
-"philosophy-12",
+"philosophy-13",
 "Illich argues that modern medicine becomes counterproductive past a threshold, producing iatrogenic harm."
 ],
 [
@@ -1326,7 +1346,7 @@ export const TOPICS = {
 ],
 "The Absolute and Spirit": [
 [
-"philosophy-10",
+"philosophy-11",
 "Hegel holds that world history is the rational self-unfolding of Spirit (Geist) toward consciousness of its own freedom, so that 'the real is rational' at the scale of history."
 ],
 [
@@ -1334,19 +1354,19 @@ export const TOPICS = {
 "Emerson posits an Over-Soul, a universal mind in which every person participates, so that intuition gives direct access to the divine source behind nature."
 ],
 [
-"philosophy-6",
+"philosophy-7",
 "Spinoza identifies God with the one infinite substance (Deus sive Natura), of which minds and bodies are modes; nothing exists or is conceived outside it."
 ],
 [
-"philosophy-37",
+"philosophy-38",
 "Stace argues that the eternal, as known in mystical experience, is a different order from the temporal and cannot be reached or refuted by naturalistic reasoning about the time-order."
 ],
 [
-"philosophy-31",
+"philosophy-32",
 "Whitehead rejects a static Absolute: God has a primordial nature (the envisagement of all possibilities) and a consequent nature that receives and preserves the world's becoming."
 ],
 [
-"philosophy-49",
+"philosophy-50",
 "Plato's Form of the Good, compared to the sun, is the source of both the being and the intelligibility of all that is known."
 ]
 ],
@@ -1390,11 +1410,11 @@ export const TOPICS = {
 ],
 "The Sacred and the Holy": [
 [
-"philosophy-20",
+"philosophy-21",
 "Otto describes the holy as the 'wholly other', evoking awe, dread and fascination."
 ],
 [
-"philosophy-15",
+"philosophy-16",
 "Eliade argues that sacred space and time are made by hierophanies, manifestations of the sacred."
 ],
 [
@@ -1404,7 +1424,7 @@ export const TOPICS = {
 ],
 "Time and Eternity": [
 [
-"philosophy-37",
+"philosophy-38",
 "Stace holds that the eternal and temporal orders intersect in mystical experience without competing."
 ],
 [
@@ -1420,7 +1440,7 @@ export const TOPICS = {
 "Kierkegaard treats repetition as the forward recovery of a life, and the 'moment' as where the eternal enters time."
 ],
 [
-"philosophy-15",
+"philosophy-16",
 "Eliade argues that religious man periodically returns to the mythical time of origins."
 ],
 [
@@ -1430,7 +1450,7 @@ export const TOPICS = {
 ],
 "Tragedy": [
 [
-"philosophy-47",
+"philosophy-48",
 "Nietzsche holds that tragedy arose from the Dionysian chorus and was killed by Euripides' and Socrates' rational optimism."
 ],
 [
@@ -1504,7 +1524,7 @@ export const TOPICS = {
 ],
 "Utopia and the Ideal Society": [
 [
-"philosophy-49",
+"philosophy-50",
 "Plato's city in words, with common property and family among the guardians and rule by philosophers, is the founding Western blueprint of an ideal society."
 ],
 [

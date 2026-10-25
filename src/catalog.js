@@ -49,6 +49,13 @@ export const shelves = [
           'Heidegger’s magnum opus analyzes Dasein—human existence—as the site where the question of Being is raised. Through being-in-the-world, care, authenticity, and being-toward-death, he offers a fundamental ontology that transformed existentialism and hermeneutics. Though unfinished, it remains one of the most influential books of the twentieth century.',
       },
       {
+        title: 'The Question Concerning Technology and Other Essays',
+        spine: 'Question Conc. Technology',
+        author: 'Martin Heidegger',
+        description:
+          'Five essays from the 1950s, translated with an introduction by William Lovitt. The title essay (1954) argues that the essence of modern technology is nothing technological: it is Gestell, “enframing,” a way of revealing that orders everything, nature and people alike, as standing-reserve on call for use. Heidegger looks to art and poetry for a “saving power.” Also includes The Turning, The Word of Nietzsche: “God Is Dead,” The Age of the World Picture and Science and Reflection.',
+      },
+      {
         title: 'Ethics',
         spine: 'Ethics',
         author: 'Benedict de Spinoza',

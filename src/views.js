@@ -315,7 +315,21 @@ export function mountIdeaMap(openPanel) {
   function layoutLabels() {
     raf = 0
     const tfs0 = Math.max(12, Math.min(20, 18 * (k0 / k) ** 0.3))
-    const placed = themeBox.map(({ t, cx, top }) => { const sx = cx * k + tx, sy = top * k + ty, w = t.textContent.length * tfs0 * 0.78; return [sx - w / 2, sy - tfs0 / 2 - 2, sx + w / 2, sy + tfs0 / 2 + 2] })
+    // theme captions: push neighbours apart on screen so they never crowd each other
+    const GAP = 30
+    const caps = themeBox.map(({ t, cx, top }) => ({ t, sx: cx * k + tx, sy: top * k + ty, w: t.textContent.length * tfs0 * 0.78 }))
+    for (let it = 0; it < 4; it++) {
+      for (let a = 0; a < caps.length; a++) for (let b = a + 1; b < caps.length; b++) {
+        const A = caps[a], B = caps[b]
+        if (Math.abs(A.sy - B.sy) > tfs0 + 4) continue
+        const [L, R] = A.sx <= B.sx ? [A, B] : [B, A]
+        const need = L.w / 2 + R.w / 2 + GAP - (R.sx - L.sx)
+        if (need > 0) { L.sx -= need / 2; R.sx += need / 2 }
+      }
+      caps.forEach((c) => { c.sx = Math.max(4 + c.w / 2, Math.min(W - 4 - c.w / 2, c.sx)) })
+    }
+    caps.forEach((c) => c.t.setAttribute('x', (c.sx - tx) / k))
+    const placed = caps.map(({ sx, sy, w }) => [sx - w / 2, sy - tfs0 / 2 - 2, sx + w / 2, sy + tfs0 / 2 + 2])
     const zoomed = k > k0 * 1.9
     const fs = (n) => (n.kind === 'topic' ? LABEL_TOPIC : LABEL_AUTHOR)
     const cands = N.filter((n) => n === sel || nb.has(n) || n.kind === 'topic' || zoomed)

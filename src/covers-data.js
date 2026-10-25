@@ -81,6 +81,19 @@ export const covers = {
   "philosophy-6": {
     "cover": "covers/philosophy-6.jpg",
     "spine": "covers/philosophy-6.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://openlibrary.org/books/OL7289870M",
+    "coverId": 47954,
+    "match": {
+      "title": "The Question Concerning Technology, and Other Essays",
+      "author": "Martin Heidegger"
+    },
+    "gap": false,
+    "note": "Harper paperback, tr. William Lovitt (ISBN 9780061319693)"
+  },
+  "philosophy-7": {
+    "cover": "covers/philosophy-7.jpg",
+    "spine": "covers/philosophy-7.jpg",
     "source": "User-provided edition cover",
     "sourceUrl": null,
     "coverId": null,
@@ -91,9 +104,9 @@ export const covers = {
     "gap": false,
     "note": "Yellow geometric jacket; Elwes association OK on cover"
   },
-  "philosophy-7": {
-    "cover": "covers/philosophy-7.jpg",
-    "spine": "covers/philosophy-7.jpg",
+  "philosophy-8": {
+    "cover": "covers/philosophy-8.jpg",
+    "spine": "covers/philosophy-8.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL509281W",
     "coverId": 8465610,
@@ -104,9 +117,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-8": {
-    "cover": "covers/philosophy-8.jpg",
-    "spine": "covers/philosophy-8.jpg",
+  "philosophy-9": {
+    "cover": "covers/philosophy-9.jpg",
+    "spine": "covers/philosophy-9.jpg",
     "source": "Open Library (Penguin Classics ISBN 9780140446197)",
     "sourceUrl": "https://covers.openlibrary.org/b/isbn/9780140446197-L.jpg",
     "coverId": 14368419,
@@ -117,9 +130,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-9": {
-    "cover": "covers/philosophy-9.jpg",
-    "spine": "covers/philosophy-9.jpg",
+  "philosophy-10": {
+    "cover": "covers/philosophy-10.jpg",
+    "spine": "covers/philosophy-10.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL35308721W",
     "coverId": 15071611,
@@ -130,9 +143,9 @@ export const covers = {
     "gap": true,
     "note": "Closest Open Library match: “The Student's Oxford Aristotle, Vol. V. Ethics Ethica Nicomachea.” — Aristotle; W.D. Ross (Ed.)"
   },
-  "philosophy-10": {
-    "cover": "covers/philosophy-10.jpg",
-    "spine": "covers/philosophy-10.jpg",
+  "philosophy-11": {
+    "cover": "covers/philosophy-11.jpg",
+    "spine": "covers/philosophy-11.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL678559W",
     "coverId": 2196026,
@@ -143,9 +156,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-11": {
-    "cover": "covers/philosophy-11.jpg",
-    "spine": "covers/philosophy-11.jpg",
+  "philosophy-12": {
+    "cover": "covers/philosophy-12.jpg",
+    "spine": "covers/philosophy-12.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL164882W",
     "coverId": 254052,
@@ -156,9 +169,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-12": {
-    "cover": "covers/philosophy-12.jpg",
-    "spine": "covers/philosophy-12.jpg",
+  "philosophy-13": {
+    "cover": "covers/philosophy-13.jpg",
+    "spine": "covers/philosophy-13.jpg",
     "source": "Internet Archive",
     "sourceUrl": "https://archive.org/details/limitstomedicine0000illi",
     "coverId": null,
@@ -169,9 +182,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-13": {
-    "cover": "covers/philosophy-13.jpg",
-    "spine": "covers/philosophy-13.jpg",
+  "philosophy-14": {
+    "cover": "covers/philosophy-14.jpg",
+    "spine": "covers/philosophy-14.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL717015W",
     "coverId": 690993,
@@ -182,9 +195,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-14": {
-    "cover": "covers/philosophy-14.jpg",
-    "spine": "covers/philosophy-14.jpg",
+  "philosophy-15": {
+    "cover": "covers/philosophy-15.jpg",
+    "spine": "covers/philosophy-15.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL717014W",
     "coverId": 691266,
@@ -195,9 +208,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-15": {
-    "cover": "covers/philosophy-15.jpg",
-    "spine": "covers/philosophy-15.jpg",
+  "philosophy-16": {
+    "cover": "covers/philosophy-16.jpg",
+    "spine": "covers/philosophy-16.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL748585W",
     "coverId": 116494,
@@ -208,9 +221,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-16": {
-    "cover": "covers/philosophy-16.jpg",
-    "spine": "covers/philosophy-16.jpg",
+  "philosophy-17": {
+    "cover": "covers/philosophy-17.jpg",
+    "spine": "covers/philosophy-17.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL790308W",
     "coverId": 307858,
@@ -221,9 +234,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-17": {
-    "cover": "covers/philosophy-17.jpg",
-    "spine": "covers/philosophy-17.jpg",
+  "philosophy-18": {
+    "cover": "covers/philosophy-18.jpg",
+    "spine": "covers/philosophy-18.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1410381W",
     "coverId": 5415771,
@@ -234,9 +247,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-18": {
-    "cover": "covers/philosophy-18.jpg",
-    "spine": "covers/philosophy-18.jpg",
+  "philosophy-19": {
+    "cover": "covers/philosophy-19.jpg",
+    "spine": "covers/philosophy-19.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL80731W",
     "coverId": 2292601,
@@ -247,9 +260,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-19": {
-    "cover": "covers/philosophy-19.jpg",
-    "spine": "covers/philosophy-19.jpg",
+  "philosophy-20": {
+    "cover": "covers/philosophy-20.jpg",
+    "spine": "covers/philosophy-20.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL871786W",
     "coverId": 9803626,
@@ -260,9 +273,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-20": {
-    "cover": "covers/philosophy-20.jpg",
-    "spine": "covers/philosophy-20.jpg",
+  "philosophy-21": {
+    "cover": "covers/philosophy-21.jpg",
+    "spine": "covers/philosophy-21.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL8520902W",
     "coverId": 1858027,
@@ -273,9 +286,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-21": {
-    "cover": "covers/philosophy-21.jpg",
-    "spine": "covers/philosophy-21.jpg",
+  "philosophy-22": {
+    "cover": "covers/philosophy-22.jpg",
+    "spine": "covers/philosophy-22.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL24626980W",
     "coverId": 11303046,
@@ -286,9 +299,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-22": {
-    "cover": "covers/philosophy-22.jpg",
-    "spine": "covers/philosophy-22.jpg",
+  "philosophy-23": {
+    "cover": "covers/philosophy-23.jpg",
+    "spine": "covers/philosophy-23.jpg",
     "source": "User-provided edition cover",
     "sourceUrl": null,
     "coverId": null,
@@ -299,9 +312,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-23": {
-    "cover": "covers/philosophy-23.jpg",
-    "spine": "covers/philosophy-23.jpg",
+  "philosophy-24": {
+    "cover": "covers/philosophy-24.jpg",
+    "spine": "covers/philosophy-24.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL24395406W",
     "coverId": 10933013,
@@ -312,9 +325,9 @@ export const covers = {
     "gap": true,
     "note": "Closest Open Library match: “American Lyceum, With The Proceedings Of The Conference Held In N.y., May 4, 1831, To Organize The National Department Of The Institution” — American Lyceum"
   },
-  "philosophy-24": {
-    "cover": "covers/philosophy-24.jpg",
-    "spine": "covers/philosophy-24.jpg",
+  "philosophy-25": {
+    "cover": "covers/philosophy-25.jpg",
+    "spine": "covers/philosophy-25.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL71744W",
     "coverId": 854951,
@@ -325,9 +338,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-25": {
-    "cover": "covers/philosophy-25.jpg",
-    "spine": "covers/philosophy-25.jpg",
+  "philosophy-26": {
+    "cover": "covers/philosophy-26.jpg",
+    "spine": "covers/philosophy-26.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL2203892W",
     "coverId": 12755445,
@@ -338,9 +351,9 @@ export const covers = {
     "gap": false,
     "note": "Closest de Maistre edition cover: “The works of Joseph de Maistre”"
   },
-  "philosophy-26": {
-    "cover": "covers/philosophy-26.jpg",
-    "spine": "covers/philosophy-26.jpg",
+  "philosophy-27": {
+    "cover": "covers/philosophy-27.jpg",
+    "spine": "covers/philosophy-27.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL19388571W",
     "coverId": 12179582,
@@ -351,9 +364,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-27": {
-    "cover": "covers/philosophy-27.jpg",
-    "spine": "covers/philosophy-27.jpg",
+  "philosophy-28": {
+    "cover": "covers/philosophy-28.jpg",
+    "spine": "covers/philosophy-28.jpg",
     "source": "User-provided edition cover",
     "sourceUrl": null,
     "coverId": null,
@@ -364,15 +377,15 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-28": {
+  "philosophy-29": {
     "cover": null,
     "source": null,
     "match": null,
     "gap": true
   },
-  "philosophy-29": {
-    "cover": "covers/philosophy-29.jpg",
-    "spine": "covers/philosophy-29.jpg",
+  "philosophy-30": {
+    "cover": "covers/philosophy-30.jpg",
+    "spine": "covers/philosophy-30.jpg",
     "source": "User-provided edition cover",
     "sourceUrl": null,
     "coverId": null,
@@ -383,9 +396,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-30": {
-    "cover": "covers/philosophy-30.jpg",
-    "spine": "covers/philosophy-30.jpg",
+  "philosophy-31": {
+    "cover": "covers/philosophy-31.jpg",
+    "spine": "covers/philosophy-31.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL301436W",
     "coverId": 310248,
@@ -396,9 +409,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-31": {
-    "cover": "covers/philosophy-31.jpg",
-    "spine": "covers/philosophy-31.jpg",
+  "philosophy-32": {
+    "cover": "covers/philosophy-32.jpg",
+    "spine": "covers/philosophy-32.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1133700W",
     "coverId": 4421829,
@@ -409,9 +422,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-32": {
-    "cover": "covers/philosophy-32.jpg",
-    "spine": "covers/philosophy-32.jpg",
+  "philosophy-33": {
+    "cover": "covers/philosophy-33.jpg",
+    "spine": "covers/philosophy-33.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL1133704W",
     "coverId": 426593,
@@ -422,9 +435,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-33": {
-    "cover": "covers/philosophy-33.jpg",
-    "spine": "covers/philosophy-33.jpg",
+  "philosophy-34": {
+    "cover": "covers/philosophy-34.jpg",
+    "spine": "covers/philosophy-34.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL4979604W",
     "coverId": 4894645,
@@ -435,9 +448,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-34": {
-    "cover": "covers/philosophy-34.jpg",
-    "spine": "covers/philosophy-34.jpg",
+  "philosophy-35": {
+    "cover": "covers/philosophy-35.jpg",
+    "spine": "covers/philosophy-35.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL26444312W",
     "coverId": 12470133,
@@ -448,9 +461,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-35": {
-    "cover": "covers/philosophy-35.jpg",
-    "spine": "covers/philosophy-35.jpg",
+  "philosophy-36": {
+    "cover": "covers/philosophy-36.jpg",
+    "spine": "covers/philosophy-36.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL20771063W",
     "coverId": 9695104,
@@ -461,9 +474,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-36": {
-    "cover": "covers/philosophy-36.jpg",
-    "spine": "covers/philosophy-36.jpg",
+  "philosophy-37": {
+    "cover": "covers/philosophy-37.jpg",
+    "spine": "covers/philosophy-37.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL16072302W",
     "coverId": 6882152,
@@ -474,9 +487,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-37": {
-    "cover": "covers/philosophy-37.jpg",
-    "spine": "covers/philosophy-37.jpg",
+  "philosophy-38": {
+    "cover": "covers/philosophy-38.jpg",
+    "spine": "covers/philosophy-38.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL5271649W",
     "coverId": 9816646,
@@ -487,9 +500,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-38": {
-    "cover": "covers/philosophy-38.jpg",
-    "spine": "covers/philosophy-38.jpg",
+  "philosophy-39": {
+    "cover": "covers/philosophy-39.jpg",
+    "spine": "covers/philosophy-39.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL697931W",
     "coverId": 126066,
@@ -500,9 +513,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-39": {
-    "cover": "covers/philosophy-39.jpg",
-    "spine": "covers/philosophy-39.jpg",
+  "philosophy-40": {
+    "cover": "covers/philosophy-40.jpg",
+    "spine": "covers/philosophy-40.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL15326236W",
     "coverId": 15157779,
@@ -513,9 +526,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-40": {
-    "cover": "covers/philosophy-40.jpg",
-    "spine": "covers/philosophy-40.jpg",
+  "philosophy-41": {
+    "cover": "covers/philosophy-41.jpg",
+    "spine": "covers/philosophy-41.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL25382550W",
     "coverId": 12399177,
@@ -526,9 +539,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-41": {
-    "cover": "covers/philosophy-41.jpg",
-    "spine": "covers/philosophy-41.jpg",
+  "philosophy-42": {
+    "cover": "covers/philosophy-42.jpg",
+    "spine": "covers/philosophy-42.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL17732W",
     "coverId": 12707846,
@@ -539,9 +552,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-42": {
-    "cover": "covers/philosophy-42.jpg",
-    "spine": "covers/philosophy-42.jpg",
+  "philosophy-43": {
+    "cover": "covers/philosophy-43.jpg",
+    "spine": "covers/philosophy-43.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL539172W",
     "coverId": 13799522,
@@ -1527,9 +1540,9 @@ export const covers = {
     "gap": false,
     "note": "Library of America Emerson: Essays and Lectures"
   },
-  "philosophy-43": {
-    "cover": "covers/philosophy-43.jpg",
-    "spine": "covers/philosophy-43.jpg",
+  "philosophy-44": {
+    "cover": "covers/philosophy-44.jpg",
+    "spine": "covers/philosophy-44.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL716850W",
     "coverId": 14368453,
@@ -1540,9 +1553,9 @@ export const covers = {
     "gap": false,
     "note": null
   },
-  "philosophy-44": {
-    "cover": "covers/philosophy-44.jpg",
-    "spine": "covers/philosophy-44.jpg",
+  "philosophy-45": {
+    "cover": "covers/philosophy-45.jpg",
+    "spine": "covers/philosophy-45.jpg",
     "source": "Open Library (Zero Books edition)",
     "sourceUrl": "https://covers.openlibrary.org/b/id/6707037-L.jpg",
     "coverId": 6707037,
@@ -1816,9 +1829,9 @@ export const covers = {
     "gap": false,
     "note": "Cropped from the owner’s photo of this copy"
   },
-  "philosophy-45": {
-    "cover": "covers/philosophy-45.jpg",
-    "spine": "covers/philosophy-45.jpg",
+  "philosophy-46": {
+    "cover": "covers/philosophy-46.jpg",
+    "spine": "covers/philosophy-46.jpg",
     "source": "AbeBooks",
     "sourceUrl": "https://pictures.abebooks.com/isbn/9780136638810-us.jpg",
     "coverId": null,
@@ -1829,9 +1842,9 @@ export const covers = {
     "gap": false,
     "note": "Prentice Hall second edition"
   },
-  "philosophy-46": {
-    "cover": "covers/philosophy-46.jpg",
-    "spine": "covers/philosophy-46.jpg",
+  "philosophy-47": {
+    "cover": "covers/philosophy-47.jpg",
+    "spine": "covers/philosophy-47.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL11425726W",
     "coverId": null,
@@ -1842,9 +1855,9 @@ export const covers = {
     "gap": false,
     "note": "1992 HarperCollins hardcover jacket (matches owner’s spine)"
   },
-  "philosophy-47": {
-    "cover": "covers/philosophy-47.jpg",
-    "spine": "covers/philosophy-47.jpg",
+  "philosophy-48": {
+    "cover": "covers/philosophy-48.jpg",
+    "spine": "covers/philosophy-48.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL98152W",
     "coverId": 10192681,
@@ -1855,9 +1868,9 @@ export const covers = {
     "gap": false,
     "note": "Vintage Books paperback, Walter Kaufmann translation (ISBN 9780394703695)"
   },
-  "philosophy-50": {
-    "cover": "covers/philosophy-50.jpg",
-    "spine": "covers/philosophy-50.jpg",
+  "philosophy-51": {
+    "cover": "covers/philosophy-51.jpg",
+    "spine": "covers/philosophy-51.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/isbn/9780801492655",
     "coverId": 565453,
@@ -1868,9 +1881,9 @@ export const covers = {
     "gap": false,
     "note": "Cornell University Press, tr. Bergin & Fisch, unabridged 3rd ed. (ISBN 9780801492655)"
   },
-  "philosophy-49": {
-    "cover": "covers/philosophy-49.jpg",
-    "spine": "covers/philosophy-49.jpg",
+  "philosophy-50": {
+    "cover": "covers/philosophy-50.jpg",
+    "spine": "covers/philosophy-50.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/isbn/9780140455113",
     "coverId": 2324117,
@@ -1881,9 +1894,9 @@ export const covers = {
     "gap": false,
     "note": "Penguin Classics, tr. Desmond Lee (ISBN 9780140455113)"
   },
-  "philosophy-48": {
-    "cover": "covers/philosophy-48.jpg",
-    "spine": "covers/philosophy-48.jpg",
+  "philosophy-49": {
+    "cover": "covers/philosophy-49.jpg",
+    "spine": "covers/philosophy-49.jpg",
     "source": "Open Library",
     "sourceUrl": "https://openlibrary.org/works/OL15381368W",
     "coverId": 314265,

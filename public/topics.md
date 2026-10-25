@@ -1,6 +1,6 @@
 # Topic Index of Garrett's Library
 
-56 topics, 148 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
+56 topics, 149 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
 
 ## Aesthetics and Art
 
@@ -66,6 +66,7 @@
 - *Logic*, Martin Heidegger: In this lecture course Heidegger argues that logic must be grounded in a questioning of language and the human being rather than treated as formal calculation.
 - *Process and Reality, corrected edition*, Alfred North Whitehead: Whitehead replaces enduring substances with 'actual occasions' of experience that become and perish, making process the basic reality.
 - *The Metaphysics*, Aristotle (tr. Hugh Lawson-Tancred, Penguin Classics): Aristotle defines first philosophy as the study of being qua being and argues that substance (ousia), above all form, is the primary sense of being, culminating in the unmoved mover.
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: Heidegger treats technology as a mode of revealing, a destining of Being, and reads Nietzsche's 'God is dead' as the completion of Western metaphysics.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato holds that the Forms are fully real, while sensible things are only images of them, as the shadows in the cave are images of objects.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein holds that the world is the totality of facts, not things, and that logical form is shared by world and language.
 
@@ -142,6 +143,7 @@
 - *Simulacra and Simulation*, Jean Baudrillard: Baudrillard argues that media and consumer society have dissolved the distinction between reality and its representations.
 - *The Culture of Narcissism: American Life in an Age of Diminishing Expectations*, Christopher Lasch: Lasch argues that modern capitalism and the therapeutic state erode the family and inner life, producing dependent, anxious narcissists.
 - *The Decline of the West, Vol. II*, Oswald Spengler: Spengler sees the modern West as a late 'civilization' ruled by money and mass cities, headed toward Caesarism.
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: Heidegger reads the modern age as the 'age of the world picture', in which the world becomes an object represented and mastered by a subject; enframing is its supreme danger.
 - *The Sacred and the Profane*, Mircea Eliade: Eliade argues that modern secular man inhabits a desacralized world but still carries camouflaged religious behaviour.
 - *The Technological Society*, Jacques Ellul: Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands.
 
@@ -250,6 +252,7 @@
 - *Meta-Meditations*, Sesonske and Fleming: Sesonske and Fleming's contributors reexamine Descartes' method of doubt, the cogito and his proofs as live problems of certainty and self-knowledge.
 - *On Experience, Nature, and Freedom*, John Dewey: Dewey treats knowing as active inquiry resolving problematic situations, rather than a spectator copying reality.
 - *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Against Descartes, Vico holds that we can truly know only what we have made (verum ipsum factum), so the civil world, made by humans, is more knowable than nature.
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: In 'Science and Reflection' and 'The Age of the World Picture' Heidegger argues that modern science is 'the theory of the real', securing beings in advance as calculable objects.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato distinguishes knowledge of the unchanging Forms from opinion about the changing sensible world, through the divided line and the allegory of the cave.
 - *Tractatus Logico-Philosophicus*, Ludwig Wittgenstein: Wittgenstein holds that what can be said can be said clearly and that whereof one cannot speak one must be silent.
 
@@ -354,6 +357,7 @@
 - *The New Pocket Anthology of American Verse*, Edited by Oscar Williams: Oscar Williams's pocket anthology spans American verse from colonial times to the mid-twentieth century.
 - *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Vico's 'poetic wisdom' holds that the first humans were poets who spoke in images; his 'Discovery of the True Homer' treats Homer as the collective voice of the Greek people.
 - *The Poetical Works of John Milton, Vol. II (London, 1808)*, John Milton: An 1808 edition of Milton's poetry, including his shorter poems.
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: Heidegger recalls poiesis, bringing-forth, and quotes Hölderlin ('where danger is, grows the saving power also') to find in art a possible counter to enframing.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato argues that imitative poetry is at a third remove from truth and feeds the passions, so it is banished from the ideal city except for hymns to gods and praise of good men.
 - *Whatever Is Moving*, Howard Moss: Moss's essays practice close, appreciative reading of modern poets.
 
@@ -451,6 +455,7 @@
 - *Limits to Medicine*, Ivan Illich: Illich argues that modern medicine becomes counterproductive past a threshold, producing iatrogenic harm.
 - *Simulacra and Simulation*, Jean Baudrillard: Baudrillard argues that simulations have replaced the real, producing a 'hyperreal' without original.
 - *The Gutenberg Galaxy*, Marshall McLuhan: McLuhan argues that print created 'typographic man', fragmenting perception and favoring the eye.
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: Heidegger argues that the essence of modern technology is nothing technological but 'enframing' (Gestell), a way of revealing that orders nature and people alike as 'standing-reserve' on call for use.
 - *The Technological Society*, Jacques Ellul: Ellul argues that 'technique', the pursuit of absolute efficiency, has become autonomous and governs modern society.
 
 ## The Absolute and Spirit
@@ -649,6 +654,7 @@
 - *The Oxford Dictionary of Classical Myth and Religion*, Edited by Simon Price and Emily Kearns: Myth and Symbol, The Sacred and the Holy
 - *The Philosophy of History*, G. W. F. Hegel (tr. J. Sibree): Civilization, Rise and Decline, Freedom and Liberty, Philosophy of History, The Absolute and Spirit
 - *The Poetical Works of John Milton, Vol. II (London, 1808)*, John Milton: Milton, Poetry and Poetics
+- *The Question Concerning Technology and Other Essays*, Martin Heidegger: Being and Ontology, Critique of Modernity, Knowledge and Reason, Poetry and Poetics, Technology and Media
 - *The Rebel*, Albert Camus: Ethics and Virtue, Existence and Authenticity, Revolution
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Aesthetics and Art, Ancient Greece and Rome, Being and Ontology, Death and Mortality, Education, Ethics and Virtue, Justice, Knowledge and Reason, Myth and Symbol, Poetry and Poetics, Political Philosophy and the State, Psychology and the Unconscious, The Absolute and Spirit, Utopia and the Ideal Society
 - *The Romantic Rebellion*, Kenneth Clark: Aesthetics and Art, Transcendentalism and Romanticism
