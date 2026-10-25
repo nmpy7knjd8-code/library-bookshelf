@@ -2080,4 +2080,4 @@ body.drawer-open { overflow: hidden; }
 #idea-map.zoomed .m-theme-label { opacity: .35; }
 #idea-map.has-sel .m-theme-label { opacity: .2; }
 .map-legend .lg-author { background: #9fb4d6; }
-@media (max-width: 720px) { .map-theme { padding: .28rem .6rem; font-size: .74rem; } .map-frame { height: 74vh; } }
+@media (max-width: 720px) { .map-theme { padding: .28rem .6rem; font-size: .74rem; } .map-frame { height: 74vh; height: 74svh; } }

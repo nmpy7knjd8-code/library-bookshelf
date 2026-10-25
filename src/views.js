@@ -356,20 +356,38 @@ export function mountIdeaMap(openPanel) {
   const toSvg = (cx, cy) => { const r = svg.getBoundingClientRect(); return [((cx - r.left) / r.width) * W, ((cy - r.top) / r.height) * H] }
   const zoomAt = (px, py, f) => { const nk = Math.max(k0 * 0.6, Math.min(k0 * 12, k * f)); tx = px - ((px - tx) * nk) / k; ty = py - ((py - ty) * nk) / k; k = nk; apply() }
   svg.addEventListener('wheel', (e) => { e.preventDefault(); cancelAnimationFrame(anim); const [px, py] = toSvg(e.clientX, e.clientY); zoomAt(px, py, Math.exp(-e.deltaY * 0.0015)) }, { passive: false })
-  svg.addEventListener('pointerdown', (e) => { cancelAnimationFrame(anim); pts.set(e.pointerId, [e.clientX, e.clientY]); last = [e.clientX, e.clientY]; moved = 0 })
+  // gestures: re-baseline whenever the number of fingers changes so nothing jumps
+  const rebase = () => {
+    const v = [...pts.values()]
+    if (v.length >= 2) { const [a, b] = v; pinch = { d: Math.hypot(a[0] - b[0], a[1] - b[1]), mid: toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2) }; last = null }
+    else { pinch = null; last = v[0] || null }
+  }
+  svg.addEventListener('pointerdown', (e) => {
+    cancelAnimationFrame(anim)
+    if (pts.size === 0) moved = 0
+    pts.set(e.pointerId, [e.clientX, e.clientY]); rebase()
+    svg.setPointerCapture?.(e.pointerId)
+  })
   svg.addEventListener('pointermove', (e) => {
     if (!pts.has(e.pointerId)) return
     pts.set(e.pointerId, [e.clientX, e.clientY])
-    if (pts.size === 2) {
-      const [a, b] = [...pts.values()]; const d = Math.hypot(a[0] - b[0], a[1] - b[1]); const [px, py] = toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
-      if (pinch) zoomAt(px, py, d / pinch); pinch = d; moved = 99; return
+    if (pts.size >= 2 && pinch) {
+      const [a, b] = [...pts.values()]
+      const d = Math.hypot(a[0] - b[0], a[1] - b[1]); const mid = toSvg((a[0] + b[0]) / 2, (a[1] + b[1]) / 2)
+      tx += mid[0] - pinch.mid[0]; ty += mid[1] - pinch.mid[1] // two-finger pan
+      if (pinch.d > 0) zoomAt(mid[0], mid[1], d / pinch.d); else apply()
+      pinch = { d, mid }; moved = 99; return
     }
+    if (!last) return
     const r = svg.getBoundingClientRect(); const dx = ((e.clientX - last[0]) / r.width) * W, dy = ((e.clientY - last[1]) / r.height) * H
-    moved += Math.abs(dx) + Math.abs(dy); if (moved > 4) { tx += dx; ty += dy; apply() }
     last = [e.clientX, e.clientY]
+    moved += Math.abs(dx) + Math.abs(dy); if (moved > 4) { tx += dx; ty += dy; apply() }
   })
-  const end = (e) => { pts.delete(e.pointerId); if (pts.size < 2) pinch = null }
-  svg.addEventListener('pointerup', end); svg.addEventListener('pointercancel', end)
+  // stop Safari's own page pinch-zoom from fighting the map's zoom
+  for (const t of ['gesturestart', 'gesturechange', 'gestureend']) svg.addEventListener(t, (e) => e.preventDefault())
+  svg.addEventListener('touchmove', (e) => { if (e.touches.length > 1) e.preventDefault() }, { passive: false })
+  const end = (e) => { pts.delete(e.pointerId); rebase() }
+  svg.addEventListener('pointerup', end); svg.addEventListener('pointercancel', end); svg.addEventListener('lostpointercapture', end)
   svg.addEventListener('click', () => { if (moved < 5) select(null) })
   // theme chips zoom to a cluster
   document.querySelector('.map-themes')?.addEventListener('click', (e) => {
