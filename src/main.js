@@ -740,8 +740,7 @@ function renderAuthorsView() {
           (a, i) => `
         <section class="covers-section" aria-labelledby="author-${i}">
           <div class="covers-heading">
-            <h2 id="author-${i}">${escapeHtml(a.name)}</h2>
-            <p>${a.books.length}</p>
+            <h2 id="author-${i}">${escapeHtml(a.name)} <span style="opacity:0.55;font-weight:500">(${a.books.length})</span></h2>
           </div>
           <div class="covers-grid" role="list" aria-label="Books by ${escapeAttr(a.name)}">
             ${a.books.map(({ shelf, book, index }) => renderCoverCard(shelf, book, index)).join('')}
