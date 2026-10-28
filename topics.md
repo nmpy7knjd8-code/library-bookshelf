@@ -1,6 +1,6 @@
 # Topic Index of Garrett's Library
 
-56 topics, 149 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
+56 topics, 150 books. Live: https://nmpy7knjd8-code.github.io/library-bookshelf/topics.html
 
 ## Aesthetics and Art
 
@@ -21,6 +21,7 @@
 - *Light in August*, William Faulkner: Faulkner shows Southern racial categories as murderous fictions through Joe Christmas, who does not know whether he is Black or white.
 - *The American Lyceum*, Author uncertain: A study of the nineteenth-century lyceum lecture movement as democratic adult education (edition and author not confirmed).
 - *The Culture of Narcissism: American Life in an Age of Diminishing Expectations*, Christopher Lasch: Lasch argues that late-twentieth-century America cultivates a narcissistic personality (dependent, anxious, hungry for admiration) produced by bureaucracy, therapy culture, consumerism and the decline of authority and the family.
+- *The New Radicalism in America, 1889–1963: The Intellectual as a Social Type*, Christopher Lasch: Lasch argues that from the 1890s American intellectuals became a distinct social type, alienated from middle-class culture and turning politics into a vehicle for cultural rebellion and self-discovery (Jane Addams, Randolph Bourne, Mabel Dodge, Lincoln Steffens).
 
 ## American History and Founding
 
@@ -123,6 +124,7 @@
 - *Impressions of Lenin*, Angelica Balabanoff: Balabanoff, a disillusioned former colleague, describes how Lenin's devotion to revolution led him to accept any means.
 - *Stalin*, Leon Trotsky: Trotsky indicts Stalin as the gravedigger of the revolution.
 - *The Essential Works of Lenin*, V. I. Lenin: Lenin argues that imperialism is capitalism's highest stage and that a vanguard party must lead the revolution to a dictatorship of the proletariat.
+- *The New Radicalism in America, 1889–1963: The Intellectual as a Social Type*, Christopher Lasch: Lasch traces the intellectuals' romance with the Soviet experiment (Steffens) and the later Cold War anti-communism of liberals, both read as symptoms of the same estranged class.
 
 ## Consciousness and Mind
 
@@ -143,6 +145,7 @@
 - *Simulacra and Simulation*, Jean Baudrillard: Baudrillard argues that media and consumer society have dissolved the distinction between reality and its representations.
 - *The Culture of Narcissism: American Life in an Age of Diminishing Expectations*, Christopher Lasch: Lasch argues that modern capitalism and the therapeutic state erode the family and inner life, producing dependent, anxious narcissists.
 - *The Decline of the West, Vol. II*, Oswald Spengler: Spengler sees the modern West as a late 'civilization' ruled by money and mass cities, headed toward Caesarism.
+- *The New Radicalism in America, 1889–1963: The Intellectual as a Social Type*, Christopher Lasch: Lasch reads the 'new radicalism' as a revolt against the genteel, domestic middle-class culture of the late nineteenth century, an early chapter in his critique of therapeutic modern liberalism.
 - *The Question Concerning Technology and Other Essays*, Martin Heidegger: Heidegger reads the modern age as the 'age of the world picture', in which the world becomes an object represented and mastered by a subject; enframing is its supreme danger.
 - *The Sacred and the Profane*, Mircea Eliade: Eliade argues that modern secular man inhabits a desacralized world but still carries camouflaged religious behaviour.
 - *The Technological Society*, Jacques Ellul: Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands.
@@ -368,6 +371,7 @@
 - *Major Works, Vol. I*, Joseph de Maistre: Maistre holds that constitutions cannot be written by reason and that sovereignty rests on divine providence.
 - *Political Essays*, James Russell Lowell: Lowell argues that American democracy depends on an educated public conscience, and judges Lincoln and the Union cause by that standard.
 - *The Essential Works of Lenin*, V. I. Lenin: Lenin's State and Revolution holds that the bourgeois state must be smashed and will wither away under communism.
+- *The New Radicalism in America, 1889–1963: The Intellectual as a Social Type*, Christopher Lasch: Lasch criticizes progressive and liberal intellectuals who confused social reform with cultural and personal liberation, and who sought influence through the managerial state rather than independent criticism.
 - *The Republic*, Plato (tr. Desmond Lee, Penguin Classics): Plato builds an ideal city of rulers, auxiliaries and producers ruled by philosopher-kings, and traces its decline through timocracy, oligarchy and democracy to tyranny.
 - *The Social Contract*, Jean-Jacques Rousseau: Rousseau argues that the sovereign is the people and that law must express the general will.
 
@@ -648,6 +652,7 @@
 - *The Metaphysics*, Aristotle (tr. Hugh Lawson-Tancred, Penguin Classics): Being and Ontology, God and the Divine
 - *The Name of the Rose*, Umberto Eco: Christianity and the Church, The Novel and Modern Fiction
 - *The New Pocket Anthology of American Verse*, Edited by Oscar Williams: Poetry and Poetics
+- *The New Radicalism in America, 1889–1963: The Intellectual as a Social Type*, Christopher Lasch: American Culture and Society, Communism and Marxism, Critique of Modernity, Political Philosophy and the State
 - *The New Science*, Giambattista Vico (tr. Thomas Goddard Bergin and Max Harold Fisch): Ancient Greece and Rome, Civilization, Rise and Decline, Knowledge and Reason, Language and Meaning, Myth and Symbol, Philosophy of History, Poetry and Poetics
 - *The Origins of Modern Science*, Herbert Butterfield: Science and the Scientific Revolution
 - *The Outline of History*, H. G. Wells: Civilization, Rise and Decline, Philosophy of History
