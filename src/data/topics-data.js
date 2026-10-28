@@ -58,6 +58,10 @@ export const TOPICS = {
 [
 "literature-27",
 "Faulkner shows Southern racial categories as murderous fictions through Joe Christmas, who does not know whether he is Black or white."
+],
+[
+"history-28",
+"Lasch argues that from the 1890s American intellectuals became a distinct social type, alienated from middle-class culture and turning politics into a vehicle for cultural rebellion and self-discovery (Jane Addams, Randolph Bourne, Mabel Dodge, Lincoln Steffens)."
 ]
 ],
 "American History and Founding": [
@@ -177,11 +181,11 @@ export const TOPICS = {
 "Being and Ontology": [
 [
 "philosophy-5",
-"Heidegger reopens the 'question of the meaning of Being' by analyzing Dasein, the being for whom its own being is an issue, and argues that Being must be understood through temporality.",
+"Heidegger reopens the 'question of the meaning of Being' by analyzing Dasein, the being for whom its own being is an issue, and argues that Being must be understood through temporality."
+],
 [
 "philosophy-6",
 "Heidegger treats technology as a mode of revealing, a destining of Being, and reads Nietzsche's 'God is dead' as the completion of Western metaphysics."
-]
 ],
 [
 "philosophy-4",
@@ -366,6 +370,10 @@ export const TOPICS = {
 [
 "philosophy-45",
 "Fisher argues that 'capitalist realism' makes it seem impossible to imagine an alternative to capitalism."
+],
+[
+"history-28",
+"Lasch traces the intellectuals' romance with the Soviet experiment (Steffens) and the later Cold War anti-communism of liberals, both read as symptoms of the same estranged class."
 ]
 ],
 "Consciousness and Mind": [
@@ -401,11 +409,11 @@ export const TOPICS = {
 "Critique of Modernity": [
 [
 "philosophy-12",
-"Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands.",
+"Ellul holds that modern societies serve technique rather than human ends, and that politics and economics merely adapt to its demands."
+],
 [
 "philosophy-6",
 "Heidegger reads the modern age as the 'age of the world picture', in which the world becomes an object represented and mastered by a subject; enframing is its supreme danger."
-]
 ],
 [
 "philosophy-15",
@@ -438,6 +446,10 @@ export const TOPICS = {
 [
 "philosophy-22",
 "Spengler sees the modern West as a late 'civilization' ruled by money and mass cities, headed toward Caesarism."
+],
+[
+"history-28",
+"Lasch reads the 'new radicalism' as a revolt against the genteel, domestic middle-class culture of the late nineteenth century, an early chapter in his critique of therapeutic modern liberalism."
 ]
 ],
 "Death and Mortality": [
@@ -717,11 +729,11 @@ export const TOPICS = {
 "Knowledge and Reason": [
 [
 "philosophy-2",
-"Kant argues that synthetic a priori knowledge is possible because space, time and the categories structure experience, but that reason overreaches into antinomies when it goes beyond experience.",
+"Kant argues that synthetic a priori knowledge is possible because space, time and the categories structure experience, but that reason overreaches into antinomies when it goes beyond experience."
+],
 [
 "philosophy-6",
 "In 'Science and Reflection' and 'The Age of the World Picture' Heidegger argues that modern science is 'the theory of the real', securing beings in advance as calculable objects."
-]
 ],
 [
 "philosophy-37",
@@ -1021,11 +1033,11 @@ export const TOPICS = {
 "Poetry and Poetics": [
 [
 "literature-15",
-"Practising poets reflect on how poems are made and why they matter (editor identification not confirmed).",
+"Practising poets reflect on how poems are made and why they matter (editor identification not confirmed)."
+],
 [
 "philosophy-6",
 "Heidegger recalls poiesis, bringing-forth, and quotes Hölderlin ('where danger is, grows the saving power also') to find in art a possible counter to enframing."
-]
 ],
 [
 "literature-16",
@@ -1104,6 +1116,10 @@ export const TOPICS = {
 [
 "philosophy-50",
 "Plato builds an ideal city of rulers, auxiliaries and producers ruled by philosopher-kings, and traces its decline through timocracy, oligarchy and democracy to tyranny."
+],
+[
+"history-28",
+"Lasch criticizes progressive and liberal intellectuals who confused social reform with cultural and personal liberation, and who sought influence through the managerial state rather than independent criticism."
 ]
 ],
 "Prussia and Germany": [
@@ -1321,11 +1337,11 @@ export const TOPICS = {
 "Technology and Media": [
 [
 "philosophy-12",
-"Ellul argues that 'technique', the pursuit of absolute efficiency, has become autonomous and governs modern society.",
+"Ellul argues that 'technique', the pursuit of absolute efficiency, has become autonomous and governs modern society."
+],
 [
 "philosophy-6",
 "Heidegger argues that the essence of modern technology is nothing technological but 'enframing' (Gestell), a way of revealing that orders nature and people alike as 'standing-reserve' on call for use."
-]
 ],
 [
 "philosophy-20",

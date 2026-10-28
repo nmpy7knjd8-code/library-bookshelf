@@ -2106,7 +2106,7 @@ export const enrichments = {
         "title": "The new radicalism in America, 1889-1963",
         "author": "Christopher Lasch",
         "cover": "covers/extra/auth-history-13-1.jpg",
-        "bookId": null,
+        "bookId": "history-28",
         "source": "openlibrary"
       },
       {
@@ -3070,7 +3070,93 @@ export const enrichments = {
         "why": "His major study of medieval mechanics."
       }
     ]
+  },  "history-28": {
+    "longDescription": "The New Radicalism in America, 1889–1963: The Intellectual as a Social Type (Knopf, 1965; Norton paperback 1997, ISBN 0-393-31696-3) was Christopher Lasch’s breakthrough book.\n\nIn a series of portraits (Jane Addams, Randolph Bourne, Mabel Dodge Luhan, Lincoln Steffens, and the liberals of the New Republic and the Cold War), Lasch argues that a class of intellectuals, alienated from the domestic, genteel culture of the middle class, came to treat politics as a means of cultural and personal liberation. The book anticipates the critique of therapeutic liberalism he developed later in The Culture of Narcissism.",
+    "author": {
+      "name": "Christopher Lasch",
+      "bio": "Christopher Lasch (1932–1994) was an American historian and social critic who taught at the University of Rochester. His books include The New Radicalism in America, Haven in a Heartless World, The Culture of Narcissism, The True and Only Heaven, and The Revolt of the Elites.",
+      "photo": "authors/OL532247A.jpg"
+    },
+    "similar": [
+      {
+        "title": "The Age of Reform",
+        "author": "Richard Hofstadter",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Hofstadter on the Populist and Progressive reformers Lasch reinterprets."
+      },
+      {
+        "title": "Anti-intellectualism in American Life",
+        "author": "Richard Hofstadter",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "The companion study of America’s suspicion of its intellectuals."
+      },
+      {
+        "title": "The Last Intellectuals",
+        "author": "Russell Jacoby",
+        "cover": null,
+        "bookId": null,
+        "source": "explore",
+        "why": "Where the independent American intellectual went after 1960."
+      },
+      {
+        "title": "The Culture of Narcissism",
+        "author": "Christopher Lasch",
+        "cover": "covers/history-13.jpg",
+        "bookId": "history-13",
+        "source": "shelf",
+        "why": "Lasch’s later diagnosis, already on this shelf."
+      }
+    ],
+    "otherByAuthor": [
+      {
+        "title": "The Culture of Narcissism",
+        "author": "Christopher Lasch",
+        "cover": "covers/history-13.jpg",
+        "bookId": "history-13",
+        "source": "shelf"
+      },
+      {
+        "title": "The true and only heaven",
+        "author": "Christopher Lasch",
+        "cover": "covers/extra/auth-history-13-0.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The revolt of the elites and the betrayal of democracy",
+        "author": "Christopher Lasch",
+        "cover": "covers/extra/auth-history-13-2.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The agony of the American left",
+        "author": "Christopher Lasch",
+        "cover": "covers/extra/auth-history-13-3.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "Haven in a heartless world",
+        "author": "Christopher Lasch",
+        "cover": "covers/extra/auth-history-13-6.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      },
+      {
+        "title": "The minimal self",
+        "author": "Christopher Lasch",
+        "cover": "covers/extra/auth-history-13-4.jpg",
+        "bookId": null,
+        "source": "openlibrary"
+      }
+    ]
   },
+
   "history-3": {
     "longDescription": "A collective volume on the enduring contributions of Israel to religion, law, and culture in the West. Essays typically treat Hebrew scripture, prophecy, and historical peoplehood as civilizational inheritance. It belongs to early twentieth-century efforts to map “legacies” of ancient peoples. This shelf copy sits among related works in ancient history, general history, and political thought, inviting comparison of style, argument, and historical moment. Readers often approach it both as a self-contained classic and as a node in a longer conversation—one that rewards slow reading, annotation, and return visits across years.",
     "author": {

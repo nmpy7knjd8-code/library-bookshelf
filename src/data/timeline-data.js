@@ -168,6 +168,7 @@ export const WORK_YEARS = {
   'philosophy-20': { year: 1962 },
   'literature-30': { year: 1962 },
   'philosophy-30': { year: 1964 },
+  'history-28': { year: 1965 },
   'philosophy-3': { year: 1968 },
   'philosophy-13': { year: 1975 },
   'literature-10': { year: 1976 },

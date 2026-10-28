@@ -585,6 +585,13 @@ export const shelves = [
           'Marshall Clagett’s concise history of Greek science and its afterlife (Dover reprint of the 1955 original). From the Presocratics, Aristotle, Euclid, Archimedes, and Ptolemy to the Roman and early medieval transmission of Greek learning.',
         binding: { bg: '#3f8acb', ink: '#10203c', band: '#10203c', pages: '#eee7d4', tone: 'dark', material: 'paper', deco: 'modern' },
       },
+      {
+        title: 'The New Radicalism in America, 1889–1963: The Intellectual as a Social Type',
+        spine: 'The New Radicalism',
+        author: 'Christopher Lasch',
+        description:
+          'Lasch’s first major book (1965; Norton paperback, 1997). Through portraits of Jane Addams, Randolph Bourne, Mabel Dodge, Lincoln Steffens and others, he argues that American intellectuals became a distinct social class estranged from middle-class life, and that their reform politics often turned into cultural rebellion and a search for personal fulfilment.',
+      },
     ],
   },
   {

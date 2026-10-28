@@ -95,6 +95,7 @@ export const READING_PATHS = [
       ['philosophy-12', 'Ellul on technique as an autonomous force.'],
       ['philosophy-20', 'McLuhan on how print remade the mind.'],
       ['philosophy-13', 'Illich on institutions that produce their opposite.'],
+      ['history-28', 'Early Lasch: the intellectual as an estranged social type.'],
       ['history-13', 'Lasch on the narcissistic culture of late capitalism.'],
       ['philosophy-17', 'Baudrillard: when the copy replaces the real.'],
       ['philosophy-45', 'Fisher: why no alternative seems imaginable.'],

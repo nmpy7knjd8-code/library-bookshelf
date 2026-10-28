@@ -1801,7 +1801,20 @@ export const covers = {
     },
     "gap": false,
     "note": "Dover edition, ISBN 0-486-41973-8 (matches spine)"
+  },  "history-28": {
+    "cover": "covers/history-28.jpg",
+    "spine": "covers/history-28.jpg",
+    "source": "Open Library",
+    "sourceUrl": "https://covers.openlibrary.org/b/isbn/0393316963-L.jpg",
+    "coverId": 249424,
+    "match": {
+      "title": "The New Radicalism in America, 1889-1963",
+      "author": "Christopher Lasch"
+    },
+    "gap": false,
+    "note": "W. W. Norton paperback, 1997, ISBN 0-393-31696-3"
   },
+
   "literature-54": {
     "cover": null,
     "source": null,
